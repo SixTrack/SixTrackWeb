@@ -1,0 +1,80 @@
+a {
+  color: #3861aa;
+}
+
+ul li {
+  padding-left: 0.5em;
+  list-style: none;
+}
+
+ul {
+  padding-left: 0.0em;
+  list-style: none;
+}
+
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  background: #ff0;
+  padding: 0;
+  margin: 0
+}
+dt {
+  float: left;
+  width: 50%;
+  /* adjust the width; make sure the total of both is 100% */
+  background: #cc0;
+  padding: 0;
+  margin: 0
+}
+dd {
+  float: left;
+  width: 50%;
+  /* adjust the width; make sure the total of both is 100% */
+  background: #dd0
+  padding: 0;
+  margin: 0
+}
+
+#footer {
+  height: 80px;
+  margin-top: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+#footer p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.9em;
+  line-height: 1;
+  margin-bottom: 0;
+  color: #999;
+}
+#footer a#cern_logo {position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media all and (max-width:480px) {
+  body {padding: 0 3%;
+}
+body.fluid #container {width: 100%;
+  padding: 0;
+}
+#footer {height: auto;
+  text-align: left;
+}
+#footer p {position: relative;
+  bottom: auto;
+  left: auto;
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 1em;
+  color: #000;
+  line-height: 1.3;
+}
+#footer a#cern_logo {position: relative;
+  bottom: auto;
+  right: auto;
+}
