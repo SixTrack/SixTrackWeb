@@ -1,0 +1,255 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{3}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{List of Tables}}{4}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-30001}{QQ2-1-3}{Introduction}}{2}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-40002}{QQ2-1-4}{Versions and Service}}{4}\relax 
+\doTocEntry\toclot{2.1}{\csname a:TocLink\endcsname{1}{x1-4001r1}{}{\ignorespaces External Routines}}{table}\relax 
+\doTocEntry\tocsubsection{2.0.1}{\csname a:TocLink\endcsname{1}{x1-50002.0.1}{QQ2-1-6}{Evolution of SixTrack}}{7}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-60003}{QQ2-1-7}{Input Structure}}{8}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-70003.1}{QQ2-1-8}{General Input}}{8}\relax 
+\doTocEntry\tocsubsection{3.1.1}{\csname a:TocLink\endcsname{1}{x1-80003.1.1}{QQ2-1-9}{Program Version}}{8}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-90003.1.1}{QQ2-1-10}{Description}}{8}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-100003.1.1}{QQ2-1-11}{Keyword}}{8}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-110003.1.1}{QQ2-1-12}{Number of data lines}}{8}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-120003.1.1}{QQ2-1-13}{Format}}{8}\relax 
+\doTocEntry\tocsubsection{3.1.2}{\csname a:TocLink\endcsname{1}{x1-130003.1.2}{QQ2-1-14}{Print Selection}}{8}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-140003.1.2}{QQ2-1-15}{Description}}{8}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-150003.1.2}{QQ2-1-16}{Keyword}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-160003.1.2}{QQ2-1-17}{Number of data lines}}{9}\relax 
+\doTocEntry\tocsubsection{3.1.3}{\csname a:TocLink\endcsname{1}{x1-170003.1.3}{QQ2-1-18}{Comment Line}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-180003.1.3}{QQ2-1-19}{Description}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-190003.1.3}{QQ2-1-20}{Keyword}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-200003.1.3}{QQ2-1-21}{Number of data lines}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-210003.1.3}{QQ2-1-22}{Format}}{9}\relax 
+\doTocEntry\tocsubsection{3.1.4}{\csname a:TocLink\endcsname{1}{x1-220003.1.4}{QQ2-1-23}{Iteration Errors}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-230003.1.4}{QQ2-1-24}{Description}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-240003.1.4}{QQ2-1-25}{Keyword}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-250003.1.4}{QQ2-1-26}{Number of data lines}}{9}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-260003.1.4}{QQ2-1-27}{Format}}{9}\relax 
+\doTocEntry\toclot{3.1}{\csname a:TocLink\endcsname{1}{x1-26001r1}{}{\ignorespaces Iteration Errors}}{table}\relax 
+\doTocEntry\tocsubsection{3.1.5}{\csname a:TocLink\endcsname{1}{x1-270003.1.5}{QQ2-1-29}{MAD -- SixTrack Conversion}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-280003.1.5}{QQ2-1-30}{Description}}{12}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-290003.2}{QQ2-1-31}{Machine Geometry}}{12}\relax 
+\doTocEntry\tocsubsection{3.2.1}{\csname a:TocLink\endcsname{1}{x1-300003.2.1}{QQ2-1-32}{Single Elements}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-310003.2.1}{QQ2-1-33}{Description}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-320003.2.1}{QQ2-1-34}{Keyword}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-330003.2.1}{QQ2-1-35}{Number of data lines}}{12}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-340003.2.1}{QQ2-1-36}{Format}}{12}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.1}{\csname a:TocLink\endcsname{1}{x1-350003.2.1.1}{QQ2-1-37}{Linear Elements}}{12}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-360003.2.1.1}{QQ2-1-38}{Description}}{12}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-370003.2.1.1}{QQ2-1-39}{Format}}{13}\relax 
+\doTocEntry\toclot{3.2}{\csname a:TocLink\endcsname{1}{x1-37001r2}{}{\ignorespaces Different Types of Linear Elements}}{table}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-380003.2.1.1}{QQ2-1-41}{Remarks}}{16}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.2}{\csname a:TocLink\endcsname{1}{x1-390003.2.1.2}{QQ2-1-42}{Nonlinear Elements}}{16}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-400003.2.1.2}{QQ2-1-43}{Format}}{16}\relax 
+\doTocEntry\toclot{3.3}{\csname a:TocLink\endcsname{1}{x1-40001r3}{}{\ignorespaces Different Types of Nonlinear Elements}}{table}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-410003.2.1.2}{QQ2-1-45}{Remarks}}{19}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.3}{\csname a:TocLink\endcsname{1}{x1-420003.2.1.3}{QQ2-1-46}{Multipole Blocks}}{19}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-430003.2.1.3}{QQ2-1-47}{Description}}{19}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-440003.2.1.3}{QQ2-1-48}{Format}}{19}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-450003.2.1.3}{QQ2-1-49}{Remark}}{20}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.4}{\csname a:TocLink\endcsname{1}{x1-460003.2.1.4}{QQ2-1-50}{Cavities}}{20}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-470003.2.1.4}{QQ2-1-51}{Format}}{20}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.5}{\csname a:TocLink\endcsname{1}{x1-480003.2.1.5}{QQ2-1-52}{Beam--Beam Separation}}{21}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-490003.2.1.5}{QQ2-1-53}{Format}}{21}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-500003.2.1.5}{QQ2-1-54}{Remark}}{21}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.6}{\csname a:TocLink\endcsname{1}{x1-510003.2.1.6}{QQ2-1-55}{``Phase--trombone'' or matrix element}}{21}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-520003.2.1.6}{QQ2-1-56}{Format}}{22}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-530003.2.1.6}{QQ2-1-57}{Remark}}{22}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.7}{\csname a:TocLink\endcsname{1}{x1-540003.2.1.7}{QQ2-1-58}{AC dipole}}{22}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-550003.2.1.7}{QQ2-1-59}{Format}}{22}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-560003.2.1.7}{QQ2-1-60}{Remark}}{22}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.8}{\csname a:TocLink\endcsname{1}{x1-570003.2.1.8}{QQ2-1-61}{Crab Cavity}}{22}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-580003.2.1.8}{QQ2-1-62}{Format}}{23}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.9}{\csname a:TocLink\endcsname{1}{x1-590003.2.1.9}{QQ2-1-63}{Beam Position Monitor}}{23}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-600003.2.1.9}{QQ2-1-64}{Format}}{23}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-610003.2.1.9}{QQ2-1-65}{Remark}}{23}\relax 
+\doTocEntry\tocsubsubsection{3.2.1.10}{\csname a:TocLink\endcsname{1}{x1-620003.2.1.10}{QQ2-1-66}{Other element types}}{23}\relax 
+\doTocEntry\tocsubsection{3.2.2}{\csname a:TocLink\endcsname{1}{x1-630003.2.2}{QQ2-1-67}{Block Definitions}}{23}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-640003.2.2}{QQ2-1-68}{Description}}{23}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-650003.2.2}{QQ2-1-69}{Keyword}}{24}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-660003.2.2}{QQ2-1-70}{Number of data lines}}{24}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-670003.2.2}{QQ2-1-71}{Format}}{24}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-680003.2.2}{QQ2-1-72}{Remarks}}{24}\relax 
+\doTocEntry\tocsubsection{3.2.3}{\csname a:TocLink\endcsname{1}{x1-690003.2.3}{QQ2-1-73}{Structure Input}}{25}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-700003.2.3}{QQ2-1-74}{Description}}{25}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-710003.2.3}{QQ2-1-75}{Format}}{25}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-720003.2.3}{QQ2-1-76}{Remark}}{25}\relax 
+\doTocEntry\tocsubsection{3.2.4}{\csname a:TocLink\endcsname{1}{x1-730003.2.4}{QQ2-1-77}{Displacement of Elements}}{25}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-740003.2.4}{QQ2-1-78}{Description}}{25}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-750003.2.4}{QQ2-1-79}{Keyword}}{25}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-760003.2.4}{QQ2-1-80}{Number of data lines}}{25}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-770003.2.4}{QQ2-1-81}{Format}}{26}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-780003.2.4}{QQ2-1-82}{Format}}{26}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-790003.2.4}{QQ2-1-83}{Remark}}{26}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{1}{x1-800003.3}{QQ2-1-84}{Special Elements}}{26}\relax 
+\doTocEntry\tocsubsection{3.3.1}{\csname a:TocLink\endcsname{1}{x1-810003.3.1}{QQ2-1-85}{Multipole Coefficients}}{26}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-820003.3.1}{QQ2-1-86}{Description}}{27}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-830003.3.1}{QQ2-1-87}{Keyword}}{27}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-840003.3.1}{QQ2-1-88}{Number of data lines}}{27}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-850003.3.1}{QQ2-1-89}{Format}}{27}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-860003.3.1}{QQ2-1-90}{Remarks}}{27}\relax 
+\doTocEntry\tocsubsection{3.3.2}{\csname a:TocLink\endcsname{1}{x1-870003.3.2}{QQ2-1-91}{Aperture Limitations}}{28}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-880003.3.2}{QQ2-1-92}{Description}}{28}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-890003.3.2}{QQ2-1-93}{Keyword}}{28}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-900003.3.2}{QQ2-1-94}{Number of data lines}}{28}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-910003.3.2}{QQ2-1-95}{Format}}{28}\relax 
+\doTocEntry\tocsubsection{3.3.3}{\csname a:TocLink\endcsname{1}{x1-920003.3.3}{QQ2-1-96}{Power Supply Ripple}}{29}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-930003.3.3}{QQ2-1-97}{Description}}{29}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-940003.3.3}{QQ2-1-98}{Keyword}}{29}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-950003.3.3}{QQ2-1-99}{Number of data lines}}{29}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-960003.3.3}{QQ2-1-100}{Format}}{29}\relax 
+\doTocEntry\tocsubsection{3.3.4}{\csname a:TocLink\endcsname{1}{x1-970003.3.4}{QQ2-1-101}{Beam--Beam Element}}{30}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-980003.3.4}{QQ2-1-102}{Description}}{30}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-990003.3.4}{QQ2-1-103}{Keyword}}{30}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1000003.3.4}{QQ2-1-104}{Number of data lines}}{30}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1010003.3.4}{QQ2-1-105}{Format}}{30}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1020003.3.4}{QQ2-1-106}{Remark}}{31}\relax 
+\doTocEntry\tocsubsection{3.3.5}{\csname a:TocLink\endcsname{1}{x1-1030003.3.5}{QQ2-1-107}{``Phase Trombone'' Element}}{31}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1040003.3.5}{QQ2-1-108}{Description}}{31}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1050003.3.5}{QQ2-1-109}{Keyword}}{31}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1060003.3.5}{QQ2-1-110}{Number of data lines}}{31}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1070003.3.5}{QQ2-1-111}{Format}}{31}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1080003.3.5}{QQ2-1-112}{Remark}}{32}\relax 
+\doTocEntry\tocsection{3.4}{\csname a:TocLink\endcsname{1}{x1-1090003.4}{QQ2-1-113}{Organising Tasks}}{32}\relax 
+\doTocEntry\tocsubsection{3.4.1}{\csname a:TocLink\endcsname{1}{x1-1100003.4.1}{QQ2-1-114}{Random Fluctuation Starting Number}}{32}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1110003.4.1}{QQ2-1-115}{Description}}{32}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1120003.4.1}{QQ2-1-116}{Keyword}}{32}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1130003.4.1}{QQ2-1-117}{Number of data lines}}{32}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1140003.4.1}{QQ2-1-118}{Format}}{32}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1150003.4.1}{QQ2-1-119}{Remarks}}{33}\relax 
+\doTocEntry\tocsubsection{3.4.2}{\csname a:TocLink\endcsname{1}{x1-1160003.4.2}{QQ2-1-120}{Organisation of Random Numbers}}{33}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1170003.4.2}{QQ2-1-121}{Description}}{34}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1180003.4.2}{QQ2-1-122}{Keyword}}{34}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1190003.4.2}{QQ2-1-123}{Number of data lines}}{34}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1200003.4.2}{QQ2-1-124}{Format}}{34}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1210003.4.2}{QQ2-1-125}{Remarks}}{34}\relax 
+\doTocEntry\tocsubsection{3.4.3}{\csname a:TocLink\endcsname{1}{x1-1220003.4.3}{QQ2-1-126}{Combination of Elements}}{35}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1230003.4.3}{QQ2-1-127}{Description}}{35}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1240003.4.3}{QQ2-1-128}{Keyword}}{35}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1250003.4.3}{QQ2-1-129}{Number of data lines}}{35}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1260003.4.3}{QQ2-1-130}{Format}}{35}\relax 
+\doTocEntry\tocsection{3.5}{\csname a:TocLink\endcsname{1}{x1-1270003.5}{QQ2-1-131}{Processing}}{35}\relax 
+\doTocEntry\tocsubsection{3.5.1}{\csname a:TocLink\endcsname{1}{x1-1280003.5.1}{QQ2-1-132}{Linear Optics Calculation}}{35}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1290003.5.1}{QQ2-1-133}{Description}}{35}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1300003.5.1}{QQ2-1-134}{Keyword}}{35}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1310003.5.1}{QQ2-1-135}{Number of data lines}}{36}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1320003.5.1}{QQ2-1-136}{Format}}{36}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1330003.5.1}{QQ2-1-137}{Remarks}}{36}\relax 
+\doTocEntry\tocsubsection{3.5.2}{\csname a:TocLink\endcsname{1}{x1-1340003.5.2}{QQ2-1-138}{Tune Variation}}{37}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1350003.5.2}{QQ2-1-139}{Description}}{37}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1360003.5.2}{QQ2-1-140}{Keyword}}{37}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1370003.5.2}{QQ2-1-141}{Number of data lines}}{37}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1380003.5.2}{QQ2-1-142}{Format}}{37}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1390003.5.2}{QQ2-1-143}{Remark}}{38}\relax 
+\doTocEntry\tocsubsection{3.5.3}{\csname a:TocLink\endcsname{1}{x1-1400003.5.3}{QQ2-1-144}{Chromaticity Correction}}{38}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1410003.5.3}{QQ2-1-145}{Description}}{38}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1420003.5.3}{QQ2-1-146}{Keyword}}{38}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1430003.5.3}{QQ2-1-147}{Number of data lines}}{38}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1440003.5.3}{QQ2-1-148}{Format}}{38}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1450003.5.3}{QQ2-1-149}{Format}}{38}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1460003.5.3}{QQ2-1-150}{Remark}}{38}\relax 
+\doTocEntry\tocsubsection{3.5.4}{\csname a:TocLink\endcsname{1}{x1-1470003.5.4}{QQ2-1-151}{Orbit Correction}}{39}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1480003.5.4}{QQ2-1-152}{Description}}{39}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1490003.5.4}{QQ2-1-153}{Keyword}}{39}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1500003.5.4}{QQ2-1-154}{Number of data lines}}{39}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1510003.5.4}{QQ2-1-155}{Format}}{39}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1520003.5.4}{QQ2-1-156}{Remarks}}{40}\relax 
+\doTocEntry\tocsubsection{3.5.5}{\csname a:TocLink\endcsname{1}{x1-1530003.5.5}{QQ2-1-157}{Decoupling of Motion in the Transverse Planes}}{40}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1540003.5.5}{QQ2-1-158}{Description}}{40}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1550003.5.5}{QQ2-1-159}{Keyword}}{40}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1560003.5.5}{QQ2-1-160}{Number of data lines}}{40}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1570003.5.5}{QQ2-1-161}{Format}}{40}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1580003.5.5}{QQ2-1-162}{Remark}}{41}\relax 
+\doTocEntry\tocsubsection{3.5.6}{\csname a:TocLink\endcsname{1}{x1-1590003.5.6}{QQ2-1-163}{Sub--resonance Calculation}}{41}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1600003.5.6}{QQ2-1-164}{Description}}{41}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1610003.5.6}{QQ2-1-165}{Keyword}}{41}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1620003.5.6}{QQ2-1-166}{Number of data lines}}{41}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1630003.5.6}{QQ2-1-167}{Format}}{41}\relax 
+\doTocEntry\tocsubsection{3.5.7}{\csname a:TocLink\endcsname{1}{x1-1640003.5.7}{QQ2-1-168}{Search for Optimum Places to Compensate Resonances}}{42}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1650003.5.7}{QQ2-1-169}{Description}}{42}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1660003.5.7}{QQ2-1-170}{Keyword}}{42}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1670003.5.7}{QQ2-1-171}{Number of data lines}}{42}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1680003.5.7}{QQ2-1-172}{Format}}{42}\relax 
+\doTocEntry\tocsubsection{3.5.8}{\csname a:TocLink\endcsname{1}{x1-1690003.5.8}{QQ2-1-173}{Resonance Compensation}}{43}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1700003.5.8}{QQ2-1-174}{Description}}{43}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1710003.5.8}{QQ2-1-175}{Keyword}}{43}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1720003.5.8}{QQ2-1-176}{Number of data lines}}{43}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1730003.5.8}{QQ2-1-177}{Format}}{43}\relax 
+\doTocEntry\tocsubsection{3.5.9}{\csname a:TocLink\endcsname{1}{x1-1740003.5.9}{QQ2-1-178}{Differential Algebra}}{44}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1750003.5.9}{QQ2-1-179}{Description}}{44}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1760003.5.9}{QQ2-1-180}{Keyword}}{44}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1770003.5.9}{QQ2-1-181}{Number of data lines}}{44}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1780003.5.9}{QQ2-1-182}{Format}}{45}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1790003.5.9}{QQ2-1-183}{Remarks}}{45}\relax 
+\doTocEntry\tocsubsection{3.5.10}{\csname a:TocLink\endcsname{1}{x1-1800003.5.10}{QQ2-1-184}{Normal Forms}}{46}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1810003.5.10}{QQ2-1-185}{Description}}{46}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1820003.5.10}{QQ2-1-186}{Keyword}}{46}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1830003.5.10}{QQ2-1-187}{Number of data lines}}{46}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1840003.5.10}{QQ2-1-188}{Format}}{46}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1850003.5.10}{QQ2-1-189}{Remarks}}{46}\relax 
+\doTocEntry\tocsubsection{3.5.11}{\csname a:TocLink\endcsname{1}{x1-1860003.5.11}{QQ2-1-190}{Corrections}}{47}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1870003.5.11}{QQ2-1-191}{Description}}{47}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1880003.5.11}{QQ2-1-192}{Keyword}}{47}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1890003.5.11}{QQ2-1-193}{Number of data lines}}{47}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1900003.5.11}{QQ2-1-194}{Format}}{47}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1910003.5.11}{QQ2-1-195}{Remarks}}{49}\relax 
+\doTocEntry\tocsubsection{3.5.12}{\csname a:TocLink\endcsname{1}{x1-1920003.5.12}{QQ2-1-196}{Post--processing}}{49}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1930003.5.12}{QQ2-1-197}{Description}}{49}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1940003.5.12}{QQ2-1-198}{Keyword}}{50}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1950003.5.12}{QQ2-1-199}{Number of data lines}}{50}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1960003.5.12}{QQ2-1-200}{Format}}{50}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1970003.5.12}{QQ2-1-201}{Remarks}}{52}\relax 
+\doTocEntry\tocsection{3.6}{\csname a:TocLink\endcsname{1}{x1-1980003.6}{QQ2-1-202}{Initial Conditions for Tracking}}{53}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-1990003.6}{QQ2-1-203}{Description}}{53}\relax 
+\doTocEntry\tocsubsection{3.6.1}{\csname a:TocLink\endcsname{1}{x1-2000003.6.1}{QQ2-1-204}{Tracking Parameters}}{53}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2010003.6.1}{QQ2-1-205}{Description}}{53}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2020003.6.1}{QQ2-1-206}{Keyword}}{53}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2030003.6.1}{QQ2-1-207}{Number of data lines}}{53}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2040003.6.1}{QQ2-1-208}{Format}}{53}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2050003.6.1}{QQ2-1-209}{Remarks}}{57}\relax 
+\doTocEntry\tocsubsection{3.6.2}{\csname a:TocLink\endcsname{1}{x1-2060003.6.2}{QQ2-1-210}{Initial Coordinates}}{58}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2070003.6.2}{QQ2-1-211}{Description}}{58}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2080003.6.2}{QQ2-1-212}{Keyword}}{58}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2090003.6.2}{QQ2-1-213}{Number of data lines}}{58}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2100003.6.2}{QQ2-1-214}{Format}}{58}\relax 
+\doTocEntry\toclot{3.4}{\csname a:TocLink\endcsname{1}{x1-210001r4}{}{\ignorespaces Initial Coordinates of the 2 Particles}}{table}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2110003.6.2}{QQ2-1-216}{Remarks}}{62}\relax 
+\doTocEntry\tocsubsection{3.6.3}{\csname a:TocLink\endcsname{1}{x1-2120003.6.3}{QQ2-1-217}{Synchrotron Oscillation}}{62}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2130003.6.3}{QQ2-1-218}{Description}}{62}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2140003.6.3}{QQ2-1-219}{Keyword}}{62}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2150003.6.3}{QQ2-1-220}{Number of data lines}}{62}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-2160003.6.3}{QQ2-1-221}{Format}}{62}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2170003.6.3}{QQ2-1-222}{Conclusions and Acknowledgements}}{64}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-223}{}{Conclusions and Acknowledgements}}{64}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2180003.6.3}{QQ2-1-224}{Acknowledgement}}{64}\relax 
+\doTocEntry\tocappendix{A}{\csname a:TocLink\endcsname{1}{x1-219000A}{QQ2-1-225}{List of Keywords}}{65}\relax 
+\doTocEntry\toclot{A.1}{\csname a:TocLink\endcsname{1}{x1-219001r1}{}{\ignorespaces List of Keywords}}{table}\relax 
+\doTocEntry\toclot{A.2}{\csname a:TocLink\endcsname{1}{x1-219002r2}{}{\ignorespaces List of Keywords (continued)}}{table}\relax 
+\doTocEntry\tocappendix{B}{\csname a:TocLink\endcsname{1}{x1-220000B}{QQ2-1-228}{List of Default Values}}{73}\relax 
+\doTocEntry\tocsection{B.1}{\csname a:TocLink\endcsname{1}{x1-221000B.1}{QQ2-1-229}{Default Tracking Parameters}}{73}\relax 
+\doTocEntry\toclot{B.1}{\csname a:TocLink\endcsname{1}{x1-221001r1}{}{\ignorespaces Default Tracking Parameters}}{table}\relax 
+\doTocEntry\tocsection{B.2}{\csname a:TocLink\endcsname{1}{x1-222000B.2}{QQ2-1-231}{Default Size Parameters}}{77}\relax 
+\doTocEntry\toclot{B.2}{\csname a:TocLink\endcsname{1}{x1-222001r2}{}{\ignorespaces Default Size Parameters}}{table}\relax 
+\doTocEntry\tocappendix{C}{\csname a:TocLink\endcsname{1}{x1-223000C}{QQ2-1-233}{Input and Output Files}}{81}\relax 
+\doTocEntry\toclot{C.1}{\csname a:TocLink\endcsname{1}{x1-223001r1}{}{\ignorespaces List of Input and Output Files}}{table}\relax 
+\doTocEntry\toclot{C.2}{\csname a:TocLink\endcsname{1}{x1-223002r2}{}{\ignorespaces List of Input and Output Files (continued)}}{table}\relax 
+\doTocEntry\toclot{C.3}{\csname a:TocLink\endcsname{1}{x1-223003r3}{}{\ignorespaces List of Input and Output Files (continued)}}{table}\relax 
+\doTocEntry\tocappendix{D}{\csname a:TocLink\endcsname{1}{x1-224000D}{QQ2-1-237}{Data Structure of the Data--Files}}{94}\relax 
+\doTocEntry\toclot{D.1}{\csname a:TocLink\endcsname{1}{x1-224001r1}{}{\ignorespaces Header of the Binary Data--Files}}{table}\relax 
+\doTocEntry\toclot{D.2}{\csname a:TocLink\endcsname{1}{x1-224002r2}{}{\ignorespaces Format of the Binary Data}}{table}\relax 
+\doTocEntry\toclot{D.3}{\csname a:TocLink\endcsname{1}{x1-224003r3}{}{\ignorespaces Post--processing Data}}{table}\relax 
+\doTocEntry\toclot{D.4}{\csname a:TocLink\endcsname{1}{x1-224004r4}{}{\ignorespaces 4D Linear Parameters}}{table}\relax 
+\doTocEntry\toclot{D.5}{\csname a:TocLink\endcsname{1}{x1-224005r5}{}{\ignorespaces Format of file with external errors # 16 and internal errors written to # 9}}{table}\relax 
+\doTocEntry\toclot{D.6}{\csname a:TocLink\endcsname{1}{x1-224006r6}{}{\ignorespaces Format of file # 34 for detuning and distortion calculation with external program ``SODD''\nobreakspace  {}\cite  {SODD}}}{table}\relax 
+\doTocEntry\tocappendix{E}{\csname a:TocLink\endcsname{1}{x1-225000E}{QQ2-1-244}{Tracking Examples}}{116}\relax 
+\doTocEntry\tocsection{E.1}{\csname a:TocLink\endcsname{1}{x1-226000E.1}{QQ2-1-245}{Input Example}}{116}\relax 
+\doTocEntry\tocsection{E.2}{\csname a:TocLink\endcsname{1}{x1-227000E.2}{QQ2-1-246}{Output Example}}{120}\relax 
+\doTocEntry\tocsection{E.3}{\csname a:TocLink\endcsname{1}{x1-228000E.3}{QQ2-1-247}{Plot Example}}{131}\relax 
+\doTocEntry\toclof{E.1}{\csname a:TocLink\endcsname{1}{x1-228001r1}{}{\ignorespaces \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Evolution of the Distance of Phase Space for Regular \unhbox \voidb@x \hbox {(upper part)} and Chaotic \unhbox \voidb@x \hbox {(lower part)} Motion.}}{figure}\relax 
+\doTocEntry\toclof{E.2}{\csname a:TocLink\endcsname{1}{x1-228002r2}{}{\ignorespaces Horizontal Phase Space Projections for the Regular (upper part) and the Chaotic \unhbox \voidb@x \hbox {(lower part)} Cases.}}{figure}\relax 
+\doTocEntry\toclof{E.3}{\csname a:TocLink\endcsname{1}{x1-228003r3}{}{\ignorespaces Physical Phase Space Projections for the Regular \unhbox \voidb@x \hbox {(upper part)} and the Chaotic \unhbox \voidb@x \hbox {(lower part)} Cases.}}{figure}\relax 
+\doTocEntry\toclof{E.4}{\csname a:TocLink\endcsname{1}{x1-228004r4}{}{\ignorespaces \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {Stroboscoped Vertical Phase Space Projections for the Regular (upper part) and the Chaotic (lower part) Cases respectively. The regular motion stays inside a ``separatrix'' with two unstable fix--points visible, while the chaotic motion is clearly outside this ``separatrix''.}}}{figure}\relax 
+\doTocEntry\toclof{E.5}{\csname a:TocLink\endcsname{1}{x1-228005r5}{}{\ignorespaces Horizontal FFT--Analysis for the Regular (upper part) and the Chaotic (lower part) Cases.}}{figure}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-229000E.3}{QQ2-1-253}{Bibliography}}{151}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-254}{}{\nobreakspace  {}Bibliography}}{153}\relax 

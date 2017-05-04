@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>3 Input Structure</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3 --> 
+<meta name="src" content="six.tex"> 
+<meta name="date" content="2012-05-24 15:23:00"> 
+<link rel="stylesheet" type="text/css" href="six.css"> 
+</head><body 
+>
+   <!--l. 280--><div class="crosslinks"><p class="noindent">[<a 
+href="sixli3.html" >next</a>] [<a 
+href="sixch2.html" >prev</a>] [<a 
+href="sixch2.html#tailsixch2.html" >prev-tail</a>] [<a 
+href="#tailsixch3.html">tail</a>] [<a 
+href="six.html#sixch3.html" >up</a>] </p></div>
+   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;3</span><br /><a 
+ id="x7-50003"></a>Input Structure</h2>
+<!--l. 282--><p class="noindent" >The idea of RACETRACK input is to use a sequence of input blocks, each block with a specific keyword in
+the first line, the keyword &#8220;NEXT&#8221; in the last line and the input data in the lines in between. The keyword
+&#8220;ENDE&#8221; ends this sequence, and all blocks after this keyword are ignored. This system makes it easy to
+read input and allows easy change and addition of input blocks. It was therefore also used in
+SixTrack.
+   <div class="sectionTOCS">
+   &#x00A0;<span class="sectionToc" >3.1 <a 
+href="sixse1.html#x8-60003.1">General Input</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.1.1 <a 
+href="sixse1.html#x8-70003.1.1">Program Version</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.1.2 <a 
+href="sixse1.html#x8-120003.1.2">Print Selection</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.1.3 <a 
+href="sixse1.html#x8-160003.1.3">Comment Line</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.1.4 <a 
+href="sixse1.html#x8-210003.1.4">Iteration Errors</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.1.5 <a 
+href="sixse1.html#x8-260003.1.5">MAD &#8211; SixTrack Conversion</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.2 <a 
+href="sixse2.html#x9-280003.2">Machine Geometry</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.2.1 <a 
+href="sixse2.html#x9-290003.2.1">Single Elements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.2.2 <a 
+href="sixse2.html#x9-610003.2.2">Block Definitions</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.2.3 <a 
+href="sixse2.html#x9-670003.2.3">Structure Input</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.2.4 <a 
+href="sixse2.html#x9-710003.2.4">Displacement of Elements</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.3 <a 
+href="sixse3.html#x10-780003.3">Special Elements</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.3.1 <a 
+href="sixse3.html#x10-790003.3.1">Multipole Coefficients</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.3.2 <a 
+href="sixse3.html#x10-850003.3.2">Aperture Limitations</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.3.3 <a 
+href="sixse3.html#x10-900003.3.3">Power Supply Ripple</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.3.4 <a 
+href="sixse3.html#x10-950003.3.4">Beam&#8211;Beam Element</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.3.5 <a 
+href="sixse3.html#x10-1010003.3.5">&#8220;Phase Trombone&#8221; Element</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.4 <a 
+href="sixse4.html#x11-1070003.4">Organising Tasks</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.4.1 <a 
+href="sixse4.html#x11-1080003.4.1">Random Fluctuation Starting Number</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.4.2 <a 
+href="sixse4.html#x11-1140003.4.2">Organisation of Random Numbers</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.4.3 <a 
+href="sixse4.html#x11-1200003.4.3">Combination of Elements</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.5 <a 
+href="sixse5.html#x12-1250003.5">Processing</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.1 <a 
+href="sixse5.html#x12-1260003.5.1">Linear Optics Calculation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.2 <a 
+href="sixse5.html#x12-1320003.5.2">Tune Variation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.3 <a 
+href="sixse5.html#x12-1380003.5.3">Chromaticity Correction</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.4 <a 
+href="sixse5.html#x12-1450003.5.4">Orbit Correction</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.5 <a 
+href="sixse5.html#x12-1510003.5.5">Decoupling of Motion in the Transverse Planes</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.6 <a 
+href="sixse5.html#x12-1570003.5.6">Sub&#8211;resonance Calculation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.7 <a 
+href="sixse5.html#x12-1620003.5.7">Search for Optimum Places to Compensate Resonances</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.8 <a 
+href="sixse5.html#x12-1670003.5.8">Resonance Compensation</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.9 <a 
+href="sixse5.html#x12-1720003.5.9">Differential Algebra</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.10 <a 
+href="sixse5.html#x12-1780003.5.10">Normal Forms</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.11 <a 
+href="sixse5.html#x12-1840003.5.11">Corrections</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.5.12 <a 
+href="sixse5.html#x12-1900003.5.12">Post&#8211;processing</a></span>
+<br />   &#x00A0;<span class="sectionToc" >3.6 <a 
+href="sixse6.html#x13-1960003.6">Initial Conditions for Tracking</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.6.1 <a 
+href="sixse6.html#x13-1980003.6.1">Tracking Parameters</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.6.2 <a 
+href="sixse6.html#x13-2040003.6.2">Initial Coordinates</a></span>
+<br />   &#x00A0;&#x00A0;<span class="subsectionToc" >3.6.3 <a 
+href="sixse6.html#x13-2100003.6.3">Synchrotron Oscillation</a></span>
+   </div>
+
+
+
+
+
+
+<!--l. 2223--><div class="crosslinks"><p class="noindent">[<a 
+href="sixli3.html" >next</a>] [<a 
+href="sixch2.html" >prev</a>] [<a 
+href="sixch2.html#tailsixch2.html" >prev-tail</a>] [<a 
+href="sixch3.html" >front</a>] [<a 
+href="six.html#sixch3.html" >up</a>] </p></div>
+<!--l. 2223--><p class="indent" ><a 
+ id="tailsixch3.html"></a> 
+</body></html> 

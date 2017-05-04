@@ -1,0 +1,1282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>D Data Structure of the Data&#8211;Files</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3 --> 
+<meta name="src" content="six.tex"> 
+<meta name="date" content="2012-05-24 15:23:00"> 
+<link rel="stylesheet" type="text/css" href="six.css"> 
+</head><body 
+>
+<!--l. 2808--><div class="crosslinks"><p class="noindent">[<a 
+href="sixap5.html" >next</a>] [<a 
+href="sixap3.html" >prev</a>] [<a 
+href="sixap3.html#tailsixap3.html" >prev-tail</a>] [<a 
+href="#tailsixap4.html">tail</a>] [<a 
+href="six.html#sixap4.html" >up</a>] </p></div>
+<h2 class="appendixHead"><span class="titlemark">Appendix&#x00A0;D</span><br /><a 
+ id="x21-222000D"></a>Data Structure of the Data&#8211;Files</h2>
+<!--l. 2810--><p class="noindent" >A common data structure for the programs MAD and SixTrack is agreed on. Besides some minor differences
+this allows a straightforward post&#8211;processing of data from either program. Each binary data&#8211;file has a header
+which holds a description of the run with comments, tracking parameters and 50 additional parameters for
+future purposes, six of which are already specified in SixTrack.
+<div class="table">
+
+<!--l. 2817--><p class="indent" ><a 
+ id="x21-222001r1"></a><hr class="float"><div class="float" 
+>
+
+<div class="caption" 
+><span class="id">Table&#x00A0;D.1: </span><span  
+class="content">Header of the Binary Data&#8211;Files</span></div><!--tex4ht:label?: x21-222001r1 -->
+<div class="tabular"><table id="TBL-14" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-14-1g"><col 
+id="TBL-14-1"></colgroup><colgroup id="TBL-14-2g"><col 
+id="TBL-14-2"></colgroup><colgroup id="TBL-14-3g"><col 
+id="TBL-14-3"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-1-1"  
+class="td11"><span 
+class="cmbx-10x-x-109">Data Type</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-1-2"  
+class="td11"><span 
+class="cmbx-10x-x-109">Bytes</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-1-3"  
+class="td11">               <span 
+class="cmbx-10x-x-109">Description                     </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-2-1"  
+class="td11"> Character  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-2-2"  
+class="td11">  80   </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-2-3"  
+class="td11">           General title of the run                 </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-3-1"  
+class="td11"> Character </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-3-2"  
+class="td11"> 80 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-3-3"  
+class="td11"> Additional title</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-4-1"  
+class="td11"> Character  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-4-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-4-3"  
+class="td11">                   Date                             </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-5-1"  
+class="td11"> Character </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-5-2"  
+class="td11"> 8 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-5-3"  
+class="td11"> Time</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-6-1"  
+class="td11"> Character  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-6-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-6-3"  
+class="td11">              Program name                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-7-1"  
+class="td11">   Integer    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-7-2"  
+class="td11">  4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-7-3"  
+class="td11">           First particle in the file                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-8-1"  
+class="td11">   Integer    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-8-2"  
+class="td11">  4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-8-3"  
+class="td11">           Last particle in the file                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-9-1"  
+class="td11">   Integer    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-9-2"  
+class="td11">  4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-9-3"  
+class="td11">          Total number of particles                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-10-1"  
+class="td11">   Integer    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-10-2"  
+class="td11">  4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-10-3"  
+class="td11">    Code for dimensionality of phase space       </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-11-1"  
+class="td11">           </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-11-2"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-11-3"  
+class="td11">1,2,4 are hor., vert.&#x00A0;and longitudinal respectively</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-12-1"  
+class="td11">   Integer    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-12-2"  
+class="td11">  4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-12-3"  
+class="td11">         Projected number of turns               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-13-1"  
+class="td11">   Float     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-13-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-13-3"  
+class="td11">              Horizontal Tune                      </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-14-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-14-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-14-2"  
+class="td11"> 8 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-14-3"  
+class="td11"> Vertical Tune</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-15-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-15-1"  
+class="td11">   Float     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-15-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-15-3"  
+class="td11">             Longitudinal Tune                    </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-16-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-16-1"  
+class="td11">   Float     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-16-2"  
+class="td11"> 6 * 8 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-16-3"  
+class="td11">            Closed Orbit vector                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-17-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-17-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-17-2"  
+class="td11"> 6 * 8 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-17-3"  
+class="td11">             Dispersion vector                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-18-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-18-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-18-2"  
+class="td11">36 * 8</td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-18-3"  
+class="td11">        Six&#8211;dimensional transfer map             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-19-"><td colspan="3" style="white-space:nowrap; text-align:left;" id="TBL-14-19-1"  
+class="td11"><div class="multicolumn"  style="white-space:nowrap; text-align:left;">&#8212;&#8211; 50 additional parameters &#8212;&#8211;</div>
+</td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-20-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-20-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-20-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-20-3"  
+class="td11">      Maximum number of different seeds         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-21-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-21-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-21-2"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-21-3"  
+class="td11">                                         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-22-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-22-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-22-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-22-3"  
+class="td11">            Actual seed number                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-23-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-23-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-23-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-23-3"  
+class="td11">          Starting value of the seed                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-24-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-24-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-24-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-24-3"  
+class="td11">    Number of turns in the reverse direction      </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-25-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-25-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-25-2"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-25-3"  
+class="td11">                (IBM only)                         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-26-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-26-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-26-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-26-3"  
+class="td11">      Correction&#8211;factor for the Lyapunov         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-27-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-27-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-27-2"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-27-3"  
+class="td11">              (<span 
+class="cmmi-10x-x-109">&sigma; </span>= <span 
+class="cmmi-10x-x-109">s </span><span 
+class="cmsy-10x-x-109">&minus; </span><span 
+class="cmmi-10x-x-109">v</span><sub><span 
+class="cmmi-8">o</span></sub> <span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="cmmi-10x-x-109">t</span>)                      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-28-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-28-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-28-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-28-3"  
+class="td11">      Correction&#8211;factor for the Lyapunov         </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-29-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-29-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-29-2"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-29-3"  
+class="td11">                   (<img 
+src="six29x.png" alt="&Delta;ppo"  class="frac" align="middle">)                             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-30-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-30-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-30-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-30-3"  
+class="td11">   Start turn number for ripple prolongation     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-31-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-31-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-31-2"  
+class="td11">43 * 8</td><td  style="white-space:nowrap; text-align:center;" id="TBL-14-31-3"  
+class="td11">                 Dummies                          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-14-32-"><td  style="white-space:nowrap; text-align:center;" id="TBL-14-32-1"  
+class="td11"> </td></tr></table></div>
+
+</div><hr class="endfloat" />
+</div>
+
+<!--l. 2886--><p class="indent" >Following this header the tracking data are written in n samples of nine numbers preceded by the turn
+number. In the MAD format the number of samples n is not restricted, whilst SixTrack writes only up to two
+samples for the two particles for the Lyapunov&#8211;exponent method. Up to 64 particles (two per file) can be
+treated in the vectorised version of SixTrack.
+<div class="table">
+
+<!--l. 2893--><p class="indent" ><a 
+ id="x21-222002r2"></a><hr class="float"><div class="float" 
+>
+
+<div class="caption" 
+><span class="id">Table&#x00A0;D.2: </span><span  
+class="content">Format of the Binary Data</span></div><!--tex4ht:label?: x21-222002r2 -->
+<div class="tabular"><table id="TBL-15" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-15-1g"><col 
+id="TBL-15-1"></colgroup><colgroup id="TBL-15-2g"><col 
+id="TBL-15-2"></colgroup><colgroup id="TBL-15-3g"><col 
+id="TBL-15-3"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-1-1"  
+class="td11"><span 
+class="cmbx-10x-x-109">Data Type</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-1-2"  
+class="td11"><span 
+class="cmbx-10x-x-109">Bytes</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-1-3"  
+class="td11">            <span 
+class="cmbx-10x-x-109">Description                </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-2-1"  
+class="td11">   Integer    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-2-2"  
+class="td11">  4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-2-3"  
+class="td11">            Turn number                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-3-"><td colspan="3" style="white-space:nowrap; text-align:left;" id="TBL-15-3-1"  
+class="td11"><div class="multicolumn"  style="white-space:nowrap; text-align:left;">&#8212;&#8211; One or two samples of 9 values are following &#8212;&#8211;</div>
+</td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-4-1"  
+class="td11">   Integer    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-4-2"  
+class="td11">  4    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-4-3"  
+class="td11">           Particle number                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-5-1"  
+class="td11">   Float     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-5-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-5-3"  
+class="td11">Angular distance in phase space ( <span 
+class="cmmi-10x-x-109">&#x003C;</span>= 1 )</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-6-1"  
+class="td11">   Float     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-6-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-6-3"  
+class="td11">              x (mm)                      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-7-1"  
+class="td11">   Float     </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-7-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-7-3"  
+class="td11">             <span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmsy-10x-x-109">&prime; </span>(mrad)                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-8-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-8-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-8-3"  
+class="td11">              y (mm)                      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-9-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-9-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-9-3"  
+class="td11">             <span 
+class="cmmi-10x-x-109">y</span><span 
+class="cmsy-10x-x-109">&prime; </span>(mrad)                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-10-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-10-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-10-3"  
+class="td11">   Path&#8211;length (<span 
+class="cmmi-10x-x-109">&sigma; </span>= <span 
+class="cmmi-10x-x-109">s </span><span 
+class="cmsy-10x-x-109">&minus; </span><span 
+class="cmmi-10x-x-109">v</span><sub><span 
+class="cmmi-8">o</span></sub> <span 
+class="cmsy-10x-x-109">&#x00D7; </span><span 
+class="cmmi-10x-x-109">t</span>) (mm)    </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-11-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-11-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-11-3"  
+class="td11">   Relative momentum deviation <img 
+src="six30x.png" alt="&Delta;p-
+po"  class="frac" align="middle">      </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-12-1"  
+class="td11"> Float </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-12-2"  
+class="td11">  8    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-15-12-3"  
+class="td11">           Energy (MeV)                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-15-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-15-13-1"  
+class="td11"> </td></tr></table></div>
+
+</div><hr class="endfloat" />
+</div>
+<!--l. 2929--><p class="indent" >Some of the post&#8211;processing data are written in Ascii&#8211;format on file # 10. This can be used for instance
+for plotting purposes. Each time the post&#8211;processing routine is called 60 double precision numbers (some of
+them still dummy) are added to the file.
+<!--l. 2934--><p class="indent" >The file with the errors (in: fort.16, out: fort.9) has the following format: first line &#8211; name of element; line
+2&#8211;7 &#8211; normal multipoles order 1&#8211;18; line 8 &#8211; normal multipoles of order 19 and 20; line 9&#8211;14 &#8211; skew
+multipoles order 1&#8211;18; line 15 &#8211; skew multipoles of order 19 and 20. The strength definition is according
+to block&#x00A0;<a 
+href="sixse3.html#x10-790003.3.1">3.3.1<!--tex4ht:ref: MulCoe --></a> and to be effective in fort.3 the random values of the corresponding multipole
+block have to be set to 1.0. A word of caution: when writing on file fort.9 the <span 
+class="cmti-10x-x-109">total </span>multipole
+strength is used, i.e.&#x00A0;systematic and random part combined. File fort.16 and fort.9 might therefore
+be different. When using fort.9 as input (fort.16) the systematic part in fort.3 has to be set to
+0.0.
+<!--l. 2946--><p class="indent" >Misalignment and tilt are in file # 8 and # 27 as input and output respectively. The format is
+(a16,2x,1p,2d14.6,d17.9), i.e.&#x00A0;name, horizontal misalignment, vertical misalignment and tilt. The
+misalignment is in units of [mm] the tilt in units of [mrad]. The files # 30 (in) and # 31 (out) have the
+random single nonlinear element kick, misalignments and tilt in the format: (a8,1p,d19.11,2d14.6,d17.9).
+Misalignment and tilt in file fort.8 or fort.30 is automatically activated while the random strength (strength
+definition same as in block&#x00A0;<a 
+href="sixse2.html#x9-290003.2.1">3.2.1<!--tex4ht:ref: SinEle --></a>) needs an entry in the fourth column in the geometry file fort.2. File # 28
+and # 29 hold integer counter and closed orbit displacement at a horizontal or vertical monitor
+respectively.
+<div class="table">
+
+<!--l. 2961--><p class="indent" ><a 
+ id="x21-222003r3"></a><hr class="float"><div class="float" 
+>
+
+<div class="caption" 
+><span class="id">Table&#x00A0;D.3: </span><span  
+class="content">Post&#8211;processing Data</span></div><!--tex4ht:label?: x21-222003r3 -->
+<div class="tabular"><table id="TBL-16" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-16-1g"><col 
+id="TBL-16-1"></colgroup><colgroup id="TBL-16-2g"><col 
+id="TBL-16-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-1-1"  
+class="td11"><span 
+class="cmbx-10"># of Column</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-1-2"  
+class="td11">                 <span 
+class="cmbx-10">Description                       </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-2-1"  
+class="td11">      <span 
+class="cmr-10">1         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-2-2"  
+class="td11">             <span 
+class="cmr-10">Maximum turn number                    </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-3-1"  
+class="td11">      <span 
+class="cmr-10">2         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-3-2"  
+class="td11">         <span 
+class="cmr-10">Stability Flag (0=stable, 1=lost)              </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-4-1"  
+class="td11">      <span 
+class="cmr-10">3         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-4-2"  
+class="td11">                <span 
+class="cmr-10">Horizontal Tune                         </span></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-5-1"  
+class="td11"> <span 
+class="cmr-10">4 </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-5-2"  
+class="td11"> <span 
+class="cmr-10">Vertical Tune</span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-6-1"  
+class="td11">      <span 
+class="cmr-10">5         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-6-2"  
+class="td11">             <span 
+class="cmr-10">Horizontal </span><span 
+class="cmmi-10">&beta;</span><span 
+class="cmr-10">&#8211;function                     </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-7-1"  
+class="td11">      <span 
+class="cmr-10">6         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-7-2"  
+class="td11">               <span 
+class="cmr-10">Vertical </span><span 
+class="cmmi-10">&beta;</span><span 
+class="cmr-10">&#8211;function                       </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-8-1"  
+class="td11">      <span 
+class="cmr-10">7         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-8-2"  
+class="td11">         <span 
+class="cmr-10">Horizontal amplitude 1</span><sup><span 
+class="cmmi-7">st</span></sup> <span 
+class="cmr-10">particle              </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-9-1"  
+class="td11">      <span 
+class="cmr-10">8         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-9-2"  
+class="td11">          <span 
+class="cmr-10">Vertical amplitude 1</span><sup><span 
+class="cmmi-7">st</span></sup> <span 
+class="cmr-10">particle                </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-10-1"  
+class="td11">      <span 
+class="cmr-10">9         </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-10-2"  
+class="td11">        <span 
+class="cmr-10">Relative momentum deviation</span> <img 
+src="six31x.png" alt="&Delta;p-
+po"  class="frac" align="middle">               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-11-1"  
+class="td11">      <span 
+class="cmr-10">10        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-11-2"  
+class="td11">          <span 
+class="cmr-10">Final distance in phase space                </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-12-1"  
+class="td11">      <span 
+class="cmr-10">11        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-12-2"  
+class="td11">     <span 
+class="cmr-10">Maximum slope of distance in phase space        </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-13-1"  
+class="td11">      <span 
+class="cmr-10">12        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-13-2"  
+class="td11">              <span 
+class="cmr-10">Horizontal detuning                      </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-14-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-14-1"  
+class="td11">      <span 
+class="cmr-10">13        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-14-2"  
+class="td11">          <span 
+class="cmr-10">Spread of horizontal detuning                </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-15-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-15-1"  
+class="td11">      <span 
+class="cmr-10">14        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-15-2"  
+class="td11">               <span 
+class="cmr-10">Vertical detuning                        </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-16-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-16-1"  
+class="td11">      <span 
+class="cmr-10">15        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-16-2"  
+class="td11">           <span 
+class="cmr-10">Spread of vertical detuning                  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-17-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-17-1"  
+class="td11">      <span 
+class="cmr-10">16        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-17-2"  
+class="td11">       <span 
+class="cmr-10">Horizontal factor to nearest resonance           </span></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-18-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-18-1"  
+class="td11"> <span 
+class="cmr-10">17 </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-18-2"  
+class="td11"> <span 
+class="cmr-10">Vertical factor to nearest resonance</span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-19-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-19-1"  
+class="td11">      <span 
+class="cmr-10">18        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-19-2"  
+class="td11">           <span 
+class="cmr-10">Order of nearest resonance                  </span></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-20-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-20-1"  
+class="td11"> <span 
+class="cmr-10">19 </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-20-2"  
+class="td11"> <span 
+class="cmr-10">Horizontal smear</span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-21-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-21-1"  
+class="td11">      <span 
+class="cmr-10">20        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-21-2"  
+class="td11">                 <span 
+class="cmr-10">Vertical smear                          </span></td></tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-22-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-22-1"  
+class="td11"> <span 
+class="cmr-10">21 </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-22-2"  
+class="td11"> <span 
+class="cmr-10">Transverse smear</span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-23-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-23-1"  
+class="td11">      <span 
+class="cmr-10">22        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-23-2"  
+class="td11">           <span 
+class="cmr-10">Survived turns 1</span><sup><span 
+class="cmmi-7">st</span></sup> <span 
+class="cmr-10">particle                  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-24-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-24-1"  
+class="td11">      <span 
+class="cmr-10">23        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-24-2"  
+class="td11">           <span 
+class="cmr-10">Survived turns 2</span><sup><span 
+class="cmmi-7">nd</span></sup> <span 
+class="cmr-10">particle                  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-25-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-25-1"  
+class="td11">      <span 
+class="cmr-10">24        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-25-2"  
+class="td11">        <span 
+class="cmr-10">Starting seed for random generator            </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-26-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-26-1"  
+class="td11">      <span 
+class="cmr-10">25        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-26-2"  
+class="td11">               <span 
+class="cmr-10">Synchrotron tune                        </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-27-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-27-1"  
+class="td11">      <span 
+class="cmr-10">26        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-27-2"  
+class="td11">         <span 
+class="cmr-10">Horizontal amplitude 2</span><sup><span 
+class="cmmi-7">nd</span></sup> <span 
+class="cmr-10">particle             </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-28-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-28-1"  
+class="td11">      <span 
+class="cmr-10">27        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-28-2"  
+class="td11">          <span 
+class="cmr-10">Vertical amplitude 2</span><sup><span 
+class="cmmi-7">nd</span></sup> <span 
+class="cmr-10">particle               </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-29-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-29-1"  
+class="td11"> <span 
+class="cmr-10">28        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-29-2"  
+class="td11">          <span 
+class="cmr-10">Minimum horizontal amplitude               </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-30-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-30-1"  
+class="td11"> <span 
+class="cmr-10">29        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-30-2"  
+class="td11">           <span 
+class="cmr-10">Mean horizontal amplitude                  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-31-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-31-1"  
+class="td11"> <span 
+class="cmr-10">30        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-31-2"  
+class="td11">         <span 
+class="cmr-10">Maximum horizontal amplitude               </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-32-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-32-1"  
+class="td11"> <span 
+class="cmr-10">31        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-32-2"  
+class="td11">           <span 
+class="cmr-10">Minimum vertical amplitude                 </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-33-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-33-1"  
+class="td11"> <span 
+class="cmr-10">32        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-33-2"  
+class="td11">            <span 
+class="cmr-10">Mean vertical amplitude                   </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-34-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-34-1"  
+class="td11"> <span 
+class="cmr-10">33        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-34-2"  
+class="td11">          <span 
+class="cmr-10">Maximum vertical amplitude                </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-35-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-35-1"  
+class="td11"> <span 
+class="cmr-10">34        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-35-2"  
+class="td11">  <span 
+class="cmr-10">Minimum horizontal amplitude (linear decoupled)   </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-36-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-36-1"  
+class="td11"> <span 
+class="cmr-10">35        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-36-2"  
+class="td11">   <span 
+class="cmr-10">Mean horizontal amplitude (linear decoupled)     </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-37-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-37-1"  
+class="td11"> <span 
+class="cmr-10">36        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-37-2"  
+class="td11">  <span 
+class="cmr-10">Maximum horizontal amplitude (linear decoupled)  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-38-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-38-1"  
+class="td11"> <span 
+class="cmr-10">37        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-38-2"  
+class="td11">   <span 
+class="cmr-10">Minimum vertical amplitude (linear decoupled)    </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-39-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-39-1"  
+class="td11"> <span 
+class="cmr-10">38        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-39-2"  
+class="td11">     <span 
+class="cmr-10">Mean vertical amplitude (linear decoupled)       </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-40-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-40-1"  
+class="td11"> <span 
+class="cmr-10">39        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-40-2"  
+class="td11">   <span 
+class="cmr-10">Maximum vertical amplitude (linear decoupled)    </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-41-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-41-1"  
+class="td11"> <span 
+class="cmr-10">40        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-41-2"  
+class="td11"><span 
+class="cmr-10">Minimum horizontal amplitude (nonlinear decoupled)</span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-42-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-42-1"  
+class="td11"> <span 
+class="cmr-10">41        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-42-2"  
+class="td11">  <span 
+class="cmr-10">Mean horizontal amplitude (nonlinear decoupled)   </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-43-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-43-1"  
+class="td11"> <span 
+class="cmr-10">42        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-43-2"  
+class="td11"><span 
+class="cmr-10">Maximum horizontal amplitude (nonlinear decoupled)</span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-44-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-44-1"  
+class="td11"> <span 
+class="cmr-10">43        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-44-2"  
+class="td11"> <span 
+class="cmr-10">Minimum vertical amplitude (nonlinear decoupled)  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-45-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-45-1"  
+class="td11"> <span 
+class="cmr-10">44        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-45-2"  
+class="td11">   <span 
+class="cmr-10">Mean vertical amplitude (nonlinear decoupled)     </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-46-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-46-1"  
+class="td11"> <span 
+class="cmr-10">45        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-46-2"  
+class="td11"> <span 
+class="cmr-10">Maximum vertical amplitude (nonlinear decoupled)  </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-47-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-47-1"  
+class="td11"> <span 
+class="cmr-10">46        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-47-2"  
+class="td11">               <span 
+class="cmr-10">Emittance Mode I                        </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-48-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-48-1"  
+class="td11"> <span 
+class="cmr-10">47        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-48-2"  
+class="td11">               <span 
+class="cmr-10">Emittance Mode II                       </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-49-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-49-1"  
+class="td11"> <span 
+class="cmr-10">48        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-49-2"  
+class="td11">         <span 
+class="cmr-10">Secondary horizontal </span><span 
+class="cmmi-10">&beta;</span><span 
+class="cmr-10">&#8211;function              </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-50-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-50-1"  
+class="td11"> <span 
+class="cmr-10">49        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-50-2"  
+class="td11">          <span 
+class="cmr-10">Secondary vertical </span><span 
+class="cmmi-10">&beta;</span><span 
+class="cmr-10">&#8211;function                </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-51-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-51-1"  
+class="td11"> <span 
+class="cmr-10">50        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-51-2"  
+class="td11">                     <span 
+class="cmmi-10">Q</span><span 
+class="cmsy-10">&prime;</span><sub><span 
+class="cmmi-7">x</span></sub>                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-52-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-52-1"  
+class="td11"> <span 
+class="cmr-10">51        </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-52-2"  
+class="td11">                     <span 
+class="cmmi-10">Q</span><span 
+class="cmsy-10">&prime;</span><sub><span 
+class="cmmi-7">y</span></sub>                                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-53-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-53-1"  
+class="td11"> <span 
+class="cmr-10">52</span><span 
+class="cmr-10">&#x00A0;&#8211; 58     </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-53-2"  
+class="td11">                   <span 
+class="cmr-10">Dummy                              </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-54-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-54-1"  
+class="td11"> <span 
+class="cmr-10">59 &#8211; 60      </span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-16-54-2"  
+class="td11">                  <span 
+class="cmr-10">Internal use                            </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-16-55-"><td  style="white-space:nowrap; text-align:center;" id="TBL-16-55-1"  
+class="td11">             </td></tr></table></div>
+
+</div><hr class="endfloat" />
+</div>
+
+<!--l. 3083--><p class="indent" >As an option the 4D linear parameters can be dumped to file # 11 when the linear optics block&#x00A0;<a 
+href="sixse5.html#x12-1260003.5.1">3.5.1<!--tex4ht:ref: LinOpt --></a> is
+activated. This can be used for instance for a post&#8211;processing of linear coupling. 25 values are written in a
+binary format.
+<div class="table">
+
+<!--l. 3092--><p class="indent" ><a 
+ id="x21-222004r4"></a><hr class="float"><div class="float" 
+>
+
+<div class="caption" 
+><span class="id">Table&#x00A0;D.4: </span><span  
+class="content">4D Linear Parameters</span></div><!--tex4ht:label?: x21-222004r4 -->
+<div class="tabular"><table id="TBL-17" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-17-1g"><col 
+id="TBL-17-1"></colgroup><colgroup id="TBL-17-2g"><col 
+id="TBL-17-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-1-1"  
+class="td11"><span 
+class="cmbx-10x-x-109"># of Column</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-1-2"  
+class="td11">               <span 
+class="cmbx-10x-x-109">Description                    </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-2-1"  
+class="td11">      1         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-2-2"  
+class="td11">           Name of the element                  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-3-1"  
+class="td11">      2         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-3-2"  
+class="td11">         Longitudinal Position [m]               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-4-1"  
+class="td11">      3         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-4-2"  
+class="td11">         Horizontal phase advance               </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-5-1"  
+class="td11">      4         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-5-2"  
+class="td11">           Vertical phase advance                 </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-6-1"  
+class="td11">      5         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-6-2"  
+class="td11">      Primary horizontal <span 
+class="cmmi-10x-x-109">&beta;</span>&#8211;function [m]         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-7-1"  
+class="td11">      6         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-7-2"  
+class="td11">     Secondary horizontal <span 
+class="cmmi-10x-x-109">&beta;</span>&#8211;function [m]        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-8-1"  
+class="td11">      7         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-8-2"  
+class="td11">      Secondary vertical <span 
+class="cmmi-10x-x-109">&beta;</span>&#8211;function [m]         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-9-1"  
+class="td11">      8         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-9-2"  
+class="td11">       Primary vertical <span 
+class="cmmi-10x-x-109">&beta;</span>&#8211;function [m]           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-10-1"  
+class="td11">      9         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-10-2"  
+class="td11">     Primary horizontal <span 
+class="cmmi-10x-x-109">&alpha;</span>&#8211;function [rad]        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-11-1"  
+class="td11">      10        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-11-2"  
+class="td11">    Secondary horizontal <span 
+class="cmmi-10x-x-109">&alpha;</span>&#8211;function [rad]       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-12-1"  
+class="td11">      11        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-12-2"  
+class="td11">     Secondary vertical <span 
+class="cmmi-10x-x-109">&alpha;</span>&#8211;function [rad]        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-13-1"  
+class="td11">      12        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-13-2"  
+class="td11">      Primary vertical <span 
+class="cmmi-10x-x-109">&alpha;</span>&#8211;function [rad]          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-14-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-14-1"  
+class="td11">      13        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-14-2"  
+class="td11">      Primary horizontal <span 
+class="cmmi-10x-x-109">&gamma;</span>&#8211;function [m]         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-15-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-15-1"  
+class="td11">      14        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-15-2"  
+class="td11">     Secondary horizontal <span 
+class="cmmi-10x-x-109">&gamma;</span>&#8211;function [m]        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-16-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-16-1"  
+class="td11">      15        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-16-2"  
+class="td11">      Secondary vertical <span 
+class="cmmi-10x-x-109">&gamma;</span>&#8211;function [m]          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-17-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-17-1"  
+class="td11"> 16        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-17-2"  
+class="td11">       Primary vertical <span 
+class="cmmi-10x-x-109">&gamma;</span>&#8211;function [m]           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-18-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-18-1"  
+class="td11"> 17        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-18-2"  
+class="td11"> Primary horizontal phase of x&#8211;coordinate [pi]  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-19-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-19-1"  
+class="td11"> 18        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-19-2"  
+class="td11">Secondary horizontal phase of x&#8211;coordinate [pi]</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-20-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-20-1"  
+class="td11"> 19        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-20-2"  
+class="td11"> Secondary vertical phase of y&#8211;coordinate [pi]  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-21-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-21-1"  
+class="td11"> 20        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-21-2"  
+class="td11">  Primary vertical phase of y&#8211;coordinate [pi]   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-22-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-22-1"  
+class="td11"> 21        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-22-2"  
+class="td11"> Primary horizontal phase of <span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmsy-10x-x-109">&prime;</span>&#8211;coordinate [pi] </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-23-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-23-1"  
+class="td11"> 22        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-23-2"  
+class="td11">Secondary horizontal phase of <span 
+class="cmmi-10x-x-109">x</span><span 
+class="cmsy-10x-x-109">&prime;</span>&#8211;coordinate [pi]</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-24-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-24-1"  
+class="td11"> 23        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-24-2"  
+class="td11"> Secondary vertical phase of <span 
+class="cmmi-10x-x-109">y</span><span 
+class="cmsy-10x-x-109">&prime;</span>&#8211;coordinate [pi]  </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-25-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-25-1"  
+class="td11"> 24        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-25-2"  
+class="td11">  Primary vertical phase of <span 
+class="cmmi-10x-x-109">y</span><span 
+class="cmsy-10x-x-109">&prime;</span>&#8211;coordinate [pi]   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-26-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-26-1"  
+class="td11"> 25        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-26-2"  
+class="td11">            Coupling angle [pi]                   </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-27-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-27-1"  
+class="td11"> 26        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-27-2"  
+class="td11">                <span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmmi-8">x</span></sub> [mm]                          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-28-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-28-1"  
+class="td11"> 27        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-28-2"  
+class="td11">                <span 
+class="cmmi-10x-x-109">D</span><span 
+class="cmsy-10x-x-109">&prime;</span><sub><span 
+class="cmmi-8">x</span></sub> [mrad]                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-29-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-29-1"  
+class="td11"> 28        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-29-2"  
+class="td11">                <span 
+class="cmmi-10x-x-109">D</span><sub><span 
+class="cmmi-8">y</span></sub> [mm]                          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-30-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-30-1"  
+class="td11"> 29        </td><td  style="white-space:nowrap; text-align:center;" id="TBL-17-30-2"  
+class="td11">                <span 
+class="cmmi-10x-x-109">D</span><span 
+class="cmsy-10x-x-109">&prime;</span><sub><span 
+class="cmmi-8">y</span></sub> [mrad]                        </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-17-31-"><td  style="white-space:nowrap; text-align:center;" id="TBL-17-31-1"  
+class="td11">             </td></tr></table></div>
+
+</div><hr class="endfloat" />
+</div>
+
+<!--l. 3166--><p class="indent" >When external multipole errors are read&#8211;in (see section&#x00A0;<a 
+href="sixse4.html#x11-1080003.4.1">3.4.1<!--tex4ht:ref: FluNum --></a>) the program expects a complete list of
+magnet errors on file # 16. The format of each set of multipole errors is given in table&#x00A0;<a 
+href="#x21-222005r5">D.5<!--tex4ht:ref: T-XME --></a>. The definition of
+the multipole coefficients should be as described in section&#x00A0;<a 
+href="sixse3.html#x10-790003.3.1">3.3.1<!--tex4ht:ref: MulCoe --></a>.
+<div class="table">
+
+<!--l. 3176--><p class="indent" ><a 
+ id="x21-222005r5"></a><hr class="float"><div class="float" 
+>
+
+<div class="caption" 
+><span class="id">Table&#x00A0;D.5: </span><span  
+class="content">Format of file with external errors # 16 and internal errors written to # 9</span></div><!--tex4ht:label?: x21-222005r5 -->
+<div class="tabular"><table id="TBL-18" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-18-1g"><col 
+id="TBL-18-1"></colgroup><colgroup id="TBL-18-2g"><col 
+id="TBL-18-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-1-1"  
+class="td11"><span 
+class="cmbx-10x-x-109"># of Row</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-1-2"  
+class="td11">    <span 
+class="cmbx-10x-x-109">Description     </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-2-1"  
+class="td11">     1       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-2-2"  
+class="td11">Name of multipole set</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-3-1"  
+class="td11">     2       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-3-2"  
+class="td11">     <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">3</span></sub>         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-4-1"  
+class="td11">     3       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-4-2"  
+class="td11">     <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">4</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">5</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">6</span></sub>         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-5-1"  
+class="td11">     4       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-5-2"  
+class="td11">     <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">7</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">8</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">9</span></sub>         </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-6-1"  
+class="td11">     5       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-6-2"  
+class="td11">   <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">10</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">11</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">12</span></sub>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-7-1"  
+class="td11">     6       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-7-2"  
+class="td11">   <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">13</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">14</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">15</span></sub>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-8-1"  
+class="td11">     7       </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-8-2"  
+class="td11">   <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">16</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">17</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">18</span></sub>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-9-1"  
+class="td11"> 8 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-9-2"  
+class="td11">      <span 
+class="cmmi-10x-x-109">B</span><sub><span 
+class="cmr-8">19</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;B</span><sub><span 
+class="cmr-8">20</span></sub>           </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-10-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-10-1"  
+class="td11"> 9 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-10-2"  
+class="td11">     <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">1</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">2</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">3</span></sub>          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-11-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-11-1"  
+class="td11"> 10 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-11-2"  
+class="td11">     <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">4</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">5</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">6</span></sub>          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-12-1"  
+class="td11"> 11 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-12-2"  
+class="td11">     <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">7</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">8</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">9</span></sub>          </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-13-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-13-1"  
+class="td11"> 12 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-13-2"  
+class="td11">    <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">10</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">11</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">12</span></sub>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-14-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-14-1"  
+class="td11"> 13 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-14-2"  
+class="td11">    <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">13</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">14</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">15</span></sub>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-15-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-15-1"  
+class="td11"> 14 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-15-2"  
+class="td11">    <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">16</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">17</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">18</span></sub>       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-16-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-16-1"  
+class="td11"> 15 </td><td  style="white-space:nowrap; text-align:center;" id="TBL-18-16-2"  
+class="td11">      <span 
+class="cmmi-10x-x-109">A</span><sub><span 
+class="cmr-8">19</span></sub><span 
+class="cmmi-10x-x-109">&#x00A0;A</span><sub><span 
+class="cmr-8">20</span></sub>            </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-18-17-"><td  style="white-space:nowrap; text-align:center;" id="TBL-18-17-1"  
+class="td11"> </td></tr></table></div>
+
+</div><hr class="endfloat" />
+</div>
+<!--l. 3220--><p class="indent" >With the parameter &#8220;mout&#8221; set to 2 or 3 in the &#8220;Random Fluctuation&#8221; block (&#x00A0;<a 
+href="sixse4.html#x11-1080003.4.1">3.4.1<!--tex4ht:ref: FluNum --></a>) the internally used
+multipoles are written to file # 9 in the same format as above. This file can therefore be used as an input
+fort.16 file for a subsequent run.
+<!--l. 3225--><p class="indent" >The file # 34 is written when the &#8220;Linear Optic Block&#8221; (see section&#x00A0;<a 
+href="sixse5.html#x12-1260003.5.1">3.5.1<!--tex4ht:ref: LinOpt --></a>) is invoked with the
+&#8220;ELEMENT 0&#8221; option.
+<div class="table">
+
+<!--l. 3229--><p class="indent" ><a 
+ id="x21-222006r6"></a><hr class="float"><div class="float" 
+>
+
+<div class="caption" 
+><span class="id">Table&#x00A0;D.6: </span><span  
+class="content">Format  of  file  #  34  for  detuning  and  distortion  calculation  with  external  program
+&#8220;SODD&#8221;&#x00A0;<span class="cite">[<a 
+href="sixli5.html#XSODD">20</a>]</span></span></div><!--tex4ht:label?: x21-222006r6 -->
+<div class="tabular"><table id="TBL-19" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-19-1g"><col 
+id="TBL-19-1"></colgroup><colgroup id="TBL-19-2g"><col 
+id="TBL-19-2"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-1-1"  
+class="td11"><span 
+class="cmbx-10x-x-109"># of Column</span></td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-1-2"  
+class="td11">                  <span 
+class="cmbx-10x-x-109">Description                         </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-2-1"  
+class="td11">      1         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-2-2"  
+class="td11">             Longitudinal position [m]                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-3-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-3-1"  
+class="td11">      2         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-3-2"  
+class="td11">Type &#8220;n&#8221; of Multipole (<span 
+class="cmmi-10x-x-109">n &#x003E; </span>0 =<span 
+class="cmmi-10x-x-109">&#x003E; </span>erect, <span 
+class="cmmi-10x-x-109">n &#x003C; </span>0 =<span 
+class="cmmi-10x-x-109">&#x003E; </span>skew)</td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-4-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-4-1"  
+class="td11">      3         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-4-2"  
+class="td11">        Multipole strength [mrad <span 
+class="cmsy-10x-x-109">&sdot;</span> mm<sup><span 
+class="cmr-8">(1</span><span 
+class="cmsy-8">&minus;|</span><span 
+class="cmmi-8">n</span><span 
+class="cmsy-8">|</span><span 
+class="cmr-8">)</span></sup>]             </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-5-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-5-1"  
+class="td11"> 4         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-5-2"  
+class="td11">             Horizontal <span 
+class="cmmi-10x-x-109">&beta;</span>&#8211;function [m]                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-6-1"  
+class="td11"> 5         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-6-2"  
+class="td11">              Vertical <span 
+class="cmmi-10x-x-109">&beta;</span>&#8211;function [m]                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-7-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-7-1"  
+class="td11"> 6         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-7-2"  
+class="td11">             Horizontal phase advance                     </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-8-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-8-1"  
+class="td11"> 7         </td><td  style="white-space:nowrap; text-align:center;" id="TBL-19-8-2"  
+class="td11">              Vertical phase advance                       </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-19-9-"><td  style="white-space:nowrap; text-align:center;" id="TBL-19-9-1"  
+class="td11">             </td></tr></table></div>
+
+</div><hr class="endfloat" />
+</div>
+<!--l. 3258--><p class="indent" >The last line serves as the end of the structure: Length of the accelerator, fake name &#8220;END&#8221;, fake type
+&#8220;100&#8221;, <span 
+class="cmmi-10x-x-109">&beta; </span>functions and phase advances at the end of the accelerator for the horizontal and vertical plane
+respectively.
+
+<!--l. 3263--><div class="crosslinks"><p class="noindent">[<a 
+href="sixap5.html" >next</a>] [<a 
+href="sixap3.html" >prev</a>] [<a 
+href="sixap3.html#tailsixap3.html" >prev-tail</a>] [<a 
+href="sixap4.html" >front</a>] [<a 
+href="six.html#sixap4.html" >up</a>] </p></div>
+<!--l. 3263--><p class="indent" ><a 
+ id="tailsixap4.html"></a> 
+</body></html> 

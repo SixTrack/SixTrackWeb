@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>General Input</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3 --> 
+<meta name="src" content="six.tex"> 
+<meta name="date" content="2012-05-24 15:23:00"> 
+<link rel="stylesheet" type="text/css" href="six.css"> 
+</head><body 
+>
+<!--l. 290--><div class="crosslinks"><p class="noindent">[<a 
+href="sixse2.html" >next</a>] [<a 
+href="#tailsixse1.html">tail</a>] [<a 
+href="sixch3.html#sixse1.html" >up</a>] </p></div>
+<h3 class="sectionHead"><span class="titlemark">3.1 </span> <a 
+ id="x8-60003.1"></a>General Input</h3>
+<!--l. 292--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">3.1.1 </span> <a 
+ id="x8-70003.1.1"></a>Program Version</h4>
+<!--l. 294--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-80003.1.1"></a><span 
+class="cmbx-10x-x-109">Description</span></span> The <span 
+class="cmti-10x-x-109">Program Version </span>input block determines if all of the input will be in
+the input file # 3 or if the geometry part of the machine (see&#x00A0;<a 
+href="sixse2.html#x9-280003.2">3.2<!--tex4ht:ref: MaGe --></a>) will be in a separate file
+# 2. The latter option is useful if tracking parameters are changed but the geometry part of
+the input is left as it is. The geometry part can be produced directly from a MAD input file
+(see&#x00A0;<a 
+href="#x8-260003.1.5">3.1.5<!--tex4ht:ref: MADT --></a>).
+<!--l. 302--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-90003.1.1"></a><span 
+class="cmbx-10x-x-109">Keyword</span></span> FREE or GEOM
+<!--l. 303--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-100003.1.1"></a><span 
+class="cmbx-10x-x-109">Number of data lines</span></span> 0
+<!--l. 305--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-110003.1.1"></a><span 
+class="cmbx-10x-x-109">Format</span></span> <span 
+class="cmti-10x-x-109">keyword comment title</span>
+<dl class="description"><dt class="description">
+<span 
+class="cmti-10x-x-109">keyword</span></dt><dd 
+class="description">The first four characters of the first line of the input file # 3 are reserved for the keyword
+(FREE for free format input with all input in file # 3; GEOM if the geometry part is in file #
+2)
+</dd><dt class="description">
+<span 
+class="cmti-10x-x-109">comment</span></dt><dd 
+class="description">Following the first four characters, 8 characters are reserved for comments
+</dd><dt class="description">
+<span 
+class="cmti-10x-x-109">title</span></dt><dd 
+class="description">The next 60 characters are interpreted as the title of the output file # 6</dd></dl>
+<!--l. 318--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">3.1.2 </span> <a 
+ id="x8-120003.1.2"></a>Print Selection</h4>
+<!--l. 320--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-130003.1.2"></a><span 
+class="cmbx-10x-x-109">Description</span></span> Use of the <span 
+class="cmti-10x-x-109">Print Selection </span>input block causes the printing of the input data to the output
+file # 6. It is advisable to always use this input block to have a complete protocol of the tracking
+run.
+<!--l. 325--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-140003.1.2"></a><span 
+class="cmbx-10x-x-109">Keyword</span></span> PRIN
+<!--l. 325--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-150003.1.2"></a><span 
+class="cmbx-10x-x-109">Number of data lines</span></span> 0
+
+<!--l. 327--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">3.1.3 </span> <a 
+ id="x8-160003.1.3"></a>Comment Line</h4>
+<!--l. 329--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-170003.1.3"></a><span 
+class="cmbx-10x-x-109">Description</span></span> An additional comment can be specified with this block. It will be written to the binary
+data files (Appendix&#x00A0;<a 
+href="sixap4.html#x21-222000D">D<!--tex4ht:ref: Header --></a>) and will appear in the post&#8211;processing output as well.
+<!--l. 334--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-180003.1.3"></a><span 
+class="cmbx-10x-x-109">Keyword</span></span> COMM
+<!--l. 334--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-190003.1.3"></a><span 
+class="cmbx-10x-x-109">Number of data lines</span></span> 1
+<!--l. 336--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-200003.1.3"></a><span 
+class="cmbx-10x-x-109">Format</span></span> A string of up to 80 characters.
+<!--l. 338--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">3.1.4 </span> <a 
+ id="x8-210003.1.4"></a>Iteration Errors</h4>
+<!--l. 340--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-220003.1.4"></a><span 
+class="cmbx-10x-x-109">Description</span></span> For the processing procedures, the number of iterations and the precision to which the
+processing is to be performed are chosen with the <span 
+class="cmti-10x-x-109">Iteration Errors </span>input block. If the input block is left out,
+default values will be used.
+<!--l. 345--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-230003.1.4"></a><span 
+class="cmbx-10x-x-109">Keyword</span></span> ITER
+<!--l. 345--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-240003.1.4"></a><span 
+class="cmbx-10x-x-109">Number of data lines</span></span> 1 to 4
+<!--l. 347--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-250003.1.4"></a><span 
+class="cmbx-10x-x-109">Format</span></span> Each data line holds three values as in table&#x00A0;<a 
+href="#x8-25001r1">3.1<!--tex4ht:ref: T-IteErr --></a>, except for the fourth line one which the
+horizontal and vertical aperture limits can be additionally specified. This has been added to avoid artificial
+crashes for special machines.
+<div class="table">
+
+<!--l. 352--><p class="indent" ><a 
+ id="x8-25001r1"></a><hr class="float"><div class="float" 
+>
+
+<div class="caption" 
+><span class="id">Table&#x00A0;3.1: </span><span  
+class="content">Iteration Errors</span></div><!--tex4ht:label?: x8-25001r1 -->
+<div class="tabular"><table id="TBL-2" class="tabular" 
+cellspacing="0" cellpadding="0" rules="groups" 
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1"></colgroup><colgroup id="TBL-2-2g"><col 
+id="TBL-2-2"></colgroup><colgroup id="TBL-2-3g"><col 
+id="TBL-2-3"></colgroup><colgroup id="TBL-2-4g"><col 
+id="TBL-2-4"></colgroup><colgroup id="TBL-2-5g"><col 
+id="TBL-2-5"></colgroup><colgroup id="TBL-2-6g"><col 
+id="TBL-2-6"></colgroup><colgroup id="TBL-2-7g"><col 
+id="TBL-2-7"></colgroup><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-1"  
+class="td11"><span 
+class="cmr-8">data</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-2"  
+class="td11"><span 
+class="cmr-8">integer </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-3"  
+class="td11"><span 
+class="cmr-8">double    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-4"  
+class="td11"><span 
+class="cmr-8">default    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-5"  
+class="td11"><span 
+class="cmr-8">number of     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-6"  
+class="td11"><span 
+class="cmr-8">demanded        </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-1-7"  
+class="td11"><span 
+class="cmr-8">variations of        </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-1"  
+class="td11"><span 
+class="cmr-8">line  </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-4"  
+class="td11"><span 
+class="cmr-8">value      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-5"  
+class="td11"><span 
+class="cmr-8">iterations for </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-6"  
+class="td11"><span 
+class="cmr-8">precision of      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-2-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-1"  
+class="td11"><span 
+class="cmr-8">1     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-2"  
+class="td11"><span 
+class="cmr-8">ITCO  </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-4"  
+class="td11"><span 
+class="cmr-8">50          </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-5"  
+class="td11"><span 
+class="cmr-8">closed orbit   </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-3-7"  
+class="td11">                </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-3"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-4"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-5"  
+class="td11"><span 
+class="cmr-8">calculation </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-6"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-4-7"  
+class="td11"></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-3"  
+class="td11"><span 
+class="cmr-8">DMA     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-4"  
+class="td11"><span 
+class="cmr-8">1e-12      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-6"  
+class="td11"><span 
+class="cmr-8">closed orbit      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-5-7"  
+class="td11">                </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-3"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-4"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-5"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-6"  
+class="td11"><span 
+class="cmr-8">displacements </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-6-7"  
+class="td11"></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-7-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-3"  
+class="td11"><span 
+class="cmr-8">DMAP   </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-4"  
+class="td11"><span 
+class="cmr-8">1e-15      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-6"  
+class="td11"><span 
+class="cmr-8">derivative         </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-7-7"  
+class="td11">                </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-8-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-3"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-4"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-5"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-6"  
+class="td11"><span 
+class="cmr-8">of closed orbit </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-8-7"  
+class="td11"></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-9-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-6"  
+class="td11"><span 
+class="cmr-8">displacements   </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-9-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-10-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-1"  
+class="td11"><span 
+class="cmr-8">2     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-2"  
+class="td11"><span 
+class="cmr-8">ITQV  </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-4"  
+class="td11"><span 
+class="cmr-8">10          </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-5"  
+class="td11"><span 
+class="cmr-8">Q adjustment</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-10-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-11-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-3"  
+class="td11"><span 
+class="cmr-8">DKQ     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-4"  
+class="td11"><span 
+class="cmr-8">1e-10      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-11-7"  
+class="td11"><span 
+class="cmr-8">quadrupole          </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-12-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-12-7"  
+class="td11"><span 
+class="cmr-8">strengths            </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-13-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-3"  
+class="td11"><span 
+class="cmr-8">DQQ     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-4"  
+class="td11"><span 
+class="cmr-8">1e-10      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-6"  
+class="td11"><span 
+class="cmr-8">tunes              </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-13-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-14-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-1"  
+class="td11"><span 
+class="cmr-8">3     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-2"  
+class="td11"><span 
+class="cmr-8">ITCRO</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-4"  
+class="td11"><span 
+class="cmr-8">10          </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-5"  
+class="td11"><span 
+class="cmr-8">chromaticity  </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-14-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-15-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-5"  
+class="td11"><span 
+class="cmr-8">correction     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-15-7"  
+class="td11">                </td></tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-16-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-16-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-16-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-16-3"  
+class="td11"><span 
+class="cmr-8">DSM0 </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-16-4"  
+class="td11"><span 
+class="cmr-8">1e-10 </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-16-5"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-16-6"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-16-7"  
+class="td11"><span 
+class="cmr-8">sextupole</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-17-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-17-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-17-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-17-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-17-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-17-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-17-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-17-7"  
+class="td11"><span 
+class="cmr-8">strengths            </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-18-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-18-1"  
+class="td11">     </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-18-2"  
+class="td11">       </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-18-3"  
+class="td11"><span 
+class="cmr-8">DECH    </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-18-4"  
+class="td11"><span 
+class="cmr-8">1e-10      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-18-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-18-6"  
+class="td11"><span 
+class="cmr-8">chromaticity     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-18-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-19-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-19-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-19-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-19-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-19-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-19-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-19-6"  
+class="td11"><span 
+class="cmr-8">correction        </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-19-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-20-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-20-1"  
+class="td11"><span 
+class="cmr-8">4 </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-20-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-20-3"  
+class="td11"><span 
+class="cmr-8">DE0       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-20-4"  
+class="td11"><span 
+class="cmr-8">1e-9       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-20-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-20-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-20-7"  
+class="td11"><span 
+class="cmr-8">momentum spread</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-21-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-21-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-21-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-21-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-21-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-21-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-21-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-21-7"  
+class="td11"><span 
+class="cmr-8">for chromaticity   </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-22-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-22-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-22-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-22-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-22-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-22-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-22-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-22-7"  
+class="td11"><span 
+class="cmr-8">calculation          </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-23-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-23-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-23-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-23-3"  
+class="td11"><span 
+class="cmr-8">DED      </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-23-4"  
+class="td11"><span 
+class="cmr-8">1e-9       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-23-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-23-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-23-7"  
+class="td11"><span 
+class="cmr-8">momentum spread</span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-24-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-24-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-24-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-24-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-24-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-24-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-24-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-24-7"  
+class="td11"><span 
+class="cmr-8">for evaluation      </span></td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-25-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-25-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-25-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-25-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-25-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-25-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-25-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-25-7"  
+class="td11"><span 
+class="cmr-8">of dispersion        </span></td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-26-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-26-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-26-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-26-3"  
+class="td11"><span 
+class="cmr-8">DSI       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-26-4"  
+class="td11"><span 
+class="cmr-8">1e-9       </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-26-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-26-6"  
+class="td11"><span 
+class="cmr-8">desired orbit     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-26-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-27-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-27-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-27-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-27-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-27-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-27-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-27-6"  
+class="td11"><span 
+class="cmr-8">r.m.s. value;     </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-27-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-28-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-28-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-28-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-28-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-28-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-28-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-28-6"  
+class="td11"><span 
+class="cmr-8">compensation of</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-28-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-29-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-29-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-29-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-29-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-29-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-29-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-29-6"  
+class="td11"><span 
+class="cmr-8">resonance width</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-29-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-30-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-30-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-30-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-30-3"  
+class="td11"><span 
+class="cmr-8">APER(1)</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-30-4"  
+class="td11"><span 
+class="cmr-8">1000[mm]</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-30-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-30-6"  
+class="td11"><span 
+class="cmr-8">horizontal        </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-30-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-31-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-31-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-31-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-31-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-31-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-31-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-31-6"  
+class="td11"><span 
+class="cmr-8">aperture          </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-31-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-32-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-32-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-32-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-32-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-32-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-32-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-32-6"  
+class="td11"><span 
+class="cmr-8">limit               </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-32-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-33-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-33-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-33-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-33-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-33-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-33-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-33-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-33-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-34-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-34-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-34-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-34-3"  
+class="td11"><span 
+class="cmr-8">APER(2)</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-34-4"  
+class="td11"><span 
+class="cmr-8">1000[mm]</span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-34-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-34-6"  
+class="td11"><span 
+class="cmr-8">vertical            </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-34-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-35-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-35-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-35-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-35-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-35-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-35-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-35-6"  
+class="td11"><span 
+class="cmr-8">aperture          </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-35-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-36-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-36-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-36-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-36-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-36-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-36-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-36-6"  
+class="td11"><span 
+class="cmr-8">limit               </span></td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-36-7"  
+class="td11">                </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-37-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-37-1"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-37-2"  
+class="td11"> </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-37-3"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-37-4"  
+class="td11">        </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-37-5"  
+class="td11">            </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-37-6"  
+class="td11">              </td><td  style="white-space:nowrap; text-align:left;" id="TBL-2-37-7"  
+class="td11">                </td>
+</tr><tr 
+class="hline"><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td><td><hr></td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-38-"><td  style="white-space:nowrap; text-align:left;" id="TBL-2-38-1"  
+class="td11"> </td></tr></table></div>
+
+</div><hr class="endfloat" />
+</div>
+<h4 class="subsectionHead"><span class="titlemark">3.1.5 </span> <a 
+ id="x8-260003.1.5"></a>MAD &#8211; SixTrack Conversion</h4>
+<!--l. 418--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x8-270003.1.5"></a><span 
+class="cmbx-10x-x-109">Description</span></span>
+A converter has been developed&#x00A0;<span class="cite">[<a 
+href="sixli5.html#XCONVERTOR">15</a>]</span> which is directly linked to MAD8. It produces the geometry file # 2;
+an appendix to the parameter file # 3 which defines which of the multipole errors are switched on; the error
+file # 16 and the file # 8 which holds the transverse misalignments and the tilt of the nonlinear kick
+elements. It also produce a file (unit 34) with linear lattice functions, phase advances and multipole strengths
+needed for resonance calculations for the program <span 
+class="cmti-10x-x-109">SODD</span>&#x00A0;<span class="cite">[<a 
+href="sixli5.html#XSODD">20</a>]</span>.
+
+<!--l. 431--><div class="crosslinks"><p class="noindent">[<a 
+href="sixse2.html" >next</a>] [<a 
+href="sixse1.html" >front</a>] [<a 
+href="sixch3.html#sixse1.html" >up</a>] </p></div>
+<!--l. 431--><p class="indent" ><a 
+ id="tailsixse1.html"></a> 
+</body></html> 

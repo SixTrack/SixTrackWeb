@@ -1,0 +1,64 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Versions and Service}{}% 2
+\BOOKMARK [1][-]{subsection.2.0.1}{Evolution of SixTrack}{chapter.2}% 3
+\BOOKMARK [0][-]{chapter.3}{Input Structure}{}% 4
+\BOOKMARK [1][-]{section.3.1}{General Input}{chapter.3}% 5
+\BOOKMARK [2][-]{subsection.3.1.1}{Program Version}{section.3.1}% 6
+\BOOKMARK [2][-]{subsection.3.1.2}{Print Selection}{section.3.1}% 7
+\BOOKMARK [2][-]{subsection.3.1.3}{Comment Line}{section.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.1.4}{Iteration Errors}{section.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.1.5}{MAD \205 SixTrack Conversion}{section.3.1}% 10
+\BOOKMARK [1][-]{section.3.2}{Machine Geometry}{chapter.3}% 11
+\BOOKMARK [2][-]{subsection.3.2.1}{Single Elements}{section.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{Linear Elements}{subsection.3.2.1}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.1.2}{Nonlinear Elements}{subsection.3.2.1}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.1.3}{Multipole Blocks}{subsection.3.2.1}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.1.4}{Cavities}{subsection.3.2.1}% 16
+\BOOKMARK [3][-]{subsubsection.3.2.1.5}{Beam\205Beam Separation}{subsection.3.2.1}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.1.6}{``Phase\205trombone'' or matrix element}{subsection.3.2.1}% 18
+\BOOKMARK [3][-]{subsubsection.3.2.1.7}{AC dipole}{subsection.3.2.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.2.1.8}{Crab Cavity}{subsection.3.2.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.2.1.9}{Beam Position Monitor}{subsection.3.2.1}% 21
+\BOOKMARK [3][-]{subsubsection.3.2.1.10}{Other element types}{subsection.3.2.1}% 22
+\BOOKMARK [2][-]{subsection.3.2.2}{Block Definitions}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.3}{Structure Input}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.4}{Displacement of Elements}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Special Elements}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{Multipole Coefficients}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.2}{Aperture Limitations}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.3}{Power Supply Ripple}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.4}{Beam\205Beam Element}{section.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.3.5}{``Phase Trombone'' Element}{section.3.3}% 31
+\BOOKMARK [1][-]{section.3.4}{Organising Tasks}{chapter.3}% 32
+\BOOKMARK [2][-]{subsection.3.4.1}{Random Fluctuation Starting Number}{section.3.4}% 33
+\BOOKMARK [2][-]{subsection.3.4.2}{Organisation of Random Numbers}{section.3.4}% 34
+\BOOKMARK [2][-]{subsection.3.4.3}{Combination of Elements}{section.3.4}% 35
+\BOOKMARK [1][-]{section.3.5}{Processing}{chapter.3}% 36
+\BOOKMARK [2][-]{subsection.3.5.1}{Linear Optics Calculation}{section.3.5}% 37
+\BOOKMARK [2][-]{subsection.3.5.2}{Tune Variation}{section.3.5}% 38
+\BOOKMARK [2][-]{subsection.3.5.3}{Chromaticity Correction}{section.3.5}% 39
+\BOOKMARK [2][-]{subsection.3.5.4}{Orbit Correction}{section.3.5}% 40
+\BOOKMARK [2][-]{subsection.3.5.5}{Decoupling of Motion in the Transverse Planes}{section.3.5}% 41
+\BOOKMARK [2][-]{subsection.3.5.6}{Sub\205resonance Calculation}{section.3.5}% 42
+\BOOKMARK [2][-]{subsection.3.5.7}{Search for Optimum Places to Compensate Resonances}{section.3.5}% 43
+\BOOKMARK [2][-]{subsection.3.5.8}{Resonance Compensation}{section.3.5}% 44
+\BOOKMARK [2][-]{subsection.3.5.9}{Differential Algebra}{section.3.5}% 45
+\BOOKMARK [2][-]{subsection.3.5.10}{Normal Forms}{section.3.5}% 46
+\BOOKMARK [2][-]{subsection.3.5.11}{Corrections}{section.3.5}% 47
+\BOOKMARK [2][-]{subsection.3.5.12}{Post\205processing}{section.3.5}% 48
+\BOOKMARK [1][-]{section.3.6}{Initial Conditions for Tracking}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.6.1}{Tracking Parameters}{section.3.6}% 50
+\BOOKMARK [2][-]{subsection.3.6.2}{Initial Coordinates}{section.3.6}% 51
+\BOOKMARK [2][-]{subsection.3.6.3}{Synchrotron Oscillation}{section.3.6}% 52
+\BOOKMARK [0][-]{chapter*.165}{Conclusions and Acknowledgements}{}% 53
+\BOOKMARK [0][-]{appendix.A}{List of Keywords}{}% 54
+\BOOKMARK [0][-]{appendix.B}{List of Default Values}{}% 55
+\BOOKMARK [1][-]{section.B.1}{Default Tracking Parameters}{appendix.B}% 56
+\BOOKMARK [1][-]{section.B.2}{Default Size Parameters}{appendix.B}% 57
+\BOOKMARK [0][-]{appendix.C}{Input and Output Files}{}% 58
+\BOOKMARK [0][-]{appendix.D}{Data Structure of the Data\205Files}{}% 59
+\BOOKMARK [0][-]{appendix.E}{Tracking Examples}{}% 60
+\BOOKMARK [1][-]{section.E.1}{Input Example}{appendix.E}% 61
+\BOOKMARK [1][-]{section.E.2}{Output Example}{appendix.E}% 62
+\BOOKMARK [1][-]{section.E.3}{Plot Example}{appendix.E}% 63
+\BOOKMARK [0][-]{appendix*.167}{ Bibliography}{}% 64

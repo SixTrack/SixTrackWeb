@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>Organising Tasks</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3 --> 
+<meta name="src" content="six.tex"> 
+<meta name="date" content="2012-05-24 15:23:00"> 
+<link rel="stylesheet" type="text/css" href="six.css"> 
+</head><body 
+>
+<!--l. 1034--><div class="crosslinks"><p class="noindent">[<a 
+href="sixse5.html" >next</a>] [<a 
+href="sixse3.html" >prev</a>] [<a 
+href="sixse3.html#tailsixse3.html" >prev-tail</a>] [<a 
+href="#tailsixse4.html">tail</a>] [<a 
+href="sixch3.html#sixse4.html" >up</a>] </p></div>
+<h3 class="sectionHead"><span class="titlemark">3.4 </span> <a 
+ id="x11-1070003.4"></a>Organising Tasks</h3>
+<!--l. 1036--><p class="noindent" >In this section the input data blocks are described, which are used to organise the input structure.
+<!--l. 1039--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">3.4.1 </span> <a 
+ id="x11-1080003.4.1"></a>Random Fluctuation Starting Number</h4>
+<!--l. 1041--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1090003.4.1"></a><span 
+class="cmbx-10x-x-109">Description</span></span> If besides mean values for the multipole errors (Gaussian) random errors should be
+considered this input data structure is used to set the start value for the random generator.
+<!--l. 1045--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1100003.4.1"></a><span 
+class="cmbx-10x-x-109">Keyword</span></span> FLUC
+<!--l. 1045--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1110003.4.1"></a><span 
+class="cmbx-10x-x-109">Number of data lines</span></span> 1
+<!--l. 1047--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1120003.4.1"></a><span 
+class="cmbx-10x-x-109">Format</span></span> <span 
+class="cmti-10x-x-109">izu0 mmac mout mcut </span>(integers)
+<dl class="description"><dt class="description">
+<span 
+class="cmti-10x-x-109">izu0</span></dt><dd 
+class="description">Start value for the random number generator
+</dd><dt class="description">
+<span 
+class="cmti-10x-x-109">mmac</span></dt><dd 
+class="description"><span 
+class="cmti-12">&#8211; Sorry: disabled for the time being, i.e.</span><span 
+class="cmti-12">&#x00A0;mmac is fixed to be 1 &#8211; </span>(<span 
+class="cmr-10">In the vectorised version</span>
+<span 
+class="cmr-10">the number of different starting seeds can be varied. Each seed is calculated as</span> <span 
+class="cmmi-10">k </span><span 
+class="cmsy-10">&#x00D7; </span><span 
+class="cmmi-10">izu</span><span 
+class="cmr-10">0</span> <span 
+class="cmr-10">where </span><span 
+class="cmmi-10">k </span><span 
+class="cmr-10">runs</span>
+<span 
+class="cmr-10">from 1 to </span><span 
+class="cmti-10">mmac </span><span 
+class="cmr-10">which can not exceed 5 to save storage space (see list of parameters in Appendix</span><span 
+class="cmr-10">&#x00A0;</span><a 
+href="sixse8.html#x19-220000B.2"><span 
+class="cmr-10">B.2</span><!--tex4ht:ref: DSP --></a><span 
+class="cmr-10">).</span>)
+</dd><dt class="description">
+</dt><dd 
+class="description"><span 
+class="cmti-10x-x-109">mout </span>A binary switch for various purposes, so all options, as described below, can be combined.
+<ul class="itemize1">
+<li class="itemize"><span 
+class="cmti-10x-x-109">mout </span>= 0 : multipole errors internally created
+</li>
+<li class="itemize"><span 
+class="cmti-10x-x-109">mout </span>= 1 : multipole errors read&#8211;in from external file
+<!--l. 1062--><p class="noindent" >External multipole errors are read&#8211;in from file 16 into the array of random values. To
+activate these values one has to set to a value of 1 the relevant r.m.s.&#8211;positions of the
+corresponding multipole blocks (&#x00A0;<a 
+href="sixse3.html#x10-790003.3.1">3.3.1<!--tex4ht:ref: MulCoe --></a>). The systematic components are added as usual
+and multipoles not found in the fort.16 are treated as for (<span 
+class="cmti-10x-x-109">mout </span>= 0 ). An error is only
+detected if there are too few sets of multipoles in fort.16.
+</li>
+<li class="itemize"><span 
+class="cmti-10x-x-109">mout </span>= 2: the geometry and strength file is written to file # 4 in the same format as the
+input file # 2; the multipole coefficients are written to file # 9; name, misalignments and
+tilt is written to file # 27 and finally name, random single multipole strength and both
+random transverse misalignments are written to file # 31.
+
+</li>
+<li class="itemize"><span 
+class="cmti-10x-x-109">mout </span>= 4: Name, horizontal and vertical misalignment and also the element tilt are read&#8211;in
+from file # 8.
+</li>
+<li class="itemize"><span 
+class="cmti-10x-x-109">mout  </span>=  8:  Name  and  3  Random  numbers  for  single  kick  strength  and  both  random
+transverse misalignments and also the value of the tilt are read&#8211;in from file # 30.</li></ul>
+</dd><dt class="description">
+<span 
+class="cmti-10x-x-109">mcut</span></dt><dd 
+class="description">The random distribution can be cut by <span 
+class="cmti-10x-x-109">mcut </span>sigma of the distribution. No cuts are applied for <span 
+class="cmti-10x-x-109">mcut =</span>
+<span 
+class="cmti-10x-x-109">0</span>.</dd></dl>
+<!--l. 1085--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1130003.4.1"></a><span 
+class="cmbx-10x-x-109">Remarks</span></span>
+<ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x11-113002x1">The RANECU random generator <span class="cite">[<a 
+href="sixli5.html#XRANECU">23</a>]</span> is used as it produces machine independent sequences of
+random numbers.
+</li>
+<li 
+  class="enumerate" id="x11-113004x2">If the starting point has to be changed or another nonlinear element is to be inserted, this can be
+done without changing the once chosen random distribution of errors by using the <span 
+class="cmti-10x-x-109">Organisation</span>
+<span 
+class="cmti-10x-x-109">of Random Numbers </span>input block.
+</li>
+<li 
+  class="enumerate" id="x11-113006x3">The description of an accelerator is fully contained in 4 files: fort.2 (geometry), fort.3 (tracking
+parameters and definition of multipole blocks), fort.16 (multipole errors) and fort.30 (random
+numbers of the single multipole kick, the horizontal and vertical misalignment and the value of
+the tilt). This block allows to write out the files # 4, 9, 27, 31 which may serve as the input files
+# 2, 16, 8 and 30 respectively. The file fort.30 superseeds fort.8 if both files are read in.</li></ol>
+<!--l. 1103--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">3.4.2 </span> <a 
+ id="x11-1140003.4.2"></a>Organisation of Random Numbers</h4>
+<!--l. 1105--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1150003.4.2"></a><span 
+class="cmbx-10x-x-109">Description</span></span> Working on a lattice for an accelerator often requires to introduce new nonlinear elements.
+In those cases simply introducing this new element means that the previously chosen random distribution of
+the errors will be changed and with it often the linear parameters. This input data block is mainly used to
+avoid this problem by reserving extra random numbers for the new elements. It also allows to change
+the observation point without affecting the machine. The random values of different nonlinear
+elements including blocks of multipoles can be set to be equal to allow to vary the number of
+nonlinear kicks in one magnet which clearly should have the same random distribution for each
+multipolar kick. Finally multipole sets with different name can be made equal with this input data
+block.
+<!--l. 1118--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1160003.4.2"></a><span 
+class="cmbx-10x-x-109">Keyword</span></span> ORGA
+<!--l. 1118--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1170003.4.2"></a><span 
+class="cmbx-10x-x-109">Number of data lines</span></span> variable
+
+<!--l. 1121--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1180003.4.2"></a><span 
+class="cmbx-10x-x-109">Format</span></span> <span 
+class="cmti-10x-x-109">ele1 ele2 ele3 </span>The data lines can be set in three different ways:
+<ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x11-118002x1">Ele1 = &#8220;name&#8221; where name <span 
+class="cmmi-10x-x-109">&ne;</span> MULT <br 
+class="newline" />Ele2 = ignored <br 
+class="newline" />Ele3 = ignored <br 
+class="newline" />The nonlinear element or multipole set will have its own set of random numbers.
+</li>
+<li 
+  class="enumerate" id="x11-118004x2">Ele1 = &#8220;name1&#8221; where name1 <span 
+class="cmmi-10x-x-109">&ne;</span> MULT <br 
+class="newline" />Ele2 = &#8220;name2&#8221; <br 
+class="newline" />Ele3 = ignored <br 
+class="newline" />The nonlinear element or multipole block Ele1 has the same random number set as those of
+Ele2, if it follows Ele2 as the first nonlinear element in the structure list (&#x00A0;<a 
+href="sixse2.html#x9-670003.2.3">3.2.3<!--tex4ht:ref: StrInp --></a>).
+</li>
+<li 
+  class="enumerate" id="x11-118006x3">Ele1 = &#8220;MULT&#8221; <br 
+class="newline" />Ele2 = &#8220;name2&#8221; <br 
+class="newline" />Ele3 = &#8220;name3&#8221; <br 
+class="newline" />The multipole set &#8220;name3&#8221; is set to the values of the set &#8220;name2&#8221;. random errors are not
+influenced in this case.</li></ol>
+<!--l. 1142--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1190003.4.2"></a><span 
+class="cmbx-10x-x-109">Remarks</span></span>
+<ol  class="enumerate1" >
+<li 
+  class="enumerate" id="x11-119002x1">A simple change of the starting point, by placing a &#8220;GO&#8221; somewhere in structure, used to change
+the machine optics as the random numbers were shifted, too. Simply calling this block even
+without a data line, will always fix the sequence of random numbers to start at the first multipole
+in the structure.
+</li>
+<li 
+  class="enumerate" id="x11-119004x2">This input data block must follow the definition of the multipole block, otherwise multipoles
+cannot be set equal (option 3).
+</li>
+<li 
+  class="enumerate" id="x11-119006x3">Do not use the keyword &#8220;MULT&#8221; in the single element list (&#x00A0;<a 
+href="sixse2.html#x9-290003.2.1">3.2.1<!--tex4ht:ref: SinEle --></a>).</li></ol>
+<!--l. 1156--><p class="noindent" >
+<h4 class="subsectionHead"><span class="titlemark">3.4.3 </span> <a 
+ id="x11-1200003.4.3"></a>Combination of Elements</h4>
+<!--l. 1158--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1210003.4.3"></a><span 
+class="cmbx-10x-x-109">Description</span></span> It is often necessary to use several families of magnetic elements with a certain ratio <span 
+class="cmmi-10x-x-109">R </span>of
+magnetic strength to perform corrections like tune adjustment (&#x00A0;<a 
+href="sixse5.html#x12-1320003.5.2">3.5.2<!--tex4ht:ref: TunVar --></a>), chromaticity correction (&#x00A0;<a 
+href="sixse5.html#x12-1380003.5.3">3.5.3<!--tex4ht:ref: ChrCor --></a>)
+or resonance compensation (&#x00A0;<a 
+href="sixse5.html#x12-1670003.5.8">3.5.8<!--tex4ht:ref: ResCom --></a>). The <span 
+class="cmti-10x-x-109">Combination of Elements </span>input block allows such a
+combination of elements. The maximum number of elements is defined by the parameter NCOM (see
+Appendix&#x00A0;<a 
+href="sixse8.html#x19-220000B.2">B.2<!--tex4ht:ref: DSP --></a>).
+<!--l. 1166--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1220003.4.3"></a><span 
+class="cmbx-10x-x-109">Keyword</span></span> COMB
+
+<!--l. 1166--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1230003.4.3"></a><span 
+class="cmbx-10x-x-109">Number of data lines</span></span> variable
+<!--l. 1169--><p class="indent" ><span class="subparagraphHead"><a 
+ id="x11-1240003.4.3"></a><span 
+class="cmbx-10x-x-109">Format</span></span> <span 
+class="cmti-10x-x-109">e0 R1 e1 </span><span 
+class="cmti-10x-x-109">&hellip;Rn en</span>
+<dl class="description"><dt class="description">
+<span 
+class="cmti-10x-x-109">e0</span></dt><dd 
+class="description">Reference element which appears in the input of the processing procedure
+</dd><dt class="description">
+<span 
+class="cmti-10x-x-109">e1, </span><span 
+class="cmti-10x-x-109">&hellip;, en</span></dt><dd 
+class="description">Elements to be combined with <span 
+class="cmti-10x-x-109">e0</span>
+</dd><dt class="description">
+<span 
+class="cmti-10x-x-109">Rj</span></dt><dd 
+class="description">Ratio of the magnetic strength of element <span 
+class="cmti-10x-x-109">ej </span>to that of element <span 
+class="cmti-10x-x-109">e0</span></dd></dl>
+
+<!--l. 1179--><div class="crosslinks"><p class="noindent">[<a 
+href="sixse5.html" >next</a>] [<a 
+href="sixse3.html" >prev</a>] [<a 
+href="sixse3.html#tailsixse3.html" >prev-tail</a>] [<a 
+href="sixse4.html" >front</a>] [<a 
+href="sixch3.html#sixse4.html" >up</a>] </p></div>
+<!--l. 1179--><p class="indent" ><a 
+ id="tailsixse4.html"></a> 
+</body></html> 

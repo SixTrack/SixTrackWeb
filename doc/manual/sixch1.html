@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title>1 Introduction</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html,index=2,3 --> 
+<meta name="src" content="six.tex"> 
+<meta name="date" content="2012-05-24 15:23:00"> 
+<link rel="stylesheet" type="text/css" href="six.css"> 
+</head><body 
+>
+   <!--l. 113--><div class="crosslinks"><p class="noindent">[<a 
+href="sixch2.html" >next</a>] [<a 
+href="sixli1.html" >prev</a>] [<a 
+href="sixli1.html#tailsixli1.html" >prev-tail</a>] [<a 
+href="#tailsixch1.html">tail</a>] [<a 
+href="six.html#sixch1.html" >up</a>] </p></div>
+   <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;1</span><br /><a 
+ id="x4-30001"></a>Introduction</h2>
+<!--l. 115--><p class="noindent" >The Single Particle Tracking Code SixTrack is optimised to carry two
+particles&#x00A0;<span class="footnote-mark"><a 
+href="six5.html#fn1x1"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x4-3001f1"></a>
+through an accelerator structure over a large number of turns. It is an offspring of RACETRACK <span class="cite">[<a 
+href="sixli5.html#XRACETRACK">3</a>]</span> written
+by Albin Wrulich and its input structure has been changed as little as possible so that slightly
+modified RACETRACK input files or those of other offsprings like FASTRAC <span class="cite">[<a 
+href="sixli5.html#XFASTRAC">4</a>]</span> can be read
+in.
+<!--l. 123--><p class="indent" >   The main features of SixTrack are:
+     <ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x4-3003x1">Treatment of the full six&#8211;dimensional motion including synchrotron motion in a symplectic
+     manner <span class="cite">[<a 
+href="sixli5.html#XRipken85">5</a>]</span>. The energy can be ramped at the same time considering the relativistic change of
+     the velocity <span class="cite">[<a 
+href="sixli5.html#XRipken87">6</a>]</span>.
+     </li>
+     <li 
+  class="enumerate" id="x4-3005x2">Detection  of  the  onset  of  chaotic  motion  and  thereby  the  long&#8211;term  dynamic  aperture  by
+     evaluating the Lyapunov exponent.
+     </li>
+     <li 
+  class="enumerate" id="x4-3007x3">Post&#8211;processing procedure allowing
+          <ul class="itemize1">
+          <li class="itemize">calculation of the Lyapunov exponent
+          </li>
+          <li class="itemize">calculation of the average phase advance per turn
+          </li>
+          <li class="itemize">FFT analysis
+          </li>
+          <li class="itemize">resonance analysis
+          </li>
+          <li class="itemize">calculation of the average, maximum and minimum values of the Courant&#8211;Snyder emittance
+          and the invariants of linearly coupled motion
+          </li>
+          <li class="itemize">calculation of smear
+          </li>
+          <li class="itemize">plotting using the CERN packages HBOOK, HPLOT and HIGZ <span class="cite">[<a 
+href="sixli5.html#XHBOOK">7</a>,&#x00A0;<a 
+href="sixli5.html#XHPLOT">8</a>,&#x00A0;<a 
+href="sixli5.html#XHIGZ">9</a>]</span></li></ul>
+     </li>
+     <li 
+  class="enumerate" id="x4-3009x4">Calculation of first&#8211;order resonances and of correction schemes for the resonances <span class="cite">[<a 
+href="sixli5.html#XGilbert78">10</a>]</span>.
+     </li>
+     <li 
+  class="enumerate" id="x4-3011x5">Calculation of the one&#8211;turn map using the differential algebra techniques. The original DA package by
+     M.Berz <span class="cite">[<a 
+href="sixli5.html#XBerz89">11</a>]</span> has been replaced by the package of LBL&#x00A0;<span class="cite">[<a 
+href="sixli5.html#XDALIE">1</a>]</span>. The Fortran code is transfered into a Map
+     producing via the (slightly modified) &#8220;DAFOR&#8221; code&#x00A0;<span class="cite">[<a 
+href="sixli5.html#XDAFOR">12</a>]</span>.
+
+</li>
+<li 
+  class="enumerate" id="x4-3013x6">The code is vectorised, with two particles, the number of amplitudes, the different relative momentum
+deviations <img 
+src="six0x.png" alt="&Delta;ppo-"  class="frac" align="middle"> in parallel <span class="cite">[<a 
+href="sixli5.html#XSixvec">13</a>]</span>.
+</li>
+<li 
+  class="enumerate" id="x4-3015x7">Operational improvements:
+<ul class="itemize1">
+<li class="itemize">free format input
+</li>
+<li class="itemize">optimisation of the calculation of multipole kicks
+</li>
+<li class="itemize">improved treatment of random errors
+</li>
+<li class="itemize">each binary data&#8211;file has a header describing the history of the run (Appendix&#x00A0;<a 
+href="sixap4.html#x21-222000D">D<!--tex4ht:ref: Header --></a>)</li></ul>
+</li></ol>
+<!--l. 165--><p class="indent" >The SixTrack input is line oriented. Each line of 80 characters is treated as one string of input in which a
+certain sequence of numbers and character strings is expected to be found. The numbers and character
+strings must be separated by at least one blank, floating point numbers can be given in any format, but must
+be distinguished from integer numbers. Omitted values at the end of an input line will keep
+their default values (&#x00A0;<a 
+href="sixse7.html#x18-219000B.1">B.1<!--tex4ht:ref: DTP --></a>), and lines with a slash &#8220;/&#8221; in the first column will be ignored by the
+program.
+<!--l. 174--><p class="indent" >For detailed questions concerning rounding errors, calculation of the Lyapunov exponent and
+determination of the long&#8211;term dynamic aperture, see <span class="cite">[<a 
+href="sixli5.html#Xthesis">14</a>]</span>.
+<!--l. 178--><p class="indent" >In chapter&#x00A0;<a 
+href="sixch3.html#x7-50003">3<!--tex4ht:ref: InpStr --></a>, the input structure of SixTrack is discussed in detail. To facilitate the use of the program, a
+set of appendices are added, giving a list of keywords (Appendix&#x00A0;<a 
+href="sixap1.html#x16-217000A">A<!--tex4ht:ref: Lkey --></a>), a list of default values (Appendix&#x00A0;<a 
+href="sixap2.html#x17-218000B">B<!--tex4ht:ref: Default --></a>),
+the input and output files (Appendix&#x00A0;<a 
+href="sixap3.html#x20-221000C">C<!--tex4ht:ref: Files --></a>), a description of the data structure of the binary data&#8211;files
+(Appendix&#x00A0;<a 
+href="sixap4.html#x21-222000D">D<!--tex4ht:ref: Header --></a>)and tracking examples (Appendix&#x00A0;<a 
+href="sixap5.html#x22-223000E">E<!--tex4ht:ref: Exam --></a>).
+
+<!--l. 186--><div class="crosslinks"><p class="noindent">[<a 
+href="sixch2.html" >next</a>] [<a 
+href="sixli1.html" >prev</a>] [<a 
+href="sixli1.html#tailsixli1.html" >prev-tail</a>] [<a 
+href="sixch1.html" >front</a>] [<a 
+href="six.html#sixch1.html" >up</a>] </p></div>
+<!--l. 186--><p class="indent" ><a 
+ id="tailsixch1.html"></a> 
+</body></html> 
