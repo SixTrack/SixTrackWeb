@@ -1,0 +1,12 @@
+.svn
+.*.sw?
+build
+eric
+old
+SixDesk_utilities
+sixdesk-bin
+google*
+*.aux
+*.out
+*.toc
+*.tmp
