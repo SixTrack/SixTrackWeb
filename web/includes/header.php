@@ -29,7 +29,7 @@
             <img src="images/logo.jpg" width="116px">
         </div><div class="title">
             <h1>SixTrack - 6D Tracking Code</h1>
-            <h3><a href="https://espace.cern.ch/be-dep/ABP/default.aspx">CERN - BE/ABP Accelerator Beam Physics Group</a></h3>
+            <h3><a href="https://be-dep-abp.web.cern.ch/">CERN - BE/ABP Accelerator Beam Physics Group</a></h3>
         </div>
     </header>
     <!-- End Header -->
@@ -41,8 +41,9 @@
                 echo "<li><a href='index.php'>Home</a></li>";
                 echo "<li><a href='docs.php'>Docs</a></li>";
                 echo "<li><a href='source.php'>Source</a></li>";
-                echo "<li><a href='references.php'>References</a></li>";
                 echo "<li><a href='/wiki'>Developers' Wiki</a></li>";
             ?>
         </ul>
-    </nav><div id="content">
+    </nav>
+    
+    <div id="content">
