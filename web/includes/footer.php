@@ -8,9 +8,9 @@
     if(!isset($bMain)) exit();
 ?>
 </div>
-</div>
 <footer id="footer">
     Copyright 2016&ndash;<?php echo date("Y",time()); ?> CERN
 </footer>
+</div>
 </body>
 </html>

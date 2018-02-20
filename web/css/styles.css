@@ -6,15 +6,12 @@
  */
 
 html {
-    background-color: #dddddd;
+    background-color: #cccccc;
 }
 
 body {
-    /* padding: 40px;
     font-size: 15px;
-    max-width: 1100px;
     background-color: #ffffff;
-    margin: 20px auto; */
 }
 
 h1 {font-size: 2.00em; margin: 0em 0em 0.4em 0em;}
@@ -33,9 +30,11 @@ a:hover {color: #0053a1; text-decoration: underline;}
 
 #wrapper {
     width: 1200px;
-    border: 1px dashed #ff0000;
     margin: 0px auto;
     background-color: #ffffff;
+    /* background: url("/SixTrack/web/images/top.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: top left; */
 }
 
 /* CERN Bar */
@@ -51,6 +50,7 @@ a:hover {color: #0053a1; text-decoration: underline;}
 #cernbar div {
     /* width: 1200px; */
     /* margin: 0px auto; */
+    margin: 2px 20px;
 }
 
 #cernbar em {
@@ -63,39 +63,39 @@ a:hover {color: #0053a1; text-decoration: underline;}
     color: #ffffff;
 }
 
-/* Page Header */
+/**
+ *  Page Header
+ */
 
 #header {
     background-color: #ffffff;
-    margin: 0px auto;
-    /* border: 1px solid #ff0000; */
-    /* border-bottom: 4px solid #e07e21; */
-    /* border: 1px dashed #00ff00; */
-    vertical-align: top;
+    width: 1200px;
+    height: 140px;
+    display: table;
 }
 
 #header .logo {
-    width: 140px;
-    height: 140px;
-    display: inline-block;
-    /* border: 1px dashed #ff0000; */
+    display: table-cell;
     vertical-align: top;
-}
-
-#header .logo img {
-    margin: 12px;
+    padding: 12px 0px 0px 12px;
+    width: 140px;
 }
 
 #header .title {
-    height: 140px;
-    display: inline-block;
-    /* border: 1px dashed #ff0000; */
+    display: table-cell;
     vertical-align: top;
+}
+
+#header .illustration {
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    padding: 12px 12px 0px 12px;
 }
 
 #header h1 {
     color: #000000;
-    margin: 30px 0px 6px 12px;
+    margin: 36px 0px 6px 12px;
     font-size: 2.0em;
     text-decoration: underline;
 }
@@ -106,18 +106,14 @@ a:hover {color: #0053a1; text-decoration: underline;}
     font-size: 1.1em;
 }
 
-
-/* Page Menu */
+/**
+ *  Site Menu
+ */
 
 #main-menu {
-    /* display: inline-block; */
-    /* vertical-align: top; */
     width: 1200px;
     margin: 0px;
     padding: 0px;
-    /* border: 1px dashed #ff0000; */
-    /* margin-bottom: 12px; */
-    /* border-right: 1px dashed #c0c0c0; */
     background-color: #e07e21;
 }
 
@@ -141,16 +137,72 @@ a:hover {color: #0053a1; text-decoration: underline;}
 }
 
 #main-menu ul li:hover {
-    /* background-color: #e0f0e0; */
+    background-color: rgba(255,255,255,0.2);
 }
 
-/* Content */
+/**
+ *  Page Content
+ */
 
 #content {
-    display: inline-block;
-    vertical-align: top;
-    width: 980px;
-    border: 1px dashed #ff0000;
+    display: table;
+    width: 1184px;
+    margin: 20px 8px;
+}
+
+#content article {
+    display: table-cell;
+    border-right: 2px solid #0053a1;
+    padding: 4px 18px 4px 0px;
+}
+
+#content aside {
+    display: table-cell;
+    width: 240px;
+    padding: 4px 0px 4px 18px;
+}
+
+/**
+ *  Article Area
+ */
+
+#content article img {
+    max-width: 1174px;
+}
+
+/**
+ *  Page Navigation
+ */
+
+#content aside img {
+    max-width: 228px;
+}
+
+/**
+ *  Content Styles
+ */
+
+.no-bullet-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.no-bullet-list li {
+    margin: 0px 0px 8px 0px;
+}
+
+/**
+ *  Page Footer
+ */
+
+#footer {
+    background-color: #cccccc;
+    color: #000000;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 4px;
+    border-top: 2px solid #e07e21;
 }
 
 /**
@@ -158,6 +210,14 @@ a:hover {color: #0053a1; text-decoration: underline;}
  */
 
 /* Mobile */
+
+@media screen and (max-width: 1200px) {
+    
+    #wrapper {
+        width: 100%;
+    }
+    
+}
 
 @media screen and (max-width: 500px) {
 

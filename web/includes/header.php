@@ -26,10 +26,12 @@
     <!-- Begin Header -->
     <header id="header">
         <div class="logo">
-            <img src="images/logo.jpg" width="116px">
+            <a href="http://cern.ch/"><img src="images/logo.jpg" height="116px"></a>
         </div><div class="title">
             <h1>SixTrack - 6D Tracking Code</h1>
             <h3><a href="https://be-dep-abp.web.cern.ch/">CERN - BE/ABP Accelerator Beam Physics Group</a></h3>
+        </div><div class="illustration">
+            <img src="images/plot.png" height="116px">
         </div>
     </header>
     <!-- End Header -->
@@ -39,9 +41,9 @@
         <ul>
             <?php
                 echo "<li><a href='index.php'>Home</a></li>";
-                echo "<li><a href='docs.php'>Docs</a></li>";
-                echo "<li><a href='source.php'>Source</a></li>";
-                echo "<li><a href='/wiki'>Developers' Wiki</a></li>";
+                echo "<li><a href='download.php'>Download</a></li>";
+                echo "<li><a href='docs.php'>Documentation</a></li>";
+                echo "<li><a href='https://twiki.cern.ch/twiki/bin/view/LHCAtHome/SixTrack'>Developers' Wiki</a></li>";
             ?>
         </ul>
     </nav>
