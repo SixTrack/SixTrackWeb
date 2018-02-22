@@ -1,0 +1,239 @@
+<!DOCTYPE html><html>
+<head>
+<title>1 Introduction</title>
+<!--Generated on Thu Feb 22 18:44:52 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on February 22, 2018.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-report.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<link rel="start" href="manual.html" title="">
+<link rel="prev" href="manual.html" title="">
+<link rel="next" href="Ch2.html" title="Chapter 2 Versions and Service">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Versions and Service">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Input Structure">
+<link rel="chapter" href="Chx1.html" title="Conclusions">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Acknowledgement">
+<link rel="appendix" href="A1.html" title="Appendix A List of Keywords">
+<link rel="appendix" href="A2.html" title="Appendix B List of Default Values">
+<link rel="appendix" href="A3.html" title="Appendix C Input and Output Files">
+<link rel="appendix" href="A4.html" title="Appendix D Data Structure of the Data–Files">
+<link rel="appendix" href="A5.html" title="Appendix E Tracking Examples">
+<link rel="bibliography" href="bib.html" title="Bibliography">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="manual.html" title="" class="ltx_ref" rel="prev">TEMPORARY_DOCUMENT_ID</a><a href="Ch2.html" title="Chapter 2 Versions and Service" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Versions and Service</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_chapter">
+<h1 class="ltx_title ltx_title_chapter">
+<span class="ltx_tag ltx_tag_chapter">Chapter 1 </span>Introduction</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The Single Particle Tracking Code SixTrack is optimised to carry two
+particles <span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>Two particles are needed for the detection of
+chaotic behaviour.</span></span></span> through an accelerator structure over a large
+number of turns. It is an offspring of RACETRACK <cite class="ltx_cite">[<a href="bib.html#bib3" title="" class="ltx_ref">3</a>]</cite>
+written by Albin Wrulich and its input structure has been changed as
+little as possible so that slightly modified RACETRACK input files or
+those of other offsprings like FASTRAC <cite class="ltx_cite">[<a href="bib.html#bib4" title="" class="ltx_ref">4</a>]</cite> can be read in.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The main features of SixTrack are:</p>
+</div>
+<div id="p3" class="ltx_para">
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Treatment of the full six–dimensional motion including
+synchrotron motion in a symplectic manner <cite class="ltx_cite">[<a href="bib.html#bib5" title="" class="ltx_ref">5</a>]</cite>. The
+energy can be ramped at the same time considering the relativistic
+change of the velocity <cite class="ltx_cite">[<a href="bib.html#bib6" title="" class="ltx_ref">6</a>]</cite>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Detection of the onset of chaotic motion and thereby the
+long–term dynamic aperture by evaluating the Lyapunov exponent.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">3.</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Post–processing procedure allowing</p>
+<ul id="I1.I1" class="ltx_itemize">
+<li id="I1.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">calculation of the Lyapunov exponent
+</p>
+</div>
+</li>
+<li id="I1.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">calculation of the average phase advance per turn</p>
+</div>
+</li>
+<li id="I1.I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I1.i3.p1" class="ltx_para">
+<p class="ltx_p">FFT analysis</p>
+</div>
+</li>
+<li id="I1.I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I1.i4.p1" class="ltx_para">
+<p class="ltx_p">resonance analysis</p>
+</div>
+</li>
+<li id="I1.I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I1.i5.p1" class="ltx_para">
+<p class="ltx_p">calculation of the average, maximum and minimum values of the
+Courant–Snyder emittance and the invariants of linearly coupled
+motion</p>
+</div>
+</li>
+<li id="I1.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I1.i6.p1" class="ltx_para">
+<p class="ltx_p">calculation of smear</p>
+</div>
+</li>
+<li id="I1.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I1.i7.p1" class="ltx_para">
+<p class="ltx_p">plotting using the CERN packages HBOOK, HPLOT and HIGZ
+<cite class="ltx_cite">[<a href="bib.html#bib7" title="" class="ltx_ref">7</a>, <a href="bib.html#bib8" title="" class="ltx_ref">8</a>, <a href="bib.html#bib9" title="" class="ltx_ref">9</a>]</cite></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">4.</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Calculation of first–order resonances and of correction schemes
+for the resonances <cite class="ltx_cite">[<a href="bib.html#bib10" title="" class="ltx_ref">10</a>]</cite>.</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">5.</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p">Calculation of the one–turn map using the differential algebra
+techniques. The original DA package by M.Berz <cite class="ltx_cite">[<a href="bib.html#bib11" title="" class="ltx_ref">11</a>]</cite> has been
+replaced by the package of LBL <cite class="ltx_cite">[<a href="bib.html#bib1" title="" class="ltx_ref">1</a>]</cite>. The Fortran code is
+transfered into a Map producing via the (slightly modified) “DAFOR”
+code <cite class="ltx_cite">[<a href="bib.html#bib12" title="" class="ltx_ref">12</a>]</cite>.</p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">6.</span> 
+<div id="I1.i6.p1" class="ltx_para">
+<p class="ltx_p">The code is vectorised, with two particles, the
+number of amplitudes, the different relative momentum deviations
+<math id="I1.i6.p1.m1" class="ltx_Math" alttext="\frac{\Delta p}{p_{o}}" display="inline"><mfrac><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>p</mi></mrow><msub><mi>p</mi><mi>o</mi></msub></mfrac></math> in parallel
+<cite class="ltx_cite">[<a href="bib.html#bib13" title="" class="ltx_ref">13</a>]</cite>.</p>
+</div>
+</li>
+<li id="I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">7.</span> 
+<div id="I1.i7.p1" class="ltx_para">
+<p class="ltx_p">Operational improvements:</p>
+<ul id="I1.I2" class="ltx_itemize">
+<li id="I1.I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I2.i1.p1" class="ltx_para">
+<p class="ltx_p">free format input</p>
+</div>
+</li>
+<li id="I1.I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I2.i2.p1" class="ltx_para">
+<p class="ltx_p">optimisation of the calculation of multipole kicks
+</p>
+</div>
+</li>
+<li id="I1.I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I2.i3.p1" class="ltx_para">
+<p class="ltx_p">improved treatment of random errors</p>
+</div>
+</li>
+<li id="I1.I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span> 
+<div id="I1.I2.i4.p1" class="ltx_para">
+<p class="ltx_p">each binary data–file has a header describing the history of
+the run (Appendix <a href="A4.html" title="Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_tag">D</span></a>)</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">The SixTrack input is line oriented. Each line of 80 characters is
+treated as one string of input in which a certain sequence of numbers
+and character strings is expected to be found. The numbers and
+character strings must be separated by at least one blank, floating
+point numbers can be given in any format, but must be distinguished
+from integer numbers. Omitted values at the end of an input line will
+keep their default values ( <a href="A2.html#S1" title="B.1 Default Tracking Parameters ‣ Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_tag">B.1</span></a>), and lines with a slash “/” in
+the first column will be ignored by the program.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">For detailed questions concerning rounding errors, calculation of the
+Lyapunov exponent and determination of the long–term dynamic
+aperture, see <cite class="ltx_cite">[<a href="bib.html#bib14" title="" class="ltx_ref">14</a>]</cite>.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">In chapter <a href="Ch3.html" title="Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>, the input structure of SixTrack is discussed
+in detail. To facilitate the use of the program, a set of appendices
+are added, giving a list of keywords (Appendix <a href="A1.html" title="Appendix A List of Keywords" class="ltx_ref"><span class="ltx_text ltx_ref_tag">A</span></a>), a
+list of default values (Appendix <a href="A2.html" title="Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_tag">B</span></a>), the input and
+output files (Appendix <a href="A3.html" title="Appendix C Input and Output Files" class="ltx_ref"><span class="ltx_text ltx_ref_tag">C</span></a>), a description of the data
+structure of the binary data–files (Appendix <a href="A4.html" title="Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_tag">D</span></a>) and
+tracking examples (Appendix <a href="A5.html" title="Appendix E Tracking Examples" class="ltx_ref"><span class="ltx_text ltx_ref_tag">E</span></a>).</p>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="manual.html" title="" class="ltx_ref" rel="prev">TEMPORARY_DOCUMENT_ID</a><a href="bib.html" title="Bibliography" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="Ch2.html" title="Chapter 2 Versions and Service" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Versions and Service</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Feb 22 18:44:52 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

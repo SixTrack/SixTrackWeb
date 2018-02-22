@@ -1,0 +1,670 @@
+<!DOCTYPE html><html>
+<head>
+<title>C Input and Output Files</title>
+<!--Generated on Thu Feb 22 18:44:52 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on February 22, 2018.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-report.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<link rel="start" href="manual.html" title="">
+<link rel="prev" href="A2.html" title="Appendix B List of Default Values">
+<link rel="next" href="A4.html" title="Appendix D Data Structure of the Data–Files">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Introduction">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Versions and Service">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Input Structure">
+<link rel="chapter" href="Chx1.html" title="Conclusions">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Acknowledgement">
+<link rel="appendix" href="A1.html" title="Appendix A List of Keywords">
+<link rel="appendix" href="A2.html" title="Appendix B List of Default Values">
+<link rel="appendix" href="A4.html" title="Appendix D Data Structure of the Data–Files">
+<link rel="appendix" href="A5.html" title="Appendix E Tracking Examples">
+<link rel="bibliography" href="bib.html" title="Bibliography">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="A2.html" title="Appendix B List of Default Values" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>List of Default Values</span></a><a href="A4.html" title="Appendix D Data Structure of the Data–Files" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Data Structure of the Data–Files</span></a>
+</div></header>
+<div class="ltx_page_content">
+<section class="ltx_appendix">
+<h1 class="ltx_title ltx_title_appendix">
+<span class="ltx_tag ltx_tag_appendix">Appendix C </span>Input and Output Files</h1>
+<div class="ltx_date ltx_role_creation"></div>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">The program uses a couple of files for its input and output procedures.</p>
+</div>
+<figure id="T1" class="ltx_table ltx_align_center">
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">Table C.1: </span>List of Input and Output Files.</figcaption>
+<table class="ltx_tabular">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:35.6pt;position:relative; bottom:-14.2pt;background:black;display:inline-block;"></span> <span class="ltx_text ltx_font_bold">File Unit</span>
+</th>
+<th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
+            <span class="ltx_text ltx_font_bold">Input</span>
+          </th>
+<th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
+            <span class="ltx_text ltx_font_bold">Output</span>
+          </th>
+<th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
+            <span class="ltx_text ltx_font_bold">File Type</span>
+          </th>
+<th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
+            <span class="ltx_text ltx_font_bold">Contents</span>
+          </th>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></th>
+<th class="ltx_td ltx_border_t"></th>
+<th class="ltx_td ltx_border_t"></th>
+<th class="ltx_td ltx_border_t"></th>
+<th class="ltx_td ltx_border_t"></th>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+2</td>
+<td class="ltx_td ltx_align_center ltx_border_r">X</td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r">Geometry and Strength Parameters</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+3</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Tracking Parameters</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span> 4</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Geometry and
+strength Parameters (format as file #
+2)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+6</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Input Parameters and Analysis of Data</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+8</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Name, hor., ver. Misalignment and Tilt</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+9</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Internally used multipoles</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Format: <math id="T1.m1" class="ltx_Math" alttext="a16,\ 2\times\{6\times(1p,3d23.15),\ (1p,2d23.15)\}" display="inline"><mrow><mrow id="XM254"><mi>a</mi><mo>⁢</mo><mn>16</mn></mrow><mo>,</mo><mrow id="XM255"><mn> 2</mn><mo>×</mo><mrow><mo stretchy="false">{</mo><mrow id="XM252"><mn>6</mn><mo>×</mo><mrow><mo stretchy="false">(</mo><mrow id="XM248"><mn>1</mn><mo>⁢</mo><mi>p</mi></mrow><mo>,</mo><mrow id="XM249"><mn>3</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mn>23.15</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="7.5pt">,</mo><mrow><mo stretchy="false">(</mo><mrow id="XM250"><mn>1</mn><mo>⁢</mo><mi>p</mi></mrow><mo>,</mo><mrow id="XM251"><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mn>23.15</mn></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></math>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+10</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Summary of Post–processing (auxiliary)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+11</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">This file is used to dump linear</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">coupling parameters at locations of choice</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+12</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">End Coordinates of both Particles</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Format: (<math id="T1.m2" class="ltx_Math" alttext="15\times F10.6" display="inline"><mrow><mrow><mn>15</mn><mo>×</mo><mi>F</mi></mrow><mo>⁢</mo><mn>10.6</mn></mrow></math>)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+13</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Start Coordinates for a Prolongation</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+14</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Horizontal FFT Spectrum for detailed</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Analysis; Format: (<math id="T1.m3" class="ltx_Math" alttext="2\times F10.6" display="inline"><mrow><mrow><mn>2</mn><mo>×</mo><mi>F</mi></mrow><mo>⁢</mo><mn>10.6</mn></mrow></math>)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+15</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Vertical FFT Spectrum for detailed</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Analysis; Format: (<math id="T1.m4" class="ltx_Math" alttext="2\times F10.6" display="inline"><mrow><mrow><mn>2</mn><mo>×</mo><mi>F</mi></mrow><mo>⁢</mo><mn>10.6</mn></mrow></math>)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+16</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">External multipole errors</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Format: <math id="T1.m5" class="ltx_Math" alttext="a16,\ 2\times\{6\times(1p,3d23.15),\ (1p,2d23.15)\}" display="inline"><mrow><mrow id="XM268"><mi>a</mi><mo>⁢</mo><mn>16</mn></mrow><mo>,</mo><mrow id="XM269"><mn> 2</mn><mo>×</mo><mrow><mo stretchy="false">{</mo><mrow id="XM266"><mn>6</mn><mo>×</mo><mrow><mo stretchy="false">(</mo><mrow id="XM262"><mn>1</mn><mo>⁢</mo><mi>p</mi></mrow><mo>,</mo><mrow id="XM263"><mn>3</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mn>23.15</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="7.5pt">,</mo><mrow><mo stretchy="false">(</mo><mrow id="XM264"><mn>1</mn><mo>⁢</mo><mi>p</mi></mrow><mo>,</mo><mrow id="XM265"><mn>2</mn><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mn>23.15</mn></mrow><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow></math>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+17</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Additional Map at</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">location of interest</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+18</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">One–Turn Map with Differential</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Algebra</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+19</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Internal use for Differential Algebra</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+20</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Meta–file</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">PS–file of selected Plots</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+21</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Factorisation of the one–turn</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">map</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+22</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Transformation in the</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Normal Form coordinates</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+23</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Hamiltonian in</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">action variables</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+24</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Tune–shift in action</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">coordinates</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+25</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Tune–shift in Cartesian</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">coordinates</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+26</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">NAGLIB log–file</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+27</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Name, hor., ver. Misalignment and Tilt</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-5.0pt;background:black;display:inline-block;"></span>
+28</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Horizontal closed orbit displacement,</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">measured at monitors</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-5.0pt;background:black;display:inline-block;"></span>
+29</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Vertical closed orbit displacement,</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">measured at monitors</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+30</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Name, Random strength, misalignments and tilt</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+31</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Name, Random strength, misalignments and tilt</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+32</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Binary</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Binary dump of full accelerator description</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+33</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Guess values for 6D closed orbit search</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+34</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Multipole strength and linear lattice
+parameters <cite class="ltx_cite">[<a href="bib.html#bib21" title="" class="ltx_ref">21</a>]</cite>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+90 – k</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Binary</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Tracking Data (not singletrackfile)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">
+            <math id="T1.m6" class="ltx_Math" alttext="0&lt;=k&lt;=31" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mn>31</mn></mrow></math>
+          </td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-3.6pt;background:black;display:inline-block;"></span>
+90</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Binary</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Tracking Data (singletrackfile)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">
+            <span class="ltx_text ltx_font_typewriter">singletrackfile.dat</span>
+          </td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+92</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Checkpoint/Restart only:</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">Program “standard output” (lout)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+93</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Checkpoint/Restart only: Log file</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+94</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Checkpoint/Restart only: Temp file for</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">resetting binary tracking data file(s)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+95</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Checkpoint/Restart only: Data file 1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+96</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Checkpoint/Restart only: Data file 2</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+98</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">6D coordinates at Cavity (1p,6(2x,e25.18))</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+664</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">DYNK reading FUN FILE(LIN)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_r">(only during initialization)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+665</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">DYNK output file <span class="ltx_text ltx_font_typewriter">dynksets.dat</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+2001001</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">FMA output file <span class="ltx_text ltx_font_typewriter">fma_sixtrack</span>
+</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
+<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+200101+i*10</td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">X</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">Ascii</td>
+<td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">FMA output file <span class="ltx_text ltx_font_typewriter">NORM_*</span>,</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r">
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
+<td class="ltx_td ltx_border_b ltx_border_r"></td>
+<td class="ltx_td ltx_border_b ltx_border_r"></td>
+<td class="ltx_td ltx_border_b ltx_border_r"></td>
+<td class="ltx_td ltx_align_center ltx_border_b ltx_border_r">where <math id="T1.m7" class="ltx_Math" alttext="i=1,\ldots,\mathrm{number\ of\ FMAs}" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn id="XM270">1</mn><mo>,</mo><mi mathvariant="normal" id="XM271">…</mi><mo>,</mo><mrow id="XM272"><mpadded width="+5pt"><mi>number</mi></mpadded><mo>⁢</mo><mpadded width="+5pt"><mi>of</mi></mpadded><mo>⁢</mo><mi>FMAs</mi></mrow></mrow></mrow></math>
+</td>
+</tr>
+</table>
+</figure>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In addition to those files listed in the table, DUMP uses arbitary file unit numbers as determined by the input file. The collimation module also uses many input/output files at various units, which are not listed here.</p>
+</div>
+</section>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="A2.html" title="Appendix B List of Default Values" class="ltx_ref" rel="prev"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>List of Default Values</span></a><a href="bib.html" title="Bibliography" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="A4.html" title="Appendix D Data Structure of the Data–Files" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Data Structure of the Data–Files</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Feb 22 18:44:52 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

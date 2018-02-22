@@ -1,0 +1,256 @@
+<!DOCTYPE html><html>
+<head>
+<title>Untitled Document</title>
+<!--Generated on Thu Feb 22 18:44:52 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-report.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<link rel="next" href="Ch1.html" title="Chapter 1 Introduction">
+<link rel="chapter" href="Ch1.html" title="Chapter 1 Introduction">
+<link rel="chapter" href="Ch2.html" title="Chapter 2 Versions and Service">
+<link rel="chapter" href="Ch3.html" title="Chapter 3 Input Structure">
+<link rel="chapter" href="Chx1.html" title="Conclusions">
+<link rel="chapter" href="Ch4.html" title="Chapter 4 Acknowledgement">
+<link rel="appendix" href="A1.html" title="Appendix A List of Keywords">
+<link rel="appendix" href="A2.html" title="Appendix B List of Default Values">
+<link rel="appendix" href="A3.html" title="Appendix C Input and Output Files">
+<link rel="appendix" href="A4.html" title="Appendix D Data Structure of the Data–Files">
+<link rel="appendix" href="A5.html" title="Appendix E Tracking Examples">
+<link rel="bibliography" href="bib.html" title="Bibliography">
+</head>
+<body>
+<div class="ltx_page_main">
+<header class="ltx_page_header">
+<div>
+<a href="Ch1.html" title="Chapter 1 Introduction" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a>
+</div></header>
+<div class="ltx_page_content">
+<article class="ltx_document">
+<div class="ltx_titlepage">
+<p class="ltx_p ltx_align_center">EUROPEAN LABORATORY FOR PARTICLE PHYSICS</p>
+<p class="ltx_p ltx_align_center">CERN – SL Division</p>
+<p class="ltx_p ltx_align_right">CERN/SL/94–56 (AP)</p>
+<p class="ltx_p ltx_align_right">Update November 2017</p>
+<p class="ltx_p ltx_align_center">
+      <span class="ltx_text ltx_font_bold" style="font-size:172%;">SixTrack<span class="ltx_text ltx_font_medium"></span></span>
+    </p>
+<p class="ltx_p ltx_align_center">
+      <span class="ltx_text" style="font-size:172%;">Version 4.7.16</span>
+    </p>
+<p class="ltx_p ltx_align_center">
+      <span class="ltx_text" style="font-size:172%;">Single Particle Tracking Code Treating Transverse Motion with Synchrotron Oscillations in a Symplectic Manner</span>
+    </p>
+<p class="ltx_p ltx_align_center">
+      <span class="ltx_text ltx_font_bold" style="font-size:172%;">User’s Reference Manual<span class="ltx_text ltx_font_medium"></span></span>
+    </p>
+<p class="ltx_p ltx_align_center">
+      <span class="ltx_text ltx_font_italic">F. Schmidt, update by A. Alekou, M. Fitterer, J.F. Wagner, S.J. Wretborn, R. De Maria, S. Kostoglou, K. Sjobak and T. Persson</span>
+    </p>
+<p class="ltx_p ltx_align_center">
+      <span class="ltx_text ltx_font_bold" style="font-size:120%;">Abstract<span class="ltx_text ltx_font_medium"></span></span>
+    </p>
+<p class="ltx_p">The aim of SixTrack is to track two nearby particles taking into
+account the full six–dimensional phase space including synchrotron
+oscillations in a symplectic manner. It allows to predict the
+long–term dynamic aperture which is defined as the border between
+regular and chaotic motion. This border can be found by studying the
+evolution of the distance in phase space of two initially nearby
+particles. Parameters of interest like nonlinear detuning and smear
+are determined via a post–processing of the tracking data. An
+analysis of the first order resonances can be done and correction
+schemes for several of those resonances can be calculated. Moreover
+there is the feature to calculate a one–turn map to very high order
+and the full six–dimensional case, using the LBL differential
+algebra. This map allows a subsequent theoretical
+analysis like normal form procedures which are provided by É.
+Forest <cite class="ltx_cite">[<a href="bib.html#bib1" title="" class="ltx_ref">1</a>]</cite>.</p>
+<p class="ltx_p">The linear elements are usually treated as thick elements in
+SixTrack. In that case there is at least one non–zero length
+element in the structure file which is not a drift–element. If the
+accelerator, however, is modelled exclusively with drifts and kicks
+SixTrack automatically uses the thin–lens formalism according to
+G. Ripken <cite class="ltx_cite">[<a href="bib.html#bib2" title="" class="ltx_ref">2</a>]</cite>. A common header of output
+data and the format of these data has been found for MAD and SixTrack
+tracking data.</p>
+<p class="ltx_p ltx_align_center">Geneva, Switzerland</p>
+<p class="ltx_p ltx_align_center">February 22, 2018</p>
+</div>
+<h6>Contents:</h6>
+<ul class="ltx_toclist">
+<li class="ltx_tocentry"><a href="Ch1.html" title="Chapter 1 Introduction" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a></li>
+<li class="ltx_tocentry">
+<a href="Ch2.html" title="Chapter 2 Versions and Service" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Versions and Service</span></a>
+<ul class="ltx_toclist ltx_toc_chapter">
+<li class="ltx_tocentry"><a href="Ch2.html#S0.SS1" title="2.0.1 Evolution of SixTrack ‣ Chapter 2 Versions and Service" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.0.1 </span>Evolution of SixTrack</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry">
+<a href="Ch3.html" title="Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Input Structure</span></a>
+<ul class="ltx_toclist ltx_toc_chapter">
+<li class="ltx_tocentry">
+<a href="Ch3.html#S1" title="3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>General Input</span></a>
+<ul class="ltx_toclist ltx_toc_section">
+<li class="ltx_tocentry"><a href="Ch3.html#S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.1 </span>Program Version</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S1.SS2" title="3.1.2 Print Selection ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.2 </span>Print Selection</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S1.SS3" title="3.1.3 Comment Line ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.3 </span>Comment Line</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S1.SS4" title="3.1.4 Iteration Errors ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.4 </span>Iteration Errors</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S1.SS5" title="3.1.5 MAD – SixTrack Conversion ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1.5 </span>MAD – SixTrack Conversion</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry">
+<a href="Ch3.html#S2" title="3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Machine Geometry</span></a>
+<ul class="ltx_toclist ltx_toc_section">
+<li class="ltx_tocentry">
+<a href="Ch3.html#S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2.1 </span>Single Elements</span></a>
+<ul class="ltx_toclist ltx_toc_subsection">
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS1" title="Linear Elements ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Linear Elements</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS2" title="Nonlinear Elements ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Nonlinear Elements</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS3" title="Multipole Blocks ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Multipole Blocks</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS4" title="Cavities ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Cavities</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS5" title="Beam–Beam Lens ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Beam–Beam Lens</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS6" title="Wire ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Wire</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS7" title="“Phase–trombone” or matrix element ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">“Phase–trombone” or matrix element</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS8" title="AC dipole ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">AC dipole</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS9" title="Dipole edge ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Dipole edge</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS10" title="Crab Cavity ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Crab Cavity</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS11" title="RF multipole ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">RF multipole</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS12" title="Electron Lens ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Electron Lens</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS13" title="Scattering point ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Scattering point</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS14" title="Beam Position Monitor ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Beam Position Monitor</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS1.SSS15" title="Other element types ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title">Other element types</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2.2 </span>Block Definitions</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2.3 </span>Structure Input</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S2.SS4" title="3.2.4 Displacement of Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2.4 </span>Displacement of Elements</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry">
+<a href="Ch3.html#S3" title="3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>Special Elements</span></a>
+<ul class="ltx_toclist ltx_toc_section">
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.1 </span>Multipole Coefficients</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.2 </span>Aperture Limitations</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS3" title="3.3.3 Power Supply Ripple ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.3 </span>Power Supply Ripple</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS4" title="3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.4 </span>Dynamic Kicks</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.5 </span>Beam–Beam Element</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS6" title="3.3.6 Wire ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.6 </span>Wire</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS7" title="3.3.7 “Phase Trombone” Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.7 </span>“Phase Trombone” Element</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS8" title="3.3.8 Beam Distribution EXchange (BDEX) ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.8 </span>Beam Distribution EXchange (BDEX)</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS9" title="3.3.9 Electron lens ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.9 </span>Electron lens</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S3.SS10" title="3.3.10 Scattering ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3.10 </span>Scattering</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry">
+<a href="Ch3.html#S4" title="3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Organising Tasks</span></a>
+<ul class="ltx_toclist ltx_toc_section">
+<li class="ltx_tocentry"><a href="Ch3.html#S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.1 </span>Random Fluctuation Starting Number</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.2 </span>Organisation of Random Numbers</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4.3 </span>Combination of Elements</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry">
+<a href="Ch3.html#S5" title="3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>Processing</span></a>
+<ul class="ltx_toclist ltx_toc_section">
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.1 </span>Linear Optics Calculation</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS2" title="3.5.2 Tune Variation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.2 </span>Tune Variation</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS3" title="3.5.3 Chromaticity Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.3 </span>Chromaticity Correction</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.4 </span>Orbit Correction</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS5" title="3.5.5 Decoupling of Motion in the Transverse Planes ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.5 </span>Decoupling of Motion in the Transverse Planes</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS6" title="3.5.6 Sub–resonance Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.6 </span>Sub–resonance Calculation</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS7" title="3.5.7 Search for Optimum
+Places to Compensate Resonances ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.7 </span>Search for Optimum
+Places to Compensate Resonances</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS8" title="3.5.8 Resonance Compensation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.8 </span>Resonance Compensation</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.9 </span>Differential Algebra</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS10" title="3.5.10 Normal Forms ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.10 </span>Normal Forms</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS11" title="3.5.11 Corrections ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.11 </span>Corrections</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5.12 </span>Post–processing</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry">
+<a href="Ch3.html#S6" title="3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6 </span>Initial Conditions for Tracking</span></a>
+<ul class="ltx_toclist ltx_toc_section">
+<li class="ltx_tocentry"><a href="Ch3.html#S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6.1 </span>Tracking Parameters</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6.2 </span>Initial Coordinates</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6.3 </span>Synchrotron Oscillation</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry">
+<a href="Ch3.html#S7" title="3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.7 </span>Extra output files</span></a>
+<ul class="ltx_toclist ltx_toc_section">
+<li class="ltx_tocentry"><a href="Ch3.html#S7.SS1" title="3.7.1 Dumping of beam population ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.7.1 </span>Dumping of beam population</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S7.SS2" title="3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.7.2 </span>FMA analysis</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#S7.SS3" title="3.7.3 ZIPFile combined and compressed output ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.7.3 </span>ZIPFile combined and compressed output</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="ltx_tocentry"><a href="Chx1.html" title="Conclusions" class="ltx_ref"><span class="ltx_text ltx_ref_title">Conclusions</span></a></li>
+<li class="ltx_tocentry"><a href="Ch4.html" title="Chapter 4 Acknowledgement" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Acknowledgement</span></a></li>
+<li class="ltx_tocentry"><a href="A1.html" title="Appendix A List of Keywords" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">A </span>List of Keywords</span></a></li>
+<li class="ltx_tocentry">
+<a href="A2.html" title="Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B </span>List of Default Values</span></a>
+<ul class="ltx_toclist ltx_toc_appendix">
+<li class="ltx_tocentry"><a href="A2.html#S1" title="B.1 Default Tracking Parameters ‣ Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.1 </span>Default Tracking Parameters</span></a></li>
+<li class="ltx_tocentry"><a href="A2.html#S2" title="B.2 Default Size Parameters ‣ Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.2 </span>Default Size Parameters</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry"><a href="A3.html" title="Appendix C Input and Output Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C </span>Input and Output Files</span></a></li>
+<li class="ltx_tocentry"><a href="A4.html" title="Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D </span>Data Structure of the Data–Files</span></a></li>
+<li class="ltx_tocentry">
+<a href="A5.html" title="Appendix E Tracking Examples" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E </span>Tracking Examples</span></a>
+<ul class="ltx_toclist ltx_toc_appendix">
+<li class="ltx_tocentry"><a href="A5.html#S1" title="E.1 Input Example ‣ Appendix E Tracking Examples" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E.1 </span>Input Example</span></a></li>
+<li class="ltx_tocentry"><a href="A5.html#S2" title="E.2 Output Example ‣ Appendix E Tracking Examples" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E.2 </span>Output Example</span></a></li>
+<li class="ltx_tocentry"><a href="A5.html#S3" title="E.3 Plot Example ‣ Appendix E Tracking Examples" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">E.3 </span>Plot Example</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry"><a href="bib.html" title="Bibliography" class="ltx_ref"><span class="ltx_text ltx_ref_title">Bibliography</span></a></li>
+</ul>
+<h6>List of Tables:</h6>
+<ul class="ltx_toclist">
+<li class="ltx_tocentry"><a href="Ch2.html#T1" title="Table 2.1 ‣ Chapter 2 Versions and Service" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>External Routines</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T1" title="Table 3.1 ‣ Format ‣ 3.1.4 Iteration Errors ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Iteration Errors</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T2" title="Table 3.2 ‣ Format ‣ Linear Elements ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>Different Types of Linear Elements</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T3" title="Table 3.3 ‣ Format ‣ Nonlinear Elements ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>Different Types of Nonlinear Elements</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T4" title="Table 3.4 ‣ FUN ‣ Format ‣ 3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.4 </span>Available function types in DYNK.</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T5" title="Table 3.5 ‣ SET ‣ Format ‣ 3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.5 </span>Element types and attributes available in DYNK.</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T6" title="Table 3.6 ‣ Format ‣ 3.3.6 Wire ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.6 </span>Input parameters for WIRE block.</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T7" title="Table 3.7 ‣ Format ‣ 3.3.9 Electron lens ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.7 </span>Input parameters for ELEN block.</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T8" title="Table 3.8 ‣ Format ‣ 3.5.11 Corrections ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.8 </span>Tune-shift correction parameters</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T9" title="Table 3.9 ‣ Format ‣ 3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.9 </span>Initial Coordinates of the 2 Particles</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T10" title="Table 3.10 ‣ method ‣ Format of input block ‣ 3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.10 </span>Available tune calculation methods in SixTrack.</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T11" title="Table 3.11 ‣ Output file format ‣ 3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.11 </span>Format of the NORM files</span></a></li>
+<li class="ltx_tocentry"><a href="Ch3.html#T12" title="Table 3.12 ‣ Output file format ‣ 3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.12 </span>Format of the fma_sixtrack file</span></a></li>
+<li class="ltx_tocentry"><a href="A1.html#T1" title="Table A.1 ‣ Appendix A List of Keywords" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">
+          <span class="ltx_text" style="font-size:70%;">A.1</span>
+         </span>
+        <span class="ltx_text" style="font-size:70%;">List of Keywords</span></span></a></li>
+<li class="ltx_tocentry"><a href="A2.html#T1" title="Table B.1 ‣ B.1 Default Tracking Parameters ‣ Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.1 </span>Default Tracking Parameters</span></a></li>
+<li class="ltx_tocentry"><a href="A2.html#T2" title="Table B.2 ‣ B.2 Default Size Parameters ‣ Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.2 </span>Default Size Parameters</span></a></li>
+<li class="ltx_tocentry"><a href="A3.html#T1" title="Table C.1 ‣ Appendix C Input and Output Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.1 </span>List of Input and Output Files.</span></a></li>
+<li class="ltx_tocentry"><a href="A4.html#T1" title="Table D.1 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.1 </span>Header of the Binary Data–Files</span></a></li>
+<li class="ltx_tocentry"><a href="A4.html#T2" title="Table D.2 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.2 </span>Format of the Binary Data</span></a></li>
+<li class="ltx_tocentry"><a href="A4.html#T3" title="Table D.3 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">
+          <span class="ltx_text" style="font-size:90%;">D.3</span>
+         </span>
+        <span class="ltx_text" style="font-size:90%;">Post–processing Data</span></span></a></li>
+<li class="ltx_tocentry"><a href="A4.html#T4" title="Table D.4 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.4 </span>4D Linear Parameters</span></a></li>
+<li class="ltx_tocentry"><a href="A4.html#T5" title="Table D.5 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.5 </span>Format of file with external errors # 16 and internal errors
+written to # 9</span></a></li>
+<li class="ltx_tocentry"><a href="A4.html#T6" title="Table D.6 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.6 </span>Format of file # 34 for detuning and distortion calculation
+with external program “SODD” <cite class="ltx_cite">[<span class="ltx_ref">21</span>]</cite></span></a></li>
+</ul>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div>
+<a href="bib.html" title="Bibliography" class="ltx_ref" rel="bibliography"><span class="ltx_text ltx_ref_title">Bibliography</span></a><a href="Ch1.html" title="Chapter 1 Introduction" class="ltx_ref" rel="next"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Introduction</span></a>
+</div>
+<div class="ltx_page_logo">Generated  on Thu Feb 22 18:44:52 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
