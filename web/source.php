@@ -45,9 +45,7 @@
         <li><a href="https://github.com/SixTrack/SixTrack/releases">SixTrack Releases</a></li>
     </ul>
     <br>
-    <?php include_once("includes/aside_footer.php"); ?>
+    <?php include_once($incPath."/aside_footer.php"); ?>
 </aside>
 
-<?php
-    require_once("includes/footer.php");
-?>
+<?php require_once($incPath."/footer.php"); ?>

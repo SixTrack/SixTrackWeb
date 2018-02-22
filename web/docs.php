@@ -145,13 +145,7 @@
     </ul>
 </article>
 <aside>
-    <h2>Content</h2>
-    <ul>
-        <li>More Stuff</li>
-    </ul>
-    <?php include_once("includes/aside_footer.php"); ?>
+    <?php include_once($incPath."/aside_manual.php"); ?>
 </aside>
 
-<?php
-    require_once("includes/footer.php");
-?>
+<?php require_once($incPath."/footer.php"); ?>

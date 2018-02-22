@@ -15,4 +15,4 @@
     <li><b>Bug Reports:</b><br><a href="https://github.com/SixTrack/SixTrack/issues">GitHub Issues Tracker</a></li>
 </ul>
 <br>
-<a href="http://lhcathome.web.cern.ch/"><img src="images/lhcathome.jpg"></a>
+<a href="http://lhcathome.web.cern.ch/"><img src="/SixTrack/web/images/lhcathome.jpg"></a>
