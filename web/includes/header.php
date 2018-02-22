@@ -39,12 +39,10 @@
     <!-- Begin Content -->
     <nav id="main-menu">
         <ul>
-            <?php
-                echo "<li><a href='index.php'>Home</a></li>";
-                echo "<li><a href='download.php'>Download</a></li>";
-                echo "<li><a href='docs.php'>Documentation</a></li>";
-                echo "<li><a href='https://twiki.cern.ch/twiki/bin/view/LHCAtHome/SixTrack'>Developers' Wiki</a></li>";
-            ?>
+            <li><a href="index.php">Home</a></li><!--
+         --><li><a href="source.php">Source Code</a></li><!--
+         --><li><a href="docs.php">Documentation</a></li><!--
+         --><li><a href="https://twiki.cern.ch/twiki/bin/view/LHCAtHome/SixTrack">Developers' Wiki</a></li>
         </ul>
     </nav>
     

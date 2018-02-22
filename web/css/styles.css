@@ -129,7 +129,7 @@ a:hover {color: #0053a1; text-decoration: underline;}
     display: inline-block;
     color: #ffffff;
     font-weight: 700;
-    padding: 4px 8px;
+    padding: 4px 12px;
 }
 
 #main-menu ul li a {
@@ -182,6 +182,16 @@ a:hover {color: #0053a1; text-decoration: underline;}
  *  Content Styles
  */
 
+.code {
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid #999999;
+    background-color: #e7e7e7;
+    padding: 6px;
+    font-size: 13px;
+    width: 80%;
+}
+ 
 .no-bullet-list {
     list-style: none;
     margin: 0px;
@@ -190,6 +200,16 @@ a:hover {color: #0053a1; text-decoration: underline;}
 
 .no-bullet-list li {
     margin: 0px 0px 8px 0px;
+}
+
+.square-bullet-list {
+    list-style-image: url("/SixTrack/web/images/bullet.png");
+    margin: 8px 0px;
+    padding: 0px 0px 0px 18px;
+}
+
+.square-bullet-list li {
+    margin: 0px 4px;
 }
 
 /**
