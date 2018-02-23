@@ -38,7 +38,7 @@
     <p>Specific on going developements are hosted on the <a href="http://github.com/SixTrack">GitHub SixTrack page</a> and they will
         normally be merged with the official repository as soon as the code is stable.</p>
     <p>Please use the git merge functionality to keep your master branch in synch with the official repository.</p>
-    <p>For further details, see the <a href="/SixTrack/web/docs/build_full/manual.php">build manual</a>.</p>
+    <p>For further details, see the <a href="/SixTrack//docs/build_full/manual.php">build manual</a>.</p>
 </article>
 <aside>
     <h2>Quick Links</h2>
