@@ -15,8 +15,8 @@
     <img src="images/top.jpg" width="906">
     <p>SixTrack is a single particle 6D symplectic tracking code optimized for long term tracking in high energy rings. 
         It is mainly used for the LHC for dynamic aperture studies, tune optimization, and collimation studies.</p>
-    <p>The core of SixTrack is a single executable built from Fortran pre-processed sources. Links to executables and the source
-        code can be found on the <a href="downloads.php">downloads</a> pages.
+    <p>The core of SixTrack is a single executable built from Fortran pre-processed sources. Links to the source
+        code can be found on the <a href="source.php">source</a> page.
         The code is licensed under <a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html">LGPLv2.1</a> under the CERN
         copyright.</p>
     <p>Manual and reference papers are available on the <a href="docs.php">documentation</a> pages.</p>
