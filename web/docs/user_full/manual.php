@@ -1,6 +1,6 @@
 <?php
     $bMain  = true;
-    $sHead  = '<!--Generated on Thu Feb 22 22:14:53 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
+    $sHead  = '<!--Generated on Fri Feb 23 09:09:19 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-report.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
@@ -10,30 +10,30 @@
     require_once('../../includes/header.php');
 ?>
 <article id='manual' class='ltx_document'>
-<div id='generator'>Generated on Thu Feb 22 22:14:53 2018 by <a href='http://dlmf.nist.gov/LaTeXML/'>LaTeXML</a> (version 0.8.1)</div>
+<div id='generator'>Generated on Fri Feb 23 09:09:19 2018 by <a href='http://dlmf.nist.gov/LaTeXML/'>LaTeXML</a> (version 0.8.1)</div>
 <div class="ltx_titlepage">
 <p class="ltx_p ltx_align_center">EUROPEAN LABORATORY FOR PARTICLE PHYSICS</p>
 <p class="ltx_p ltx_align_center">CERN – SL Division</p>
 <p class="ltx_p ltx_align_right">CERN/SL/94–56 (AP)</p>
 <p class="ltx_p ltx_align_right">Update November 2017</p>
 <p class="ltx_p ltx_align_center">
-<span class="ltx_text ltx_font_bold" style="font-size:172%;">SixTrack<span class="ltx_text ltx_font_medium"></span></span>
-</p>
+      <span class="ltx_text ltx_font_bold" style="font-size:172%;">SixTrack<span class="ltx_text ltx_font_medium"></span></span>
+    </p>
 <p class="ltx_p ltx_align_center">
-<span class="ltx_text" style="font-size:172%;">Version 4.7.16</span>
-</p>
+      <span class="ltx_text" style="font-size:172%;">Version 4.7.16</span>
+    </p>
 <p class="ltx_p ltx_align_center">
-<span class="ltx_text" style="font-size:172%;">Single Particle Tracking Code Treating Transverse Motion with Synchrotron Oscillations in a Symplectic Manner</span>
-</p>
+      <span class="ltx_text" style="font-size:172%;">Single Particle Tracking Code Treating Transverse Motion with Synchrotron Oscillations in a Symplectic Manner</span>
+    </p>
 <p class="ltx_p ltx_align_center">
-<span class="ltx_text ltx_font_bold" style="font-size:172%;">User’s Reference Manual<span class="ltx_text ltx_font_medium"></span></span>
-</p>
+      <span class="ltx_text ltx_font_bold" style="font-size:172%;">User’s Reference Manual<span class="ltx_text ltx_font_medium"></span></span>
+    </p>
 <p class="ltx_p ltx_align_center">
-<span class="ltx_text ltx_font_italic">F. Schmidt, update by A. Alekou, M. Fitterer, J.F. Wagner, S.J. Wretborn, R. De Maria, S. Kostoglou, K. Sjobak and T. Persson</span>
-</p>
+      <span class="ltx_text ltx_font_italic">F. Schmidt, update by A. Alekou, M. Fitterer, J.F. Wagner, S.J. Wretborn, R. De Maria, S. Kostoglou, K. Sjobak and T. Persson</span>
+    </p>
 <p class="ltx_p ltx_align_center">
-<span class="ltx_text ltx_font_bold" style="font-size:120%;">Abstract<span class="ltx_text ltx_font_medium"></span></span>
-</p>
+      <span class="ltx_text ltx_font_bold" style="font-size:120%;">Abstract<span class="ltx_text ltx_font_medium"></span></span>
+    </p>
 <p class="ltx_p">The aim of SixTrack is to track two nearby particles taking into
 account the full six–dimensional phase space including synchrotron
 oscillations in a symplectic manner. It allows to predict the
@@ -58,7 +58,7 @@ G. Ripken <cite class="ltx_cite">[<a href="#bib.bib2" title="" class="ltx_ref">
 data and the format of these data has been found for MAD and SixTrack
 tracking data.</p>
 <p class="ltx_p ltx_align_center">Geneva, Switzerland</p>
-<p class="ltx_p ltx_align_center">February 22, 2018</p>
+<p class="ltx_p ltx_align_center">February 23, 2018</p>
 </div>
 <h6>Contents:</h6>
 <ul class="ltx_toclist">
@@ -208,18 +208,18 @@ Places to Compensate Resonances</span></a></li>
 <li class="ltx_tocentry"><a href="#Ch3.T11" title="Table 3.11 ‣ Output file format ‣ 3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.11 </span>Format of the NORM files</span></a></li>
 <li class="ltx_tocentry"><a href="#Ch3.T12" title="Table 3.12 ‣ Output file format ‣ 3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.12 </span>Format of the fma_sixtrack file</span></a></li>
 <li class="ltx_tocentry"><a href="#A1.T1" title="Table A.1 ‣ Appendix A List of Keywords" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">
-<span class="ltx_text" style="font-size:70%;">A.1</span>
-</span>
-<span class="ltx_text" style="font-size:70%;">List of Keywords</span></span></a></li>
+          <span class="ltx_text" style="font-size:70%;">A.1</span>
+         </span>
+        <span class="ltx_text" style="font-size:70%;">List of Keywords</span></span></a></li>
 <li class="ltx_tocentry"><a href="#A2.T1" title="Table B.1 ‣ B.1 Default Tracking Parameters ‣ Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.1 </span>Default Tracking Parameters</span></a></li>
 <li class="ltx_tocentry"><a href="#A2.T2" title="Table B.2 ‣ B.2 Default Size Parameters ‣ Appendix B List of Default Values" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">B.2 </span>Default Size Parameters</span></a></li>
 <li class="ltx_tocentry"><a href="#A3.T1" title="Table C.1 ‣ Appendix C Input and Output Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">C.1 </span>List of Input and Output Files.</span></a></li>
 <li class="ltx_tocentry"><a href="#A4.T1" title="Table D.1 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.1 </span>Header of the Binary Data–Files</span></a></li>
 <li class="ltx_tocentry"><a href="#A4.T2" title="Table D.2 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.2 </span>Format of the Binary Data</span></a></li>
 <li class="ltx_tocentry"><a href="#A4.T3" title="Table D.3 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">
-<span class="ltx_text" style="font-size:90%;">D.3</span>
-</span>
-<span class="ltx_text" style="font-size:90%;">Post–processing Data</span></span></a></li>
+          <span class="ltx_text" style="font-size:90%;">D.3</span>
+         </span>
+        <span class="ltx_text" style="font-size:90%;">Post–processing Data</span></span></a></li>
 <li class="ltx_tocentry"><a href="#A4.T4" title="Table D.4 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.4 </span>4D Linear Parameters</span></a></li>
 <li class="ltx_tocentry"><a href="#A4.T5" title="Table D.5 ‣ Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">D.5 </span>Format of file with external errors # 16 and internal errors
 written to # 9</span></a></li>
@@ -266,8 +266,8 @@ long–term dynamic aperture by evaluating the Lyapunov exponent.</p>
 <ul id="Ch1.I1.I1" class="ltx_itemize">
 <li id="Ch1.I1.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I1.i1.p1" class="ltx_para">
 <p class="ltx_p">calculation of the Lyapunov exponent
 </p>
@@ -275,32 +275,32 @@ long–term dynamic aperture by evaluating the Lyapunov exponent.</p>
 </li>
 <li id="Ch1.I1.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I1.i2.p1" class="ltx_para">
 <p class="ltx_p">calculation of the average phase advance per turn</p>
 </div>
 </li>
 <li id="Ch1.I1.I1.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I1.i3.p1" class="ltx_para">
 <p class="ltx_p">FFT analysis</p>
 </div>
 </li>
 <li id="Ch1.I1.I1.i4" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I1.i4.p1" class="ltx_para">
 <p class="ltx_p">resonance analysis</p>
 </div>
 </li>
 <li id="Ch1.I1.I1.i5" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I1.i5.p1" class="ltx_para">
 <p class="ltx_p">calculation of the average, maximum and minimum values of the
 Courant–Snyder emittance and the invariants of linearly coupled
@@ -309,16 +309,16 @@ motion</p>
 </li>
 <li id="Ch1.I1.I1.i6" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I1.i6.p1" class="ltx_para">
 <p class="ltx_p">calculation of smear</p>
 </div>
 </li>
 <li id="Ch1.I1.I1.i7" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I1.i7.p1" class="ltx_para">
 <p class="ltx_p">plotting using the CERN packages HBOOK, HPLOT and HIGZ
 <cite class="ltx_cite">[<a href="#bib.bib7" title="" class="ltx_ref">7</a>, <a href="#bib.bib8" title="" class="ltx_ref">8</a>, <a href="#bib.bib9" title="" class="ltx_ref">9</a>]</cite></p>
@@ -360,16 +360,16 @@ number of amplitudes, the different relative momentum deviations
 <ul id="Ch1.I1.I2" class="ltx_itemize">
 <li id="Ch1.I1.I2.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I2.i1.p1" class="ltx_para">
 <p class="ltx_p">free format input</p>
 </div>
 </li>
 <li id="Ch1.I1.I2.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I2.i2.p1" class="ltx_para">
 <p class="ltx_p">optimisation of the calculation of multipole kicks
 </p>
@@ -377,16 +377,16 @@ number of amplitudes, the different relative momentum deviations
 </li>
 <li id="Ch1.I1.I2.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I2.i3.p1" class="ltx_para">
 <p class="ltx_p">improved treatment of random errors</p>
 </div>
 </li>
 <li id="Ch1.I1.I2.i4" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                  <span class="ltx_text ltx_font_bold">–</span>
+                </span>
 <div id="Ch1.I1.I2.i4.p1" class="ltx_para">
 <p class="ltx_p">each binary data–file has a header describing the history of
 the run (Appendix <a href="#A4" title="Appendix D Data Structure of the Data–Files" class="ltx_ref"><span class="ltx_text ltx_ref_tag">D</span></a>)</p>
@@ -456,79 +456,79 @@ details.</p>
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+              <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+              <span class="ltx_text" style="font-size:70%;">
 </span>
-<span class="ltx_text ltx_font_bold" style="font-size:120%;">Package</span>
-</th>
+              <span class="ltx_text ltx_font_bold" style="font-size:120%;">Package</span>
+            </th>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:120%;">Routine</span>
-</td>
+              <span class="ltx_text ltx_font_bold" style="font-size:120%;">Routine</span>
+            </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:120%;">Purpose</span>
-</td>
+              <span class="ltx_text ltx_font_bold" style="font-size:120%;">Purpose</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> NAGLIB</span>
-</th>
+              <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+              <span class="ltx_text" style="font-size:70%;"> NAGLIB</span>
+            </th>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">E04UCF, E04UDM, E04UEF,
+              <span class="ltx_text" style="font-size:70%;">E04UCF, E04UDM, E04UEF,
 X04ABF</span>
-</td>
+            </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">using internally Normal
+              <span class="ltx_text" style="font-size:70%;">using internally Normal
 Forms</span>
-</td>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+              <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+              <span class="ltx_text" style="font-size:70%;">
 HBOOK</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">HBOOK2, HDELET, HLIMIT, HTITLE</span>
-</td>
+              <span class="ltx_text" style="font-size:70%;">HBOOK2, HDELET, HLIMIT, HTITLE</span>
+            </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">graphic basics</span>
-</td>
+              <span class="ltx_text" style="font-size:70%;">graphic basics</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+              <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+              <span class="ltx_text" style="font-size:70%;">
 HPLOT</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">HPLAX, HPLCAP, HPLEND, HPLINT,</span>
-</td>
+              <span class="ltx_text" style="font-size:70%;">HPLAX, HPLCAP, HPLEND, HPLINT,</span>
+            </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">graphic options</span>
-</td>
+              <span class="ltx_text" style="font-size:70%;">graphic options</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_left ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
-</th>
+              <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+            </th>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">HPLOPT, HPLSET, HPLSIZ, HPLSOF</span>
-</td>
+              <span class="ltx_text" style="font-size:70%;">HPLOPT, HPLSET, HPLSIZ, HPLSOF</span>
+            </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_left ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+              <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-10.7pt;background:black;display:inline-block;"></span>
+              <span class="ltx_text" style="font-size:70%;">
 HIGZ</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_left ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">IGMETA, ISELNT, IPM, IPL</span>
-</td>
+              <span class="ltx_text" style="font-size:70%;">IGMETA, ISELNT, IPM, IPL</span>
+            </td>
 <td class="ltx_td ltx_align_left ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">graphic output</span>
-</td>
+              <span class="ltx_text" style="font-size:70%;">graphic output</span>
+            </td>
 </tr>
 </tbody>
 </table>
@@ -793,59 +793,59 @@ been added to avoid artificial crashes for special machines.</p>
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">data</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">data</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">integer</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">integer</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">double</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">double</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">default</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">default</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">number of</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">number of</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">demanded</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">demanded</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variations
+                    <span class="ltx_text" style="font-size:70%;">variations
 of</span>
-</td>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">line</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">line</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">value</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">value</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">iterations for</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">iterations for</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">precision of</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">precision of</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ITCO</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">ITCO</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">50</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">50</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">closed orbit</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">closed orbit</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
@@ -855,8 +855,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">calculation</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">calculation</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
@@ -864,15 +864,15 @@ of</span>
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DMA</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DMA</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-12</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-12</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">closed orbit</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">closed orbit</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
@@ -882,23 +882,23 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">displacements</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">displacements</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DMAP</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DMAP</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-15</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-15</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">derivative</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">derivative</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
@@ -908,8 +908,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">of closed orbit</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">of closed orbit</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
@@ -919,24 +919,24 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">displacements</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">displacements</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">2</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">2</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ITQV</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">ITQV</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">10</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">10</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Q adjustment</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">Q adjustment</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
@@ -944,16 +944,16 @@ of</span>
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DKQ</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DKQ</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-10</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-10</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">quadrupole</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">quadrupole</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -963,38 +963,38 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">strengths</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">strengths</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DQQ</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DQQ</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-10</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-10</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">tunes</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">tunes</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">3</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">3</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ITCRO</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">ITCRO</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">10</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">10</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">chromaticity</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">chromaticity</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
@@ -1004,8 +1004,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">correction</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">correction</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
@@ -1013,16 +1013,16 @@ of</span>
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DSM0</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DSM0</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-10</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-10</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">sextupole</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">sextupole</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -1032,22 +1032,22 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">strengths</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">strengths</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DECH</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DECH</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-10</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-10</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">chromaticity</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">chromaticity</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
@@ -1057,26 +1057,26 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">correction</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">correction</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">4</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">4</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DE0</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DE0</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-9</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-9</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">momentum spread</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">momentum spread</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -1086,8 +1086,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">for chromaticity</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">for chromaticity</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -1097,23 +1097,23 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">calculation</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">calculation</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DED</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DED</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-9</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-9</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">momentum spread</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">momentum spread</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -1123,8 +1123,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">for evaluation</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">for evaluation</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -1134,70 +1134,22 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">of dispersion</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">of dispersion</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DSI</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">DSI</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1e-9</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1e-9</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">desired orbit</span>
-</td>
-<td class="ltx_td ltx_border_r ltx_border_t"></td>
-</tr>
-<tr class="ltx_tr">
-<td class="ltx_td ltx_border_l ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">r.m.s. value;</span>
-</td>
-<td class="ltx_td ltx_border_r"></td>
-</tr>
-<tr class="ltx_tr">
-<td class="ltx_td ltx_border_l ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">compensation of</span>
-</td>
-<td class="ltx_td ltx_border_r"></td>
-</tr>
-<tr class="ltx_tr">
-<td class="ltx_td ltx_border_l ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">resonance width</span>
-</td>
-<td class="ltx_td ltx_border_r"></td>
-</tr>
-<tr class="ltx_tr">
-<td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
-<td class="ltx_td ltx_border_r ltx_border_t"></td>
-<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">APER(1)</span>
-</td>
-<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1000[mm]</span>
-</td>
-<td class="ltx_td ltx_border_r ltx_border_t"></td>
-<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">horizontal</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">desired orbit</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
@@ -1207,8 +1159,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">aperture</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">r.m.s. value;</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
@@ -1218,8 +1170,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">limit</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">compensation of</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
@@ -1228,22 +1180,24 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
-<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_left ltx_border_r">
+                    <span class="ltx_text" style="font-size:70%;">resonance width</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">APER(2)</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">APER(1)</span>
+                  </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1000[mm]</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">1000[mm]</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">vertical</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">horizontal</span>
+                  </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
@@ -1253,8 +1207,8 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">aperture</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">aperture</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
@@ -1264,8 +1218,54 @@ of</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">limit</span>
-</td>
+                    <span class="ltx_text" style="font-size:70%;">limit</span>
+                  </td>
+<td class="ltx_td ltx_border_r"></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_border_l ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
+                    <span class="ltx_text" style="font-size:70%;">APER(2)</span>
+                  </td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
+                    <span class="ltx_text" style="font-size:70%;">1000[mm]</span>
+                  </td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
+                    <span class="ltx_text" style="font-size:70%;">vertical</span>
+                  </td>
+<td class="ltx_td ltx_border_r ltx_border_t"></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_border_l ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_left ltx_border_r">
+                    <span class="ltx_text" style="font-size:70%;">aperture</span>
+                  </td>
+<td class="ltx_td ltx_border_r"></td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_border_l ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_border_r"></td>
+<td class="ltx_td ltx_align_left ltx_border_r">
+                    <span class="ltx_text" style="font-size:70%;">limit</span>
+                  </td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
@@ -1370,8 +1370,8 @@ focusing and a nonzero length.</p>
 </div>
 </dd>
 <dt id="Ch3.I2.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I2.ix3.m1" class="ltx_Math" alttext="\varrho^{-1}" display="inline"><msup><mi>ϱ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>
-</span></dt>
+                    <math id="Ch3.I2.ix3.m1" class="ltx_Math" alttext="\varrho^{-1}" display="inline"><msup><mi>ϱ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I2.ix3.p1" class="ltx_para">
 <p class="ltx_p">Inverse bending radius in <math id="Ch3.I2.ix3.p1.m1" class="ltx_Math" alttext="\mathrm{m}^{-1}" display="inline"><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math></p>
@@ -1397,145 +1397,145 @@ focusing and a nonzero length.</p>
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">type</span>
-</th>
+                      <span class="ltx_text" style="font-size:70%;">type</span>
+                    </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="Ch3.T2.m1" class="ltx_Math" alttext="\varrho^{-1}" display="inline"><msup><mi>ϱ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>
-</th>
+                      <math id="Ch3.T2.m1" class="ltx_Math" alttext="\varrho^{-1}" display="inline"><msup><mi>ϱ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></math>
+                    </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="Ch3.T2.m2" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math>
-</th>
+                      <math id="Ch3.T2.m2" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math>
+                    </th>
 <th class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">description</span>
-</th>
+                      <span class="ltx_text" style="font-size:70%;">description</span>
+                    </th>
 </tr>
 </thead>
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">drift length magnet</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">drift length magnet</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">1</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">horizontal (rectangular) bending</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">horizontal (rectangular) bending</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">2</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">2</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">quadrupole (– focusing, + defocusing)</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">quadrupole (– focusing, + defocusing)</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">3</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">3</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">horizontal (sector) bending</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">horizontal (sector) bending</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">4</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">4</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">vertical (rectangular) bending</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">vertical (rectangular) bending</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">5</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">5</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">vertical (sector) bending</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">vertical (sector) bending</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">6</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">6</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">horizontal combined function magnet</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">horizontal combined function magnet</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">7</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">7</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">vertical combined function magnet</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">vertical combined function magnet</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">8</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">8</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">X</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">X</span>
+                    </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">0</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">edge focusing</span>
-</td>
+                      <span class="ltx_text" style="font-size:70%;">edge focusing</span>
+                    </td>
 </tr>
 </tbody>
 </table>
@@ -1649,29 +1649,29 @@ instance</td>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">1</td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<math id="Ch3.T3.m1" class="ltx_Math" alttext="b_{1}[\mathrm{rad}\cdot\mathrm{m}^{0}]" display="inline"><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM1"><mi>rad</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mn>0</mn></msup></mrow><mo stretchy="false">]</mo></mrow></mrow></math>
-</td>
+                      <math id="Ch3.T3.m1" class="ltx_Math" alttext="b_{1}[\mathrm{rad}\cdot\mathrm{m}^{0}]" display="inline"><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM1"><mi>rad</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mn>0</mn></msup></mrow><mo stretchy="false">]</mo></mrow></mrow></math>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">horizontal bending kick</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r">–1</td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<math id="Ch3.T3.m2" class="ltx_Math" alttext="a_{1}" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math>
-</td>
+                      <math id="Ch3.T3.m2" class="ltx_Math" alttext="a_{1}" display="inline"><msub><mi>a</mi><mn>1</mn></msub></math>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">vertical bending kick</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">2</td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<math id="Ch3.T3.m3" class="ltx_Math" alttext="b_{2}[\mathrm{rad}\cdot\mathrm{m}^{-1}]" display="inline"><mrow><msub><mi>b</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM2"><mi>rad</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">]</mo></mrow></mrow></math>
-</td>
+                      <math id="Ch3.T3.m3" class="ltx_Math" alttext="b_{2}[\mathrm{rad}\cdot\mathrm{m}^{-1}]" display="inline"><mrow><msub><mi>b</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM2"><mi>rad</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">]</mo></mrow></mrow></math>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">normal quadrupole kick</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r">–2</td>
 <td class="ltx_td ltx_align_left ltx_border_r">
-<math id="Ch3.T3.m4" class="ltx_Math" alttext="a_{2}" display="inline"><msub><mi>a</mi><mn>2</mn></msub></math>
-</td>
+                      <math id="Ch3.T3.m4" class="ltx_Math" alttext="a_{2}" display="inline"><msub><mi>a</mi><mn>2</mn></msub></math>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r">skew quadrupole kick</td>
 </tr>
 <tr class="ltx_tr">
@@ -1682,15 +1682,15 @@ instance</td>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">10</td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<math id="Ch3.T3.m5" class="ltx_Math" alttext="b_{10}[\mathrm{rad}\cdot\mathrm{m}^{-9}]" display="inline"><mrow><msub><mi>b</mi><mn>10</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM3"><mi>rad</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow><mo stretchy="false">]</mo></mrow></mrow></math>
-</td>
+                      <math id="Ch3.T3.m5" class="ltx_Math" alttext="b_{10}[\mathrm{rad}\cdot\mathrm{m}^{-9}]" display="inline"><mrow><msub><mi>b</mi><mn>10</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM3"><mi>rad</mi><mo>⋅</mo><msup><mi mathvariant="normal">m</mi><mrow><mo>-</mo><mn>9</mn></mrow></msup></mrow><mo stretchy="false">]</mo></mrow></mrow></math>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">normal <math id="Ch3.T3.m6" class="ltx_Math" alttext="20^{th}" display="inline"><msup><mn>20</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math> pole</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_b ltx_border_l ltx_border_r">–10</td>
 <td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">
-<math id="Ch3.T3.m7" class="ltx_Math" alttext="a_{10}" display="inline"><msub><mi>a</mi><mn>10</mn></msub></math>
-</td>
+                      <math id="Ch3.T3.m7" class="ltx_Math" alttext="a_{10}" display="inline"><msub><mi>a</mi><mn>10</mn></msub></math>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">skew <math id="Ch3.T3.m8" class="ltx_Math" alttext="20^{th}" display="inline"><msup><mn>20</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math> pole</td>
 </tr>
 </tbody>
@@ -1719,16 +1719,16 @@ follows:</p>
 <ul id="Ch3.I5.I1" class="ltx_itemize">
 <li id="Ch3.I5.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                          <span class="ltx_text ltx_font_bold">–</span>
+                        </span>
 <div id="Ch3.I5.I1.i1.p1" class="ltx_para">
 <p class="ltx_p">for normal elements <math id="Ch3.I5.I1.i1.p1.m1" class="ltx_Math" alttext="b_{n}(\mathrm{SixTrack})=\frac{-1}{(n-1)!}L_{element}b_{n}(\mathrm{MAD})" display="inline"><mrow><mrow><msub><mi>b</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM6">SixTrack</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mrow><mo>-</mo><mn>1</mn></mrow><mrow><mrow><mo stretchy="false">(</mo><mrow id="XM5"><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0pt" rspace="3.5pt">!</mo></mrow></mfrac><mo>⁢</mo><msub><mi>L</mi><mrow><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow></msub><mo>⁢</mo><msub><mi>b</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM7">MAD</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></p>
 </div>
 </li>
 <li id="Ch3.I5.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                          <span class="ltx_text ltx_font_bold">–</span>
+                        </span>
 <div id="Ch3.I5.I1.i2.p1" class="ltx_para">
 <p class="ltx_p">for skew elements <math id="Ch3.I5.I1.i2.p1.m1" class="ltx_Math" alttext="a_{n}(\mathrm{SixTrack})=\frac{1}{(n-1)!}L_{element}a_{n}(\mathrm{MAD})" display="inline"><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM9">SixTrack</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mrow><mrow><mo stretchy="false">(</mo><mrow id="XM8"><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0pt" rspace="3.5pt">!</mo></mrow></mfrac><mo>⁢</mo><msub><mi>L</mi><mrow><mi>e</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>t</mi></mrow></msub><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM10">MAD</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></p>
 </div>
@@ -1851,16 +1851,16 @@ of a multipole block ( <a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficient
 <ul id="Ch3.I6.I2.I1" class="ltx_itemize">
 <li id="Ch3.I6.I2.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">*</span>
-</span>
+                                <span class="ltx_text ltx_font_bold">*</span>
+                              </span>
 <div id="Ch3.I6.I2.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">length = -1</span> : horizontal dipole</p>
 </div>
 </li>
 <li id="Ch3.I6.I2.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">*</span>
-</span>
+                                <span class="ltx_text ltx_font_bold">*</span>
+                              </span>
 <div id="Ch3.I6.I2.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">length = -2</span> : vertical dipole</p>
 </div>
@@ -2003,24 +2003,24 @@ close by) kicks.</p>
 </div>
 </dd>
 <dt id="Ch3.I9.ix6" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I9.ix6.m1" class="ltx_Math" alttext="{\sigma\_\rm{hor}}^{2}" display="inline"><mrow><mi>σ</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>hor</mi><mn>2</mn></msup></mrow></math>
-</span></dt>
+                    <math id="Ch3.I9.ix6.m1" class="ltx_Math" alttext="{\sigma\_\rm{hor}}^{2}" display="inline"><mrow><mi>σ</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>hor</mi><mn>2</mn></msup></mrow></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I9.ix6.p1" class="ltx_para">
 <p class="ltx_p">when the flag <math id="Ch3.I9.ix6.p1.m1" class="ltx_Math" alttext="lhc=2" display="inline"><mrow><mrow><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>c</mi></mrow><mo>=</mo><mn>2</mn></mrow></math> is set in the BEAM block of the fort.3 file, this column represent the horizontal <math id="Ch3.I9.ix6.p1.m2" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> for the strong beam <math id="Ch3.I9.ix6.p1.m3" class="ltx_Math" alttext="\rm{[mm^{2}]}" display="inline"><mrow><mo stretchy="false">[</mo><msup id="XM11"><mi>mm</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></math></p>
 </div>
 </dd>
 <dt id="Ch3.I9.ix7" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I9.ix7.m1" class="ltx_Math" alttext="{\sigma\_\rm{ver}}^{2}" display="inline"><mrow><mi>σ</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>ver</mi><mn>2</mn></msup></mrow></math>
-</span></dt>
+                    <math id="Ch3.I9.ix7.m1" class="ltx_Math" alttext="{\sigma\_\rm{ver}}^{2}" display="inline"><mrow><mi>σ</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>ver</mi><mn>2</mn></msup></mrow></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I9.ix7.p1" class="ltx_para">
 <p class="ltx_p">when the flag <math id="Ch3.I9.ix7.p1.m1" class="ltx_Math" alttext="lhc=2" display="inline"><mrow><mrow><mi>l</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><mi>c</mi></mrow><mo>=</mo><mn>2</mn></mrow></math> is set in the BEAM block of the fort.3 file, this column represent the vertical <math id="Ch3.I9.ix7.p1.m2" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> for the strong beam <math id="Ch3.I9.ix7.p1.m3" class="ltx_Math" alttext="\rm{[mm^{2}]}" display="inline"><mrow><mo stretchy="false">[</mo><msup id="XM12"><mi>mm</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></math></p>
 </div>
 </dd>
 <dt id="Ch3.I9.ix8" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I9.ix8.m1" class="ltx_Math" alttext="{\sigma\_\rm{lon}}^{2}" display="inline"><mrow><mi>σ</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>lon</mi><mn>2</mn></msup></mrow></math>
-</span></dt>
+                    <math id="Ch3.I9.ix8.m1" class="ltx_Math" alttext="{\sigma\_\rm{lon}}^{2}" display="inline"><mrow><mi>σ</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><msup><mi>lon</mi><mn>2</mn></msup></mrow></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I9.ix8.p1" class="ltx_para">
 <p class="ltx_p">this variable is for future purposes, at the present it is always equal to zero.</p>
@@ -2168,16 +2168,16 @@ deflection angle.</p>
 </div>
 </dd>
 <dt id="Ch3.I13.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I13.ix3.m1" class="ltx_Math" alttext="r_{21}" display="inline"><msub><mi>r</mi><mn>21</mn></msub></math>
-</span></dt>
+                    <math id="Ch3.I13.ix3.m1" class="ltx_Math" alttext="r_{21}" display="inline"><msub><mi>r</mi><mn>21</mn></msub></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I13.ix3.p1" class="ltx_para">
 <p class="ltx_p">Horizontal edge focusing.</p>
 </div>
 </dd>
 <dt id="Ch3.I13.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I13.ix4.m1" class="ltx_Math" alttext="r_{43}" display="inline"><msub><mi>r</mi><mn>43</mn></msub></math>
-</span></dt>
+                    <math id="Ch3.I13.ix4.m1" class="ltx_Math" alttext="r_{43}" display="inline"><msub><mi>r</mi><mn>43</mn></msub></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I13.ix4.p1" class="ltx_para">
 <p class="ltx_p">Vertical edge focusing.</p>
@@ -2190,16 +2190,16 @@ deflection angle.</p>
 <tr id="Ch3.E1" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.E1.m1" class="ltx_Math" alttext="\displaystyle x^{\prime}_{2}=x^{\prime}_{1}+x_{1}\frac{r_{21}}{1+\delta}" display="inline"><mrow><msubsup><mi>x</mi><mn>2</mn><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>x</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msub><mi>r</mi><mn>21</mn></msub><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></math>
-</td>
+                                <math id="Ch3.E1.m1" class="ltx_Math" alttext="\displaystyle x^{\prime}_{2}=x^{\prime}_{1}+x_{1}\frac{r_{21}}{1+\delta}" display="inline"><mrow><msubsup><mi>x</mi><mn>2</mn><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>x</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msub><mi>r</mi><mn>21</mn></msub><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></math>
+                              </td>
 <td class="ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(3.1)</span></td>
 </tr>
 <tr id="Ch3.E2" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.E2.m1" class="ltx_Math" alttext="\displaystyle y^{\prime}_{2}=y^{\prime}_{1}+y_{1}\frac{r_{43}}{1+\delta}" display="inline"><mrow><msubsup><mi>y</mi><mn>2</mn><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>y</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msub><mi>r</mi><mn>43</mn></msub><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></math>
-</td>
+                                <math id="Ch3.E2.m1" class="ltx_Math" alttext="\displaystyle y^{\prime}_{2}=y^{\prime}_{1}+y_{1}\frac{r_{43}}{1+\delta}" display="inline"><mrow><msubsup><mi>y</mi><mn>2</mn><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>y</mi><mn>1</mn><mo>′</mo></msubsup><mo>+</mo><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msub><mi>r</mi><mn>43</mn></msub><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></math>
+                              </td>
 <td class="ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(3.2)</span></td>
 </tr>
@@ -2276,23 +2276,23 @@ As an example, to have the effect of a vertical Crab Cavity of <math id="Ch3.S2.
 <tr id="Ch3.E3" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.E3.m1" class="ltx_Math" alttext="\displaystyle\Delta x^{\prime}+i\Delta y^{\prime}=" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow></mrow><mo>=</mo><mi></mi></mrow></math>
-</td>
+                      <math id="Ch3.E3.m1" class="ltx_Math" alttext="\displaystyle\Delta x^{\prime}+i\Delta y^{\prime}=" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>x</mi><mo>′</mo></msup></mrow><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi mathvariant="normal">Δ</mi><mo>⁢</mo><msup><mi>y</mi><mo>′</mo></msup></mrow></mrow><mo>=</mo><mi></mi></mrow></math>
+                    </td>
 <td class="ltx_td ltx_align_left">
-<math id="Ch3.E3.m2" class="ltx_Math" alttext="\displaystyle\frac{k}{1+\delta}(x+iy)^{n}\cos(\phi-2\pi ft)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mi>k</mi><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow id="XM22"><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mrow><mi id="XM23">cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow id="XM24"><mi>ϕ</mi><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>
-</td>
+                      <math id="Ch3.E3.m2" class="ltx_Math" alttext="\displaystyle\frac{k}{1+\delta}(x+iy)^{n}\cos(\phi-2\pi ft)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mi>k</mi><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac></mstyle><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow id="XM22"><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>⁢</mo><mrow><mi id="XM23">cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow id="XM24"><mi>ϕ</mi><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>
+                    </td>
 <td class="ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(3.3)</span></td>
 </tr>
 <tr id="Ch3.E4" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.E4.m1" class="ltx_Math" alttext="\displaystyle\Delta\delta=" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>δ</mi></mrow><mo>=</mo><mi></mi></mrow></math>
-</td>
+                      <math id="Ch3.E4.m1" class="ltx_Math" alttext="\displaystyle\Delta\delta=" display="inline"><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>δ</mi></mrow><mo>=</mo><mi></mi></mrow></math>
+                    </td>
 <td class="ltx_td ltx_align_left">
-<math id="Ch3.E4.m2" class="ltx_Math" alttext="\displaystyle P_{0}\frac{k}{1+\delta}\frac{(x+iy)^{n+1}}{(n+1)!}\cos(\phi-2\pi
+                      <math id="Ch3.E4.m2" class="ltx_Math" alttext="\displaystyle P_{0}\frac{k}{1+\delta}\frac{(x+iy)^{n+1}}{(n+1)!}\cos(\phi-2\pi
 ft)" display="inline"><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mi>k</mi><mrow><mn>1</mn><mo>+</mo><mi>δ</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow id="XM29"><mi>x</mi><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mrow><mo stretchy="false">(</mo><mrow id="XM30"><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0pt" rspace="3.5pt">!</mo></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mi id="XM31">cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow id="XM32"><mi>ϕ</mi><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mi>t</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>
-</td>
+                    </td>
 <td class="ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(3.4)</span></td>
 </tr>
@@ -2865,8 +2865,8 @@ of single elements ( <a href="#Ch3.S2.SS1.SSS3" title="Multipole Blocks ‣ 3.2
 </div>
 </dd>
 <dt id="Ch3.I27.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I27.ix2.m1" class="ltx_Math" alttext="R_{0}" display="inline"><msub><mi>R</mi><mn>0</mn></msub></math>
-</span></dt>
+                  <math id="Ch3.I27.ix2.m1" class="ltx_Math" alttext="R_{0}" display="inline"><msub><mi>R</mi><mn>0</mn></msub></math>
+                </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I27.ix2.p1" class="ltx_para">
 <p class="ltx_p">Reference radius (in mm) at which the magnet errors
@@ -2875,8 +2875,8 @@ measurements.</p>
 </div>
 </dd>
 <dt id="Ch3.I27.ix3" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I27.ix3.m1" class="ltx_Math" alttext="\delta_{0}" display="inline"><msub><mi>δ</mi><mn>0</mn></msub></math>
-</span></dt>
+                  <math id="Ch3.I27.ix3.m1" class="ltx_Math" alttext="\delta_{0}" display="inline"><msub><mi>δ</mi><mn>0</mn></msub></math>
+                </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I27.ix3.p1" class="ltx_para">
 <p class="ltx_p">Bending strength of the dipole (in mrad). Field
@@ -3145,15 +3145,15 @@ Function names have a maximum length of 20 characters.</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr" style="background-color:#B3B3FF;">
 <th class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">
+                    <span class="ltx_text" style="background-color:#B3B3FF;">
 Type name</span>
-</th>
+                  </th>
 <th class="ltx_td ltx_align_justify ltx_border_t" style="width:113.8pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">Arguments</span>
-</th>
+                    <span class="ltx_text" style="background-color:#B3B3FF;">Arguments</span>
+                  </th>
 <th class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:270.3pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
-</th>
+                    <span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
+                  </th>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;"></th>
@@ -3162,39 +3162,39 @@ Type name</span>
 </tr>
 <tr class="ltx_tr" style="background-color:#D9D9FF;">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#D9D9FF;">
+                    <span class="ltx_text" style="background-color:#D9D9FF;">
 “System” functions</span>
-</td>
+                  </td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">GET</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">element-name[string] attribute-name[string]</em>
-</td>
+                    <em class="ltx_emph">element-name[string] attribute-name[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Extracts the original value of a setting, i.e. as specified in the SINGLE ELEMENT section (Sec. <a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>). Attributes as used for SET, see Table <a href="#Ch3.T5" title="Table 3.5 ‣ SET ‣ Format ‣ 3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a>.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">FILE</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">filename[string]</em>
-</td>
+                    <em class="ltx_emph">filename[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Loads the settings from file; the file is expected to be an ascii file with two columns where the first column is the turn number (should start at 1 and include all turns up to as long as is wanted), and the second column is the value for that turn number.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">FILELIN</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">filename[string]</em>
-</td>
+                    <em class="ltx_emph">filename[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Similar to FILE, but any double can be used as the turn number as long as they are monotonically rising.
 When evaluated, the function interpolates from the line-segments specified in the file.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">PIPE</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">inPipeName[string] outPipeName[string] ID[string] fileUnit[int]</em>
-</td>
+                    <em class="ltx_emph">inPipeName[string] outPipeName[string] ID[string] fileUnit[int]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Uses a pair of UNIX FIFOs, through which it can communicate with an external program.
 When evaluated, it sends a message through the outpipe, and then waits for a message on the inpipe which should contain the value the FUN should returned.
 The ID is used in case several DYNK PIPE FUNs are using the same outPipe and inPipe, so that the controlling external program can choose what to calculate.
@@ -3205,8 +3205,8 @@ Also note that PIPE is not available in the checkpoint/restart version of SixTra
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">RANDG</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">seed1[int] seed2[int] mu[real] sigma[real] mcut[int]</em>
-</td>
+                    <em class="ltx_emph">seed1[int] seed2[int] mu[real] sigma[real] mcut[int]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns a pseudorandom number generated from a Gaussian distribution.
 The mean value and width is controlled by <em class="ltx_emph">mu</em> and <em class="ltx_emph">sigma</em>, while <em class="ltx_emph">mcut</em> is the maximum number of sigmas to generate numbers up to; set to 0 to disable this cut.
 The integers <em class="ltx_emph">seed1</em> and <em class="ltx_emph">seed2</em> are the seed used to initialize the RANECU generator.
@@ -3215,8 +3215,8 @@ Note that every RANDG function defined in DYNK uses its own separate random numb
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">RANDU</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">seed1[int] seed2[int]</em>
-</td>
+                    <em class="ltx_emph">seed1[int] seed2[int]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns a pseudorandom number generated from a uniform distribution.
 The integers <em class="ltx_emph">seed1</em> and <em class="ltx_emph">seed2</em> are the seed used to initialize the RANECU generator.
 Note that every RANDU function defined in DYNK uses its own separate random number stream.</td>
@@ -3224,25 +3224,25 @@ Note that every RANDU function defined in DYNK uses its own separate random numb
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">RANDON</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">seed1[int] seed2[int] P[float]</em>
-</td>
+                    <em class="ltx_emph">seed1[int] seed2[int] P[float]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the value of 1.0 or 0.0 resulting of the weighting with the probability <em class="ltx_emph">P</em> of a pseudorandom number generated from a uniform distribution .
 The integers <em class="ltx_emph">seed1</em> and <em class="ltx_emph">seed2</em> are the seed used to initialize the RANECU generator.
 Note that every RANDON function defined in DYNK uses its own separate random number stream.</td>
 </tr>
 <tr class="ltx_tr" style="background-color:#D9D9FF;">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#D9D9FF;">
+                    <span class="ltx_text" style="background-color:#D9D9FF;">
 Filters</span>
-</td>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_t" style="width:113.8pt;"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:270.3pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">FIR</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">N[int] filename[string] baseFun[string]</em>
-</td>
+                    <em class="ltx_emph">N[int] filename[string] baseFun[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Applies a Finite Impulse Response (FIR) filter of order <em class="ltx_emph">N</em> to the function <em class="ltx_emph">baseFun</em>.
 The output is given as <math id="Ch3.T4.m1" class="ltx_Math" alttext="y[t]=\sum_{i=0}^{N}b_{i}*x[t-i]" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi id="XM53">t</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>N</mi></msubsup><mrow><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>*</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM54"><mi>t</mi><mo>-</mo><mi>i</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></math>, where <math id="Ch3.T4.m2" class="ltx_Math" alttext="t" display="inline"><mi>t</mi></math> is the current turn and <math id="Ch3.T4.m3" class="ltx_Math" alttext="x[t-0]" display="inline"><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM55"><mi>t</mi><mo>-</mo><mn>0</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></math> is the result of the most recent call to <em class="ltx_emph">baseFun</em>.
 The coefficients <math id="Ch3.T4.m4" class="ltx_Math" alttext="b_{0}\ldots b_{N}" display="inline"><mrow><msub><mi>b</mi><mn>0</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>b</mi><mi>N</mi></msub></mrow></math> and initial values of <math id="Ch3.T4.m5" class="ltx_Math" alttext="x[t-0]\ldots x[t-N]" display="inline"><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM56"><mi>t</mi><mo>-</mo><mn>0</mn></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM57"><mi>t</mi><mo>-</mo><mi>N</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></math> are loaded from the given file <em class="ltx_emph">filename</em>, which is a space-separated ascii file with three columns.
@@ -3255,8 +3255,8 @@ This means that the last value in the <math id="Ch3.T4.m13" class="ltx_Math" alt
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">IIR</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">N[int] filename[string] baseFun[string]</em>
-</td>
+                    <em class="ltx_emph">N[int] filename[string] baseFun[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Applies an Infinite Impulse Response (IIR) filter of order <em class="ltx_emph">N</em> to the function <em class="ltx_emph">baseFun</em>.
 This is very similar to FIR, except that it also uses its own previous outputs.
 The sum is thus written as <math id="Ch3.T4.m16" class="ltx_Math" alttext="y[t]=\sum_{i=0}^{N}b_{i}*x[t-i]+\sum_{i=1}^{N}a_{i}*y[t-i]" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi id="XM60">t</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mi>N</mi></msubsup><mrow><mrow><msub><mi>b</mi><mi>i</mi></msub><mo>*</mo><mi>x</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM61"><mi>t</mi><mo>-</mo><mi>i</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>+</mo><mrow><msubsup><mo largeop="true" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><mrow><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>*</mo><mi>y</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow id="XM62"><mi>t</mi><mo>-</mo><mi>i</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></mrow></mrow></math>.
@@ -3266,117 +3266,117 @@ Note that <math id="Ch3.T4.m19" class="ltx_Math" alttext="a_{0}" display="inline
 </tr>
 <tr class="ltx_tr" style="background-color:#D9D9FF;">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#D9D9FF;">
+                    <span class="ltx_text" style="background-color:#D9D9FF;">
 2-operand operators</span>
-</td>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_t" style="width:113.8pt;"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:270.3pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">ADD</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
-</td>
+                    <em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Evaluate the functions referenced by <em class="ltx_emph">function-name-1</em> and <em class="ltx_emph">function-name-2</em>, and return the sum of the results.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">SUB</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
-</td>
+                    <em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Similar to ADD, but return the result of function1 minus function2.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">MUL</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
-</td>
+                    <em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Similar to ADD, but return the product of the results.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">DIV</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
-</td>
+                    <em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Similar to ADD, but return the result of function1 divided by function2</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">POW</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
-</td>
+                    <em class="ltx_emph">function-name-1[string] function-name-2[string]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Similar to ADD, but return the result of function1 raised to the power of function2.</td>
 </tr>
 <tr class="ltx_tr" style="background-color:#D9D9FF;">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#D9D9FF;">
+                    <span class="ltx_text" style="background-color:#D9D9FF;">
 1-operand operators</span>
-</td>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_t" style="width:113.8pt;"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:270.3pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">MINUS</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name</em>
-</td>
+                    <em class="ltx_emph">function-name</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the value of the named function, with the oposite sign.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">SQRT</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name</em>
-</td>
+                    <em class="ltx_emph">function-name</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the square root of the value generated by the named function.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">SIN</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name</em>
-</td>
+                    <em class="ltx_emph">function-name</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the sine of the value generated by the named function.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">COS</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name</em>
-</td>
+                    <em class="ltx_emph">function-name</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the cosine of the value generated by the named function.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">LOG</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name</em>
-</td>
+                    <em class="ltx_emph">function-name</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the natural logarithm of the value generated by the named function.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">LOG10</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name</em>
-</td>
+                    <em class="ltx_emph">function-name</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the common logarithm of the value generated by the named function.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">EXP</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">function-name</em>
-</td>
+                    <em class="ltx_emph">function-name</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Returns the natural exponential function <math id="Ch3.T4.m23" class="ltx_Math" alttext="e^{x}" display="inline"><msup><mi>e</mi><mi>x</mi></msup></math>, where <math id="Ch3.T4.m24" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> is the value generated by the named function.</td>
 </tr>
 <tr class="ltx_tr" style="background-color:#D9D9FF;">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#D9D9FF;">
+                    <span class="ltx_text" style="background-color:#D9D9FF;">
 Polynomial and elliptical functions</span>
-</td>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_t" style="width:113.8pt;"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:270.3pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">CONST</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">value[real]</em>
-</td>
+                    <em class="ltx_emph">value[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Always returns the value specified.</td>
 </tr>
 <tr class="ltx_tr">
@@ -3387,76 +3387,76 @@ Polynomial and elliptical functions</span>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">LIN</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">a[real] b[real]</em>
-</td>
+                    <em class="ltx_emph">a[real] b[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Computed value from the linear function <math id="Ch3.T4.m26" class="ltx_Math" alttext="y(t)=a\cdot t+b" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM67">t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><mo>+</mo><mi>b</mi></mrow></mrow></math>.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">LINSEG</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">x1[real] x2[real] y1[real] y2[real]</em>
-</td>
+                    <em class="ltx_emph">x1[real] x2[real] y1[real] y2[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">The function is defined by a line segment between the points <math id="Ch3.T4.m27" class="ltx_Math" alttext="(x_{1},y_{1})" display="inline"><mrow><mo stretchy="false">(</mo><msub id="XM68"><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub id="XM69"><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></math> and <math id="Ch3.T4.m28" class="ltx_Math" alttext="(x_{2},y_{2})" display="inline"><mrow><mo stretchy="false">(</mo><msub id="XM70"><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub id="XM71"><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></math>, and undefined for <math id="Ch3.T4.m29" class="ltx_Math" alttext="x&lt;x_{1}" display="inline"><mrow><mi>x</mi><mo>&lt;</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></math> and <math id="Ch3.T4.m30" class="ltx_Math" alttext="x&gt;x_{2}" display="inline"><mrow><mi>x</mi><mo>&gt;</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></math>.
 It is required that <math id="Ch3.T4.m31" class="ltx_Math" alttext="x_{1}&lt;x_{2}" display="inline"><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></math>.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">QUAD</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">a[real] b[real] c[real]</em>
-</td>
+                    <em class="ltx_emph">a[real] b[real] c[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Computed value from the quadratic function <math id="Ch3.T4.m32" class="ltx_Math" alttext="y(t)=a\cdot t^{2}+b\cdot t+c" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM72">t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⋅</mo><mi>t</mi></mrow><mo>+</mo><mi>c</mi></mrow></mrow></math>.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">QUADSEG</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">x1[real] x2[real] y1[real] y2[real] deriv1[real]</em>
-</td>
+                    <em class="ltx_emph">x1[real] x2[real] y1[real] y2[real] deriv1[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">The quadratic function is defined by overlapping the quadratic curve segment which passes through the points <math id="Ch3.T4.m33" class="ltx_Math" alttext="(x_{1},y_{1})" display="inline"><mrow><mo stretchy="false">(</mo><msub id="XM73"><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub id="XM74"><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></math> and <math id="Ch3.T4.m34" class="ltx_Math" alttext="(x_{2},y_{2})" display="inline"><mrow><mo stretchy="false">(</mo><msub id="XM75"><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub id="XM76"><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></math>, and <math id="Ch3.T4.m35" class="ltx_Math" alttext="\mathrm{d}y/\mathrm{d}x" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mi mathvariant="normal">d</mi></mrow><mo>⁢</mo><mi>x</mi></mrow></math> at <math id="Ch3.T4.m36" class="ltx_Math" alttext="x_{1}" display="inline"><msub><mi>x</mi><mn>1</mn></msub></math> is <em class="ltx_emph">deriv1</em>.
 The quadratic coefficients <math id="Ch3.T4.m37" class="ltx_Math" alttext="a,b,c" display="inline"><mrow><mi id="XM77">a</mi><mo>,</mo><mi id="XM78">b</mi><mo>,</mo><mi id="XM79">c</mi></mrow></math> are calculated as <math id="Ch3.T4.m38" class="ltx_Math" alttext="a=\frac{\emph{deriv1}}{x_{1}-x_{2}}+\frac{y_{2}-y_{1}}{(x_{1}-x_{2})^{2}}" display="inline"><mrow><mi>a</mi><mo>=</mo><mrow><mfrac><mtext><em class="ltx_emph">deriv1</em></mtext><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>-</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><msup><mrow><mo stretchy="false">(</mo><mrow id="XM80"><msub><mi>x</mi><mn>1</mn></msub><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></mrow></math>, <math id="Ch3.T4.m39" class="ltx_Math" alttext="b=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}-(x_{1}+x_{2})\cdot a" display="inline"><mrow><mi>b</mi><mo>=</mo><mrow><mfrac><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>-</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>-</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow id="XM81"><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⋅</mo><mi>a</mi></mrow></mrow></mrow></math> and <math id="Ch3.T4.m40" class="ltx_Math" alttext="c=y_{1}+\left(-x_{1}^{2}\cdot a-x_{1}\cdot b\right)" display="inline"><mrow><mi>c</mi><mo>=</mo><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mrow><mo>(</mo><mrow id="XM82"><mrow><mo>-</mo><mrow><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup><mo>⋅</mo><mi>a</mi></mrow></mrow><mo>-</mo><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>⋅</mo><mi>b</mi></mrow></mrow><mo>)</mo></mrow></mrow></mrow></math>.</td>
 </tr>
 <tr class="ltx_tr" style="background-color:#D9D9FF;">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#D9D9FF;">
+                    <span class="ltx_text" style="background-color:#D9D9FF;">
 Trancendental functions</span>
-</td>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_t" style="width:113.8pt;"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:270.3pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">SINF</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">A[real] omega[real] phi[real]</em>
-</td>
+                    <em class="ltx_emph">A[real] omega[real] phi[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Computes <math id="Ch3.T4.m41" class="ltx_Math" alttext="y(t)=A\sin\left(\omega t+\phi\right)" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM83">t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mi id="XM84">sin</mi><mo>⁡</mo><mrow><mo>(</mo><mrow id="XM85"><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">COSF</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">A[real] omega[real] phi[real]</em>
-</td>
+                    <em class="ltx_emph">A[real] omega[real] phi[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Computes <math id="Ch3.T4.m42" class="ltx_Math" alttext="y(t)=A\cos\left(\omega t+\phi\right)" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM86">t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mi id="XM87">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow id="XM88"><mrow><mi>ω</mi><mo>⁢</mo><mi>t</mi></mrow><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">COSF_RIPP</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">A[real] period[real] phi[real]</em>
-</td>
+                    <em class="ltx_emph">A[real] period[real] phi[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">Computes <math id="Ch3.T4.m43" class="ltx_Math" alttext="y(t)=A\cos\left(\frac{2\pi(t-1)}{\mathrm{period}}+\phi\right)" display="inline"><mrow><mrow><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM90">t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>A</mi><mo>⁢</mo><mrow><mi id="XM91">cos</mi><mo>⁡</mo><mrow><mo>(</mo><mrow id="XM92"><mfrac><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow id="XM89"><mi>t</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mi>period</mi></mfrac><mo>+</mo><mi>ϕ</mi></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>.
 This specialized cosine is provided for compatibility, to be used when replacing old <em class="ltx_emph">RIPP</em> blocks.</td>
 </tr>
 <tr class="ltx_tr" style="background-color:#D9D9FF;">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#D9D9FF;">
+                    <span class="ltx_text" style="background-color:#D9D9FF;">
 Specialized functions</span>
-</td>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_t" style="width:113.8pt;"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:270.3pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">PELP</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">tinj[real] Iinj[real] Inom[real] A[real] D[real] R[real] te[real]</em>
-</td>
+                    <em class="ltx_emph">tinj[real] Iinj[real] Inom[real] A[real] D[real] R[real] te[real]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">This function describes a patched “Parabolic-Exponential-Linear-Parabolic” function, as used for ramping the LHC dipoles and described in <cite class="ltx_cite">[<a href="#bib.bib38" title="" class="ltx_ref">38</a>, Appendix C]</cite> and <cite class="ltx_cite">[<a href="#bib.bib39" title="" class="ltx_ref">39</a>]</cite>.
 The parameters are:
 <ul id="Ch3.I31" class="ltx_itemize">
@@ -3508,8 +3508,8 @@ The parameters are:
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">ONOFF</td>
 <td class="ltx_td ltx_align_justify" style="width:113.8pt;">
-<em class="ltx_emph">p1[int] p2[int]</em>
-</td>
+                    <em class="ltx_emph">p1[int] p2[int]</em>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:270.3pt;">This function is a periodic “pulse width modulation” with period p2 and pulse length p1.
 It may be described as
 <math id="Ch3.T4.m44" class="ltx_Math" alttext="y(t)=\left\{1.0\;\mathrm{if}\;\mathrm{mod}(t-1,p2)&lt;p1\right\};\;\left\{0.0\;%
@@ -3554,18 +3554,18 @@ Because of this, SixTrack does not accept a real single element in <span class="
 <tbody class="ltx_tbody">
 <tr class="ltx_tr" style="background-color:#B3B3FF;">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="background-color:#B3B3FF;">
+                      <span class="ltx_text" style="background-color:#B3B3FF;">
 Element type (idx)</span>
-</td>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text" style="background-color:#B3B3FF;">Attribute</span>
-</td>
+                      <span class="ltx_text" style="background-color:#B3B3FF;">Attribute</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text" style="background-color:#B3B3FF;">Units</span>
-</td>
+                      <span class="ltx_text" style="background-color:#B3B3FF;">Units</span>
+                    </td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
-</td>
+                      <span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
+                    </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
@@ -3575,10 +3575,10 @@ Element type (idx)</span>
 <span class="ltx_p">Section <a href="#Ch3.S2.SS1.SSS2" title="Nonlinear Elements ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a></span>
 <span class="ltx_p">[-3mm]</span>
 </span>
-</td>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text ltx_font_typewriter">average_ms</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">average_ms</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">radians * m<sup class="ltx_sup">-n</sup>
 </td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">See Table <a href="#Ch3.T3" title="Table 3.3 ‣ Format ‣ Nonlinear Elements ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>
@@ -3590,24 +3590,24 @@ Element type (idx)</span>
 <span class="ltx_p">RF cavities (<math id="Ch3.T5.m3" class="ltx_Math" alttext="\pm" display="inline"><mo>±</mo></math>12),</span>
 <span class="ltx_p">Section <a href="#Ch3.S2.SS1.SSS4" title="Cavities ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a></span>
 </span>
-</td>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text ltx_font_typewriter">voltage</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">voltage</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">MV</td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">One-turn accelerating voltage</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left">
-<span class="ltx_text ltx_font_typewriter">harmonic</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">harmonic</span>
+                    </td>
 <td class="ltx_td ltx_align_left">–</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">Harmonic number of the cavity</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left">
-<span class="ltx_text ltx_font_typewriter">lag_angle</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">lag_angle</span>
+                    </td>
 <td class="ltx_td ltx_align_left">degrees</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">Lag angle of the cavity</td>
 </tr>
@@ -3618,24 +3618,24 @@ Element type (idx)</span>
 <span class="ltx_p">(<math id="Ch3.T5.m4" class="ltx_Math" alttext="\pm" display="inline"><mo>±</mo></math>23, <math id="Ch3.T5.m5" class="ltx_Math" alttext="\pm" display="inline"><mo>±</mo></math>26 – <math id="Ch3.T5.m6" class="ltx_Math" alttext="\pm" display="inline"><mo>±</mo></math>28),</span>
 <span class="ltx_p">Section <a href="#Ch3.S2.SS1.SSS10" title="Crab Cavity ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a></span>
 </span>
-</td>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text ltx_font_typewriter">voltage</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">voltage</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">MV</td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">Kick voltage</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left">
-<span class="ltx_text ltx_font_typewriter">frequency</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">frequency</span>
+                    </td>
 <td class="ltx_td ltx_align_left">MHz</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">Frequency</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_left">
-<span class="ltx_text ltx_font_typewriter">phase</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">phase</span>
+                    </td>
 <td class="ltx_td ltx_align_left">radians</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:170.7pt;">Offset between zero-crossing and ideal bunch center</td>
 </tr>
@@ -3646,10 +3646,10 @@ Element type (idx)</span>
 <span class="ltx_p">(29),</span>
 <span class="ltx_p">Section <a href="#Ch3.S3.SS9" title="3.3.9 Electron lens ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.9</span></a></span>
 </span>
-</td>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text ltx_font_typewriter">thetamax</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">thetamax</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">mrad</td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">Maximum angular kick</td>
 </tr>
@@ -3672,8 +3672,8 @@ Element type (idx)</span>
 </span>
 </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text ltx_font_typewriter">scaling</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">scaling</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">–</td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">Scaling of probability, see Section <a href="#Ch3.S3.SS10" title="3.3.10 Scattering ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.10</span></a>, paragraph about ELEM command.</td>
 </tr>
@@ -3694,10 +3694,10 @@ Element type (idx)</span>
 <span class="ltx_p">Not a real element,</span>
 <span class="ltx_p">changes global variable</span>
 </span>
-</td>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">
-<span class="ltx_text ltx_font_typewriter">E0</span>
-</td>
+                      <span class="ltx_text ltx_font_typewriter">E0</span>
+                    </td>
 <td class="ltx_td ltx_align_left ltx_border_t">MeV</td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:170.7pt;">Reference energy of synchronous particle</td>
 </tr>
@@ -3752,9 +3752,9 @@ The FUN type COSF_RIPP is provided for exactly this purpose, and provides an exa
 As an example, the RIPP block in the SixTest test-case prob1 looks like (slightly reduced in size):</p>
 <pre class="ltx_verbatim ltx_font_typewriter">
 RIPPLE OF POWER SUPPLIES------------------------------------------------
-dmqx1f50l5+2      3.2315D-10    224.9
-dmqx2af50l5+2    -3.2315D-10    224.9
-dmqx1f10mel5+2    2.5246D-16    0.0011245
+         dmqx1f50l5+2      3.2315D-10    224.9
+         dmqx2af50l5+2    -3.2315D-10    224.9
+         dmqx1f10mel5+2    2.5246D-16    0.0011245
 NEXT
 </pre>
 <p class="ltx_p">This can be replaced by the following:</p>
@@ -4144,16 +4144,16 @@ ibtyp lhc ibbc</span></p>
 </div>
 </dd>
 <dt id="Ch3.I36.ix4" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I36.ix4.m1" class="ltx_Math" alttext="\Sigma_{xx}" display="inline"><msub><mi mathvariant="normal">Σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math>
-</span></dt>
+                    <math id="Ch3.I36.ix4.m1" class="ltx_Math" alttext="\Sigma_{xx}" display="inline"><msub><mi mathvariant="normal">Σ</mi><mrow><mi>x</mi><mo>⁢</mo><mi>x</mi></mrow></msub></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I36.ix4.p1" class="ltx_para">
 <p class="ltx_p">Horizontal <math id="Ch3.I36.ix4.p1.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> for the strong beam <math id="Ch3.I36.ix4.p1.m2" class="ltx_Math" alttext="\rm{[mm^{2}]}" display="inline"><mrow><mo stretchy="false">[</mo><msup id="XM153"><mi>mm</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></math>.</p>
 </div>
 </dd>
 <dt id="Ch3.I36.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I36.ix5.m1" class="ltx_Math" alttext="\Sigma_{yy}" display="inline"><msub><mi mathvariant="normal">Σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>y</mi></mrow></msub></math>
-</span></dt>
+                    <math id="Ch3.I36.ix5.m1" class="ltx_Math" alttext="\Sigma_{yy}" display="inline"><msub><mi mathvariant="normal">Σ</mi><mrow><mi>y</mi><mo>⁢</mo><mi>y</mi></mrow></msub></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I36.ix5.p1" class="ltx_para">
 <p class="ltx_p">Vorizontal <math id="Ch3.I36.ix5.p1.m1" class="ltx_Math" alttext="\sigma" display="inline"><mi>σ</mi></math> for the strong beam <math id="Ch3.I36.ix5.p1.m2" class="ltx_Math" alttext="\rm{[mm^{2}]}" display="inline"><mrow><mo stretchy="false">[</mo><msup id="XM154"><mi>mm</mi><mn>2</mn></msup><mo stretchy="false">]</mo></mrow></math>.</p>
@@ -4179,8 +4179,8 @@ This is useful to allow for splitting one beam–beam kick into several (longitu
 </div>
 </dd>
 <dt id="Ch3.I36.ix9" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I36.ix9.m1" class="ltx_Math" alttext="\Sigma_{i,j}" display="inline"><msub><mi mathvariant="normal">Σ</mi><mrow><mi id="XM155">i</mi><mo>,</mo><mi id="XM156">j</mi></mrow></msub></math>
-</span></dt>
+                    <math id="Ch3.I36.ix9.m1" class="ltx_Math" alttext="\Sigma_{i,j}" display="inline"><msub><mi mathvariant="normal">Σ</mi><mrow><mi id="XM155">i</mi><mo>,</mo><mi id="XM156">j</mi></mrow></msub></math>
+                  </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I36.ix9.p1" class="ltx_para">
 <p class="ltx_p">Second order momenta matrix for the strong beam, in units of mm and mrad.
@@ -4225,15 +4225,15 @@ for the separation and crossing angle variables.
 <tr id="Ch3.Ex5" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex5.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}_{i}=x_{i}+sep_{x}-CO_{x}" display="inline"><mrow><msub><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>x</mi></msub></mrow></mrow><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>x</mi></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex5.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}_{i}=x_{i}+sep_{x}-CO_{x}" display="inline"><mrow><msub><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>x</mi></msub></mrow></mrow><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>x</mi></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 <tr id="Ch3.Ex6" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex6.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}_{i}=y_{i}+sep_{y}-CO_{y}" display="inline"><mrow><msub><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>+</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>y</mi></msub></mrow></mrow><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>y</mi></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex6.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}_{i}=y_{i}+sep_{y}-CO_{y}" display="inline"><mrow><msub><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>+</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>y</mi></msub></mrow></mrow><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>y</mi></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 </table>
@@ -4266,15 +4266,15 @@ for the separation and crossing angle variables.
 <tr id="Ch3.Ex7" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex7.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}_{i}=x_{i}-sep_{x}+CO_{x}" display="inline"><mrow><msub><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>x</mi></msub></mrow></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>x</mi></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex7.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}_{i}=x_{i}-sep_{x}+CO_{x}" display="inline"><mrow><msub><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>-</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>x</mi></msub></mrow></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>x</mi></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 <tr id="Ch3.Ex8" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex8.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}_{i}=y_{i}-sep_{y}+CO_{y}" display="inline"><mrow><msub><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>-</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>y</mi></msub></mrow></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>y</mi></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex8.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}_{i}=y_{i}-sep_{y}+CO_{y}" display="inline"><mrow><msub><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi></msub><mo>=</mo><mrow><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>-</mo><mrow><mi>s</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><msub><mi>p</mi><mi>y</mi></msub></mrow></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><mi>y</mi></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 </table>
@@ -4299,15 +4299,15 @@ for the separation and crossing angle variables.
 <tr id="Ch3.Ex9" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex9.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}^{\prime}_{i}=x^{\prime}_{i}-CO_{x^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>x</mi><mi>i</mi><mo>′</mo></msubsup><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>x</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex9.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}^{\prime}_{i}=x^{\prime}_{i}-CO_{x^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>x</mi><mi>i</mi><mo>′</mo></msubsup><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>x</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 <tr id="Ch3.Ex10" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex10.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}^{\prime}_{i}=y^{\prime}_{i}-CO_{y^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>y</mi><mi>i</mi><mo>′</mo></msubsup><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>y</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex10.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}^{\prime}_{i}=y^{\prime}_{i}-CO_{y^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>y</mi><mi>i</mi><mo>′</mo></msubsup><mo>-</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>y</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 </table>
@@ -4340,15 +4340,15 @@ for the separation and crossing angle variables.
 <tr id="Ch3.Ex11" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex11.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}^{\prime}_{i}=x^{\prime}_{i}+CO_{x^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>x</mi><mi>i</mi><mo>′</mo></msubsup><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>x</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex11.m1" class="ltx_Math" alttext="\displaystyle\tilde{x}^{\prime}_{i}=x^{\prime}_{i}+CO_{x^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>x</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>x</mi><mi>i</mi><mo>′</mo></msubsup><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>x</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 <tr id="Ch3.Ex12" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.Ex12.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}^{\prime}_{i}=y^{\prime}_{i}+CO_{y^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>y</mi><mi>i</mi><mo>′</mo></msubsup><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>y</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
-</td>
+                                  <math id="Ch3.Ex12.m1" class="ltx_Math" alttext="\displaystyle\tilde{y}^{\prime}_{i}=y^{\prime}_{i}+CO_{y^{\prime}}" display="inline"><mrow><msubsup><mover accent="true"><mi>y</mi><mo stretchy="false">~</mo></mover><mi>i</mi><mo>′</mo></msubsup><mo>=</mo><mrow><msubsup><mi>y</mi><mi>i</mi><mo>′</mo></msubsup><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msub><mi>O</mi><msup><mi>y</mi><mo>′</mo></msup></msub></mrow></mrow></mrow></math>
+                                </td>
 <td class="ltx_eqn_center_padright"></td>
 </tr>
 </table>
@@ -4398,15 +4398,15 @@ A description of the input parameters for the wire is given in Table <span clas
 <table class="ltx_tabular">
 <tr class="ltx_tr" style="background-color:#B3B3FF;">
 <th class="ltx_td ltx_align_justify ltx_border_l ltx_border_t" style="width:56.9pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">
+                  <span class="ltx_text" style="background-color:#B3B3FF;">
 Arguments</span>
-</th>
+                </th>
 <th class="ltx_td ltx_align_justify ltx_border_t" style="width:28.5pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">unit</span>
-</th>
+                  <span class="ltx_text" style="background-color:#B3B3FF;">unit</span>
+                </th>
 <th class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:261.8pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
-</th>
+                  <span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
+                </th>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_justify ltx_border_l ltx_border_t" style="width:56.9pt;"></th>
@@ -4415,64 +4415,64 @@ Arguments</span>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_t" style="width:56.9pt;">
-<em class="ltx_emph">name</em>
-</td>
+                  <em class="ltx_emph">name</em>
+                </td>
 <td class="ltx_td ltx_align_justify ltx_border_t" style="width:28.5pt;">-</td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:261.8pt;">Name of wire. Must be the same as in list of single elements.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">flag_co</em>
-</td>
+                  <em class="ltx_emph">flag_co</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">-</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">flag to define the displacement of the wire in respect to the closed orbit or x=y=0. For <em class="ltx_emph">flag_co</em>=+1 <em class="ltx_emph">disp_*</em> is the distance between x=y=0 and the wire. For <em class="ltx_emph">flag_co</em>=-1 <em class="ltx_emph">disp_*</em> is the distance between the closed orbit and the wire.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">current</em>
-</td>
+                  <em class="ltx_emph">current</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">A</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">wire current</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">int_length</em>
-</td>
+                  <em class="ltx_emph">int_length</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">m</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">integrated length of the wire</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">phys_length</em>
-</td>
+                  <em class="ltx_emph">phys_length</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">m</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">physical length of the wire</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">disp_x</em>
-</td>
+                  <em class="ltx_emph">disp_x</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">mm</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">hor. displacement of the wire</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">disp_y</em>
-</td>
+                  <em class="ltx_emph">disp_y</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">mm</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">vert. displacement of the wire</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">tilt_x</em>
-</td>
+                  <em class="ltx_emph">tilt_x</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">degrees</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">hor. tilt of the wire <math id="Ch3.T6.m1" class="ltx_Math" alttext="-90&lt;tilt\_x&lt;90" display="inline"><mrow><mrow><mo>-</mo><mn>90</mn></mrow><mo>&lt;</mo><mrow><mi>t</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>x</mi></mrow><mo>&lt;</mo><mn>90</mn></mrow></math> (uses same defintion as DISP block)</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l" style="width:56.9pt;">
-<em class="ltx_emph">tilt_y</em>
-</td>
+                  <em class="ltx_emph">tilt_y</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">degrees</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:261.8pt;">vert. tilt of the wire <math id="Ch3.T6.m2" class="ltx_Math" alttext="-90&lt;tilt\_y&lt;90" display="inline"><mrow><mrow><mo>-</mo><mn>90</mn></mrow><mo>&lt;</mo><mrow><mi>t</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>l</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mi mathvariant="normal">_</mi><mo>⁢</mo><mi>y</mi></mrow><mo>&lt;</mo><mn>90</mn></mrow></math> (uses same defintion as DISP block)</td>
 </tr>
@@ -4756,18 +4756,18 @@ A description of the input parameters for the different e-lens types is given in
 <table class="ltx_tabular">
 <tr class="ltx_tr" style="background-color:#B3B3FF;">
 <th class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">
+                  <span class="ltx_text" style="background-color:#B3B3FF;">
 Type name</span>
-</th>
+                </th>
 <th class="ltx_td ltx_align_justify ltx_border_t" style="width:56.9pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">Arguments</span>
-</th>
+                  <span class="ltx_text" style="background-color:#B3B3FF;">Arguments</span>
+                </th>
 <th class="ltx_td ltx_align_justify ltx_border_t" style="width:28.5pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">unit</span>
-</th>
+                  <span class="ltx_text" style="background-color:#B3B3FF;">unit</span>
+                </th>
 <th class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:256.1pt;">
-<span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
-</th>
+                  <span class="ltx_text" style="background-color:#B3B3FF;">Description</span>
+                </th>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:64.0pt;"></th>
@@ -4781,16 +4781,16 @@ Type name</span>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">name</em>
-</td>
+                  <em class="ltx_emph">name</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">-</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">Name of e-lens. Must be the same as in list of single elements.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">type</em>
-</td>
+                  <em class="ltx_emph">type</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">-</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">type of electron lens. Available types are ANNULAR.</td>
 </tr>
@@ -4800,56 +4800,56 @@ Type name</span>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;">ANNULAR</td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">thetamax</em>
-</td>
+                  <em class="ltx_emph">thetamax</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">mrad</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">Maximum kick. This equals the kick received at <math id="Ch3.T7.m1" class="ltx_Math" alttext="r=r_{2}" display="inline"><mrow><mi>r</mi><mo>=</mo><msub><mi>r</mi><mn>2</mn></msub></mrow></math> where <math id="Ch3.T7.m2" class="ltx_Math" alttext="r_{2}" display="inline"><msub><mi>r</mi><mn>2</mn></msub></math> is the outer radius of the electron lens.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">r2</em>
-</td>
+                  <em class="ltx_emph">r2</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">mm</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">Outer radius of e-lens.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">r2ovr1</em>
-</td>
+                  <em class="ltx_emph">r2ovr1</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">-</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">Outer radius/inner radius.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">offset_x</em>
-</td>
+                  <em class="ltx_emph">offset_x</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">mm</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">horizontal offset of e-lens.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">offset_y</em>
-</td>
+                  <em class="ltx_emph">offset_y</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">mm</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">vertical offset of e-lens.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">flag_entrance</em>
-</td>
+                  <em class="ltx_emph">flag_entrance</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">-</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">enable bends at entrance of e-lens.</td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:64.0pt;"></td>
 <td class="ltx_td ltx_align_justify" style="width:56.9pt;">
-<em class="ltx_emph">flag_exit</em>
-</td>
+                  <em class="ltx_emph">flag_exit</em>
+                </td>
 <td class="ltx_td ltx_align_justify" style="width:28.5pt;">-</td>
 <td class="ltx_td ltx_align_justify ltx_border_r" style="width:256.1pt;">enable bends at exit of e-lens (not yet implemented).</td>
 </tr>
@@ -4895,9 +4895,9 @@ NEXT
 SINGLE ELEMENTS---------------------------------------------------------
 ...
 hel1            29   0.000000000e+00   0.000000000e+00
-0.000000000e+00    0.000000000e+00    0.000000000e+00    0.000000000e+00
+   0.000000000e+00    0.000000000e+00    0.000000000e+00    0.000000000e+00
 hel2            29   0.000000000e+00   0.000000000e+00
-0.000000000e+00    0.000000000e+00    0.000000000e+00    0.000000000e+00
+   0.000000000e+00    0.000000000e+00    0.000000000e+00    0.000000000e+00
 ...
 STRUCTURE INPUT---------------------------------------------------------
 ...
@@ -4980,10 +4980,10 @@ Several different types are available:</p>
 <tr id="Ch3.E5" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.E5.m1" class="ltx_Math" alttext="\displaystyle\rho(x,y)=\frac{N_{\mathrm{tot}}}{2\pi\sigma_{x}\sigma_{y}}\exp%
+                              <math id="Ch3.E5.m1" class="ltx_Math" alttext="\displaystyle\rho(x,y)=\frac{N_{\mathrm{tot}}}{2\pi\sigma_{x}\sigma_{y}}\exp%
 \left(-\frac{(x-\mu_{x})^{2}}{2\sigma_{x}^{2}}\right)\exp\left(-\frac{(y-\mu_{%
 y})^{2}}{2\sigma_{y}^{2}}\right)" display="inline"><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM170">x</mi><mo>,</mo><mi id="XM171">y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><msub><mi>N</mi><mi>tot</mi></msub><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi><mo>⁢</mo><msub><mi>σ</mi><mi>x</mi></msub><mo>⁢</mo><msub><mi>σ</mi><mi>y</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mi id="XM172">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow id="XM173"><mo>-</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow id="XM168"><mi>x</mi><mo>-</mo><msub><mi>μ</mi><mi>x</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><msubsup><mi>σ</mi><mi>x</mi><mn>2</mn></msubsup></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow><mo>⁢</mo><mrow><mi id="XM174">exp</mi><mo>⁡</mo><mrow><mo>(</mo><mrow id="XM175"><mo>-</mo><mstyle displaystyle="true"><mfrac><msup><mrow><mo stretchy="false">(</mo><mrow id="XM169"><mi>y</mi><mo>-</mo><msub><mi>μ</mi><mi>y</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><mo>⁢</mo><msubsup><mi>σ</mi><mi>y</mi><mn>2</mn></msubsup></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow></mrow></mrow></mrow></math>
-</td>
+                            </td>
 <td class="ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(3.5)</span></td>
 </tr>
@@ -5009,9 +5009,9 @@ generator type.</p>
 <tr id="Ch3.E6" class="ltx_equation ltx_align_baseline">
 <td class="ltx_eqn_center_padleft"></td>
 <td class="ltx_td ltx_align_right">
-<math id="Ch3.E6.m1" class="ltx_Math" alttext="\displaystyle g(t)=\frac{1}{a_{1}^{2}}\frac{d\sigma}{dt}=e^{-b_{1}t}+2ae^{-(b_%
+                              <math id="Ch3.E6.m1" class="ltx_Math" alttext="\displaystyle g(t)=\frac{1}{a_{1}^{2}}\frac{d\sigma}{dt}=e^{-b_{1}t}+2ae^{-(b_%
 {1}+b_{2})t/2}\cos{\phi}+a^{2}e^{-b_{2}t}," display="inline"><mrow><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi id="XM179">t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><msubsup><mi>a</mi><mn>1</mn><mn>2</mn></msubsup></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>σ</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mstyle></mrow><mo>=</mo><mrow><msup><mi>e</mi><mrow><mo>-</mo><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>⁢</mo><mi>t</mi></mrow></mrow></msup><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow id="XM178"><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>t</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></msup><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow><mo>+</mo><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>e</mi><mrow><mo>-</mo><mrow><msub><mi>b</mi><mn>2</mn></msub><mo>⁢</mo><mi>t</mi></mrow></mrow></msup></mrow></mrow></mrow><mo>,</mo></mrow></math>
-</td>
+                            </td>
 <td class="ltx_eqn_center_padright"></td>
 <td rowspan="1" class="ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation">(3.6)</span></td>
 </tr>
@@ -5026,7 +5026,7 @@ These are combined into the first four input arguments <math id="Ch3.I41.ix1.p1.
 <br class="ltx_break">
 <br class="ltx_break">Input example with values for a fit to 13 TeV LHC.</p>
 <pre class="ltx_verbatim ltx_font_typewriter">
-GEN  sc_thin     PPBEAMELASTIC 0.046 18.52 4.601 2.647 0.0 30e-27
+    GEN  sc_thin     PPBEAMELASTIC 0.046 18.52 4.601 2.647 0.0 30e-27
 </pre>
 </div>
 </dd>
@@ -5105,16 +5105,16 @@ as described below, can be combined.</p>
 <ul id="Ch3.I42.I1" class="ltx_itemize">
 <li id="Ch3.I42.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I42.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">mout</span> = 0 : multipole errors internally created</p>
 </div>
 </li>
 <li id="Ch3.I42.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I42.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">mout</span> = 1 : multipole errors read–in from external file</p>
 </div>
@@ -5129,8 +5129,8 @@ of multipoles in fort.16.</p>
 </li>
 <li id="Ch3.I42.I1.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I42.I1.i3.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">mout</span> = 2: the geometry and strength file is written to
 file # 4 in the same format as the input file # 2; the multipole
@@ -5142,8 +5142,8 @@ file # 31.</p>
 </li>
 <li id="Ch3.I42.I1.i4" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I42.I1.i4.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">mout</span> = 4: Name, horizontal and vertical misalignment and
 also the element tilt are read–in from file # 8.</p>
@@ -5151,8 +5151,8 @@ also the element tilt are read–in from file # 8.</p>
 </li>
 <li id="Ch3.I42.I1.i5" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I42.I1.i5.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">mout</span> = 8: Name and 3 Random numbers for single kick
 strength and both random transverse misalignments and also the value
@@ -5457,16 +5457,16 @@ parameters.</p>
 <ul id="Ch3.I48.I1" class="ltx_itemize">
 <li id="Ch3.I48.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I48.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ntco</span> = 0 : no write–out</p>
 </div>
 </li>
 <li id="Ch3.I48.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I48.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ntco</span> <math id="Ch3.I48.I1.i2.p1.m1" class="ltx_Math" alttext="\neq" display="inline"><mo>≠</mo></math> 0 : write–out of all linear coupled (4D)
 parameters including the coupling angle. These parameters (name,
@@ -5618,8 +5618,8 @@ sub–family between the positions marked by <span class="ltx_text ltx_font_ital
 </div>
 </dd>
 <dt id="Ch3.I51.ix5" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I51.ix5.m1" class="ltx_Math" alttext="\Delta Q" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>Q</mi></mrow></math>
-</span></dt>
+                  <math id="Ch3.I51.ix5.m1" class="ltx_Math" alttext="\Delta Q" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>Q</mi></mrow></math>
+                </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I51.ix5.p1" class="ltx_para">
 <p class="ltx_p">Extra phase advance <span class="ltx_text ltx_font_italic">including</span> the integer
@@ -5689,8 +5689,8 @@ two sextupole families</p>
 </div>
 </dd>
 <dt id="Ch3.I52.ix2" class="ltx_item"><span class="ltx_tag ltx_tag_description">
-<math id="Ch3.I52.ix2.m1" class="ltx_Math" alttext="Q^{\prime}" display="inline"><msup><mi>Q</mi><mo>′</mo></msup></math>
-</span></dt>
+                  <math id="Ch3.I52.ix2.m1" class="ltx_Math" alttext="Q^{\prime}" display="inline"><msup><mi>Q</mi><mo>′</mo></msup></math>
+                </span></dt>
 <dd class="ltx_item">
 <div id="Ch3.I52.ix2.p1" class="ltx_para">
 <p class="ltx_p">Desired values of the chromaticity: <math id="Ch3.I52.ix2.p1.m1" class="ltx_Math" alttext="Q^{\prime}=\frac{\delta Q}{\delta(\frac{\Delta p}{p_{o}})}" display="inline"><mrow><msup><mi>Q</mi><mo>′</mo></msup><mo>=</mo><mfrac><mrow><mi>δ</mi><mo>⁢</mo><mi>Q</mi></mrow><mrow><mi>δ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac id="XM180"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>p</mi></mrow><msub><mi>p</mi><mi>o</mi></msub></mfrac><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math>.</p>
@@ -6000,16 +6000,16 @@ resonances a change of <math id="Ch3.I58.ix4.p1.m2" class="ltx_Math" alttext="p"
 <ul id="Ch3.I58.I1" class="ltx_itemize">
 <li id="Ch3.I58.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I58.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ip</span> = 0 : <math id="Ch3.I58.I1.i1.p1.m1" class="ltx_Math" alttext="e" display="inline"><mi>e</mi></math> is unchanged</p>
 </div>
 </li>
 <li id="Ch3.I58.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I58.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ip</span> = 1 : <math id="Ch3.I58.I1.i2.p1.m1" class="ltx_Math" alttext="(e\pm 1)=nxQx+nyQy-(p\pm 1)" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow id="XM181"><mi>e</mi><mo>±</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mrow><mrow><mi>n</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>n</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>-</mo><mrow><mo stretchy="false">(</mo><mrow id="XM182"><mi>p</mi><mo>±</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></p>
 </div>
@@ -6401,16 +6401,16 @@ constant momentum ).</p>
 <ul id="Ch3.I64.I1" class="ltx_itemize">
 <li id="Ch3.I64.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I64.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">nsix</span> = 0 : <math id="Ch3.I64.I1.i1.p1.m1" class="ltx_Math" alttext="6x6" display="inline"><mrow><mn>6</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mn>6</mn></mrow></math> map</p>
 </div>
 </li>
 <li id="Ch3.I64.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I64.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">nsix</span> = 1 : <math id="Ch3.I64.I1.i2.p1.m1" class="ltx_Math" alttext="5x6" display="inline"><mrow><mn>5</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mn>6</mn></mrow></math> map
 <br class="ltx_break">(<span class="ltx_text ltx_font_italic">nvar</span> must be set to 6; 6D closed orbit must not be
@@ -6633,16 +6633,16 @@ tune–shift using a set of correctors are given in the <span class="ltx_text lt
 <ul id="Ch3.I70.I1" class="ltx_itemize">
 <li id="Ch3.I70.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I70.I1.i1.p1" class="ltx_para">
 <p class="ltx_p">ctype = 0 order–by–order correction</p>
 </div>
 </li>
 <li id="Ch3.I70.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I70.I1.i2.p1" class="ltx_para">
 <p class="ltx_p">ctype = 1 global correction
 </p>
@@ -6771,20 +6771,20 @@ depend on the value of <span class="ltx_text ltx_font_italic">ctype</span> and i
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">ctype = 1</td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<math id="Ch3.T8.m3" class="ltx_Math" alttext="N_{min}\geq 2" display="inline"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>≥</mo><mn>2</mn></mrow></math>
-</td>
+                    <math id="Ch3.T8.m3" class="ltx_Math" alttext="N_{min}\geq 2" display="inline"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>≥</mo><mn>2</mn></mrow></math>
+                  </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<math id="Ch3.T8.m4" class="ltx_Math" alttext="N_{max}\leq 3" display="inline"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>≤</mo><mn>3</mn></mrow></math>
-</td>
+                    <math id="Ch3.T8.m4" class="ltx_Math" alttext="N_{max}\leq 3" display="inline"><mrow><msub><mi>N</mi><mrow><mi>m</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></msub><mo>≤</mo><mn>3</mn></mrow></math>
+                  </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<math id="Ch3.T8.m5" class="ltx_Math" alttext="\alpha_{H}" display="inline"><msub><mi>α</mi><mi>H</mi></msub></math>
-</td>
+                    <math id="Ch3.T8.m5" class="ltx_Math" alttext="\alpha_{H}" display="inline"><msub><mi>α</mi><mi>H</mi></msub></math>
+                  </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<math id="Ch3.T8.m6" class="ltx_Math" alttext="\alpha_{V}" display="inline"><msub><mi>α</mi><mi>V</mi></msub></math>
-</td>
+                    <math id="Ch3.T8.m6" class="ltx_Math" alttext="\alpha_{V}" display="inline"><msub><mi>α</mi><mi>V</mi></msub></math>
+                  </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<math id="Ch3.T8.m7" class="ltx_Math" alttext="\delta_{0}" display="inline"><msub><mi>δ</mi><mn>0</mn></msub></math>
-</td>
+                    <math id="Ch3.T8.m7" class="ltx_Math" alttext="\delta_{0}" display="inline"><msub><mi>δ</mi><mn>0</mn></msub></math>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_b ltx_border_l ltx_border_r"></td>
@@ -7082,8 +7082,8 @@ in the following way:</p>
 <ul id="Ch3.I74.I1" class="ltx_itemize">
 <li id="Ch3.I74.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I1.i1.p1" class="ltx_para">
 <p class="ltx_p">tune close to an integer: <span class="ltx_text ltx_font_italic">ivox, ivoy</span> = 1
 </p>
@@ -7091,8 +7091,8 @@ in the following way:</p>
 </li>
 <li id="Ch3.I74.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I1.i2.p1" class="ltx_para">
 <p class="ltx_p">tune close to half an integer: <span class="ltx_text ltx_font_italic">ivox, ivoy</span> = 0</p>
 </div>
@@ -7119,24 +7119,24 @@ maximum peak are accepted.</p>
 <ul id="Ch3.I74.I2" class="ltx_itemize">
 <li id="Ch3.I74.I2.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I2.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ifh</span> = 0 : <math id="Ch3.I74.I2.i1.p1.m1" class="ltx_Math" alttext="0\leq Q\leq 1" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>Q</mi><mo>≤</mo><mn>1</mn></mrow></math></p>
 </div>
 </li>
 <li id="Ch3.I74.I2.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I2.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ifh</span> = 1 : <math id="Ch3.I74.I2.i2.p1.m1" class="ltx_Math" alttext="0\leq Q\leq 0.5" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>Q</mi><mo>≤</mo><mn>0.5</mn></mrow></math></p>
 </div>
 </li>
 <li id="Ch3.I74.I2.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I2.i3.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ifh</span> = 2 : <math id="Ch3.I74.I2.i3.p1.m1" class="ltx_Math" alttext="0.5\leq Q\leq 1" display="inline"><mrow><mn>0.5</mn><mo>≤</mo><mi>Q</mi><mo>≤</mo><mn>1</mn></mrow></math></p>
 </div>
@@ -7159,16 +7159,16 @@ consult the HPLOT manual <cite class="ltx_cite">[<a href="#bib.bib8" title="" cl
 <ul id="Ch3.I74.I3" class="ltx_itemize">
 <li id="Ch3.I74.I3.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I3.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">itf</span> = 0 : off</p>
 </div>
 </li>
 <li id="Ch3.I74.I3.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I3.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">itf</span> = 1 : on</p>
 </div>
@@ -7192,16 +7192,16 @@ routine will not be called.</p>
 <ul id="Ch3.I74.I4" class="ltx_itemize">
 <li id="Ch3.I74.I4.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I4.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">idis</span> = 1 : plot of distance in phase space</p>
 </div>
 </li>
 <li id="Ch3.I74.I4.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I4.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">icow</span> = 1 : a set of plots of projections of the
 six–dimensional phase space and the energy E versus the turn
@@ -7210,8 +7210,8 @@ number</p>
 </li>
 <li id="Ch3.I74.I4.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I4.i3.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">istw</span> = 1 : plot of the stroboscoped phase space
 projection by restricting the phase in the other phase space
@@ -7220,8 +7220,8 @@ projection</p>
 </li>
 <li id="Ch3.I74.I4.i4" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I4.i4.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iffw</span> = 1 : plots of the horizontal and vertical FFT
 spectrum with linear amplitude scale</p>
@@ -7229,8 +7229,8 @@ spectrum with linear amplitude scale</p>
 </li>
 <li id="Ch3.I74.I4.i5" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I74.I4.i5.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iffw</span> = 2 : plots of the horizontal and vertical FFT
 spectrum with logarithmic amplitude scale</p>
@@ -7444,16 +7444,16 @@ and other effects can be turned off with these switches.</p>
 <ul id="Ch3.I77.I1" class="ltx_itemize">
 <li id="Ch3.I77.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">idy(1), idy(2)</span> = 1 : coupling on</p>
 </div>
 </li>
 <li id="Ch3.I77.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">idy(1), idy(2)</span> = 0 : coupling to the horizontal and
 vertical motion plane respectively switched off</p>
@@ -7471,24 +7471,24 @@ instance when a run is to be prolonged.</p>
 <ul id="Ch3.I77.I2" class="ltx_itemize">
 <li id="Ch3.I77.I2.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I2.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">idfor</span> = 0 : closed orbit added.</p>
 </div>
 </li>
 <li id="Ch3.I77.I2.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I2.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">idfor</span> = 1 : initial coordinates unchanged.</p>
 </div>
 </li>
 <li id="Ch3.I77.I2.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I2.i3.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">idfor</span> = 2 : prolongation of a run, taken the initial coordinates from unit # 13.</p>
 </div>
@@ -7507,16 +7507,16 @@ applications it may be useful to store all data. The switch <span class="ltx_tex
 <ul id="Ch3.I77.I3" class="ltx_itemize">
 <li id="Ch3.I77.I3.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I3.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">irew</span> = 0 : unit 90 (and lower) rewound</p>
 </div>
 </li>
 <li id="Ch3.I77.I3.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I3.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">irew</span> = 1 : all data on unit 90 (and lower)</p>
 </div>
@@ -7533,32 +7533,32 @@ Note that iclo6 ¿ 0 is mandatory for 6D simulations, and that iclo6 == 0 is man
 <ul id="Ch3.I77.I4" class="ltx_itemize">
 <li id="Ch3.I77.I4.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I4.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iclo6</span> = 0 : switched off</p>
 </div>
 </li>
 <li id="Ch3.I77.I4.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I4.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iclo6</span> = 1 : calculated</p>
 </div>
 </li>
 <li id="Ch3.I77.I4.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I4.i3.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iclo6</span> = 2 : calculated and added to the initial coordinates ( <a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>).</p>
 </div>
 </li>
 <li id="Ch3.I77.I4.i4" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I4.i4.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iclo6</span> = 5 or = 6: like for <span class="ltx_text ltx_font_italic">1</span> and <span class="ltx_text ltx_font_italic">2</span>  but in addition a guess closed orbit is read (in free format) from fileunit # 33.</p>
 </div>
@@ -7638,16 +7638,16 @@ tracking parameter file # 3.</p>
 <ul id="Ch3.I77.I5" class="ltx_itemize">
 <li id="Ch3.I77.I5.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I5.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ibidu</span> = 1 : write dump</p>
 </div>
 </li>
 <li id="Ch3.I77.I5.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I5.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ibidu</span> = 2 : read dump
 </p>
@@ -7664,8 +7664,8 @@ tracking and 6D (no 4D) optics calculations.</p>
 <ul id="Ch3.I77.I6" class="ltx_itemize">
 <li id="Ch3.I77.I6.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I6.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iexact</span> = 0 : approximated equation
 (e.g. <math id="Ch3.I77.I6.i1.p1.m1" class="ltx_Math" alttext="x^{\prime}\simeq\frac{P_{x}}{P_{0}(1+\delta)}" display="inline"><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>≃</mo><mfrac><msub><mi>P</mi><mi>x</mi></msub><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow id="XM196"><mn>1</mn><mo>+</mo><mi>δ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math>,
@@ -7674,8 +7674,8 @@ tracking and 6D (no 4D) optics calculations.</p>
 </li>
 <li id="Ch3.I77.I6.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I77.I6.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iexact</span> = 1 : exact equation (e.g
 <math id="Ch3.I77.I6.i2.p1.m1" class="ltx_Math" alttext="x^{\prime}\simeq\frac{P_{x}}{P_{0}\sqrt{(1+\delta)^{2}-P_{x}^{2}-P_{y}^{2}}}" display="inline"><mrow><msup><mi>x</mi><mo>′</mo></msup><mo>≃</mo><mfrac><msub><mi>P</mi><mi>x</mi></msub><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>⁢</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow id="XM198"><mn>1</mn><mo>+</mo><mi>δ</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>-</mo><msubsup><mi>P</mi><mi>x</mi><mn>2</mn></msubsup><mo>-</mo><msubsup><mi>P</mi><mi>y</mi><mn>2</mn></msubsup></mrow></msqrt></mrow></mfrac></mrow></math>,
@@ -7708,16 +7708,16 @@ set :</p>
 <ul id="Ch3.I78.I1" class="ltx_itemize">
 <li id="Ch3.I78.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I78.I1.i1.p1" class="ltx_para">
 <p class="ltx_p">in this input block : idfor = 1</p>
 </div>
 </li>
 <li id="Ch3.I78.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I78.I1.i2.p1" class="ltx_para">
 <p class="ltx_p">in the <span class="ltx_text ltx_font_italic">Initial coordinates</span> input block :</p>
 <ol id="Ch3.I78.I1.I1" class="ltx_enumerate">
@@ -7772,8 +7772,8 @@ define a longitudinal amplitude. The 6 normalized coordinates read:</p>
 <ul id="Ch3.I78.I2" class="ltx_itemize">
 <li id="Ch3.I78.I2.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I78.I2.i1.p1" class="ltx_para">
 <p class="ltx_p">horizontal:
 <br class="ltx_break"></p>
@@ -7789,8 +7789,8 @@ _{xII}}}" display="inline"><mrow><msqrt><msub><mi>e</mi><mi>I</mi></msub></msqrt
 </li>
 <li id="Ch3.I78.I2.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I78.I2.i2.p1" class="ltx_para">
 <p class="ltx_p">vertical:
 <br class="ltx_break"></p>
@@ -7805,8 +7805,8 @@ _{xII}}}" display="inline"><mrow><msqrt><msub><mi>e</mi><mi>I</mi></msub></msqrt
 </li>
 <li id="Ch3.I78.I2.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I78.I2.i3.p1" class="ltx_para">
 <p class="ltx_p">longitudinal:
 <br class="ltx_break"></p>
@@ -7897,8 +7897,8 @@ the two particles.</p>
 <ul id="Ch3.I80.I1" class="ltx_itemize">
 <li id="Ch3.I80.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I80.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">itra</span> = 0 : Amplitude values of tracking parameter block
 ( <a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>) are ignored and coordinates of data line 2–16 are
@@ -7908,8 +7908,8 @@ particles. This is necessary in case a run is to be prolonged.</p>
 </li>
 <li id="Ch3.I80.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I80.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">itra</span> = 1 : Tracking of one particle, twin particle
 ignored</p>
@@ -7917,8 +7917,8 @@ ignored</p>
 </li>
 <li id="Ch3.I80.I1.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I80.I1.i3.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">itra</span> = 2 : Tracking the two twin particles</p>
 </div>
@@ -7956,16 +7956,16 @@ the switch <span class="ltx_text ltx_font_italic">iver</span> has been introduce
 <ul id="Ch3.I80.I2" class="ltx_itemize">
 <li id="Ch3.I80.I2.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I80.I2.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iver</span> = 0 : Vertical coordinates unchanged</p>
 </div>
 </li>
 <li id="Ch3.I80.I2.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I80.I2.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">iver</span> = 1 : Vertical coordinates set to zero.</p>
 </div>
@@ -8193,8 +8193,8 @@ the linear synchrotron tune <math id="Ch3.I83.ix2.p1.m1" class="ltx_Math" alttex
 <ul id="Ch3.I83.I1" class="ltx_itemize">
 <li id="Ch3.I83.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I83.I1.i1.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ition</span> =  0 for no synchrotron oscillation
 (energy ramping still possible)</p>
@@ -8202,16 +8202,16 @@ the linear synchrotron tune <math id="Ch3.I83.ix2.p1.m1" class="ltx_Math" alttex
 </li>
 <li id="Ch3.I83.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I83.I1.i2.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ition</span> =  1 for above transition energy</p>
 </div>
 </li>
 <li id="Ch3.I83.I1.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_itemize">
-<span class="ltx_text ltx_font_bold">–</span>
-</span>
+                        <span class="ltx_text ltx_font_bold">–</span>
+                      </span>
 <div id="Ch3.I83.I1.i3.p1" class="ltx_para">
 <p class="ltx_p"><span class="ltx_text ltx_font_italic">ition</span> = –1 for below transition energy</p>
 </div>
@@ -8391,13 +8391,13 @@ For more details, see the physics manual <cite class="ltx_cite">[<a href="#bib.
 <p class="ltx_p">– <span class="ltx_text ltx_font_bold">Modified format for aperture check (normalized coordinates):
 <br class="ltx_break"></span>Dumps the particle trajectories in normalized coordinates. If the coordinates are dumped at the start of the sequence (<span class="ltx_text ltx_font_typewriter">StartDUMP</span>), the normalization matrix as used for the initialization of the particle amplitudes is used. This means, that if 4D optics are chosen, the 4D matrix is used, if 6D optics is chosen, the matrix obtained from the 6D optics calculation is chosen. For every other element except <span class="ltx_text ltx_font_typewriter">StartDUMP</span>, the 6D optics are used independent of the tracking method chosen. In this case the 6D optics needs to be run and the following lines have to be inserted in <span class="ltx_text ltx_font_typewriter">fort.3</span>:</p>
 <pre class="ltx_verbatim ltx_font_typewriter">
-DUMP
-element_name_1 1 unit_1 7 filename_1 first_turn_1 last_turn_1
-...
-NEXT
-LINE
-ELEMENT  0 2 1 emit_1 emit_2
-NEXT
+     DUMP
+     element_name_1 1 unit_1 7 filename_1 first_turn_1 last_turn_1
+     ...
+     NEXT
+     LINE
+     ELEMENT  0 2 1 emit_1 emit_2
+     NEXT
 </pre>
 <p class="ltx_p">If there are multiple single elements attached to the file, the headers are repeated.
 <br class="ltx_break">Data lines: as described in the header, one per particle and per turn.
@@ -8573,14 +8573,14 @@ For the linear optics calculation <a href="#Ch3.S5.SS1" title="3.5.1 Linear Opti
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_left ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Library</span>
-</th>
+                      <span class="ltx_text ltx_font_bold">Library</span>
+                    </th>
 <th class="ltx_td ltx_align_left ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">method</span>
-</th>
+                      <span class="ltx_text ltx_font_bold">method</span>
+                    </th>
 <th class="ltx_td ltx_align_justify ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</th>
+                      <span class="ltx_text ltx_font_bold">Description</span>
+                    </th>
 </tr>
 </thead>
 <tbody class="ltx_tbody">
@@ -8674,14 +8674,14 @@ Note that the capitalization must be correct for the flag to be recognized.</p>
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Line Number</span>
-</td>
+                    <span class="ltx_text ltx_font_bold">Line Number</span>
+                  </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Type</span>
-</td>
+                    <span class="ltx_text ltx_font_bold">Type</span>
+                  </td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</td>
+                    <span class="ltx_text ltx_font_bold">Description</span>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
@@ -8707,8 +8707,8 @@ Note that the capitalization must be correct for the flag to be recognized.</p>
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r">
-<code class="ltx_verbatim ltx_font_typewriter"># id turn pos[m] nx[1.e-3 sqrt(m)] npx[1.e-3 sqrt(m)]</code>
-</td>
+                    <code class="ltx_verbatim ltx_font_typewriter"># id turn pos[m] nx[1.e-3 sqrt(m)] npx[1.e-3 sqrt(m)]</code>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -8736,14 +8736,14 @@ Note that the capitalization must be correct for the flag to be recognized.</p>
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Line Number</span>
-</th>
+                    <span class="ltx_text ltx_font_bold">Line Number</span>
+                  </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Type</span>
-</th>
+                    <span class="ltx_text ltx_font_bold">Type</span>
+                  </th>
 <th class="ltx_td ltx_align_justify ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</th>
+                    <span class="ltx_text ltx_font_bold">Description</span>
+                  </th>
 </tr>
 </thead>
 <tbody class="ltx_tbody">
@@ -8756,15 +8756,15 @@ Note that the capitalization must be correct for the flag to be recognized.</p>
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r">
-<code class="ltx_verbatim ltx_font_typewriter"># eps0*,eps2*,eps3* all in 1.e-6*m, phi* [rad]</code>
-</td>
+                    <code class="ltx_verbatim ltx_font_typewriter"># eps0*,eps2*,eps3* all in 1.e-6*m, phi* [rad]</code>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_justify ltx_border_r">
-<code class="ltx_verbatim ltx_font_typewriter"># inputfile method id q1 q2 q3 eps1_min eps2_min eps3_min</code>
-</td>
+                    <code class="ltx_verbatim ltx_font_typewriter"># inputfile method id q1 q2 q3 eps1_min eps2_min eps3_min</code>
+                  </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -8899,37 +8899,37 @@ code of Hirata <cite class="ltx_cite">[<a href="#bib.bib19" title="" class="ltx
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-11.4pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> </span>
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">#</span>
-</th>
+            <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-11.4pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;">#</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Keyword</span>
-</th>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;">Keyword</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t" colspan="2">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Input–data–block</span>
-</th>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;">Input–data–block</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Short Description</span>
-</th>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;">Short Description</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">§</span>
-</th>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;">§</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Page</span>
-</th>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;">Page</span>
+          </th>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:22.8pt;position:relative; bottom:-8.5pt;background:black;display:inline-block;"></span>
-</th>
+            <span class="ltx_rule" style="width:0.0pt;height:22.8pt;position:relative; bottom:-8.5pt;background:black;display:inline-block;"></span>
+          </th>
 <th class="ltx_td ltx_border_r ltx_border_t"></th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Title</span>
-</th>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;">Title</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;"># of Data–lines</span>
-</th>
+            <span class="ltx_text ltx_font_bold" style="font-size:70%;"># of Data–lines</span>
+          </th>
 <th class="ltx_td ltx_border_r ltx_border_t"></th>
 <th class="ltx_td ltx_border_r ltx_border_t"></th>
 <th class="ltx_td ltx_border_r ltx_border_t"></th>
@@ -8945,386 +8945,386 @@ code of Hirata <cite class="ltx_cite">[<a href="#bib.bib19" title="" class="ltx
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">BEAM</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">BEAM</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">BEAM–BEAM Element</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">BEAM–BEAM Element</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">4-6D including Beam Separation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">4-6D including Beam Separation</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
-</td>
+            <a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">&amp; Linear Coupling</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">&amp; Linear Coupling</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 2</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 2</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">BLOC</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">BLOC</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Block–definition</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Block–definition</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable + 1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable + 1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Blocks of
+            <span class="ltx_text" style="font-size:70%;">Blocks of
 Linear Elements</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
-</td>
+            <a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 3</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 3</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">BLOCK</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">BLOCK</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Linear Parameters for each Structure</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Linear Parameters for each Structure</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
-</td>
+            <a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Element</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Element</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 4</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 4</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">CAV</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">CAV</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Cavity in the Structure Input Block</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Cavity in the Structure Input Block</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+            <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 5</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 5</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">CHRO</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">CHRO</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Chromaticity</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Chromaticity</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">2</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">2</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Correcting Chromaticity with</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Correcting Chromaticity with</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS3" title="3.5.3 Chromaticity Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS3" title="3.5.3 Chromaticity Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS3" title="3.5.3 Chromaticity Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.3</span></a>
-</td>
+            <a href="#Ch3.S5.SS3" title="3.5.3 Chromaticity Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Correction</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Correction</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Sextupoles</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Sextupoles</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 6</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 6</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">CORR</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">CORR</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Tune–shift Corrections</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Tune–shift Corrections</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">3</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">3</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Correction of Nonlinear
+            <span class="ltx_text" style="font-size:70%;">Correction of Nonlinear
 Tune–Shift</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS11" title="3.5.11 Corrections ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.11</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS11" title="3.5.11 Corrections ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.11</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS11" title="3.5.11 Corrections ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.11</span></a>
-</td>
+            <a href="#Ch3.S5.SS11" title="3.5.11 Corrections ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.11</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 7</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 7</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">COMB</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">COMB</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Combination of</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Combination of</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Combining Different Elements</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Combining Different Elements</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
-</td>
+            <a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Elements</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Elements</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">for a Correction</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">for a Correction</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 8</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 8</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">COMM</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">COMM</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Comment Line</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Comment Line</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Additional Comments</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Additional Comments</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S1.SS3" title="3.1.3 Comment Line ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S1.SS3" title="3.1.3 Comment Line ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S1.SS3" title="3.1.3 Comment Line ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.3</span></a>
-</td>
+            <a href="#Ch3.S1.SS3" title="3.1.3 Comment Line ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 9</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 9</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DAMAP</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">DAMAP</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Location for a Printout of a DA map</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Location for a Printout of a DA map</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+            <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 10</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:5.7pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 10</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DECO</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">DECO</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Decoupling</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Decoupling</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">3</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">3</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Compensation of Linear Coupling</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Compensation of Linear Coupling</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS5" title="3.5.5 Decoupling of Motion in the Transverse Planes ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.5</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS5" title="3.5.5 Decoupling of Motion in the Transverse Planes ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.5</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS5" title="3.5.5 Decoupling of Motion in the Transverse Planes ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.5</span></a>
-</td>
+            <a href="#Ch3.S5.SS5" title="3.5.5 Decoupling of Motion in the Transverse Planes ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.5</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 11</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 11</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DIFF</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">DIFF</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Differential</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Differential</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Calculating a One–turn Map with</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Calculating a One–turn Map with</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+            <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Algebra</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Algebra</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Differential Algebra</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Differential Algebra</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 12</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 12</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DISP</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">DISP</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Displacement of</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Displacement of</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Displacing Nonlinear
+            <span class="ltx_text" style="font-size:70%;">Displacing Nonlinear
 Elements</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS4" title="3.2.4 Displacement of Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S2.SS4" title="3.2.4 Displacement of Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS4" title="3.2.4 Displacement of Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.4</span></a>
-</td>
+            <a href="#Ch3.S2.SS4" title="3.2.4 Displacement of Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Elements</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Elements</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -9332,185 +9332,185 @@ Elements</span>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 13</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 13</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DUMP</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">DUMP</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Writing the beam population to file</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Writing the beam population to file</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S7.SS1" title="3.7.1 Dumping of beam population ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S7.SS1" title="3.7.1 Dumping of beam population ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S7.SS1" title="3.7.1 Dumping of beam population ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.1</span></a>
-</td>
+            <a href="#Ch3.S7.SS1" title="3.7.1 Dumping of beam population ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 14</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 14</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">DYNK</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">DYNK</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Dynamic kicks</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Dynamic kicks</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS4" title="3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS4" title="3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS4" title="3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.4</span></a>
-</td>
+            <a href="#Ch3.S3.SS4" title="3.3.4 Dynamic Kicks ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 15</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 15</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">EL</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">EL</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Elliptical Aperture Limitation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Elliptical Aperture Limitation</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+            <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 16</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 16</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ELEMENT</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">ELEMENT</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Linear Parameters after each Single</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Linear Parameters after each Single</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
-</td>
+            <a href="#Ch3.S5.SS1" title="3.5.1 Linear Optics Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Element</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Element</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 17</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 17</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ELEN</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">ELEN</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Electron lens</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Electron lens</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS9" title="3.3.9 Electron lens ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.9</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS9" title="3.3.9 Electron lens ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.9</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS9" title="3.3.9 Electron lens ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.9</span></a>
-</td>
+            <a href="#Ch3.S3.SS9" title="3.3.9 Electron lens ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.9</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;">
 18</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ENDE</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">ENDE</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">End of SixTrack Input Structure</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">End of SixTrack Input Structure</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 19</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 19</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">FLUC</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">FLUC</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Random Fluctuation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Random Fluctuation</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Seed for the Random Generator</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Seed for the Random Generator</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
-</td>
+            <a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Starting Number</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Starting Number</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -9518,140 +9518,140 @@ Elements</span>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 20</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 20</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">FMA</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">FMA</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Frequency Map Analysis</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Frequency Map Analysis</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S7.SS2" title="3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S7.SS2" title="3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S7.SS2" title="3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.2</span></a>
-</td>
+            <a href="#Ch3.S7.SS2" title="3.7.2 FMA analysis ‣ 3.7 Extra output files ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.7.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 21</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 21</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">FREE</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">FREE</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A1.T1.m1" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:70%;"> Program Version</span>
-</td>
+            <math id="A1.T1.m1" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
+            <span class="ltx_text" style="font-size:70%;"> Program Version</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">0</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Free Format Input from one
+            <span class="ltx_text" style="font-size:70%;">Free Format Input from one
 File</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
-</td>
+            <a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 22</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 22</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">GEOM</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">GEOM</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A1.T1.m2" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:70%;"> Program Version</span>
-</td>
+            <math id="A1.T1.m2" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
+            <span class="ltx_text" style="font-size:70%;"> Program Version</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">0</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Input of Machine
+            <span class="ltx_text" style="font-size:70%;">Input of Machine
 Geometry in</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
-</td>
+            <a href="#Ch3.S1.SS1" title="3.1.1 Program Version ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">extra File</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">extra File</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 23</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 23</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">GO</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">GO</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Start of Tracking in the Structure Input</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Start of Tracking in the Structure Input</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+            <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 24</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 24</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">“HCOR= ”</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">“HCOR= ”</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Specifies an Horizontal Orbit Corrector</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Specifies an Horizontal Orbit Corrector</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -9659,867 +9659,867 @@ Geometry in</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Element (Dipole or Multipole)</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Element (Dipole or Multipole)</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 25</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 25</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">“HMON= ”</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">“HMON= ”</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Specifies an Horizontal Orbit Monitor</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Specifies an Horizontal Orbit Monitor</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 26</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 26</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">INIT</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">INIT</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Initial Coordinates</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Initial Coordinates</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">16</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">16</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Setting up of the Initial
+            <span class="ltx_text" style="font-size:70%;">Setting up of the Initial
 Coordinates</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
-</td>
+            <a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 27</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 27</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ITER</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">ITER</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Iteration Errors</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Iteration Errors</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">4</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">4</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"># of Iterations and Precision</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"># of Iterations and Precision</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S1.SS4" title="3.1.4 Iteration Errors ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S1.SS4" title="3.1.4 Iteration Errors ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S1.SS4" title="3.1.4 Iteration Errors ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.4</span></a>
-</td>
+            <a href="#Ch3.S1.SS4" title="3.1.4 Iteration Errors ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">for Correction Routines</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">for Correction Routines</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 28</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 28</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">LIMI</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">LIMI</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Aperture Limitation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Aperture Limitation</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Collimators that stop the
+            <span class="ltx_text" style="font-size:70%;">Collimators that stop the
 Program</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+            <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">when being hit</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">when being hit</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 29</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 29</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">MULT</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">MULT</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Multipole</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Multipole</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">max. 11</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">max. 11</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Multipole Coefficients normal
+            <span class="ltx_text" style="font-size:70%;">Multipole Coefficients normal
 and</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
-</td>
+            <a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:11.4pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:11.4pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">skew Coefficients</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">skew Coefficients</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">up to </span>
-<math id="A1.T1.m3" class="ltx_Math" alttext="10^{th}" display="inline"><msup><mn>10</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:70%;"> order</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">up to </span>
+            <math id="A1.T1.m3" class="ltx_Math" alttext="10^{th}" display="inline"><msup><mn>10</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>
+            <span class="ltx_text" style="font-size:70%;"> order</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:11.4pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:11.4pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Combination of Different
+            <span class="ltx_text" style="font-size:70%;">Combination of Different
 Multi–</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
-</td>
+            <a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">poles in the ORGA Input Block</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">poles in the ORGA Input Block</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 30</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 30</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NEXT</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">NEXT</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Last Line of each Input Data Block</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Last Line of each Input Data Block</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 31</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 31</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NORM</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">NORM</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Normal Form</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Normal Form</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Normal Form Operations on Maps</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Normal Form Operations on Maps</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS10" title="3.5.10 Normal Forms ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.10</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS10" title="3.5.10 Normal Forms ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.10</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS10" title="3.5.10 Normal Forms ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.10</span></a>
-</td>
+            <a href="#Ch3.S5.SS10" title="3.5.10 Normal Forms ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.10</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 32</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 32</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ORBI</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">ORBI</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Orbit Adjustment</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Orbit Adjustment</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Adjusting Orbit
+            <span class="ltx_text" style="font-size:70%;">Adjusting Orbit
 to desired</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Sigma Values</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Sigma Values</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 33</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 33</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">ORGA</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">ORGA</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Organisation of</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Organisation of</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable + 1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable + 1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Arranging Random
+            <span class="ltx_text" style="font-size:70%;">Arranging Random
 Errors and</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
-</td>
+            <a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Random Numbers</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Random Numbers</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Multipole sets</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Multipole sets</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 34</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 34</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">POST</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">POST</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Post–processing</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Post–processing</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">3</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">3</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Post–processing of the
+            <span class="ltx_text" style="font-size:70%;">Post–processing of the
 Tracking Data</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
-</td>
+            <a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 35</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 35</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">PRIN</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">PRIN</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Printout Selection</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Printout Selection</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">0</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Initiates the Printing of</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Initiates the Printing of</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S1.SS2" title="3.1.2 Print Selection ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S1.SS2" title="3.1.2 Print Selection ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S1.SS2" title="3.1.2 Print Selection ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.2</span></a>
-</td>
+            <a href="#Ch3.S1.SS2" title="3.1.2 Print Selection ‣ 3.1 General Input ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">the Input Data</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">the Input Data</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 36</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 36</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">RE</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">RE</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Rectangular Aperture Limitation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Rectangular Aperture Limitation</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+            <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 37</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 37</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">RESO</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">RESO</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Resonance</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Resonance</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">6</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">6</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Compensation of up to 3</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Compensation of up to 3</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS8" title="3.5.8 Resonance Compensation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.8</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS8" title="3.5.8 Resonance Compensation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.8</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS8" title="3.5.8 Resonance Compensation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.8</span></a>
-</td>
+            <a href="#Ch3.S5.SS8" title="3.5.8 Resonance Compensation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.8</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Compensation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Compensation</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Different Resonances</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Different Resonances</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 38</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 38</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">RIPP</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">RIPP</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Power Supply Ripple</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Power Supply Ripple</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Invokes a Sinusoidal Tune</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Invokes a Sinusoidal Tune</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS3" title="3.3.3 Power Supply Ripple ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS3" title="3.3.3 Power Supply Ripple ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS3" title="3.3.3 Power Supply Ripple ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.3</span></a>
-</td>
+            <a href="#Ch3.S3.SS3" title="3.3.3 Power Supply Ripple ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text ltx_font_italic" style="font-size:70%;">(obsolete – use DYNK)</span>
-</td>
+            <span class="ltx_text ltx_font_italic" style="font-size:70%;">(obsolete – use DYNK)</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Variation </span>
-<span class="ltx_text ltx_font_italic" style="font-size:70%;">(obsolete – use DYNK)</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Variation </span>
+            <span class="ltx_text ltx_font_italic" style="font-size:70%;">(obsolete – use DYNK)</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 39</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 39</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">SEAR</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">SEAR</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Search for Resonance</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Search for Resonance</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Evaluating Longitudinal
+            <span class="ltx_text" style="font-size:70%;">Evaluating Longitudinal
 Positions</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS7" title="3.5.7 Search for Optimum
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS7" title="3.5.7 Search for Optimum
 Places to Compensate Resonances ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.7</span></a>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS7" title="3.5.7 Search for Optimum
+            <a href="#Ch3.S5.SS7" title="3.5.7 Search for Optimum
 Places to Compensate Resonances ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.7</span></a>
-</td>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Compensation Positions</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Compensation Positions</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">for a Resonance Compensation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">for a Resonance Compensation</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 40</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 40</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">SING</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">SING</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Single Elements</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Single Elements</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Magnet Parameters of</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Magnet Parameters of</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
-</td>
+            <a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Single Elements</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Single Elements</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 41</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 41</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">STRU</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">STRU</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Structure Input</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Structure Input</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Structure of
+            <span class="ltx_text" style="font-size:70%;">Structure of
 Linear Blocks and</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+            <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Nonlinear Elements</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Nonlinear Elements</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 42</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 42</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">SUBR</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">SUBR</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Sub–resonance</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Sub–resonance</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">1</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Calculation of </span>
-<math id="A1.T1.m4" class="ltx_Math" alttext="1^{th}" display="inline"><msup><mn>1</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:70%;">
+            <span class="ltx_text" style="font-size:70%;">Calculation of </span>
+            <math id="A1.T1.m4" class="ltx_Math" alttext="1^{th}" display="inline"><msup><mn>1</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>
+            <span class="ltx_text" style="font-size:70%;">
 Order Reso–</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS6" title="3.5.6 Sub–resonance Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.6</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS6" title="3.5.6 Sub–resonance Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.6</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS6" title="3.5.6 Sub–resonance Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.6</span></a>
-</td>
+            <a href="#Ch3.S5.SS6" title="3.5.6 Sub–resonance Calculation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.6</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Calculation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Calculation</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">nances up to </span>
-<math id="A1.T1.m5" class="ltx_Math" alttext="9^{th}" display="inline"><msup><mn>9</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:70%;"> Multipole Order</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">nances up to </span>
+            <math id="A1.T1.m5" class="ltx_Math" alttext="9^{th}" display="inline"><msup><mn>9</mn><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>
+            <span class="ltx_text" style="font-size:70%;"> Multipole Order</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 43</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 43</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">SYNC</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">SYNC</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Synchrotron</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Synchrotron</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">2</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">2</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Parameters concerning Synchrotrons</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Parameters concerning Synchrotrons</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
-</td>
+            <a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Oscillations</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Oscillations</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Oscillation</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Oscillation</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 44</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 44</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">TRAC</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">TRAC</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Tracking</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Tracking</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">3</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">3</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">All major Tracking Parameters for</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">All major Tracking Parameters for</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
-</td>
+            <a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Parameters</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Parameters</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">the transversal Motion Plane</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">the transversal Motion Plane</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 45</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 45</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">TUNE</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">TUNE</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Tune
+            <span class="ltx_text" style="font-size:70%;">Tune
 Variation</span>
-</td>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">2 or 4</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">2 or 4</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Adjusting the Horizontal and</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Adjusting the Horizontal and</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS2" title="3.5.2 Tune Variation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.2</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS2" title="3.5.2 Tune Variation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.2</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS2" title="3.5.2 Tune Variation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.2</span></a>
-</td>
+            <a href="#Ch3.S5.SS2" title="3.5.2 Tune Variation ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.2</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Vertical Tunes</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Vertical Tunes</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 46</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 46</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">TROM</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">TROM</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">“Phase Trombone” element</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">“Phase Trombone” element</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">mult. of 14</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">mult. of 14</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Phase Shift Transparent</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Phase Shift Transparent</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS7" title="3.3.7 “Phase Trombone” Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.7</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS7" title="3.3.7 “Phase Trombone” Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.7</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS7" title="3.3.7 “Phase Trombone” Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.7</span></a>
-</td>
+            <a href="#Ch3.S3.SS7" title="3.3.7 “Phase Trombone” Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.7</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">for Linear Optics</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">for Linear Optics</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 47</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 47</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">“VCOR= ”</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">“VCOR= ”</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Specifies an Vertical Orbit Corrector</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Specifies an Vertical Orbit Corrector</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_border_l ltx_border_r"></td>
@@ -10527,58 +10527,58 @@ Variation</span>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Element (Dipole or Multipole)</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Element (Dipole or Multipole)</span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 48</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 48</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">“VMON= ”</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">“VMON= ”</span>
+          </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Specifies an Vertical Orbit Monitor</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Specifies an Vertical Orbit Monitor</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+            <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 49</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;"></span>
+            <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+            <span class="ltx_text" style="font-size:70%;"> 49</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">WIRE</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">WIRE</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">WIRE element</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">WIRE element</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">variable</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">variable</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Wire element</span>
-</td>
+            <span class="ltx_text" style="font-size:70%;">Wire element</span>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS6" title="3.3.6 Wire ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.6</span></a>
-</td>
+            <span class="ltx_text" style="font-size:70%;"> </span>
+            <a href="#Ch3.S3.SS6" title="3.3.6 Wire ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.6</span></a>
+          </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS6" title="3.3.6 Wire ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.6</span></a>
-</td>
+            <a href="#Ch3.S3.SS6" title="3.3.6 Wire ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.6</span></a>
+          </td>
 </tr>
 </table>
 </figure>
@@ -10601,292 +10601,292 @@ the <span class="ltx_text ltx_font_italic">Iteration Errors</span> ( <a href="#
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-11.4pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-11.4pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 </span>
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">#</span>
-</th>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">#</span>
+              </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Description</span>
-</th>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">Description</span>
+              </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Value</span>
-</th>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">Value</span>
+              </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">§</span>
-</th>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">§</span>
+              </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Page</span>
-</th>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">Page</span>
+              </th>
 </tr>
 </thead>
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 1</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 1</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">General
+                <span class="ltx_text" style="font-size:70%;">General
 Aperture Limitations (horizontal and vertical)</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1000 mm</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1000 mm</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
-</td>
+                <a href="#Ch3.S3.SS2" title="3.3.2 Aperture Limitations ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.2</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 2</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 2</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Starting in
+                <span class="ltx_text" style="font-size:70%;">Starting in
 the Accelerator Structure at Element Number</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+                <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 3</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 3</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number of
+                <span class="ltx_text" style="font-size:70%;">Number of
 Turns in the forward Direction</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
-</td>
+                <a href="#Ch3.S6.SS1" title="3.6.1 Tracking Parameters ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.1</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 4</span>
-</th>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Initial horizontal Amplitude</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Initial horizontal Amplitude</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0.001 mm</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">0.001 mm</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 5</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 5</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Horizontal and vertical Phase Space Coupling Switches on</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Horizontal and vertical Phase Space Coupling Switches on</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 6</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 6</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Flat
+                <span class="ltx_text" style="font-size:70%;">Flat
 Bottom, Ramping and Flat Top Printout after Turn Number</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 7</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 7</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Printout of Coordinates (file 6) after Turn Number</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Printout of Coordinates (file 6) after Turn Number</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">10000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">10000</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 8</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 8</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Kinetic
+                <span class="ltx_text" style="font-size:70%;">Kinetic
 Energy [MeV] of the Reference Particle</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A2.T1.m1" class="ltx_Math" alttext="10^{-6}" display="inline"><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></math>
-</td>
+                <math id="A2.T1.m1" class="ltx_Math" alttext="10^{-6}" display="inline"><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></math>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
-</td>
+                <a href="#Ch3.S6.SS2" title="3.6.2 Initial Coordinates ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.2</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 9</span>
-</th>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Harmonic Number</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Harmonic Number</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
-</td>
+                <a href="#Ch3.S6.SS3" title="3.6.3 Synchrotron Oscillation ‣ 3.6 Initial Conditions for Tracking ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.6.3</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 10</span>
-</th>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Momentum Compaction Factor</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Momentum Compaction Factor</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">0.001</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">0.001</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 11</span>
-</th>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Length of the Machine</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Length of the Machine</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1 km</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1 km</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 12</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 12</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Mass
+                <span class="ltx_text" style="font-size:70%;">Mass
 of the Particle (Proton)</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">938.2723128 </span>
-<math id="A2.T1.m2" class="ltx_Math" alttext="\mathrm{MeV}/\mathrm{c}^{2}" display="inline"><mrow><mi>MeV</mi><mo>/</mo><msup><mi mathvariant="normal">c</mi><mn>2</mn></msup></mrow></math>
-</td>
+                <span class="ltx_text" style="font-size:70%;">938.2723128 </span>
+                <math id="A2.T1.m2" class="ltx_Math" alttext="\mathrm{MeV}/\mathrm{c}^{2}" display="inline"><mrow><mi>MeV</mi><mo>/</mo><msup><mi mathvariant="normal">c</mi><mn>2</mn></msup></mrow></math>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 13</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 13</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Momentum Correction Factor for Distance in Phase Space</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Momentum Correction Factor for Distance in Phase Space</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 14</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 14</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Path–length Correction Factor for Distance in Phase Space</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Path–length Correction Factor for Distance in Phase Space</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 15</span>
-</th>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 15</span>
+              </th>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Averaging
+                <span class="ltx_text" style="font-size:70%;">Averaging
 Turn Interval for Post–processing</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
-</td>
+                <a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
+              </td>
 </tr>
 </tbody>
 </table>
@@ -10908,591 +10908,591 @@ The default values are adjusted to allow the treatment of a full LHC lattice: th
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-11.4pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> </span>
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">#</span>
-</td>
+                <span class="ltx_rule" style="width:0.0pt;height:28.5pt;position:relative; bottom:-11.4pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">#</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Description</span>
-</td>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">Description</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Value</span>
-</td>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">Value</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Name</span>
-</td>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">Name</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">§</span>
-</td>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">§</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:70%;">Page</span>
-</td>
+                <span class="ltx_text ltx_font_bold" style="font-size:70%;">Page</span>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 1</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Number of Coordinates used in the Correction Routines</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">6</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">6</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">MPA</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">MPA</span>
+              </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 2</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 2</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number of
+                <span class="ltx_text" style="font-size:70%;">Number of
 Single Elements</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">750</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">750</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NELE</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NELE</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
-</td>
+                <a href="#Ch3.S2.SS1" title="3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 3</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 3</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number of
+                <span class="ltx_text" style="font-size:70%;">Number of
 Blocks of Linear Elements</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">160</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">160</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NBLO</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NBLO</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
-</td>
+                <a href="#Ch3.S2.SS2" title="3.2.2 Block Definitions ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 4</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number of Linear Elements per Block</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Number of Linear Elements per Block</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">100</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">100</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NELB</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NELB</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 5</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 5</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Total
+                <span class="ltx_text" style="font-size:70%;">Total
 Number of Elements in the Structure</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">15000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">15000</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NBLZ</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NBLZ</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
-</td>
+                <a href="#Ch3.S2.SS3" title="3.2.3 Structure Input ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 6</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number of Accelerator Super–periods</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Number of Accelerator Super–periods</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">16</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">16</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NPER</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NPER</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 7</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 7</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Total
+                <span class="ltx_text" style="font-size:70%;">Total
 Number of Random Values</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">300000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">300000</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NZFZ</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NZFZ</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
-</td>
+                <a href="#Ch3.S4.SS1" title="3.4.1 Random Fluctuation Starting Number ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 8</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 8</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number
+                <span class="ltx_text" style="font-size:70%;">Number
 of Random Values for the basic Set of Nonlinear
 Elements</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">280000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">280000</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NRAN</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NRAN</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 9</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 9</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number of
+                <span class="ltx_text" style="font-size:70%;">Number of
 Random Values for inserted Nonlinear Elements</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">20000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">20000</span>
+              </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
-</td>
+                <a href="#Ch3.S4.SS2" title="3.4.2 Organisation of Random Numbers ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.2</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 10</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-2.8pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 10</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number
+                <span class="ltx_text" style="font-size:70%;">Number
 of Random Values for each Inserted Nonlinear Element</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">500</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">500</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">MRAN</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">MRAN</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-</td>
+                <span class="ltx_rule" style="width:0.0pt;height:14.2pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">Number of Nonlinear Elements that can be inserted</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Number of Nonlinear Elements that can be inserted</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text" style="font-size:70%;">20</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">20</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 11</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 11</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Limit
+                <span class="ltx_text" style="font-size:70%;">Limit
 Number of Particles for Vectorisation</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">64</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">64</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NPART</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NPART</span>
+              </td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 <td class="ltx_td ltx_border_r ltx_border_t"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 12</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 12</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Number of Elements for Combined Tasks</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">100</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">100</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NCOM</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NCOM</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
-</td>
+                <a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 13</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 13</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Resonance Compensation Order</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">5</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">5</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NRCO</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NRCO</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
-</td>
+                <a href="#Ch3.S4.SS3" title="3.4.3 Combination of Elements ‣ 3.4 Organising Tasks ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.3</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 14</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 14</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Total
+                <span class="ltx_text" style="font-size:70%;">Total
 Number of Data for Processing</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">20000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">20000</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NPOS</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NPOS</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
-</td>
+                <a href="#Ch3.S5.SS12" title="3.5.12 Post–processing ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.12</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 15</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 15</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number
+                <span class="ltx_text" style="font-size:70%;">Number
 of Intervals for Calculation of Lyapunov–Exponents</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">10000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">10000</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NLYA</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NLYA</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 16</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 16</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number
+                <span class="ltx_text" style="font-size:70%;">Number
 of Intervals for Calculation of Invariants</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">1000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">1000</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NINV</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NINV</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;">
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;">
 17</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Number of Data for Plotting</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Number of Data for Plotting</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">20000</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">20000</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NPLO</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NPLO</span>
+              </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 18</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 18</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Pole Order of Multipole Block</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">11</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">11</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">MMUL</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">MMUL</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
-</td>
+                <a href="#Ch3.S3.SS1" title="3.3.1 Multipole Coefficients ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.1</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 19</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 19</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Number of extra Parameters of the DA Map</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">10</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">10</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">MCOR</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">MCOR</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+                <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 20</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 20</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Order of DA Calculation</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">15</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">15</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NEMA</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NEMA</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
-</td>
+                <a href="#Ch3.S5.SS9" title="3.5.9 Differential Algebra ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.9</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 21</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 21</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Number of Monitors for Micado Closed Orbit Correction</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">600</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">600</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NMON1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NMON1</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+                <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 22</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 22</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Number of Correctors for Micado Closed Orbit Correction</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">600</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">600</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NCOR1</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NCOR1</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
-</td>
+                <a href="#Ch3.S5.SS4" title="3.5.4 Orbit Correction ‣ 3.5 Processing ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5.4</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 23</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 23</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum Number of Beam–Beam Elements</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Maximum Number of Beam–Beam Elements</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">350</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">350</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NBB</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NBB</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
-</td>
+                <a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 24</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 24</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum Number of Slices for 6D Beam–Beam Kick</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">Maximum Number of Slices for 6D Beam–Beam Kick</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">99</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">99</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">MBEA</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">MBEA</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
-</td>
+                <a href="#Ch3.S3.SS5" title="3.3.5 Beam–Beam Element ‣ 3.3 Special Elements ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3.5</span></a>
+              </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"></span>
-<span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
-<span class="ltx_text" style="font-size:70%;"> 25</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;"></span>
+                <span class="ltx_rule" style="width:0.0pt;height:17.1pt;position:relative; bottom:-5.7pt;background:black;display:inline-block;"></span>
+                <span class="ltx_text" style="font-size:70%;"> 25</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">Maximum
+                <span class="ltx_text" style="font-size:70%;">Maximum
 Number of “Phase Trombone” Elements</span>
-</td>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">20</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">20</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;">NTR</span>
-</td>
+                <span class="ltx_text" style="font-size:70%;">NTR</span>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:70%;"> </span>
-<a href="#Ch3.S2.SS1.SSS7" title="“Phase–trombone” or matrix element ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
-</td>
+                <span class="ltx_text" style="font-size:70%;"> </span>
+                <a href="#Ch3.S2.SS1.SSS7" title="“Phase–trombone” or matrix element ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
+              </td>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<a href="#Ch3.S2.SS1.SSS7" title="“Phase–trombone” or matrix element ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
-</td>
+                <a href="#Ch3.S2.SS1.SSS7" title="“Phase–trombone” or matrix element ‣ 3.2.1 Single Elements ‣ 3.2 Machine Geometry ‣ Chapter 3 Input Structure" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>
+              </td>
 </tr>
 </tbody>
 </table>
@@ -11513,17 +11513,17 @@ Number of “Phase Trombone” Elements</span>
 <span class="ltx_rule" style="width:0.0pt;height:35.6pt;position:relative; bottom:-14.2pt;background:black;display:inline-block;"></span> <span class="ltx_text ltx_font_bold">File Unit</span>
 </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Input</span>
-</th>
+            <span class="ltx_text ltx_font_bold">Input</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Output</span>
-</th>
+            <span class="ltx_text ltx_font_bold">Output</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">File Type</span>
-</th>
+            <span class="ltx_text ltx_font_bold">File Type</span>
+          </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Contents</span>
-</th>
+            <span class="ltx_text ltx_font_bold">Contents</span>
+          </th>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></th>
@@ -11589,8 +11589,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11617,8 +11617,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11635,8 +11635,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11662,8 +11662,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11680,8 +11680,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11698,8 +11698,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11717,8 +11717,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11735,8 +11735,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11771,8 +11771,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11789,8 +11789,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11807,8 +11807,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11825,8 +11825,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11843,8 +11843,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11879,8 +11879,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11897,8 +11897,8 @@ strength Parameters (format as file #
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -11962,14 +11962,14 @@ parameters <cite class="ltx_cite">[<a href="#bib.bib21" title="" class="ltx_ref
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<math id="A3.T1.m6" class="ltx_Math" alttext="0&lt;=k&lt;=31" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mn>31</mn></mrow></math>
-</td>
+            <math id="A3.T1.m6" class="ltx_Math" alttext="0&lt;=k&lt;=31" display="inline"><mrow><mn>0</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mn>31</mn></mrow></math>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
@@ -11982,14 +11982,14 @@ parameters <cite class="ltx_cite">[<a href="#bib.bib21" title="" class="ltx_ref
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_align_center ltx_border_r">
-<span class="ltx_text ltx_font_typewriter">singletrackfile.dat</span>
-</td>
+            <span class="ltx_text ltx_font_typewriter">singletrackfile.dat</span>
+          </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
@@ -12002,8 +12002,8 @@ parameters <cite class="ltx_cite">[<a href="#bib.bib21" title="" class="ltx_ref
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -12029,8 +12029,8 @@ parameters <cite class="ltx_cite">[<a href="#bib.bib21" title="" class="ltx_ref
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -12074,8 +12074,8 @@ parameters <cite class="ltx_cite">[<a href="#bib.bib21" title="" class="ltx_ref
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
 <td class="ltx_td ltx_border_r"></td>
@@ -12112,8 +12112,8 @@ parameters <cite class="ltx_cite">[<a href="#bib.bib21" title="" class="ltx_ref
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r">
-<span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
-</td>
+            <span class="ltx_rule" style="width:0.0pt;height:21.3pt;position:relative; bottom:-10.5pt;background:black;display:inline-block;"></span>
+          </td>
 <td class="ltx_td ltx_border_b ltx_border_r"></td>
 <td class="ltx_td ltx_border_b ltx_border_r"></td>
 <td class="ltx_td ltx_border_b ltx_border_r"></td>
@@ -12143,14 +12143,14 @@ six of which are already specified in SixTrack.</p>
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Data Type</span>
-</td>
+              <span class="ltx_text ltx_font_bold">Data Type</span>
+            </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Bytes</span>
-</td>
+              <span class="ltx_text ltx_font_bold">Bytes</span>
+            </td>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</td>
+              <span class="ltx_text ltx_font_bold">Description</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Character</td>
@@ -12318,14 +12318,14 @@ of SixTrack.</p>
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Data Type</span>
-</th>
+              <span class="ltx_text ltx_font_bold">Data Type</span>
+            </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Bytes</span>
-</th>
+              <span class="ltx_text ltx_font_bold">Bytes</span>
+            </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</th>
+              <span class="ltx_text ltx_font_bold">Description</span>
+            </th>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">Integer</th>
@@ -12434,510 +12434,510 @@ monitor respectively.</p>
 <tbody class="ltx_tbody">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:90%;"># of Column</span>
-</th>
+              <span class="ltx_text ltx_font_bold" style="font-size:90%;"># of Column</span>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold" style="font-size:90%;">Description</span>
-</td>
+              <span class="ltx_text ltx_font_bold" style="font-size:90%;">Description</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 1</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum turn number</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum turn number</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 2</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Stability Flag (0=stable, 1=lost)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Stability Flag (0=stable, 1=lost)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 3</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Horizontal Tune</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Horizontal Tune</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 4</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Vertical Tune</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Vertical Tune</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 5</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Horizontal </span>
-<math id="A4.T3.m1" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
-<span class="ltx_text" style="font-size:90%;">–function</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Horizontal </span>
+              <math id="A4.T3.m1" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
+              <span class="ltx_text" style="font-size:90%;">–function</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 6</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Vertical </span>
-<math id="A4.T3.m2" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
-<span class="ltx_text" style="font-size:90%;">–function</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Vertical </span>
+              <math id="A4.T3.m2" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
+              <span class="ltx_text" style="font-size:90%;">–function</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 7</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Horizontal amplitude </span>
-<math id="A4.T3.m3" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:90%;"> particle</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Horizontal amplitude </span>
+              <math id="A4.T3.m3" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
+              <span class="ltx_text" style="font-size:90%;"> particle</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 8</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Vertical amplitude </span>
-<math id="A4.T3.m4" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:90%;"> particle</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Vertical amplitude </span>
+              <math id="A4.T3.m4" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
+              <span class="ltx_text" style="font-size:90%;"> particle</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">9</span>
-</th>
+              <span class="ltx_text" style="font-size:90%;">9</span>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Relative momentum deviation
+              <span class="ltx_text" style="font-size:90%;">Relative momentum deviation
 </span>
-<span class="ltx_text" style="font-size:90%;">
-<math id="A4.T3.m5" class="ltx_Math" alttext="\frac{\Delta p}{p_{o}}" display="inline"><mfrac><mrow><mi mathsize="111%" mathvariant="normal" stretchy="false">Δ</mi><mo mathsize="90%" stretchy="false">⁢</mo><mi mathsize="111%" stretchy="false">p</mi></mrow><msub><mi mathsize="111%" stretchy="false">p</mi><mi mathsize="111%" stretchy="false">o</mi></msub></mfrac></math>
-</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">
+                <math id="A4.T3.m5" class="ltx_Math" alttext="\frac{\Delta p}{p_{o}}" display="inline"><mfrac><mrow><mi mathsize="111%" mathvariant="normal" stretchy="false">Δ</mi><mo mathsize="90%" stretchy="false">⁢</mo><mi mathsize="111%" stretchy="false">p</mi></mrow><msub><mi mathsize="111%" stretchy="false">p</mi><mi mathsize="111%" stretchy="false">o</mi></msub></mfrac></math>
+              </span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 10</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Final distance in phase space</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Final distance in phase space</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 11</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum slope of distance in phase space</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum slope of distance in phase space</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 12</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Horizontal detuning</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Horizontal detuning</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 13</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Spread of horizontal detuning</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Spread of horizontal detuning</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 14</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Vertical detuning</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Vertical detuning</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 15</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Spread of vertical detuning</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Spread of vertical detuning</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 16</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Horizontal factor to nearest resonance</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Horizontal factor to nearest resonance</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 17</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Vertical factor to nearest resonance</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Vertical factor to nearest resonance</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 18</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Order of nearest resonance</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Order of nearest resonance</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 19</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Horizontal smear</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Horizontal smear</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 20</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Vertical smear</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Vertical smear</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 21</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Transverse smear</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Transverse smear</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 22</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Survived turns </span>
-<math id="A4.T3.m6" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:90%;"> particle</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Survived turns </span>
+              <math id="A4.T3.m6" class="ltx_Math" alttext="1^{st}" display="inline"><msup><mn>1</mn><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msup></math>
+              <span class="ltx_text" style="font-size:90%;"> particle</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 23</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Survived turns </span>
-<math id="A4.T3.m7" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:90%;"> particle</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Survived turns </span>
+              <math id="A4.T3.m7" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
+              <span class="ltx_text" style="font-size:90%;"> particle</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 24</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Starting seed for random generator</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Starting seed for random generator</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 25</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Synchrotron tune</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Synchrotron tune</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 26</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Horizontal amplitude </span>
-<math id="A4.T3.m8" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:90%;"> particle</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Horizontal amplitude </span>
+              <math id="A4.T3.m8" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
+              <span class="ltx_text" style="font-size:90%;"> particle</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 27</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Vertical amplitude </span>
-<math id="A4.T3.m9" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
-<span class="ltx_text" style="font-size:90%;"> particle</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Vertical amplitude </span>
+              <math id="A4.T3.m9" class="ltx_Math" alttext="2^{nd}" display="inline"><msup><mn>2</mn><mrow><mi>n</mi><mo>⁢</mo><mi>d</mi></mrow></msup></math>
+              <span class="ltx_text" style="font-size:90%;"> particle</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 28</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Minimum horizontal amplitude</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Minimum horizontal amplitude</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 29</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Mean horizontal amplitude</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Mean horizontal amplitude</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 30</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum horizontal amplitude</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum horizontal amplitude</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 31</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Minimum vertical amplitude</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Minimum vertical amplitude</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 32</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Mean vertical amplitude</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Mean vertical amplitude</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 33</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum vertical amplitude</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum vertical amplitude</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 34</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Minimum horizontal amplitude (linear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Minimum horizontal amplitude (linear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 35</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Mean horizontal amplitude (linear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Mean horizontal amplitude (linear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 36</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum horizontal amplitude (linear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum horizontal amplitude (linear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 37</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Minimum vertical amplitude (linear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Minimum vertical amplitude (linear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 38</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Mean vertical amplitude (linear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Mean vertical amplitude (linear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 39</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum vertical amplitude (linear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum vertical amplitude (linear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 40</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Minimum horizontal amplitude (nonlinear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Minimum horizontal amplitude (nonlinear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 41</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Mean horizontal amplitude (nonlinear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Mean horizontal amplitude (nonlinear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 42</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum horizontal amplitude (nonlinear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum horizontal amplitude (nonlinear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 43</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Minimum vertical amplitude (nonlinear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Minimum vertical amplitude (nonlinear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 44</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Mean vertical amplitude (nonlinear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Mean vertical amplitude (nonlinear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 45</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Maximum vertical amplitude (nonlinear decoupled)</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Maximum vertical amplitude (nonlinear decoupled)</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 46</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Emittance Mode I</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Emittance Mode I</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 47</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Emittance Mode II</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Emittance Mode II</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 48</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Secondary horizontal </span>
-<math id="A4.T3.m10" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
-<span class="ltx_text" style="font-size:90%;">–function</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Secondary horizontal </span>
+              <math id="A4.T3.m10" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
+              <span class="ltx_text" style="font-size:90%;">–function</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 49</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Secondary vertical </span>
-<math id="A4.T3.m11" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
-<span class="ltx_text" style="font-size:90%;">–function</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Secondary vertical </span>
+              <math id="A4.T3.m11" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>
+              <span class="ltx_text" style="font-size:90%;">–function</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 50</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T3.m12" class="ltx_Math" alttext="Q^{\prime}_{x}" display="inline"><msubsup><mi>Q</mi><mi>x</mi><mo>′</mo></msubsup></math>
-</td>
+              <math id="A4.T3.m12" class="ltx_Math" alttext="Q^{\prime}_{x}" display="inline"><msubsup><mi>Q</mi><mi>x</mi><mo>′</mo></msubsup></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 51</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T3.m13" class="ltx_Math" alttext="Q^{\prime}_{y}" display="inline"><msubsup><mi>Q</mi><mi>y</mi><mo>′</mo></msubsup></math>
-</td>
+              <math id="A4.T3.m13" class="ltx_Math" alttext="Q^{\prime}_{y}" display="inline"><msubsup><mi>Q</mi><mi>y</mi><mo>′</mo></msubsup></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">
+              <span class="ltx_text" style="font-size:90%;">
 52 – 58</span>
-</th>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Dummy</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Dummy</span>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">59 – 60</span>
-</th>
+              <span class="ltx_text" style="font-size:90%;">59 – 60</span>
+            </th>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<span class="ltx_text" style="font-size:90%;">Internal use</span>
-</td>
+              <span class="ltx_text" style="font-size:90%;">Internal use</span>
+            </td>
 </tr>
 </tbody>
 </table>
@@ -12955,11 +12955,11 @@ written in a binary format.</p>
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold"># of Column</span>
-</th>
+              <span class="ltx_text ltx_font_bold"># of Column</span>
+            </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</th>
+              <span class="ltx_text ltx_font_bold">Description</span>
+            </th>
 </tr>
 </thead>
 <tbody class="ltx_tbody">
@@ -13130,11 +13130,11 @@ written to # 9</figcaption>
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold"># of Row</span>
-</th>
+              <span class="ltx_text ltx_font_bold"># of Row</span>
+            </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</th>
+              <span class="ltx_text ltx_font_bold">Description</span>
+            </th>
 </tr>
 </thead>
 <tbody class="ltx_tbody">
@@ -13147,99 +13147,99 @@ written to # 9</figcaption>
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 2</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m1" class="ltx_Math" alttext="B_{1}\ B_{2}\ B_{3}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>2</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>3</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m1" class="ltx_Math" alttext="B_{1}\ B_{2}\ B_{3}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>2</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>3</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 3</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m2" class="ltx_Math" alttext="B_{4}\ B_{5}\ B_{6}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>4</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>5</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>6</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m2" class="ltx_Math" alttext="B_{4}\ B_{5}\ B_{6}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>4</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>5</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>6</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 4</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m3" class="ltx_Math" alttext="B_{7}\ B_{8}\ B_{9}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>7</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>8</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>9</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m3" class="ltx_Math" alttext="B_{7}\ B_{8}\ B_{9}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>7</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>8</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>9</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 5</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m4" class="ltx_Math" alttext="B_{10}\ B_{11}\ B_{12}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>10</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>11</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>12</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m4" class="ltx_Math" alttext="B_{10}\ B_{11}\ B_{12}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>10</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>11</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>12</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 6</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m5" class="ltx_Math" alttext="B_{13}\ B_{14}\ B_{15}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>13</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>14</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>15</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m5" class="ltx_Math" alttext="B_{13}\ B_{14}\ B_{15}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>13</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>14</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>15</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 7</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m6" class="ltx_Math" alttext="B_{16}\ B_{17}\ B_{18}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>16</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>17</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>18</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m6" class="ltx_Math" alttext="B_{16}\ B_{17}\ B_{18}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>16</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>B</mi><mn>17</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>18</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 8</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m7" class="ltx_Math" alttext="B_{19}\ B_{20}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>19</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>20</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m7" class="ltx_Math" alttext="B_{19}\ B_{20}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>B</mi><mn>19</mn></msub></mpadded><mo>⁢</mo><msub><mi>B</mi><mn>20</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 9</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m8" class="ltx_Math" alttext="A_{1}\ A_{2}\ A_{3}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>2</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>3</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m8" class="ltx_Math" alttext="A_{1}\ A_{2}\ A_{3}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>2</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>3</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 10</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m9" class="ltx_Math" alttext="A_{4}\ A_{5}\ A_{6}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>4</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>5</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>6</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m9" class="ltx_Math" alttext="A_{4}\ A_{5}\ A_{6}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>4</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>5</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>6</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 11</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m10" class="ltx_Math" alttext="A_{7}\ A_{8}\ A_{9}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>7</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>8</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>9</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m10" class="ltx_Math" alttext="A_{7}\ A_{8}\ A_{9}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>7</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>8</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>9</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 12</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m11" class="ltx_Math" alttext="A_{10}\ A_{11}\ A_{12}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>10</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>11</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>12</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m11" class="ltx_Math" alttext="A_{10}\ A_{11}\ A_{12}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>10</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>11</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>12</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 13</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m12" class="ltx_Math" alttext="A_{13}\ A_{14}\ A_{15}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>13</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>14</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>15</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m12" class="ltx_Math" alttext="A_{13}\ A_{14}\ A_{15}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>13</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>14</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>15</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
 14</th>
 <td class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<math id="A4.T5.m13" class="ltx_Math" alttext="A_{16}\ A_{17}\ A_{18}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>16</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>17</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>18</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m13" class="ltx_Math" alttext="A_{16}\ A_{17}\ A_{18}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>16</mn></msub></mpadded><mo>⁢</mo><mpadded width="+5pt"><msub><mi>A</mi><mn>17</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>18</mn></msub></mrow></math>
+            </td>
 </tr>
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r ltx_border_t">
 15</th>
 <td class="ltx_td ltx_align_center ltx_border_b ltx_border_r ltx_border_t">
-<math id="A4.T5.m14" class="ltx_Math" alttext="A_{19}\ A_{20}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>19</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>20</mn></msub></mrow></math>
-</td>
+              <math id="A4.T5.m14" class="ltx_Math" alttext="A_{19}\ A_{20}" display="inline"><mrow><mpadded width="+5pt"><msub><mi>A</mi><mn>19</mn></msub></mpadded><mo>⁢</mo><msub><mi>A</mi><mn>20</mn></msub></mrow></math>
+            </td>
 </tr>
 </tbody>
 </table>
@@ -13261,11 +13261,11 @@ with external program “SODD” <cite class="ltx_cite">[<a href="#bib.bib21" t
 <thead class="ltx_thead">
 <tr class="ltx_tr">
 <th class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold"># of Column</span>
-</th>
+              <span class="ltx_text ltx_font_bold"># of Column</span>
+            </th>
 <th class="ltx_td ltx_align_center ltx_border_r ltx_border_t">
-<span class="ltx_text ltx_font_bold">Description</span>
-</th>
+              <span class="ltx_text ltx_font_bold">Description</span>
+            </th>
 </tr>
 </thead>
 <tbody class="ltx_tbody">
@@ -13381,10 +13381,10 @@ behaviour: it leads to a widening of the lines of the spectrum.</span></p>
 <img src="x9.png" id="A5.F1.g2" class="ltx_graphics" width="399" height="385" alt="">
 </p>
 <figcaption class="ltx_caption ltx_centering">
-<span class="ltx_tag ltx_tag_figure">Figure E.1: </span>
-<span class="ltx_text" style="font-size:90%;">Evolution of the Distance of Phase Space for Regular
+          <span class="ltx_tag ltx_tag_figure">Figure E.1: </span>
+          <span class="ltx_text" style="font-size:90%;">Evolution of the Distance of Phase Space for Regular
 (upper part) and Chaotic (lower part) Motion.</span>
-</figcaption>
+        </figcaption>
 </figure>
 <figure id="A5.F2" class="ltx_figure">
 <p class="ltx_p ltx_align_center"><img src="x10.png" id="A5.F2.g1" class="ltx_graphics" width="467" height="445" alt=""></p>
@@ -13405,13 +13405,13 @@ Regular (upper part) and the Chaotic (lower part) Cases.</figcaption>
 <p class="ltx_p ltx_align_center">[5mm]
 <img src="x15.png" id="A5.F4.g2" class="ltx_graphics" width="467" height="446" alt=""></p>
 <figcaption class="ltx_caption ltx_centering">
-<span class="ltx_tag ltx_tag_figure">Figure E.4: </span>
-<span class="ltx_text" style="font-size:90%;">Stroboscoped Vertical Phase Space Projections
+          <span class="ltx_tag ltx_tag_figure">Figure E.4: </span>
+          <span class="ltx_text" style="font-size:90%;">Stroboscoped Vertical Phase Space Projections
 for the Regular (upper part) and the Chaotic (lower part) Cases
 respectively. The regular motion stays inside a “separatrix”
 with two unstable fix–points visible, while the chaotic motion
 is clearly outside this “separatrix”.</span>
-</figcaption>
+        </figcaption>
 </figure>
 <figure id="A5.F5" class="ltx_figure">
 <p class="ltx_p ltx_align_center"><img src="x16.png" id="A5.F5.g1" class="ltx_graphics" width="466" height="450" alt=""></p>
@@ -13426,13 +13426,13 @@ and the Chaotic (lower part) Cases.</figcaption>
 <h2 class="ltx_title ltx_title_bibliography">Bibliography</h2>
 <ul class="ltx_biblist">
 <li id="bib.bib1" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">1</span>
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
 <span class="ltx_bibblock"> LBL diffential algebra package and LieLib routines
 courtesy of É. Forest.
 </span>
-</li>
+      </li>
 <li id="bib.bib2" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">2</span>
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
 <span class="ltx_bibblock"> G. Ripken and F. Schmidt, “A symplectic
 six–dimensional thin–lens formalism for tracking”, CERN SL 95–12
 (AP)(1995), DESY 95–063 (1995).
@@ -13447,32 +13447,32 @@ the Exact Hamiltonian”, DESY 96–156 (1995),
 <span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/ripken3.pdf
 http://cern.ch/Frank.Schmidt/report/ripken3.pdf.
 </span>
-</li>
+      </li>
 <li id="bib.bib3" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">3</span>
+        <span class="ltx_bibtag ltx_role_refnum">3</span>
 <span class="ltx_bibblock"> A. Wrulich, “RACETRACK, A computer code for the
 simulation of nonlinear motion in accelerators”, DESY 84–026
 (1984).
 </span>
-</li>
+      </li>
 <li id="bib.bib4" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">4</span>
+        <span class="ltx_bibtag ltx_role_refnum">4</span>
 <span class="ltx_bibblock"> B. Leemann and É. Forest, “Brief
 description of the tracking codes FASTRAC and THINTRAC”, SSC Note
 SSC–133.
 </span>
-</li>
+      </li>
 <li id="bib.bib5" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">5</span>
+        <span class="ltx_bibtag ltx_role_refnum">5</span>
 <span class="ltx_bibblock"> G. Ripken, “Nonlinear canonical
 equations of coupled synchro–betatron motion and their solution
 within the framework of a nonlinear 6–dimensional (symplectic)
 tracking program for ultra–relativistic protons”, DESY 85–084
 (1985).
 </span>
-</li>
+      </li>
 <li id="bib.bib6" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">6</span>
+        <span class="ltx_bibtag ltx_role_refnum">6</span>
 <span class="ltx_bibblock"> D.P. Barber, G. Ripken and F. Schmidt,
 “A nonlinear canonical formalism for the coupled
 synchro–betatron motion of protons with arbitrary energy”, DESY
@@ -13482,90 +13482,90 @@ six–dimensional thin–lens formalism for tracking”, CERN/SL/95–12
 <span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/ripken.pdf
 http://cern.ch/Frank.Schmidt/report/ripken.pdf; K. Heinemann,
 </span>
-</li>
+      </li>
 <li id="bib.bib7" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">7</span>
+        <span class="ltx_bibtag ltx_role_refnum">7</span>
 <span class="ltx_bibblock">
 R. Brun and D. Lienart, “HBOOK User Guide”, CERN Program Library
 Y250 (1987).
 </span>
-</li>
+      </li>
 <li id="bib.bib8" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">8</span>
+        <span class="ltx_bibtag ltx_role_refnum">8</span>
 <span class="ltx_bibblock"> R. Brun and N.C. Somon, “HPLOT User
 Guide”, CERN Program Library Y251 (1988).
 </span>
-</li>
+      </li>
 <li id="bib.bib9" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">9</span>
+        <span class="ltx_bibtag ltx_role_refnum">9</span>
 <span class="ltx_bibblock"> R. Bock,
 R. Brun, O. Couet, N.C. Somon, C.E. Vandoni and P. Zanarini, “HIGZ
 User Guide”, CERN Program Library Q120.
 </span>
-</li>
+      </li>
 <li id="bib.bib10" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">10</span>
+        <span class="ltx_bibtag ltx_role_refnum">10</span>
 <span class="ltx_bibblock">
 G. Guignard, “A general treatment of resonances in accelerators”,
 CERN 78–11 (1978).
 </span>
-</li>
+      </li>
 <li id="bib.bib11" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">11</span>
+        <span class="ltx_bibtag ltx_role_refnum">11</span>
 <span class="ltx_bibblock"> M. Berz, “Differential
 algebra description of beam dynamics to very high orders”, Particle
 Accelerators, 1989, Vol. <span class="ltx_text" style="text-decoration:underline;">24</span>, pp. 109–124.
 </span>
-</li>
+      </li>
 <li id="bib.bib12" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">12</span>
+        <span class="ltx_bibtag ltx_role_refnum">12</span>
 <span class="ltx_bibblock"> M. Berz, “DAFOR – Differential Algebra Precompiler
 Version 3, Reference Manual”, MSUCL–755 (1991).
 </span>
-</li>
+      </li>
 <li id="bib.bib13" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">13</span>
+        <span class="ltx_bibtag ltx_role_refnum">13</span>
 <span class="ltx_bibblock"> F. Schmidt and M. Vaenttinen, “Vectorisation of the
 single particle tracking program SixTrack”, CERN SL Note 90–20
 (1990) (AP).
 </span>
-</li>
+      </li>
 <li id="bib.bib14" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">14</span>
+        <span class="ltx_bibtag ltx_role_refnum">14</span>
 <span class="ltx_bibblock"> F. Schmidt, “Untersuchungen zur dynamischen
 Akzeptanz von Protonenbeschleunigern und ihre Begrenzung durch
 chaotische Bewegung”, DESY HERA 88–02, (1988).
 </span>
-</li>
+      </li>
 <li id="bib.bib15" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">15</span>
+        <span class="ltx_bibtag ltx_role_refnum">15</span>
 <span class="ltx_bibblock"> H. Grote, “A MAD–SixTrack interface”, SL Note
 97–02 (AP).
 </span>
-</li>
+      </li>
 <li id="bib.bib16" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">16</span>
+        <span class="ltx_bibtag ltx_role_refnum">16</span>
 <span class="ltx_bibblock"> SixTrack Physics Manual, <a href="http://sixtrack.web.cern.ch/SixTrack/" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://sixtrack.web.cern.ch/SixTrack/</span></a>
 </span>
-</li>
+      </li>
 <li id="bib.bib17" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">17</span>
+        <span class="ltx_bibtag ltx_role_refnum">17</span>
 <span class="ltx_bibblock"> M. Berz, É. Forest
 and J. Irwin, “Normal form methods for complicated periodic
 systems: a complete solution using differential algebra and lie
 operators”, Particle Accelerators, 1989, Vol. <span class="ltx_text" style="text-decoration:underline;">24</span>, pp.
 91–107.
 </span>
-</li>
+      </li>
 <li id="bib.bib18" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">18</span>
+        <span class="ltx_bibtag ltx_role_refnum">18</span>
 <span class="ltx_bibblock"> M. Bassetti and G.A. Erskine,
 “Closed expression for the electrical field of a two–dimensional
 Gaussian charge”, CERN–ISR–TH/80–06.
 </span>
-</li>
+      </li>
 <li id="bib.bib19" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">19</span>
+        <span class="ltx_bibtag ltx_role_refnum">19</span>
 <span class="ltx_bibblock"> K. Hirata, H. Moshammer, F. Ruggiero and M. Bassetti,
 “Synchro-Beam interaction”, CERN SL-AP/90-02 (1990) and Proc.
 Workshop on Beam Dynamics Issues of High-Luminosity Asymmetric
@@ -13577,17 +13577,17 @@ Part. Accel. 40, 205-228 (1993);
 <br class="ltx_break">K. Hirata, “BBC User’s Guide; A Computer Code for Beam-Beam Interaction
 with a Crossing Angle, version 3.4”, SL-Note 97-57 AP.
 </span>
-</li>
+      </li>
 <li id="bib.bib20" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">20</span>
+        <span class="ltx_bibtag ltx_role_refnum">20</span>
 <span class="ltx_bibblock"> L.H.A. Leunissen, F. Schmidt and G. Ripken, “6D
 Beam–Beam Kick including Coupled Motion”, LHC Project Report 369,
 <span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/ripken_new.pdf
 http://cern.ch/Frank.Schmidt/report/ripken_new.pdf.
 </span>
-</li>
+      </li>
 <li id="bib.bib21" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">21</span>
+        <span class="ltx_bibtag ltx_role_refnum">21</span>
 <span class="ltx_bibblock"> F. Schmidt, “SODD:
 <br class="ltx_break">A Computer Code to calculate
 Detuning and Distortion Function Terms in First and Second Order”,
@@ -13595,9 +13595,9 @@ CERN SL/Note 99–009 (AP),
 <span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/sodd_manual.pdf
 http://cern.ch/Frank.Schmidt/report/sodd_manual.pdf.
 </span>
-</li>
+      </li>
 <li id="bib.bib22" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">22</span>
+        <span class="ltx_bibtag ltx_role_refnum">22</span>
 <span class="ltx_bibblock">
 H. Grote and F.C. Iselin, “The MAD program (Methodical Accelerator
 Design), Version 8.10, User’s Reference Manual”, CERN SL 90–13
@@ -13605,116 +13605,116 @@ Design), Version 8.10, User’s Reference Manual”, CERN SL 90–13
 <br class="ltx_break"><span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Hans.Grote/mad/mad8/doc/mad8_user.ps.gz
 http://cern.ch/Hans.Grote/mad/mad8/doc/mad8_user.ps.gz.
 </span>
-</li>
+      </li>
 <li id="bib.bib23" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">23</span>
+        <span class="ltx_bibtag ltx_role_refnum">23</span>
 <span class="ltx_bibblock">
 R. Molloy and S. Blitz, “Fringe Field Effects on Bending Magnets, Derived for,
 TRANSPORT/TURTLE”, FERMILAB-TM-2564-AD-APC-PPD
 <a href="http://lss.fnal.gov/archive/test-tm/2000/fermilab-tm-2564-ad-apc-ppd.pdf" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://lss.fnal.gov/archive/test-tm/2000/fermilab-tm-2564-ad-apc-ppd.pdf</span></a>
 </span>
-</li>
+      </li>
 <li id="bib.bib24" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">24</span>
+        <span class="ltx_bibtag ltx_role_refnum">24</span>
 <span class="ltx_bibblock"> private communication.
 </span>
-</li>
+      </li>
 <li id="bib.bib25" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">25</span>
+        <span class="ltx_bibtag ltx_role_refnum">25</span>
 <span class="ltx_bibblock"> F. James, “A review of
 pseudo–random number generators”, to be published in Computer
 Physics Communication.
 </span>
-</li>
+      </li>
 <li id="bib.bib26" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">26</span>
+        <span class="ltx_bibtag ltx_role_refnum">26</span>
 <span class="ltx_bibblock"> B. Autin and Y. Marti, “Closed Orbit Correction of
 A.G. Machines Using a Small Number of Magnets”,
 CERN–ISR–MA/73–17.
 </span>
-</li>
+      </li>
 <li id="bib.bib27" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">27</span>
+        <span class="ltx_bibtag ltx_role_refnum">27</span>
 <span class="ltx_bibblock"> M. Giovannozzi,
 “Description of software tools to perform tune–shift correction
 using normal forms”, CERN SL Note 93–111 (AP).
 </span>
-</li>
+      </li>
 <li id="bib.bib28" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">28</span>
+        <span class="ltx_bibtag ltx_role_refnum">28</span>
 <span class="ltx_bibblock"> F. Schmidt, F. Willeke and F. Zimmermann,
 “Comparison of methods to determine long–term stability in proton
 storage rings”, 1991, Particle Accelerators, Vol. <span class="ltx_text" style="text-decoration:underline;">35</span>,
 pp. 249–256.
 </span>
-</li>
+      </li>
 <li id="bib.bib29" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">29</span>
+        <span class="ltx_bibtag ltx_role_refnum">29</span>
 <span class="ltx_bibblock"> R. Bartolini, A. Bazzani, M. Giovannozzi, W. Scandale, E. Todesco,“Tune evaluation in simulations and experiments”,Part. Accel. 52 147
 </span>
-</li>
+      </li>
 <li id="bib.bib30" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">30</span>
+        <span class="ltx_bibtag ltx_role_refnum">30</span>
 <span class="ltx_bibblock"> M. Giovannozzi, E. Todesco, A. Bazzani and R. Bartolini (1997). “PLATO: a program library for the analysis of nonlinear betatronic motion”, Nucl. Instrum. and Methods A 388 1
 </span>
-</li>
+      </li>
 <li id="bib.bib31" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">31</span>
+        <span class="ltx_bibtag ltx_role_refnum">31</span>
 <span class="ltx_bibblock"> J. Laskar, C. Froeschle and C. Celletti,
 “The measure of chaos by the numerical analysis of the fundamental frequencies. Application to the standard mapping”,
 Physica D, vol. 56, pp 253-269, 1992.
 </span>
-</li>
+      </li>
 <li id="bib.bib32" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">32</span>
+        <span class="ltx_bibtag ltx_role_refnum">32</span>
 <span class="ltx_bibblock"> S. Kostoglou, N. Karastathis, Y. Papaphilippou, D. Pellegrini and P. Zisopoulos,
 “Development of computational tools for noise studies in the LHC”,
 2017, Proceedings of IPAC’17, Copenhagen, Denmark, 2017.
 </span>
-</li>
+      </li>
 <li id="bib.bib33" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">33</span>
+        <span class="ltx_bibtag ltx_role_refnum">33</span>
 <span class="ltx_bibblock"> SixTrack build manual, see SixTrack website, <a href="http://sixtrack.web.cern.ch/SixTrack/" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://sixtrack.web.cern.ch/SixTrack/</span></a>
 </span>
-</li>
+      </li>
 <li id="bib.bib34" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">34</span>
+        <span class="ltx_bibtag ltx_role_refnum">34</span>
 <span class="ltx_bibblock"> SixDesk manual, see SixTrack website, <a href="http://sixtrack.web.cern.ch/SixTrack/" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://sixtrack.web.cern.ch/SixTrack/</span></a>
 </span>
-</li>
+      </li>
 <li id="bib.bib35" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">35</span>
+        <span class="ltx_bibtag ltx_role_refnum">35</span>
 <span class="ltx_bibblock"> SixDesk manual, <a href="https://www.overleaf.com/1345694dwypbp#/3325092/" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">https://www.overleaf.com/1345694dwypbp#/3325092/</span></a>
 </span>
-</li>
+      </li>
 <li id="bib.bib36" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">36</span>
+        <span class="ltx_bibtag ltx_role_refnum">36</span>
 <span class="ltx_bibblock"> J. B. Garcia et al.,
 “Long term dynamics of the high luminosity Large Hadron Collider with crab cavities”,
 2016, PHYSICAL REVIEW ACCELERATORS AND BEAMS 19, 101003 (2016).
 </span>
-</li>
+      </li>
 <li id="bib.bib37" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">37</span>
+        <span class="ltx_bibtag ltx_role_refnum">37</span>
 <span class="ltx_bibblock"> K. Sjobak, H. Burkhardt, R.D. Maria, A. Mereghetti and A. Santamaria,
 “General functionality for turn-dependent element properties in SixTrack”
 2015, Procedings of IPAC’13, Richmond, VA, USA, May 2015.
 </span>
-</li>
+      </li>
 <li id="bib.bib38" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">38</span>
+        <span class="ltx_bibtag ltx_role_refnum">38</span>
 <span class="ltx_bibblock"> S. Russenschuck,
 “Field computation for Accelerator Magnets”,
 Wiley-VCH, 2010
 </span>
-</li>
+      </li>
 <li id="bib.bib39" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">39</span>
+        <span class="ltx_bibtag ltx_role_refnum">39</span>
 <span class="ltx_bibblock"> P. Burla, Q. King and J.G. Pett,
 “Optimisation of the current ramp for the LHC”,
 Proceedings of the 1999 Particle Accelerator Conference, New York, 1999.
 </span>
-</li>
+      </li>
 </ul>
 </section>
 </article>

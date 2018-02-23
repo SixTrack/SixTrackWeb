@@ -1,6 +1,6 @@
 <?php
     $bMain  = true;
-    $sHead  = '<!--Generated on Thu Feb 22 22:16:52 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
+    $sHead  = '<!--Generated on Fri Feb 23 09:11:18 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
 <!--Document created on Jan. 2017.-->
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-article.css" type="text/css">
@@ -12,7 +12,7 @@
     require_once('../../includes/header.php');
 ?>
 <article id='manual' class='ltx_document'>
-<div id='generator'>Generated on Thu Feb 22 22:16:52 2018 by <a href='http://dlmf.nist.gov/LaTeXML/'>LaTeXML</a> (version 0.8.1)</div>
+<div id='generator'>Generated on Fri Feb 23 09:11:18 2018 by <a href='http://dlmf.nist.gov/LaTeXML/'>LaTeXML</a> (version 0.8.1)</div>
 <h1 class="ltx_title ltx_title_document">Compiling, building, and testing SixTrack</h1>
 <div class="ltx_authors">
 <span class="ltx_creator ltx_role_author">
@@ -139,11 +139,11 @@ If you still want to download a tarball, the newest version is found at
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+              <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+            </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>clone<span class="ltx_text ltx_lst_space"> </span>https://github.com/SixTrack/SixTrack.git</span>
-</td>
+              <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>clone<span class="ltx_text ltx_lst_space"> </span>https://github.com/SixTrack/SixTrack.git</span>
+            </td>
 </tr>
 </table>
 </div>
@@ -158,11 +158,11 @@ Furthermore, it also contains a full clone of the original repository, meaning t
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+              <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+            </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>pull</span>
-</td>
+              <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>pull</span>
+            </td>
 </tr>
 </table>
 </div>
@@ -281,11 +281,11 @@ Using the command-line GIT client, this is done as follows:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                    <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                  </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>remote<span class="ltx_text ltx_lst_space"> </span>add<span class="ltx_text ltx_lst_space"> </span>upstream<span class="ltx_text ltx_lst_space"> </span>git@github.com:SixTrack/SixTrack.git</span>
-</td>
+                    <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>remote<span class="ltx_text ltx_lst_space"> </span>add<span class="ltx_text ltx_lst_space"> </span>upstream<span class="ltx_text ltx_lst_space"> </span>git@github.com:SixTrack/SixTrack.git</span>
+                  </td>
 </tr>
 </table>
 </div>
@@ -300,11 +300,11 @@ Using the command-line GIT client, this is done as follows:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                    <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                  </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>fetch<span class="ltx_text ltx_lst_space"> </span>upstream</span>
-</td>
+                    <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>fetch<span class="ltx_text ltx_lst_space"> </span>upstream</span>
+                  </td>
 </tr>
 </table>
 </div>
@@ -319,11 +319,11 @@ Using the command-line GIT client, this is done as follows:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                    <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                  </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>checkout<span class="ltx_text ltx_lst_space"> </span>master</span>
-</td>
+                    <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>checkout<span class="ltx_text ltx_lst_space"> </span>master</span>
+                  </td>
 </tr>
 </table>
 </div>
@@ -338,11 +338,11 @@ Using the command-line GIT client, this is done as follows:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                    <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                  </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>checkout<span class="ltx_text ltx_lst_space"> </span>master</span>
-</td>
+                    <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>checkout<span class="ltx_text ltx_lst_space"> </span>master</span>
+                  </td>
 </tr>
 </table>
 </div>
@@ -358,11 +358,11 @@ Using the command-line GIT client, this is done as follows:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                    <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                  </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>merge<span class="ltx_text ltx_lst_space"> </span>upstream/master</span>
-</td>
+                    <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>merge<span class="ltx_text ltx_lst_space"> </span>upstream/master</span>
+                  </td>
 </tr>
 </table>
 </div>
@@ -378,11 +378,11 @@ Using the command-line GIT client, this is done as follows:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                    <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                  </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>push</span>
-</td>
+                    <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>push</span>
+                  </td>
 </tr>
 </table>
 </div>
@@ -398,11 +398,11 @@ Such updates are done by checking out the branch in question, and then running</
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+              <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+            </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>merge<span class="ltx_text ltx_lst_space"> </span>master</span>
-</td>
+              <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>merge<span class="ltx_text ltx_lst_space"> </span>master</span>
+            </td>
 </tr>
 </table>
 </div>
@@ -427,11 +427,11 @@ To run it, simply execute the command:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+              <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+            </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>compiler<span class="ltx_text ltx_lst_space"> </span>buildtype<span class="ltx_text ltx_lst_space"> </span>OPTION1<span class="ltx_text ltx_lst_space"> </span>OPTION2<span class="ltx_text ltx_lst_space"> </span>-OPTION3</span>
-</td>
+              <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>compiler<span class="ltx_text ltx_lst_space"> </span>buildtype<span class="ltx_text ltx_lst_space"> </span>OPTION1<span class="ltx_text ltx_lst_space"> </span>OPTION2<span class="ltx_text ltx_lst_space"> </span>-OPTION3</span>
+            </td>
 </tr>
 </table>
 </div>
@@ -446,11 +446,11 @@ To see the list of options and their meaning, simply run:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+              <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+            </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>help</span>
-</td>
+              <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>help</span>
+            </td>
 </tr>
 </table>
 </div>
@@ -468,11 +468,11 @@ To see the list of options and their meaning, simply run:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+              <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+            </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>clean</span>
-</td>
+              <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>clean</span>
+            </td>
 </tr>
 </table>
 </div>
@@ -531,11 +531,11 @@ We here support the following compilers:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+              </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>help</span>
-</td>
+                <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>help</span>
+              </td>
 </tr>
 </table>
 </div>
@@ -559,11 +559,11 @@ This can be accomplished by running their setup script as</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/lcg/external/gcc/4.9/x86_64-slc6-gcc49-opt/setup.sh</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/lcg/external/gcc/4.9/x86_64-slc6-gcc49-opt/setup.sh</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -573,11 +573,11 @@ This can be accomplished by running their setup script as</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/lcg/external/geant4/10.3/x86_64-slc6-gcc49-opt/CMake-setup.sh</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/lcg/external/geant4/10.3/x86_64-slc6-gcc49-opt/CMake-setup.sh</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -599,11 +599,11 @@ To load these from AFS, simply run their setup script as:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/IntelSoftware/linux/17-all-setup.sh</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/IntelSoftware/linux/17-all-setup.sh</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -613,11 +613,11 @@ To load these from AFS, simply run their setup script as:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/IntelSoftware/linux/17-all-setup.sh<span class="ltx_text ltx_lst_space"> </span>ia32</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/IntelSoftware/linux/17-all-setup.sh<span class="ltx_text ltx_lst_space"> </span>ia32</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -634,75 +634,75 @@ This can be accomplished through the commands:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;"><span class="ltx_text ltx_lst_keyword ltx_font_bold">export</span><span class="ltx_text ltx_lst_space"> </span>PATH=/afs/cern.ch/sw/lcg/contrib/CMake/3.7.0/Linux-x86_64/bin:$PATH</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;"><span class="ltx_text ltx_lst_keyword ltx_font_bold">export</span><span class="ltx_text ltx_lst_space"> </span>PATH=/afs/cern.ch/sw/lcg/contrib/CMake/3.7.0/Linux-x86_64/bin:$PATH</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;"><span class="ltx_text ltx_lst_keyword ltx_font_bold">export</span><span class="ltx_text ltx_lst_space"> </span>CMAKE_ROOT=/afs/cern.ch/sw/lcg/contrib/CMake/3.7.0/Linux-x86_64</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;"><span class="ltx_text ltx_lst_keyword ltx_font_bold">export</span><span class="ltx_text ltx_lst_space"> </span>CMAKE_ROOT=/afs/cern.ch/sw/lcg/contrib/CMake/3.7.0/Linux-x86_64</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">\end{lstlisting}<span class="ltx_text ltx_lst_space"> </span>%$<span class="ltx_text ltx_lst_space"> </span>(Workaround<span class="ltx_text ltx_lst_space"> </span><span class="ltx_text ltx_lst_keyword ltx_font_bold">for</span><span class="ltx_text ltx_lst_space"> </span>editor<span class="ltx_text ltx_lst_space"> </span>syntax<span class="ltx_text ltx_lst_space"> </span>highlighting<span class="ltx_text ltx_lst_space"> </span>picking<span class="ltx_text ltx_lst_space"> </span>up<span class="ltx_text ltx_lst_space"> </span>the<span class="ltx_text ltx_lst_space"> </span>dollar<span class="ltx_text ltx_lst_space"> </span>sign...)</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">\end{lstlisting}<span class="ltx_text ltx_lst_space"> </span>%$<span class="ltx_text ltx_lst_space"> </span>(Workaround<span class="ltx_text ltx_lst_space"> </span><span class="ltx_text ltx_lst_keyword ltx_font_bold">for</span><span class="ltx_text ltx_lst_space"> </span>editor<span class="ltx_text ltx_lst_space"> </span>syntax<span class="ltx_text ltx_lst_space"> </span>highlighting<span class="ltx_text ltx_lst_space"> </span>picking<span class="ltx_text ltx_lst_space"> </span>up<span class="ltx_text ltx_lst_space"> </span>the<span class="ltx_text ltx_lst_space"> </span>dollar<span class="ltx_text ltx_lst_space"> </span>sign...)</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">4</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">4</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line"></span>
-</td>
+                  <span class="ltx_text ltx_lst_line"></span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">5</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">5</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">\subsubsection{nagfor}</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">\subsubsection{nagfor}</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">6</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">6</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line"></span>
-</td>
+                  <span class="ltx_text ltx_lst_line"></span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">7</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">7</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">To<span class="ltx_text ltx_lst_space"> </span>load<span class="ltx_text ltx_lst_space"> </span>nagfor<span class="ltx_text ltx_lst_space"> </span>version<span class="ltx_text ltx_lst_space"> </span>6.0<span class="ltx_text ltx_lst_space"> </span>on<span class="ltx_text ltx_lst_space"> </span>LxPlus,<span class="ltx_text ltx_lst_space"> </span>simply<span class="ltx_text ltx_lst_space"> </span>run</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">To<span class="ltx_text ltx_lst_space"> </span>load<span class="ltx_text ltx_lst_space"> </span>nagfor<span class="ltx_text ltx_lst_space"> </span>version<span class="ltx_text ltx_lst_space"> </span>6.0<span class="ltx_text ltx_lst_space"> </span>on<span class="ltx_text ltx_lst_space"> </span>LxPlus,<span class="ltx_text ltx_lst_space"> </span>simply<span class="ltx_text ltx_lst_space"> </span>run</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">8</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">8</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">\begin{lstlisting}</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">\begin{lstlisting}</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">9</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">9</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/fortran/nag/usenag.bash<span class="ltx_text ltx_lst_space"> </span>6.</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">source<span class="ltx_text ltx_lst_space"> </span>/afs/cern.ch/sw/fortran/nag/usenag.bash<span class="ltx_text ltx_lst_space"> </span>6.</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -730,11 +730,11 @@ In effect, just run</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -759,11 +759,11 @@ The collimation-specific features are controlled by a <span class="ltx_text ltx_
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>COLLIMAT<span class="ltx_text ltx_lst_space"> </span>-CRLIBM</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>COLLIMAT<span class="ltx_text ltx_lst_space"> </span>-CRLIBM</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -785,11 +785,11 @@ The feature is included by using the <span class="ltx_text ltx_font_typewriter">
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>CR</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>CR</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -811,11 +811,11 @@ Once this is done, it is possible to build SixTrack with BOINC support by runnin
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>CR<span class="ltx_text ltx_lst_space"> </span>BOINC<span class="ltx_text ltx_lst_space"> </span>API<span class="ltx_text ltx_lst_space"> </span>LIBARCHIVE</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>CR<span class="ltx_text ltx_lst_space"> </span>BOINC<span class="ltx_text ltx_lst_space"> </span>API<span class="ltx_text ltx_lst_space"> </span>LIBARCHIVE</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -838,11 +838,11 @@ This makes it possible to increase the particle number to 2048, and to track thi
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>STF<span class="ltx_text ltx_lst_space"> </span>BIGNPART</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>STF<span class="ltx_text ltx_lst_space"> </span>BIGNPART</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -856,11 +856,11 @@ This then makes it possible to track up to 65 536 particles when the <span cla
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>STF<span class="ltx_text ltx_lst_space"> </span>DATAMODS<span class="ltx_text ltx_lst_space"> </span>HUGENPART</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>STF<span class="ltx_text ltx_lst_space"> </span>DATAMODS<span class="ltx_text ltx_lst_space"> </span>HUGENPART</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -882,11 +882,11 @@ To compile it, simply run:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>DA<span class="ltx_text ltx_lst_space"> </span>NAGLIB<span class="ltx_text ltx_lst_space"> </span>ifort</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>DA<span class="ltx_text ltx_lst_space"> </span>NAGLIB<span class="ltx_text ltx_lst_space"> </span>ifort</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -960,19 +960,19 @@ In order to load the submodule, run from anywhere in the SixTrack repository run
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>init</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>init</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>update</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>update</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -985,27 +985,27 @@ This is accomplished by <span class="ltx_text ltx_font_typewriter">cd</span>-ing
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./_autosetup<span class="ltx_text ltx_lst_space"> </span>-f</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./_autosetup<span class="ltx_text ltx_lst_space"> </span>-f</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./configure<span class="ltx_text ltx_lst_space"> </span>--disable-client<span class="ltx_text ltx_lst_space"> </span>--disable-server<span class="ltx_text ltx_lst_space"> </span>--disable-manager<span class="ltx_text ltx_lst_space"> </span>--disable-boinczip</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./configure<span class="ltx_text ltx_lst_space"> </span>--disable-client<span class="ltx_text ltx_lst_space"> </span>--disable-server<span class="ltx_text ltx_lst_space"> </span>--disable-manager<span class="ltx_text ltx_lst_space"> </span>--disable-boinczip</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">make</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">make</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1015,11 +1015,11 @@ This is accomplished by <span class="ltx_text ltx_font_typewriter">cd</span>-ing
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">make<span class="ltx_text ltx_lst_space"> </span>boinc_api_fortran.o</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">make<span class="ltx_text ltx_lst_space"> </span>boinc_api_fortran.o</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1061,19 +1061,19 @@ In order to load the submodule, run from anywhere in the SixTrack repository:</p
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>init</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>init</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>update</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>update</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1088,11 +1088,11 @@ You can then configure it as
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">cmake<span class="ltx_text ltx_lst_space"> </span>-DCMAKE_BUILD_TYPE=Release<span class="ltx_text ltx_lst_space"> </span>-DENABLE_BZip2=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_ZLIB=ON<span class="ltx_text ltx_lst_space"> </span>-DENABLE_CAT=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_CPIO=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_EXPAT=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_INSTALL=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_LIBXML2=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_LZMA=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_NETTLE=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_OPENSSL=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_TAR=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_CNG=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_ICONV=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_TEST=OFF<span class="ltx_text ltx_lst_space"> </span>(-DZLIB_LIBRARY=\$ZLIB\_PATH)<span class="ltx_text ltx_lst_space"> </span>-G<span class="ltx_text ltx_lst_space"> </span>"Unix<span class="ltx_text ltx_lst_space"> </span>Makefiles"<span class="ltx_text ltx_lst_space"> </span>../libarchive<span class="ltx_text ltx_lst_space"> </span>-LH</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">cmake<span class="ltx_text ltx_lst_space"> </span>-DCMAKE_BUILD_TYPE=Release<span class="ltx_text ltx_lst_space"> </span>-DENABLE_BZip2=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_ZLIB=ON<span class="ltx_text ltx_lst_space"> </span>-DENABLE_CAT=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_CPIO=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_EXPAT=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_INSTALL=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_LIBXML2=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_LZMA=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_NETTLE=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_OPENSSL=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_TAR=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_CNG=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_ICONV=OFF<span class="ltx_text ltx_lst_space"> </span>-DENABLE_TEST=OFF<span class="ltx_text ltx_lst_space"> </span>(-DZLIB_LIBRARY=\$ZLIB\_PATH)<span class="ltx_text ltx_lst_space"> </span>-G<span class="ltx_text ltx_lst_space"> </span>"Unix<span class="ltx_text ltx_lst_space"> </span>Makefiles"<span class="ltx_text ltx_lst_space"> </span>../libarchive<span class="ltx_text ltx_lst_space"> </span>-LH</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1134,11 +1134,11 @@ To enable it, add the <span class="ltx_text ltx_font_typewriter">NAFF</span> fla
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>NAFF</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>NAFF</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1170,51 +1170,51 @@ This can be accomplished via the following sequence of commands:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>gcc</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>gcc</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>pkg-config</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>pkg-config</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>automake</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>automake</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">4</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">4</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>libtool</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>libtool</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">5</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">5</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>cmake</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>cmake</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">6</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">6</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>gawk</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">brew<span class="ltx_text ltx_lst_space"> </span>install<span class="ltx_text ltx_lst_space"> </span>gawk</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1245,11 +1245,11 @@ To do this, first update the <span class="ltx_text ltx_font_typewriter">pacman</
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Sy<span class="ltx_text ltx_lst_space"> </span>pacman</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Sy<span class="ltx_text ltx_lst_space"> </span>pacman</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1260,11 +1260,11 @@ Then, open a new MSYS2 window and update the core packages:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1275,11 +1275,11 @@ Finally, do a general update using:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Su</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Su</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1289,27 +1289,27 @@ Finally, do a general update using:</p>
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>openssh<span class="ltx_text ltx_lst_space"> </span>git<span class="ltx_text ltx_lst_space"> </span>make</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>openssh<span class="ltx_text ltx_lst_space"> </span>git<span class="ltx_text ltx_lst_space"> </span>make</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw-w64-x86_64-toolchain<span class="ltx_text ltx_lst_space"> </span>mingw64/mingw-w64-x86_64-cmake</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw-w64-x86_64-toolchain<span class="ltx_text ltx_lst_space"> </span>mingw64/mingw-w64-x86_64-cmake</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw-w64-i686-toolchain<span class="ltx_text ltx_lst_space"> </span>mingw32/mingw-w64-i686-cmake</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw-w64-i686-toolchain<span class="ltx_text ltx_lst_space"> </span>mingw32/mingw-w64-i686-cmake</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1327,19 +1327,19 @@ Therefore run inside the <span class="ltx_text ltx_font_typewriter">SixTrack</sp
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>init</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>init</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>update</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">git<span class="ltx_text ltx_lst_space"> </span>submodule<span class="ltx_text ltx_lst_space"> </span>update</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1349,35 +1349,35 @@ Therefore run inside the <span class="ltx_text ltx_font_typewriter">SixTrack</sp
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>autoconf</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>autoconf</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">2</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>automake</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>automake</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">3</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw32/mingw-w64-i686-headers-git<span class="ltx_text ltx_lst_space"> </span>mingw64/mingw-w64-x86_64-headers-git</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw32/mingw-w64-i686-headers-git<span class="ltx_text ltx_lst_space"> </span>mingw64/mingw-w64-x86_64-headers-git</span>
+                </td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">4</span>
-</td>
+                  <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">4</span>
+                </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw64/mingw-w64-x86_64-libtool<span class="ltx_text ltx_lst_space"> </span>mingw32/mingw-w64-i686-libtool</span>
-</td>
+                  <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">pacman<span class="ltx_text ltx_lst_space"> </span>-Syu<span class="ltx_text ltx_lst_space"> </span>mingw64/mingw-w64-x86_64-libtool<span class="ltx_text ltx_lst_space"> </span>mingw32/mingw-w64-i686-libtool</span>
+                </td>
 </tr>
 </table>
 </div>
@@ -1459,11 +1459,11 @@ For GNU compilers, one can also add the flag <span class="ltx_text ltx_font_type
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+              </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">ctest</span>
-</td>
+                <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">ctest</span>
+              </td>
 </tr>
 </table>
 </div>
@@ -1473,11 +1473,11 @@ For GNU compilers, one can also add the flag <span class="ltx_text ltx_font_type
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+              </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>BUILD_TESTING</span>
-</td>
+                <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;">./cmake_six<span class="ltx_text ltx_lst_space"> </span>BUILD_TESTING</span>
+              </td>
 </tr>
 </table>
 </div>
@@ -1543,11 +1543,11 @@ You then need to set the EXECS environment variable to the full path of the exec
 <table class="ltx_tabular">
 <tr class="ltx_tr">
 <td class="ltx_td ltx_lst_linenum">
-<span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
-</td>
+                <span class="ltx_text ltx_font_typewriter" style="font-size:50%;">1</span>
+              </td>
 <td class="ltx_td">
-<span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;"><span class="ltx_text ltx_lst_keyword ltx_font_bold">export</span><span class="ltx_text ltx_lst_space"> </span>TESTS="bb<span class="ltx_text ltx_lst_space"> </span>bbe51<span class="ltx_text ltx_lst_space"> </span>bbe52<span class="ltx_text ltx_lst_space"> </span>bbe571ib0<span class="ltx_text ltx_lst_space">  </span>bbinbb_ntwin1<span class="ltx_text ltx_lst_space"> </span>bnl<span class="ltx_text ltx_lst_space"> </span>crabamp<span class="ltx_text ltx_lst_space"> </span>dipedge<span class="ltx_text ltx_lst_space"> </span>distance<span class="ltx_text ltx_lst_space"> </span>dynk_globalvars<span class="ltx_text ltx_lst_space"> </span>elensidealthck4d<span class="ltx_text ltx_lst_space"> </span>elensidealthck6d<span class="ltx_text ltx_lst_space"> </span>elensidealthin4d<span class="ltx_text ltx_lst_space"> </span>elensidealthin6d<span class="ltx_text ltx_lst_space"> </span>elensidealthin6d_DYNK<span class="ltx_text ltx_lst_space"> </span>eric<span class="ltx_text ltx_lst_space"> </span>exact<span class="ltx_text ltx_lst_space"> </span>fma<span class="ltx_text ltx_lst_space"> </span>frs<span class="ltx_text ltx_lst_space"> </span>frs60<span class="ltx_text ltx_lst_space"> </span>javier<span class="ltx_text ltx_lst_space"> </span>javier_bignpart<span class="ltx_text ltx_lst_space"> </span>lost<span class="ltx_text ltx_lst_space"> </span>lostevery<span class="ltx_text ltx_lst_space"> </span>lostnotilt<span class="ltx_text ltx_lst_space"> </span>lostnumxv<span class="ltx_text ltx_lst_space"> </span>notilt<span class="ltx_text ltx_lst_space"> </span>prob1<span class="ltx_text ltx_lst_space"> </span>prob3<span class="ltx_text ltx_lst_space"> </span>s316<span class="ltx_text ltx_lst_space"> </span>thick4<span class="ltx_text ltx_lst_space"> </span>thick6dblocks<span class="ltx_text ltx_lst_space"> </span>thick6ddynk<span class="ltx_text ltx_lst_space"> </span>thick6dsingles<span class="ltx_text ltx_lst_space"> </span>tilt"</span>
-</td>
+                <span class="ltx_text ltx_lst_line ltx_font_typewriter" style="font-size:90%;"><span class="ltx_text ltx_lst_keyword ltx_font_bold">export</span><span class="ltx_text ltx_lst_space"> </span>TESTS="bb<span class="ltx_text ltx_lst_space"> </span>bbe51<span class="ltx_text ltx_lst_space"> </span>bbe52<span class="ltx_text ltx_lst_space"> </span>bbe571ib0<span class="ltx_text ltx_lst_space">  </span>bbinbb_ntwin1<span class="ltx_text ltx_lst_space"> </span>bnl<span class="ltx_text ltx_lst_space"> </span>crabamp<span class="ltx_text ltx_lst_space"> </span>dipedge<span class="ltx_text ltx_lst_space"> </span>distance<span class="ltx_text ltx_lst_space"> </span>dynk_globalvars<span class="ltx_text ltx_lst_space"> </span>elensidealthck4d<span class="ltx_text ltx_lst_space"> </span>elensidealthck6d<span class="ltx_text ltx_lst_space"> </span>elensidealthin4d<span class="ltx_text ltx_lst_space"> </span>elensidealthin6d<span class="ltx_text ltx_lst_space"> </span>elensidealthin6d_DYNK<span class="ltx_text ltx_lst_space"> </span>eric<span class="ltx_text ltx_lst_space"> </span>exact<span class="ltx_text ltx_lst_space"> </span>fma<span class="ltx_text ltx_lst_space"> </span>frs<span class="ltx_text ltx_lst_space"> </span>frs60<span class="ltx_text ltx_lst_space"> </span>javier<span class="ltx_text ltx_lst_space"> </span>javier_bignpart<span class="ltx_text ltx_lst_space"> </span>lost<span class="ltx_text ltx_lst_space"> </span>lostevery<span class="ltx_text ltx_lst_space"> </span>lostnotilt<span class="ltx_text ltx_lst_space"> </span>lostnumxv<span class="ltx_text ltx_lst_space"> </span>notilt<span class="ltx_text ltx_lst_space"> </span>prob1<span class="ltx_text ltx_lst_space"> </span>prob3<span class="ltx_text ltx_lst_space"> </span>s316<span class="ltx_text ltx_lst_space"> </span>thick4<span class="ltx_text ltx_lst_space"> </span>thick6dblocks<span class="ltx_text ltx_lst_space"> </span>thick6ddynk<span class="ltx_text ltx_lst_space"> </span>thick6dsingles<span class="ltx_text ltx_lst_space"> </span>tilt"</span>
+              </td>
 </tr>
 </table>
 </div>
@@ -1581,23 +1581,23 @@ Once a test has finished, one can check that the results matches with the canoni
 <h2 class="ltx_title ltx_title_bibliography">References</h2>
 <ul class="ltx_biblist">
 <li id="bib.bib1" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">1</span>
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
 <span class="ltx_bibblock"> CERN GitLab <a href="https://gitlab.cern.ch/" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">https://gitlab.cern.ch/</span></a>
 </span>
-</li>
+      </li>
 <li id="bib.bib2" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">2</span>
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
 <span class="ltx_bibblock"> KB0003132: When is it appropriate to use CERN GitLab or external services such as Github? <a href="https://cern.service-now.com/service-portal/article.do?n=KB0003132" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">https://cern.service-now.com/service-portal/article.do?n=KB0003132</span></a>
 </span>
-</li>
+      </li>
 <li id="bib.bib3" class="ltx_bibitem">
-<span class="ltx_bibtag ltx_role_refnum">3</span>
+        <span class="ltx_bibtag ltx_role_refnum">3</span>
 <span class="ltx_bibblock">
 S. Kostoglou, N. Karastathis, Y. Papaphilippou, D. Pellegrini and P. Zisopoulos,
 ‘‘Development of computational tools for noise studies in the LHC’’,
 2017, Proceedings of IPAC’17, Copenhagen, Denmark, 2017.
 </span>
-</li>
+      </li>
 </ul>
 </section>
 </article>
