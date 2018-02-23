@@ -1,0 +1,52 @@
+/**
+ *  SixTrack Web – LaTeXML CSS Fixes
+ * ==================================
+ *  Veronica Berglyd Olsen, CERN BE/ABP/HSS 2018
+ *  Created 2018-02-22
+ */
+
+#generator {
+    margin: 0px auto 40px auto;
+    /* border: 1px solid #990000; */
+    color: #990000;
+    padding: 4px;
+    text-align: center;
+}
+
+#generator a {
+    color: #990000;
+    text-decoration: underline;
+}
+
+#generator a:hover {
+    color: #990000;
+    background-color: #ffdddd;
+}
+
+#manual {
+    max-width: 940px!important;
+}
+
+#manual pre {
+    margin-left: 20px;
+    border: 1px solid #999999;
+    background-color: #e7e7e7;
+    padding: 6px;
+    font-size: 13px;
+    width: 80%;
+}
+
+#manual .ltx_p {
+    text-indent: 0px;
+}
+
+#manual .ltx_title_paragraph {
+    text-indent: 0px;
+    margin-right: 0px; 
+}
+
+#manual .ltx_title_subparagraph {
+    text-indent: 0px;
+    margin-left: 0px; 
+    margin-right: 0px; 
+}
