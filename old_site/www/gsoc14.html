@@ -1,0 +1,101 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link href="www/_style.css" rel="stylesheet" type="text/css">
+<title>SixTrack - 6D Tracking Code - GSoC 2014 Ideas</title>
+</head>
+
+<body>
+
+  <h1> SixTrack  - Ideas for GSoC 2014 </h1>
+
+<h3> Introduction </h3>
+
+<a href="http://cern.ch/sixtrack">SixTrack</a> simulates the trajectory of
+high energy particles in accelerators. It has been used in the design and
+optimization of the LHC and now of the HL-LHC upgrade. The code supports many
+different computer platforms and its running environment can profit from the
+volunteer computing resources through the <a
+  href="cern.ch/lhcathome">LHC@Home</a> project.
+
+The source code is written in Fortran, pre-processed by two programs that
+assemble code blocks and provide automatic differentiation on the equations of
+motion. The code relies on the <a
+href="http://lipforge.ens-lyon.fr/www/crlibm/">crlibm</a> library, careful
+arrangement of parenthesis, dedicated input/output and selected compilation
+flags for the most common compilers to provide identical results on different
+platforms and operating systems. The code can be linked to the <a
+  href="http://boinc.berkeley.edu">Boinc</a> library for the volunteering
+computer project.  A running environment SixDesk is used to generate input
+files, split simulations for LHC@Home or CERN cluster and collect the results
+for the user.
+
+The code is licensed under LGPLv2.1 under CERN copyright.
+
+<h3> Ideas </h3>
+
+Ideal students have a strong background in computer science and programming
+languages as well the interest in understanding the computational physics
+methods implemented in the code. He or she will face the challenge of working
+with an high performance production code whose reliability and backward
+compatibility cannot be compromised and be trained in the methods used in
+simulating the motion of particles in accelerators.
+
+<p><h3>Simulating time dependent functions</h3>
+<p><strong>Description:</strong> Implement, test and put in production the
+ability to change the strength, misalignment of any element by applying a
+function composed by predefined branch like linear, parabolic, sinusoidal,
+white notes and colored (by using IIR filters) noise.
+<p><strong>Expected results:</strong> The user will have the option to define magnet strengths as a function of time from the input files.
+<p><strong>Requirements:</strong> Fortran, calculus.
+
+
+<p><h3>New physics models</h3>
+<p><strong>Description:</strong> Implement, test and put in production a new
+tracking map for exact bending dipoles, includes per-particle mass and charge
+state, track total time.  <p><strong>Expected results:</strong> The user can
+build accelerator simulations with more accurate models for low energy
+machines.  <p><strong>Requirements:</strong> Fortran, calculus,  accelerator
+physics.
+
+<p><h3>Database infrastructure for large scale simulation</h3>
+<p><strong>Description:</strong> Setup a MySQL database instance and develop
+the supporting code to collect the results sent to volunteers or computer
+clusters and provide them to the users. The code will allow to split a study
+in smaller units of work, submit the study, query the state, re-submit missing
+or invalid results, collect the data in users' SQLite database.
+<p><strong>Expected results:</strong> The user will have a complete set of
+tools to submit, follow and collect results from distributed computer
+resources.
+<p><strong>Requirements:</strong> SQL, python, C/C++, Linux.
+
+<p><h3> Nightly build system and tests</h3>
+<p><strong>Description:</strong> SixTrack needs to be built and tested for
+Linux, Windows, Mac with different compilers. It written in Fortran and needs
+to be linked with a C++ library. This poses complications in the build system
+that would be otherwise automatized to allow the continuous integration of new
+features in the volunteer computing environment. The work consist in
+formalizing the building procedures, write small test units to validate
+extensive portion of the code and write scripts for automatic building and
+testing.  <p><strong>Expected results:</strong> Any new
+commit released in SVN will be automatically built and tested.
+<p><strong>Requirements:</strong> Fortran, C/C++, Makefile, Visual Studio, Cygwin, Xcode, gcc.
+
+<h3>Standalone tracking library </h3>
+<p><strong>Description:</strong> Define an API for particle tracking, re-write
+the implemented model as a standalone module in C and re-factor the existing
+code such that it will use the new library. The API and the module should open
+the way to GPU or multicore architectures.
+<p><strong>Expected results:</strong> The code will rely only on the newly
+rewritten library to perform tracking simulations.
+<p><strong>Requirements:</strong> Fortran, C, calculus, physics.
+
+<hr class="sep">
+
+<p> Last modification: 2014/02/07  &copy; Copyright 2014 CERN
+
+</html>
+
+
