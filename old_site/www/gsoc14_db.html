@@ -1,0 +1,86 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link href="www/_style.css" rel="stylesheet" type="text/css">
+<title>SixTrack - 6D Tracking Code - GSoC 2014 Ideas</title>
+</head>
+
+<body>
+
+  <h1> SixTrack  - Ideas for GSoC 2014 - Database infrastructure for large scale simulations </h1>
+
+The goal of the project is to substitute the existing mechanism of collecting
+and distributing the simulations results managed by the Boinc[1] server
+running the LHC@Home[2] project and by the CERN cluster, while being
+compatible with the existing simulation environment SixDesk[3].
+
+<ul>
+<li>[1] boinc.berkely.edu</li>
+<li>[2] cern.ch/lhcathome</li>
+<li>[3] cern.ch/SixTrack/doc/sixdesk/sixdesk_env.html</li>
+</ul>
+
+
+A brief description of the simulation workflow is the following. A
+simulation is identified by the values of a certain number of parameters
+(~6 fields) defining a grid. Those parameters are used to generate input
+files for SixTrack that returns a table of results (60 fields) and set of
+output files after being run either on the local machine of a volunteer or
+on one of the CERN cluster. At the moment the input files are created in
+shared filesystem (openAFS) on a deep tree of directories that host also
+the results of the simulations. When simulations are dispatched to the
+LHC@Home volunteers, the input files are packed and copied on a spool
+directory, the Boinc server send them to volunteers and collect the result
+in another spool directory. The users from time to time collect the
+results back in the directory tree.
+
+The large number of small files generated can exceed the capabilities of
+the filesystem (but not the disk space) and slow down all the operations.
+The goal of this project is to use sqlite3 files to substitute the user
+directory tree and a centralized database to manage the exchange of input
+and results for the LHC@Home project.
+
+You could have a quick look at the python code in
+
+http://sixtrack.web.cern.ch/SixTrack/www/sixdeskpy
+
+which contains a a first prototype of what we would like to achieve and
+shows the libraries used (sqlite3, numpy, matplolib).
+
+In particular:
+<ul>
+<li> sqltable.py which provides generic functions to translate back and fort
+sqlite query results and numpy array and</li>
+<li> sixdeskdb.py which contains specialized code for the user database
+management and some of the analysis on the simulation data.</li>
+</ul>
+
+You can also have a look to user manual of the existing environment
+
+http://sixtrack.web.cern.ch/SixTrack/doc/sixdesk/sixdesk_env.html
+
+The milestones I see are the following:
+<ul>
+<li>  translate the post processing routines using sqlite3 user database
+(partally done)</li>
+<li>  setup and profile the centralized database to host the results</li>
+<li>  write a deamon the consume the results spool and populate the
+centrlized database</li>
+<li>  write the scripts that transfers the results to the user database</li>
+<li>  substitute the routine for cern cluster to feed directly the centralized
+database</li>
+<li>  substitute the routine in the boinc server assimilator to directly feed
+the cntralized database</li>
+</ul>
+
+
+
+<hr class="sep">
+
+<p> Last modification: 2014/02/27  &copy; Copyright 2014 CERN
+
+</html>
+
+

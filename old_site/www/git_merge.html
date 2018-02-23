@@ -1,0 +1,78 @@
+<!doctype html public "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link href="www/_style.css" rel="stylesheet" type="text/css">
+<title>SixTrack - 6D Tracking Code - Documentation</title>
+</head>
+
+<body>
+
+  <h3> Git merge instructions  </h3>
+
+  <p> When you need to synchronise your git clone repository with the official
+    one, please follow the instructions below. The following steps are 
+    referred to git version <tt>1.7.1</tt>, currently (2016-01-20) in use on
+    <tt>lxplus.cern.ch</tt>. More infos can be found on
+    the <a href="https://git-scm.com/docs/git-merge">git web site</a>.
+
+  <h4> Prerequisites </h4>
+
+  <ol>
+    <li> create an account on <tt>github.com</tt>; </li>
+    <li> add an ssh public key - instructions can be found
+      <a href="https://help.github.com/articles/generating-ssh-keys">here</a>;
+    </li>
+    <li> fork on <tt>github.com</tt>. This operation will create your own
+      copy of the main project repo;</li>
+    <li> change clone <tt>URL</tt> on your fork on <tt>github.com</tt> 
+      from <tt>HTTPS</tt> to <tt>SSH</tt> and then <tt>git clone</tt>
+      on your local machine using the <tt>SSH</tt> url (required in order
+      to <tt>git push</tt>); </li>
+  </ol>
+
+  <p><b>Nota Bene</b>: another option to change the clone <tt>URL</tt>
+    is through the the <tt>git</tt> configuration file of the clone:
+    <pre>SixTrack/.git/config</pre>
+    from:
+    <pre>url = https://github.com/goofy/SixTrack.git</pre>
+    into:
+    <pre>url = git@github.com:goofy/SixTrack.git</pre>
+
+    <h4> Steps for merging from upstream </h4>
+
+  <ol>
+    <li><tt>cd</tt> to your local copy:
+      <pre> > pwd
+ /afs/cern.ch/user/g/goofy/SixTrack </pre> </li> 
+
+    <li>add a remote “upstream” (first time only):
+      <pre> > git remote add upstream git@github.com:SixTrack/SixTrack.git </pre></li> 
+
+    <li>check out your master branch:
+      <pre> > git checkout master </pre></li> 
+
+    <li>fetch the upstream repo
+      <pre> > git fetch upstream
+ From github.com:SixTrack/SixTrack
+ * [new branch]      SVN-trunk  -> upstream/SVN-trunk
+ ...</pre></li> 
+
+    <li>fast-forward merge upstream’s master into your master:
+      <pre> > git merge upstream/master </pre> </li> 
+
+    <li>push merge to github.com
+      <pre> > git push
+ Counting objects: ...
+ To git@github.com:goofy/SixTrack.git
+ xxxxxxx..yyyyyyy  master -> master </pre></li> 
+  </ol>
+
+  <hr>
+  <p> Last modification: 2016/01/21  &copy; Copyright 2015 CERN
+</body>
+
+</html>
+
+
