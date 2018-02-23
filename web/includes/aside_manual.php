@@ -2,6 +2,7 @@
    /**
     *  SixTrack Web – Aside Manual File
     * ==================================
+    *  Veronica Berglyd Olsen, CERN BE/ABP/HSS 2018
     *  Created 2018-02-20
     */
 
@@ -15,12 +16,14 @@
         |
         <a href="/SixTrack/web/docs/user_manual.pdf">PDF</a>
     </li>
+    <!--
     <li><b>User Manual (Development):</b><br>
         Version 5.0:
         <a href="/SixTrack/web/docs_dev/user_full/manual.php">HTML</a>
         |
         <a href="/SixTrack/web/docs_dev/user_manual.pdf">PDF</a>
     </li>
+    -->
     <li><b>Physics Manual:</b><br>
         Version 4.x-5.x:
         <a href="/SixTrack/web/docs/physics_full/manual.php">HTML</a>

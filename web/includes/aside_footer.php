@@ -2,6 +2,7 @@
    /**
     *  SixTrack Web – Aside Footer File
     * ==================================
+    *  Veronica Berglyd Olsen, CERN BE/ABP/HSS 2018
     *  Created 2018-02-20
     */
 

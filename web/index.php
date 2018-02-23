@@ -2,6 +2,7 @@
    /**
     *  SixTrack Web – Index File
     * ===========================
+    *  Veronica Berglyd Olsen, CERN BE/ABP/HSS 2018
     *  Created 2018-02-19
     */
 
@@ -11,7 +12,7 @@
 
 <article>
     <h1>Overview</h1>
-    <!-- <img src="images/top.jpg" width="906"> -->
+    <img src="images/top.jpg" width="906">
     <p>SixTrack is a single particle 6D symplectic tracking code optimized for long term tracking in high energy rings. 
         It is mainly used for the LHC for dynamic aperture studies, tune optimization, and collimation studies.</p>
     <p>The core of SixTrack is a single executable built from Fortran pre-processed sources. Links to executables and the source
@@ -22,7 +23,7 @@
     <p>A developer manual is also available on the <a href="https://twiki.cern.ch/twiki/bin/view/LHCAtHome/SixTrack">Wiki</a>
         pages.</p>
     <p>For Linux environments, <a href="/SixTrack/doc/sixdesk/sixdesk_env.html">SixDesk</a>, is available in the
-        <a href="downloads.html">downloads</a> pages for preparing, running, and analysing dynamic aperture studies for the LHC.
+        <a href="source.php">source</a> page for preparing, running, and analysing dynamic aperture studies for the LHC.
         It can be used with the CERN LSF and <a href="http://lhcathome.web.cern.ch/LHCathome/">LHC@Home</a> computer resources.</p>
 
     <h2>Development</h2>

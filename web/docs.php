@@ -2,6 +2,7 @@
    /**
     *  SixTrack Web – Documentation File
     * ===================================
+    *  Veronica Berglyd Olsen, CERN BE/ABP/HSS 2018
     *  Created 2018-02-20
     */
 
@@ -12,29 +13,41 @@
 <article>
     <h1>Documentation</h1>
     <h2>Manuals</h2>
+    
+    <p>The SixTrack manuals consists of a user manual for setting up and running simulations,
+        a build manual for compiling SixTrack from source, and a physics manual. The manuals are
+        provided in both PDF and HTML format. The HTML version of the manuals are generated from
+        LaTeX source, and may therefore contain formatting errors.</p>
+    
+    <h3>SixTrack User Manual for Stable Version 4.x</h3>
     <ul>
-        <li>
-            2012, SixTrack User Manual
-            <a href=/SixTrack/doc/manual_old/six.pdf>PDF</a>,
-            <a href=/SixTrack/doc/manual_old/six.html>HTML</a>,
-            F. Schmidt
-        </li>
-        <li>
-            2013, SixDesk User Manual
-            <a href=/SixTrack/doc/sixdesk/sixdesk_env.pdf>PDF</a>,
-            <a href=/SixTrack/doc/sixdesk/sixdesk_env.html>HTML</a>,
-            E. McIntosh, R. De Maria
-        </li>
-        <li>
-            2013, SixTrack Physics Manual (DRAFT)
-            <a href=/SixTrack/doc/physics_manual/sixphys.pdf>PDF</a>,
-            R. De Maria, M. Fjellstrom
-        </li>
-        <li>
-            2017, SixTrack User Manual, V4.6.30
-            <a href=../doc/manual_old/six.pdf>PDF</a>,
-            F. Schmidt, et al.
-        </li>
+        <li><a href="/SixTrack/web/docs/user_full/manual.php">HTML Version</a></li>
+        <li><a href="/SixTrack/web/docs/user_manual.pdf">PDF Version</a></li>
+    </ul>
+    
+    <h3>SixTrack User Manual for Development Version 5.0</h3>
+    <ul>
+        <li>The dev manual is currently not available</li>
+        <!-- <li><a href="/SixTrack/web/docs_dev/user_full/manual.php">HTML Version</a></li> -->
+        <!-- <li><a href="/SixTrack/web/docs_dev/user_manual.pdf">PDF Version</a></li> -->
+    </ul>
+    
+    <h3>SixDesk User Manual</h3>
+    <ul>
+        <li><a href="/SixTrack/doc/sixdesk/sixdesk_env.html">HTML Version</a></li>
+        <li><a href="/SixTrack/doc/sixdesk/sixdesk_env.pdf">PDF Version</a></li>
+    </ul>
+    
+    <h3>Physics Manual</h3>
+    <ul>
+        <li><a href="/SixTrack/web/docs/physics_full/manual.php">HTML Version</a></li>
+        <li><a href="/SixTrack/web/docs/physics_manual.pdf">PDF Version</a></li>
+    </ul>
+    
+    <h3>Build Manual for Version 4.x and 5.x</h3>
+    <ul>
+        <li><a href="/SixTrack/web/docs/build_full/manual.php">HTML Version</a></li>
+        <li><a href="/SixTrack/web/docs/building_sixtrack.pdf">PDF Version</a></li>
     </ul>
     
     <h2>Physics References</h2>
@@ -137,11 +150,6 @@
             Particle Tracking in Circular Accelerators Using the Exact Hamiltonian in SixTrack</a>,
             M. Fjellstrom.
         </li>
-    </ul>
-    
-    <h2>SixDesk</h2>
-    <ul>
-        <li>E. McIntosh et al., <a href=/SixTrack/doc/sixdesk/sixdesk_env.html>SixDesk Enviroment</a>.
     </ul>
 </article>
 <aside>

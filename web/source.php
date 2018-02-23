@@ -2,6 +2,7 @@
    /**
     *  SixTrack Web – Source File
     * ============================
+    *  Veronica Berglyd Olsen, CERN BE/ABP/HSS 2018
     *  Created 2018-02-20
     */
 
@@ -32,11 +33,12 @@
         <a href="http://github.com/SixTrack/SixTrackLib">SixTrackLib</a>: C library implementing SixTrack models.
     </p>
     
-    <h2> Contributing to the Code</h2>
+    <h2>Contributing to the Code</h2>
     <p>Developers are encouraged to create a GitHub fork and create pull requests.</p>
     <p>Specific on going developements are hosted on the <a href="http://github.com/SixTrack">GitHub SixTrack page</a> and they will
         normally be merged with the official repository as soon as the code is stable.</p>
     <p>Please use the git merge functionality to keep your master branch in synch with the official repository.</p>
+    <p>For further details, see the <a href="/SixTrack/web/docs/build_full/manual.php">build manual</a>.</p>
 </article>
 <aside>
     <h2>Quick Links</h2>

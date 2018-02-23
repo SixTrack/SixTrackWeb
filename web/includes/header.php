@@ -2,6 +2,7 @@
    /**
     *  SixTrack Web – Header File
     * ============================
+    *  Veronica Berglyd Olsen, CERN BE/ABP/HSS 2018
     *  Created 2018-02-19
     */
 
@@ -41,8 +42,8 @@
         <div class="logo">
             <a href="http://cern.ch/"><img src="/SixTrack/web/images/logo.jpg" height="116px"></a>
         </div><div class="title">
-            <h1>SixTrack - 6D Tracking Code</h1>
-            <h3><a href="https://be-dep-abp.web.cern.ch/">CERN - BE/ABP Accelerator Beam Physics Group</a></h3>
+            <h1>SixTrack &ndash; 6D Tracking Code</h1>
+            <h3><a href="https://be-dep-abp.web.cern.ch/">CERN &ndash; BE/ABP Accelerator Beam Physics Group</a></h3>
         </div><div class="illustration">
             <img src="/SixTrack/web/images/plot.png" height="116px">
         </div>
