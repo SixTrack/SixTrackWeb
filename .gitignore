@@ -12,3 +12,5 @@ google*
 *.out
 *.toc
 *.tmp
+old_site
+doc

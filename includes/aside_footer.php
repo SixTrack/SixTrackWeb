@@ -14,6 +14,7 @@
     <li><b>Archive:</b><br><a href="https://groups.cern.ch/group/SixTrack-Users">SixTrack-Users Group</a></li>
     <li><b>Support:</b><br><a href="mailto:sixtrack.support@cern.ch">sixtrack.support@cern.ch</a></li>
     <li><b>Bug Reports:</b><br><a href="https://github.com/SixTrack/SixTrack/issues">GitHub Issues Tracker</a></li>
+    <li><b>Meetings:</b><br><a href="http://indico.cern.ch/category/6623/">SixTrack Indico Page</a></li>
 </ul>
 <br>
 <a href="http://lhcathome.web.cern.ch/"><img src="/SixTrack/images/lhcathome.jpg"></a>
