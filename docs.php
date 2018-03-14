@@ -27,9 +27,9 @@
     
     <h3>SixTrack User Manual for Development Version 5.0</h3>
     <ul>
-        <li>The dev manual is currently not available</li>
-        <!-- <li><a href="/SixTrack/docs_dev/user_full/manual.php">HTML Version</a></li> -->
-        <!-- <li><a href="/SixTrack/docs_dev/user_manual.pdf">PDF Version</a></li> -->
+        <!-- <li>The dev manual is currently not available</li> -->
+        <li><a href="/SixTrack/docs/user_dev_full/manual.php">HTML Version</a></li>
+        <li><a href="/SixTrack/docs/user_dev_manual.pdf">PDF Version</a></li>
     </ul>
     
     <h3>SixDesk User Manual</h3>

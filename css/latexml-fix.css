@@ -36,6 +36,14 @@
     width: 80%;
 }
 
+#manual figure {
+    margin: 1em auto;
+}
+
+#manual td {
+    vertical-align: top;
+}
+
 #manual .ltx_p {
     text-indent: 0px;
 }
