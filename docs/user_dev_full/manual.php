@@ -1,16 +1,16 @@
 <?php
     $bMain  = true;
-    $sHead  = '<!--Generated on Wed Mar 14 14:32:08 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
+    $sHead  = '<!--Generated on Wed Mar 14 15:10:47 2018 by LaTeXML (version 0.8.1) http://dlmf.nist.gov/LaTeXML/.-->
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-report.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
 ';
-    $sHead .= '<link rel="stylesheet" href="/SixTrack/web/css/latexml-fix.css" type="text/css">
+    $sHead .= '<link rel="stylesheet" href="/SixTrack/css/latexml-fix.css" type="text/css">
 ';
     require_once('../../includes/header.php');
 ?>
 <article id='manual' class='ltx_document'>
-<div id='generator'>Generated on Wed Mar 14 14:32:08 2018 by <a href='http://dlmf.nist.gov/LaTeXML/'>LaTeXML</a> (version 0.8.1)</div>
+<div id='generator'>Generated on Wed Mar 14 15:10:47 2018 by <a href='http://dlmf.nist.gov/LaTeXML/'>LaTeXML</a> (version 0.8.1)</div>
 <div class="ltx_titlepage">
 <p class="ltx_p ltx_align_center">
       <span class="ltx_text ltx_font_smallcaps">European Organization for Nuclear Research</span>
@@ -62,22 +62,6 @@ A common header of output data and the format of these data has been found for M
 <p class="ltx_p ltx_align_center">March 14, 2018</p>
 </div>
 <div class="ltx_pagination ltx_role_newpage"></div>
-<section id="Chx1" class="ltx_chapter">
-<h2 class="ltx_title ltx_title_chapter">Acknowledgement</h2>
-<div id="Chx1.p1" class="ltx_para">
-<p class="ltx_p">I would like to thank my colleagues at DESY and CERN to help to find nasty bugs and for a thorough check of the program.
-I would like to thank Mikko Vaenttinen who helped to vectorise the program.
-He also did most of the typing of the manuscript.
-Moreover, I want to express my gratitude to F. Zimmermann who helped to finish the differential–algebra part in endless night sessions.
-Additions concerning Normal Forms have been contributed by M. Giovannozzi.
-J. Miles helped with the calculation of the 6D Courant–Snyder matrix and its use to transform the tracking data in the post–processing.
-W. Herr is thanked for providing a software package used for the orbit correction. L.H.A. Leunissen extracted and adapted the 6D beam–beam code of Hirata <cite class="ltx_cite">[<a href="#bib.bib19" title="" class="ltx_ref">19</a>]</cite>.</p>
-</div>
-<div id="Chx1.p2" class="ltx_para">
-<br class="ltx_break">
-<p class="ltx_p">– <span class="ltx_text ltx_font_italic">F. Schmidt, for the version 3.x and 4.x manual</span></p>
-<div class="ltx_pagination ltx_role_newpage"></div>
-</div>
 <h6>Contents:</h6>
 <ul class="ltx_toclist">
 <li class="ltx_tocentry"><a href="#Chx1" title="Acknowledgement" class="ltx_ref"><span class="ltx_text ltx_ref_title">Acknowledgement</span></a></li>
@@ -219,6 +203,22 @@ W. Herr is thanked for providing a software package used for the orbit correcti
 <li class="ltx_tocentry"><a href="#bib" title="Bibliography" class="ltx_ref"><span class="ltx_text ltx_ref_title">Bibliography</span></a></li>
 </ul>
 <div class="ltx_pagination ltx_role_newpage"></div>
+<section id="Chx1" class="ltx_chapter">
+<h2 class="ltx_title ltx_title_chapter">Acknowledgement</h2>
+<div id="Chx1.p1" class="ltx_para">
+<p class="ltx_p">I would like to thank my colleagues at DESY and CERN to help to find nasty bugs and for a thorough check of the program.
+I would like to thank Mikko Vaenttinen who helped to vectorise the program.
+He also did most of the typing of the manuscript.
+Moreover, I want to express my gratitude to F. Zimmermann who helped to finish the differential–algebra part in endless night sessions.
+Additions concerning Normal Forms have been contributed by M. Giovannozzi.
+J. Miles helped with the calculation of the 6D Courant–Snyder matrix and its use to transform the tracking data in the post–processing.
+W. Herr is thanked for providing a software package used for the orbit correction. L.H.A. Leunissen extracted and adapted the 6D beam–beam code of Hirata <cite class="ltx_cite">[<a href="#bib.bib19" title="" class="ltx_ref">19</a>]</cite>.</p>
+</div>
+<div id="Chx1.p2" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p ltx_align_right">– <span class="ltx_text ltx_font_italic">F. Schmidt, for the version 3.x and 4.x manual</span></p>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
 </section>
 <section id="Ch1" class="ltx_chapter">
 <h2 class="ltx_title ltx_title_chapter">
@@ -8508,20 +8508,20 @@ Please note that each single element can only be selected once; however it is po
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:392.6pt;">(single element)</td>
 </tr>
 <tr class="ltx_tr">
-<td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:51.2pt;">
+<td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:51.2pt;"></td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:392.6pt;">
                 <span class="ltx_text ltx_font_typewriter"># DUMP format #2, bez=<span class="ltx_text" style="color:#1A1AFF;">bez(i)</span>, number of particles=<span class="ltx_text" style="color:#1A1AFF;">napx</span>, dump period=<span class="ltx_text" style="color:#1A1AFF;">ndumpt(i)</span>, first turn=<span class="ltx_text" style="color:#1A1AFF;">dumpfirst(i)</span>, last turn=<span class="ltx_text" style="color:#1A1AFF;">dumplast(i)</span>, HIGH=<span class="ltx_text" style="color:#1A1AFF;">T/F</span>, FRONT=<span class="ltx_text" style="color:#1A1AFF;">T/F</span></span>
               </td>
-<td class="ltx_td ltx_align_justify" style="width:392.6pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:51.2pt;">Header #1</td>
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:392.6pt;">(all elements)</td>
 </tr>
 <tr class="ltx_tr">
-<td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:51.2pt;">
+<td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:51.2pt;"></td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:392.6pt;">
                 <span class="ltx_text ltx_font_typewriter"># DUMP format #2, ALL ELEMENTS, number of particles=<span class="ltx_text" style="color:#1A1AFF;">napx</span>, dump period=<span class="ltx_text" style="color:#1A1AFF;">ndumpt(i)</span>, first turn=<span class="ltx_text" style="color:#1A1AFF;">dumpfirst(i)</span>, last turn=<span class="ltx_text" style="color:#1A1AFF;">dumplast(i)</span>, HIGH=<span class="ltx_text" style="color:#1A1AFF;">T/F</span>, FRONT=<span class="ltx_text" style="color:#1A1AFF;">T/F</span></span>
               </td>
-<td class="ltx_td ltx_align_justify" style="width:392.6pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:51.2pt;"></td>
@@ -8707,10 +8707,10 @@ Matrix <span class="ltx_text ltx_font_typewriter">inv(tamatrix)</span> and <math
 <td class="ltx_td ltx_align_justify ltx_border_r ltx_border_t" style="width:392.6pt;">Header with units of normalized particle coordinates:</td>
 </tr>
 <tr class="ltx_tr">
-<td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:51.2pt;">
+<td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r" style="width:51.2pt;"></td>
+<td class="ltx_td ltx_align_justify ltx_border_r" style="width:392.6pt;">
                 <span class="ltx_text ltx_font_typewriter"># ID turn s[m] nx[1.e-3 sqrt(m)] npx[1.e-3 sqrt(m)] ny[1.e-3 sqrt(m)] npy[1.e-3 sqrt(m)] nz[1.e-3 sqrt(m)] ndp/p[1.e-3 sqrt(m)] ktrack</span>
               </td>
-<td class="ltx_td ltx_align_justify" style="width:392.6pt;"></td>
 </tr>
 <tr class="ltx_tr">
 <td class="ltx_td ltx_align_justify ltx_border_l ltx_border_r ltx_border_t" style="width:51.2pt;">Lines</td>
@@ -12557,13 +12557,11 @@ six–dimensional thin–lens formalism for tracking”, CERN SL 95–12
 G. Ripken and F. Schmidt, “Construction of Nonlinear Symplectic
 Six–Dimensional Thin–Lens Maps by Exponentiation”, DESY 95–189
 (1995),
-<span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/ripken2.pdf
-http://cern.ch/Frank.Schmidt/report/ripken2.pdf; D.P. Barber,
+<a href="http://cern.ch/Frank.Schmidt/report/ripken2.pdf" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://cern.ch/Frank.Schmidt/report/ripken2.pdf</span></a>; D.P. Barber,
 K. Heinemann, G. Ripken and F. Schmidt, “Symplectic Thin - Lens
 Transfer Maps for SixTrack: Treatment of Bending Magnets in Terms of
 the Exact Hamiltonian”, DESY 96–156 (1995),
-<span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/ripken3.pdf
-http://cern.ch/Frank.Schmidt/report/ripken3.pdf.
+<a href="http://cern.ch/Frank.Schmidt/report/ripken3.pdf" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://cern.ch/Frank.Schmidt/report/ripken3.pdf</span></a>.
 </span>
       </li>
 <li id="bib.bib3" class="ltx_bibitem">
@@ -12597,8 +12595,7 @@ synchro–betatron motion of protons with arbitrary energy”, DESY
 87–036 (1987); G. Ripken and F. Schmidt, “A symplectic
 six–dimensional thin–lens formalism for tracking”, CERN/SL/95–12
 (AP), DESY 95–063 (1995),
-<span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/ripken.pdf
-http://cern.ch/Frank.Schmidt/report/ripken.pdf; K. Heinemann,
+<a href="http://cern.ch/Frank.Schmidt/report/ripken.pdf" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://cern.ch/Frank.Schmidt/report/ripken.pdf</span></a>; K. Heinemann,
 </span>
       </li>
 <li id="bib.bib7" class="ltx_bibitem">
@@ -12700,8 +12697,7 @@ with a Crossing Angle, version 3.4”, SL-Note 97-57 AP.
         <span class="ltx_bibtag ltx_role_refnum">20</span>
 <span class="ltx_bibblock"> L.H.A. Leunissen, F. Schmidt and G. Ripken, “6D
 Beam–Beam Kick including Coupled Motion”, LHC Project Report 369,
-<span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/ripken_new.pdf
-http://cern.ch/Frank.Schmidt/report/ripken_new.pdf.
+<a href="http://cern.ch/Frank.Schmidt/report/ripken_new.pdf" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://cern.ch/Frank.Schmidt/report/ripken_new.pdf</span></a>.
 </span>
       </li>
 <li id="bib.bib21" class="ltx_bibitem">
@@ -12710,8 +12706,7 @@ http://cern.ch/Frank.Schmidt/report/ripken_new.pdf.
 <br class="ltx_break">A Computer Code to calculate
 Detuning and Distortion Function Terms in First and Second Order”,
 CERN SL/Note 99–009 (AP),
-<span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Frank.Schmidt/report/sodd_manual.pdf
-http://cern.ch/Frank.Schmidt/report/sodd_manual.pdf.
+<a href="http://cern.ch/Frank.Schmidt/report/sodd_manual.pdf" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://cern.ch/Frank.Schmidt/report/sodd_manual.pdf</span></a>
 </span>
       </li>
 <li id="bib.bib22" class="ltx_bibitem">
@@ -12720,8 +12715,7 @@ http://cern.ch/Frank.Schmidt/report/sodd_manual.pdf.
 H. Grote and F.C. Iselin, “The MAD program (Methodical Accelerator
 Design), Version 8.10, User’s Reference Manual”, CERN SL 90–13
 (AP) (Rev. 4)
-<br class="ltx_break"><span class="ltx_ERROR undefined">\htmladdnormallink</span>http://cern.ch/Hans.Grote/mad/mad8/doc/mad8_user.ps.gz
-http://cern.ch/Hans.Grote/mad/mad8/doc/mad8_user.ps.gz.
+<br class="ltx_break"><a href="http://cern.ch/Hans.Grote/mad/mad8/doc/mad8_user.ps.gz" title="" class="ltx_ref ltx_url"><span class="ltx_text ltx_font_typewriter">http://cern.ch/Hans.Grote/mad/mad8/doc/mad8_user.ps.gz</span></a>.
 </span>
       </li>
 <li id="bib.bib23" class="ltx_bibitem">
