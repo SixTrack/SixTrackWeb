@@ -155,7 +155,7 @@ a:hover {color: #0053a1; text-decoration: underline;}
 
 #content article {
     display: table-cell;
-    overflow-x: scroll;
+    overflow-x: auto;
     max-width: 906px!important;
     border-right: 2px solid #0053a1;
     padding: 4px 18px 4px 0px;
