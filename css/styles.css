@@ -149,11 +149,14 @@ a:hover {color: #0053a1; text-decoration: underline;}
 #content {
     display: table;
     width: 1184px;
+    max-width: 1184px!important;
     margin: 20px 8px;
 }
 
 #content article {
     display: table-cell;
+    overflow-x: scroll;
+    max-width: 906px!important;
     border-right: 2px solid #0053a1;
     padding: 4px 18px 4px 0px;
 }
