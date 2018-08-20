@@ -30,15 +30,16 @@
     <ul class="no-bullet-list">
         <li><b>Coordinator:</b> Riccardo De Maria</li>
         <li><b>Former Coordinator and Original Author:</b> Frank Schmidt</li>
-        <li><b>Release Manager:</b> Kyrre Sjobak</li>
+        <li><b>Release Manager:</b> Riccardo De Maria, Veronica Berglyd Olsen, Kyrre Sjobak</li>
         <li><b>Collimation Routines:</b> Alessio Mereghetti, Roderik Bruce, Stefano Redaelli, Guillaume Robert-Demolaize, Pascal Hermes</li>
         <li><b>SixDesk:</b> Alessio Mereghetti, Eric Mcintosh</li>
         <li><b>Boinc:</b> Alessio Mereghetti, Eric Mcintosh, Igor Zacharov, Nils Hoimyr</li>
-        <li><b>Dynamic Effects:</b> Kyrre Sjobak, Veronica K. B. Olsen</li>
+        <li><b>Dynamic Effects:</b> Kyrre Sjobak, Veronica Berglyd Olsen</li>
+        <li><b>Scattering:</b> Veronica Berglyd Olsen</li>
         <li><b>Numerical Reproducibility:</b> Eric Mcintosh, Harry Renshall</li>
-        <li><b>Build System:</b> Eric Mcintosh, Kyrre Sjobak, James Molson, Riccardo De Maria</li>
-        <li><b>BNL Link Person:</b> Guillaume Robert-Demolaize</li>
-        <li><b>Fluka Sixtrack Interoperation:</b> Alession Mereghetti, Vasilis Vlachoudis</li>
+        <li><b>Build System:</b> Eric Mcintosh, Kyrre Sjobak, James Molson, Riccardo De Maria, Veronica Berglyd Olsen</li>
+        <!-- <li><b>BNL Link Person:</b> Guillaume Robert-Demolaize</li> -->
+        <li><b>Fluka SixTrack Interoperation:</b> Alession Mereghetti, Vasilis Vlachoudis</li>
         <li><b>Fringe Fields, Generic Polynomial Maps:</b> Barbara Dalena, Dave Brett</li>
         <li><b>Beam-Beam:</b> Javier Barranco, Giovanni Iadarola</li>
         <li><b>Exact Hamiltonian:</b> Mattias Fjellstrom</li>
@@ -48,7 +49,7 @@
         <li><b>Crystal Collimators:</b> Daniele Mirarchi</li>
         <li><b>Multiple Ion Species:</b> Pascal Hermes</li>
         <li><b>Beam-Gas Interactions:</b> Yngve Levinsen</li>
-        <li><b>Frequecy Map Analysis:</b> Miriam Fitterer</li>
+        <li><b>Frequency Map Analysis:</b> Miriam Fitterer</li>
     </ul>
 </article>
 <aside>
