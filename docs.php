@@ -19,17 +19,10 @@
         provided in both PDF and HTML format. The HTML version of the manuals are generated from
         LaTeX source, and may therefore contain formatting errors.</p>
     
-    <h3>SixTrack User Manual for Stable Version 4.x</h3>
+    <h3>SixTrack User Manual for Stable Version</h3>
     <ul>
         <li><a href="/SixTrack/docs/user_full/manual.php">HTML Version</a></li>
         <li><a href="/SixTrack/docs/user_manual.pdf">PDF Version</a></li>
-    </ul>
-    
-    <h3>SixTrack User Manual for Development Version 5.0</h3>
-    <ul>
-        <!-- <li>The dev manual is currently not available</li> -->
-        <li><a href="/SixTrack/docs/user_dev_full/manual.php">HTML Version</a></li>
-        <li><a href="/SixTrack/docs/user_dev_manual.pdf">PDF Version</a></li>
     </ul>
     
     <h3>SixDesk User Manual</h3>
@@ -40,13 +33,11 @@
     
     <h3>Physics Manual</h3>
     <ul>
-        <li><a href="/SixTrack/docs/physics_full/manual.php">HTML Version</a></li>
         <li><a href="/SixTrack/docs/physics_manual.pdf">PDF Version</a></li>
     </ul>
     
     <h3>Build Manual for Version 4.x and 5.x</h3>
     <ul>
-        <li><a href="/SixTrack/docs/build_full/manual.php">HTML Version</a></li>
         <li><a href="/SixTrack/docs/building_sixtrack.pdf">PDF Version</a></li>
     </ul>
     
