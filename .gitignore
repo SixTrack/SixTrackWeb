@@ -14,3 +14,5 @@ google*
 *.tmp
 old_site
 doc
+upload.sh
+docs
