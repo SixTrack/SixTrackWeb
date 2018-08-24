@@ -19,10 +19,15 @@
         provided in both PDF and HTML format. The HTML version of the manuals are generated from
         LaTeX source, and may therefore contain formatting errors.</p>
     
-    <h3>SixTrack User Manual for Stable Version</h3>
+    <h3>SixTrack User Manual for Latest Release</h3>
     <ul>
         <li><a href="/SixTrack/docs/user_full/manual.php">HTML Version</a></li>
         <li><a href="/SixTrack/docs/user_manual.pdf">PDF Version</a></li>
+    </ul>
+    
+    <h3>SixTrack User Manual for 4.7.16</h3>
+    <ul>
+        <li><a href="/SixTrack/files/user_manual_v40716.pdf">PDF Version</a></li>
     </ul>
     
     <h3>SixDesk User Manual</h3>
