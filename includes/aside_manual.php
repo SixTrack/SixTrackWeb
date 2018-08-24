@@ -10,11 +10,13 @@
 ?>
 <h2>Documentation</h2>
 <ul class="no-bullet-list">
-    <li><b>User Manual (Stable):</b><br>
+    <li><b>User Manual:</b><br>
         Version 5.x:
         <a href="/SixTrack/docs/user_full/manual.php">HTML</a>
         |
-        <a href="/SixTrack/docs/user_manual.pdf">PDF</a>
+        <a href="/SixTrack/docs/user_manual.pdf">PDF</a><br>
+        Version 4.7.16:
+        <a href="/SixTrack/files/user_manual_v40716.pdf">PDF</a>
     </li>
     <li><b>Physics Manual:</b><br>
         Version 4.x-5.x:
