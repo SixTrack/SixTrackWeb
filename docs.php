@@ -13,39 +13,35 @@
 <article>
     <h1>Documentation</h1>
     <h2>Manuals</h2>
-    
+
     <p>The SixTrack manuals consists of a user manual for setting up and running simulations,
         a build manual for compiling SixTrack from source, and a physics manual. The manuals are
         provided in both PDF and HTML format. The HTML version of the manuals are generated from
         LaTeX source, and may therefore contain formatting errors.</p>
-    
-    <h3>SixTrack User Manual for Latest Release</h3>
+
+    <h3>SixTrack User Manual</h3>
     <ul>
-        <li><a href="/SixTrack/docs/user_full/manual.php">HTML Version</a></li>
-        <li><a href="/SixTrack/docs/user_manual.pdf">PDF Version</a></li>
+        <li><a href="/SixTrack/docs/user_full/manual.php">HTML Version</a> <b>[Version 5.x]</b></li>
+        <li><a href="/SixTrack/docs/user_manual.pdf">PDF Version</a> <b>[Version 5.x]</li>
+        <li><a href="/SixTrack/files/user_manual_v40716.pdf">PDF Version</a> <b>[Version 4.7.16]</li>
     </ul>
-    
-    <h3>SixTrack User Manual for 4.7.16</h3>
-    <ul>
-        <li><a href="/SixTrack/files/user_manual_v40716.pdf">PDF Version</a></li>
-    </ul>
-    
+
     <h3>SixDesk User Manual</h3>
     <ul>
         <li><a href="/SixTrack/doc/sixdesk/sixdesk_env.html">HTML Version</a></li>
         <li><a href="/SixTrack/doc/sixdesk/sixdesk_env.pdf">PDF Version</a></li>
     </ul>
-    
+
     <h3>Physics Manual</h3>
     <ul>
         <li><a href="/SixTrack/docs/physics_manual.pdf">PDF Version</a></li>
     </ul>
-    
+
     <h3>Build Manual for Version 4.x and 5.x</h3>
     <ul>
         <li><a href="/SixTrack/docs/building_sixtrack.pdf">PDF Version</a></li>
     </ul>
-    
+
     <h2>Physics References</h2>
     <ul>
         <li>1985,
@@ -99,7 +95,7 @@
             G. Iadarola, R. De Maria, Y. Papaphilippou.
         </li>
     </ul>
-    
+
     <h2>Useful References</h2>
     <ul>
         <li>2006,
@@ -143,7 +139,7 @@
             M. Bassetti, A. Erskine, CERN-ISR-TH-80-06. 4D beam beam kick.
         </li>
     </ul>
-    
+
     <h2>Theses</h2>
     <ul>
         <li>2014,
