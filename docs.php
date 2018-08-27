@@ -21,9 +21,9 @@
 
     <h3>SixTrack User Manual</h3>
     <ul>
-        <li><a href="/SixTrack/docs/user_full/manual.php">HTML Version</a> <b>[Version 5.x]</b></li>
-        <li><a href="/SixTrack/docs/user_manual.pdf">PDF Version</a> <b>[Version 5.x]</li>
-        <li><a href="/SixTrack/files/user_manual_v40716.pdf">PDF Version</a> <b>[Version 4.7.16]</li>
+        <li><a href="/SixTrack/docs/user_full/manual.php">HTML Version</a> [Version 5.x]</li>
+        <li><a href="/SixTrack/docs/user_manual.pdf">PDF Version</a> [Version 5.x]</li>
+        <li><a href="/SixTrack/files/user_manual_v40716.pdf">PDF Version</a> [Version 4.7.16]</li>
     </ul>
 
     <h3>SixDesk User Manual</h3>
