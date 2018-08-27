@@ -13,7 +13,7 @@
 <article>
     <h1>Overview</h1>
     <img src="images/top.jpg" width="906">
-    <p>SixTrack is a single particle 6D symplectic tracking code optimized for long term tracking in high energy rings. 
+    <p>SixTrack is a single particle 6D symplectic tracking code optimized for long term tracking in high energy rings.
         It is mainly used for the LHC for dynamic aperture studies, tune optimization, and collimation studies.</p>
     <p>The core of SixTrack is a single executable built from Fortran pre-processed sources. Links to the source
         code can be found on the <a href="source.php">source</a> page.
@@ -30,8 +30,9 @@
     <ul class="no-bullet-list">
         <li><b>Coordinator:</b> Riccardo De Maria</li>
         <li><b>Former Coordinator and Original Author:</b> Frank Schmidt</li>
-        <li><b>Release Manager:</b> Riccardo De Maria, Veronica Berglyd Olsen, Kyrre Sjobak</li>
+        <li><b>Core Developers:</b> Riccardo De Maria, Veronica Berglyd Olsen, Kyrre Sjobak, Alessio Mereghetti, James Molson, Tobias Persson</li>
         <li><b>Collimation Routines:</b> Alessio Mereghetti, Roderik Bruce, Stefano Redaelli, Guillaume Robert-Demolaize, Pascal Hermes</li>
+        <li><b>SixTrack Website:</b> Veronica Berglyd Olsen, Riccardo De Maria</li>
         <li><b>SixDesk:</b> Alessio Mereghetti, Eric Mcintosh</li>
         <li><b>Boinc:</b> Alessio Mereghetti, Eric Mcintosh, Igor Zacharov, Nils Hoimyr</li>
         <li><b>Dynamic Effects:</b> Kyrre Sjobak, Veronica Berglyd Olsen</li>
@@ -51,6 +52,7 @@
         <li><b>Beam-Gas Interactions:</b> Yngve Levinsen</li>
         <li><b>Frequency Map Analysis:</b> Miriam Fitterer</li>
     </ul>
+    The full author list is available in the source <a href="https://github.com/SixTrack/SixTrack/blob/master/README.md">readme file</a>.
 </article>
 <aside>
 <h2>Quick Links</h2>
