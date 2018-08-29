@@ -217,6 +217,24 @@ a:hover {color: #0053a1; text-decoration: underline;}
     margin: 0px 4px;
 }
 
+/* Tables */
+
+table td {
+    padding: 2px 4px;
+}
+
+.table-head {
+    background-color: #cccccc;
+    color: #000000;
+    font-weight: 700;
+}
+
+.table-subhead {
+    background-color: #bbbbbb;
+    color: #000000;
+    font-weight: 700;
+}
+
 /**
  *  Page Footer
  */
