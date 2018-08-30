@@ -109,7 +109,6 @@
                     if($bData["success"] == "False") $bPass = 0;
                     if($bData["success"] == "True")  $bPass = 1;
                     $bAge = time() - intval($bData["timestamp"]);
-                    if($bAge > 86400*5) $bPass = -1;
                     if(intval($bMeta["runtime"]) > intval($bData["timestamp"])) $bPass = 2;
                     switch($bPass) {
                     case 0:
@@ -185,7 +184,6 @@
                     if($tData["passtests"] == "False") $tPass = 0;
                     if($tData["passtests"] == "True")  $tPass = 1;
                     $tAge = time() - intval($tData["timestamp"]);
-                    if($tAge > 86400*5) $tPass = -1;
                     if(intval($tMeta["testtime"]) > intval($tData["timestamp"])) $tPass = 2;
                     switch($tPass) {
                     case 0:
