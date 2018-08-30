@@ -12,6 +12,8 @@
 
 <article>
     <h1>Build Status</h1>
+    See also the <a href="http://abp-cdash.web.cern.ch/abp-cdash/index.php?project=SixTrack">SixTrack CDash</a> page.<br>
+    <br>
     <?php
         $bStatus    = array();
         $tStatus    = array();
@@ -26,10 +28,24 @@
                 $bMeta = $bData;
             }
             if($bData["action"] == "build") {
-                $bStatus[intval($bData["buildno"])] = $bData;
+                $eNo = intval($bData["buildno"]);
+                if(array_key_exists($eNo,$bStatus)) {
+                    if(intval($bData["timestamp"]) > intval($bStatus[$eNo]["timestamp"])) {
+                        $bStatus[$eNo] = $bData;
+                    }
+                } else {
+                    $bStatus[$eNo] = $bData;
+                }
             }
             if($bData["action"] == "test") {
-                $tStatus[intval($bData["buildno"])] = $bData;
+                $eNo = intval($bData["buildno"]);
+                if(array_key_exists($eNo,$tStatus)) {
+                    if(intval($bData["timestamp"]) > intval($tStatus[$eNo]["timestamp"])) {
+                        $tStatus[$eNo] = $bData;
+                    }
+                } else {
+                    $tStatus[$eNo] = $bData;
+                }
             }
         }
 
@@ -161,6 +177,9 @@
                     $tData  = $tStatus[$tMap[$compNm."/".$typNm."/".$bldNm]];
                     $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
                     $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds";
+                    if($tData["failed"] != "") {
+                        $tInfo .= "Failed: ".$tData["failed"];
+                    }
                     echo "<td>";
                     $tPass = -1;
                     if($tData["passtests"] == "False") $tPass = 0;
