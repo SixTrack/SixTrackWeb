@@ -177,7 +177,7 @@
                     $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
                     $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds";
                     if($tData["failed"] != "") {
-                        $tInfo .= "Failed: ".$tData["failed"];
+                        $tInfo .= "\nFailed: ".$tData["failed"];
                     }
                     echo "<td>";
                     $tPass = -1;
