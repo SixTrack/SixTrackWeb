@@ -55,7 +55,7 @@
     The full author list is available in the source <a href="https://github.com/SixTrack/SixTrack/blob/master/README.md">readme file</a>.
 </article>
 <aside>
-<h2>Quick Links</h2>
+    <h2>Quick Links</h2>
     <ul class="square-bullet-list">
         <li><a href="https://github.com/SixTrack/SixTrack/">SixTrack Source</a></li>
         <li><a href="https://github.com/SixTrack/SixTrack/releases">SixTrack Releases</a></li>

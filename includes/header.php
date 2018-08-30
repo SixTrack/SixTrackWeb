@@ -55,6 +55,7 @@
         <ul>
             <li><a href="/SixTrack/index.php">Home</a></li><!--
          --><li><a href="/SixTrack/source.php">Source Code</a></li><!--
+         --><li><a href="/SixTrack/builds.php">Build Status</a></li><!--
          --><li><a href="/SixTrack/docs.php">Documentation</a></li><!--
          --><li><a href="https://twiki.cern.ch/twiki/bin/view/LHCAtHome/SixTrack">Developers' Wiki</a></li>
         </ul>
