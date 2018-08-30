@@ -20,8 +20,17 @@
 
     if($sAction == "build") {
         echo "build data accepted";
-        if(array_key_exists("buildno",$_POST)) {
-            file_put_contents("build_status/build_".str_pad($_POST["buildno"],4,"0",STR_PAD_LEFT).".dat",serialize($_POST));
+        if(array_key_exists("command",$_POST)) {
+            $fileName = "build_".md5($_POST["command"]).".dat";
+            file_put_contents("build_status/".$fileName,serialize($_POST));
+        }
+    }
+
+    if($sAction == "test") {
+        echo "test data accepted";
+        if(array_key_exists("command",$_POST)) {
+            $fileName = "test_".md5($_POST["command"]).".dat";
+            file_put_contents("build_status/".$fileName,serialize($_POST));
         }
     }
 
