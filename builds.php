@@ -80,6 +80,8 @@
                 $bMap[$theCompiler."/".$theType."/".$theBuild] = $bNo;
             }
         }
+        ksort($bCompilers);
+        krsort($bTypes);
 
         echo "<table>\n";
         echo "<tr>\n";
@@ -152,6 +154,8 @@
                 $tMap[$theCompiler."/".$theType."/".$theBuild] = $tNo;
             }
         }
+        ksort($tCompilers);
+        krsort($tTypes);
 
         echo "<table>\n";
         echo "<tr>\n";
