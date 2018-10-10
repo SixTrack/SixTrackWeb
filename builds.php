@@ -49,8 +49,8 @@
             }
         }
 
-        sort($bStatus);
-        sort($tStatus);
+        ksort($bStatus);
+        ksort($tStatus);
 
         $startTime = intval($bMeta["runtime"]);
 
@@ -70,9 +70,7 @@
             $theCompiler = $bEntry["compiler"];
             $theType     = $bEntry["type"];
             $theBuild    = $bEntry["flag"]." [".$bEntry["build"]."]";
-            $bCompilers[$theCompiler] += 1;
-            $bTypes[$theType]         += 1;
-            $buildTime = intval($bEntry["timestamp"]);
+            $buildTime   = intval($bEntry["timestamp"]);
             if($buildTime >= $startTime) {
                 $bCompilers[$theCompiler] += 1;
                 $bTypes[$theType]         += 1;
@@ -144,9 +142,7 @@
             $theCompiler = $tEntry["compiler"];
             $theType     = $tEntry["type"];
             $theBuild    = $tEntry["flag"]." [".$tEntry["build"]."]";
-            $tCompilers[$theCompiler] += 1;
-            $tTypes[$theType]         += 1;
-            $testTime = intval($tEntry["timestamp"]);
+            $testTime    = intval($tEntry["timestamp"]);
             if($testTime >= $startTime) {
                 $tCompilers[$theCompiler] += 1;
                 $tTypes[$theType]         += 1;
@@ -179,7 +175,8 @@
                 foreach($tTypes as $typNm=>$typN) {
                     $tData  = $tStatus[$tMap[$compNm."/".$typNm."/".$bldNm]];
                     $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
-                    $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds";
+                    $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds\n";
+                    $tInfo .= "Command: ".str_replace('\"','"',$tData["testcmd"]);
                     if($tData["failed"] != "") {
                         $tInfo .= "\nFailed: ".$tData["failed"];
                     }

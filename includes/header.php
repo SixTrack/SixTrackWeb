@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/SixTrack/css/normalize.css" type="text/css" media="all" />
     <link rel="stylesheet" href="/SixTrack/css/styles.css" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
     <link rel="icon" href="https://home.cern/sites/home.web.cern.ch/themes/cern_public/favicon.ico" />
     <?php
