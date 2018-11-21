@@ -9,7 +9,7 @@
     array_key_exists("action",$_POST) ? $sAction = $_POST["action"] : $sAction = "";
     array_key_exists("apikey",$_POST) ? $sAPIKey = $_POST["apikey"] : $sAPIKey = "";
 
-    $refKey = md5(utf8_encode(date("Ymd")."-zqc5XpLUGvsEMFMxKKVS"));
+    require_once("apikey.php");
 
     if($sAPIKey != $refKey) {
         echo "Invalid API key";
