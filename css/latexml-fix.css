@@ -44,6 +44,12 @@
     vertical-align: top;
 }
 
+#manual .ltx_tabular th,
+#manual .ltx_tabular td {
+    vertical-align: top;
+    padding: 3px 5px !important;
+}
+
 #manual .ltx_p {
     text-indent: 0px;
 }
