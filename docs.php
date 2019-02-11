@@ -90,7 +90,7 @@
             P. Hermes, R. Bruce, R. De Maria.
         </li>
         <li>2017,
-            <a href="https://indico.cern.ch/event/684338/contributions/2805473/attachments/1568753/2473544/note_6d_beam_beam.pdf">
+            <a href="https://indico.cern.ch/event/684338/contributions/2805473/attachments/1568753/2687512/note_6d_beam_beam.pdf">
             6D beam-beam interaction step-by-step</a>,
             G. Iadarola, R. De Maria, Y. Papaphilippou.
         </li>
