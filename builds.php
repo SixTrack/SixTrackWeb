@@ -183,6 +183,7 @@
           if(array_key_exists("action",$tData)) {
             $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
             $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds\n";
+            $tInfo .= "Result: ".$tData["ntotal"]." Run, ".$tData["npass"]." Passed, ".$tData["nfail"]." Failed\n";
             $tInfo .= "Command: ".str_replace('\"','"',$tData["testcmd"]);
             if($tData["failed"] != "") {
               $tInfo .= "\nFailed: ".$tData["failed"];
@@ -196,11 +197,7 @@
             if($tData["passtests"] == "True") {
               svgBadge("tests", $tMsg,"green");
             } elseif($tData["passtests"] == "False") {
-              if($tRate < 0.95) {
-                svgBadge("tests", $tMsg,"red");
-              } else {
-                svgBadge("tests", $tMsg,"orange");
-              }
+              svgBadge("tests", $tMsg,"red");
             } else {
               svgBadge("tests","unknown","grey");
             }
