@@ -191,12 +191,12 @@
             $nTotal = intval($tData["ntotal"]);
             $nPass  = intval($tData["npass"]);
             $nFail  = intval($tData["nfail"]);
-            $fRate  = $nFail/$nTotal;
-            $tMsg   = $tData["npass"]."/".$tData["ntotal"];
+            $tRate  = $nPass/$nTotal;
+            $tMsg   = number_format(100*$tRate,1)." %";
             if($tData["passtests"] == "True") {
               svgBadge("tests", $tMsg,"green");
             } elseif($tData["passtests"] == "False") {
-              if($fRate > 0.1) {
+              if($tRate < 0.95) {
                 svgBadge("tests", $tMsg,"red");
               } else {
                 svgBadge("tests", $tMsg,"orange");
