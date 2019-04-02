@@ -118,7 +118,7 @@
               $bInfo .= "Build Time: ".number_format($bData["buildtime"],3)." seconds\n";
               $bInfo .= "Command: ".$bData["command"];
             }
-            echo "<td title='".$bInfo."'>";
+            echo "<td title='".str_replace("\'","",$bInfo)."'>";
             if($bData["build"] == "True") {
               if($bData["success"] == "True") {
                 svgBadge("build","passed","green");
@@ -187,7 +187,7 @@
             if($tData["failed"] != "") {
               $tInfo .= "\nFailed: ".$tData["failed"];
             }
-            echo "<td title='".$tInfo."'>";
+            echo "<td title='".str_replace("\'","",$tInfo)."'>";
             $nTotal = intval($tData["ntotal"]);
             $nPass  = intval($tData["npass"]);
             $nFail  = intval($tData["nfail"]);
