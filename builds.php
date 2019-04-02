@@ -93,13 +93,13 @@
 
     echo "<table>\n";
     echo "<tr>\n";
-    echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
+    echo "<td style='border-right: 2px solid #999999; width: 180px;'>&nbsp;</td>\n";
     foreach($bCompilers as $compNm) {
       echo "<td colspan=2 align=center><b>".$compNm."</b></td>\n";
     }
     echo "</tr>\n";
     echo "<tr style='border-bottom: 2px solid #999999;'>\n";
-    echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
+    echo "<td style='border-right: 2px solid #999999; width: 180px;'>&nbsp;</td>\n";
     foreach($bCompilers as $compNm) {
       foreach($bTypes as $typNm) {
         echo "<td align=center>".$typNm."</td>\n";
@@ -108,7 +108,7 @@
     echo "</tr>\n";
     foreach($bBuilds as $bldNm) {
       echo "<tr>\n";
-      echo "<td style='border-right: 2px solid #999999; width: 230px;'><b>".$bldNm."</b></td>\n";
+      echo "<td style='border-right: 2px solid #999999; width: 180px;'><b>".$bldNm."</b></td>\n";
       foreach($bCompilers as $compNm) {
         foreach($bTypes as $typNm) {
           $bData = $bStatus[$bMap[$compNm."/".$typNm."/".$bldNm]];
@@ -161,13 +161,13 @@
 
     echo "<table>\n";
     echo "<tr>\n";
-    echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
+    echo "<td style='border-right: 2px solid #999999; width: 180px;'>&nbsp;</td>\n";
     foreach($tCompilers as $compNm) {
       echo "<td colspan=2 align=center><b>".$compNm."</b></td>\n";
     }
     echo "</tr>\n";
     echo "<tr style='border-bottom: 2px solid #999999;'>\n";
-    echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
+    echo "<td style='border-right: 2px solid #999999; width: 180px;'>&nbsp;</td>\n";
     foreach($tCompilers as $compNm) {
       foreach($tTypes as $typNm) {
         echo "<td align=center>".$typNm."</td>\n";
@@ -176,7 +176,7 @@
     echo "</tr>\n";
     foreach($tBuilds as $bldNm) {
       echo "<tr>\n";
-      echo "<td style='border-right: 2px solid #999999; width: 230px;'><b>".$bldNm."</b></td>\n";
+      echo "<td style='border-right: 2px solid #999999; width: 180px;'><b>".$bldNm."</b></td>\n";
       foreach($tCompilers as $compNm) {
         foreach($tTypes as $typNm) {
           $tData = $tStatus[$tMap[$compNm."/".$typNm."/".$bldNm]];
