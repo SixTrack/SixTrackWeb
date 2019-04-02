@@ -9,6 +9,7 @@
 
   $bMain = true;
   require_once("includes/header.php");
+  require_once("includes/badges.php");
 ?>
 
 <article>
@@ -54,78 +55,87 @@
     ksort($tStatus);
 
     $startTime = intval($bMeta["runtime"]);
+    $lblStyle  = "style='display: inline-block; width: 90px; font-weight: bold;'";
 
     echo "<ul class='no-bullet-list'>\n";
-    echo "<li><b>Last Run Time:</b> ".date("Y-m-d H:i:s",intval($bMeta["runtime"]))."</li>\n";
-    echo "<li><b>Git HASH:</b> <a href='https://github.com/SixTrack/SixTrack/commit/".$bMeta["hash"]."'>".$bMeta["hash"]."</a></li>\n";
-    echo "<li><b>Operating System:</b> ".$bMeta["os"]."</li>\n";
+    echo "<li><span ".$lblStyle.">Started:</span> ".date("Y-m-d H:i:s",intval($bMeta["runtime"]))."</li>\n";
+    if($bMeta["endtime"] == "-1") {
+      echo "<li><span ".$lblStyle.">Finished:</span> Running ...</li>\n";
+    } else {
+      $runT = intval($bMeta["endtime"])-intval($bMeta["runtime"]);
+      $runH = floor($runT/3600);
+      $runM = round(($runT-$runH*3600)/60);
+      echo "<li><span ".$lblStyle.">Finished:</span> ".date("Y-m-d H:i:s",intval($bMeta["endtime"]))."</li>\n";
+      echo "<li><span ".$lblStyle.">Run Time:</span> ".$runH." h ".$runM." min</li>\n";
+    }
+    echo "<li><span ".$lblStyle.">Git Hash:</span> ";
+      echo "<a href='https://github.com/SixTrack/SixTrack/commit/".$bMeta["hash"]."'>".$bMeta["hash"]."</a> ";
+    echo "</li>\n";
+    echo "<li><span ".$lblStyle.">Git Time:</span> ".$bMeta["ctime"]."</li>\n";
+    echo "<li><span ".$lblStyle.">Host OS:</span> ".$bMeta["os"]."</li>\n";
     echo "</ul><br>\n";
 
     echo "<h2>SixTrack Builds</h2>\n";
     // Generate map of builds from the last build session
-    $bCompilers = array();
-    $bTypes     = array();
-    $bBuilds    = array();
-    $bMap       = array();
+    $bMap = array();
     foreach($bStatus as $bNo=>$bEntry) {
       $theCompiler = $bEntry["compiler"];
       $theType     = $bEntry["type"];
-      $theBuild    = $bEntry["flag"]." [".$bEntry["build"]."]";
+      $theBuild    = $bEntry["flag"];
       $buildTime   = intval($bEntry["timestamp"]);
       if($buildTime >= $startTime) {
-        $bCompilers[$theCompiler] += 1;
-        $bTypes[$theType]         += 1;
-        $bBuilds[$theBuild]       += 1;
         $bMap[$theCompiler."/".$theType."/".$theBuild] = $bNo;
       }
     }
-    ksort($bCompilers);
-    krsort($bTypes);
+    $bTypes     = array("Release","Debug");
+    $bCompilers = explode(",",$bMeta["complist"]);
+    $bBuilds    = explode(",",$bMeta["buildlist"]);
 
     echo "<table>\n";
     echo "<tr>\n";
     echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
-    foreach($bCompilers as $compNm=>$compN) {
+    foreach($bCompilers as $compNm) {
       echo "<td colspan=2 align=center><b>".$compNm."</b></td>\n";
     }
     echo "</tr>\n";
     echo "<tr style='border-bottom: 2px solid #999999;'>\n";
     echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
-    foreach($bCompilers as $compNm=>$compN) {
-      foreach($bTypes as $typNm=>$typN) {
+    foreach($bCompilers as $compNm) {
+      foreach($bTypes as $typNm) {
         echo "<td align=center>".$typNm."</td>\n";
       }
     }
     echo "</tr>\n";
-    foreach($bBuilds as $bldNm=>$bldN) {
+    foreach($bBuilds as $bldNm) {
       echo "<tr>\n";
       echo "<td style='border-right: 2px solid #999999; width: 230px;'><b>".$bldNm."</b></td>\n";
-      foreach($bCompilers as $compNm=>$compN) {
-        foreach($bTypes as $typNm=>$typN) {
-          $bData  = $bStatus[$bMap[$compNm."/".$typNm."/".$bldNm]];
-          $bInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($bData["timestamp"]))."\n";
-          $bInfo .= "Build Time: ".number_format($bData["buildtime"],3)." seconds";
-          echo "<td>";
-          $bPass = -1;
-          if($bData["success"] == "False") $bPass = 0;
-          if($bData["success"] == "True")  $bPass = 1;
-          $bAge = time() - intval($bData["timestamp"]);
-          if(intval($bMeta["runtime"]) > intval($bData["timestamp"])) $bPass = 2;
-          switch($bPass) {
-          case 0:
-            echo "<img title='".$bInfo."' src='images/build_failing.svg'>";
-            break;
-          case 1:
-            echo "<img title='".$bInfo."' src='images/build_passing.svg'>";
-            break;
-          case 2:
-            echo "<img src='images/build_queued.svg'>";
-            break;
-          default:
-            echo "<img src='images/build_unknown.svg'>";
-            break;
+      foreach($bCompilers as $compNm) {
+        foreach($bTypes as $typNm) {
+          $bData = $bStatus[$bMap[$compNm."/".$typNm."/".$bldNm]];
+          if(array_key_exists("action",$bData)) {
+            $bInfo = "Time Stamp: ".date("Y-m-d H:i:s",intval($bData["timestamp"]))."\n";
+            if($bData["build"] == "True") {
+              $bInfo .= "Build Time: ".number_format($bData["buildtime"],3)." seconds\n";
+              $bInfo .= "Command: ".$bData["command"];
+            }
+            echo "<td title='".$bInfo."'>";
+            if($bData["build"] == "True") {
+              if($bData["success"] == "True") {
+                svgBadge("build","passed","green");
+              } elseif($bData["success"] == "False") {
+                svgBadge("build","failed","red");
+              } else {
+                svgBadge("build","unknown","grey");
+              }
+            } else {
+              svgBadge("build","skipped","blue");
+            }
+            echo "</td>\n";
+          } else {
+            echo "<td>";
+              svgBadge("build","queued","yellow");
+            echo "</td>\n";
           }
-          echo "</td>\n";
         }
       }
       echo "</tr>\n";
@@ -135,73 +145,75 @@
     echo "<br><br>\n";
     echo "<h2>SixTrack Tests</h2>\n";
     // Generate map of tests from the last build session
-    $tCompilers = array();
-    $tTypes     = array();
-    $tBuilds    = array();
-    $tMap       = array();
+    $tMap = array();
     foreach($tStatus as $tNo=>$tEntry) {
       $theCompiler = $tEntry["compiler"];
       $theType     = $tEntry["type"];
-      $theBuild    = $tEntry["flag"]." [".$tEntry["build"]."]";
+      $theBuild    = $tEntry["flag"];
       $testTime    = intval($tEntry["timestamp"]);
       if($testTime >= $startTime) {
-        $tCompilers[$theCompiler] += 1;
-        $tTypes[$theType]         += 1;
-        $tBuilds[$theBuild]       += 1;
         $tMap[$theCompiler."/".$theType."/".$theBuild] = $tNo;
       }
     }
-    ksort($tCompilers);
-    krsort($tTypes);
+    $tTypes     = array("Release","Debug");
+    $tCompilers = explode(",",$bMeta["complist"]);
+    $tBuilds    = explode(",",$bMeta["testlist"]);
 
     echo "<table>\n";
     echo "<tr>\n";
     echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
-    foreach($tCompilers as $compNm=>$compN) {
+    foreach($tCompilers as $compNm) {
       echo "<td colspan=2 align=center><b>".$compNm."</b></td>\n";
     }
     echo "</tr>\n";
     echo "<tr style='border-bottom: 2px solid #999999;'>\n";
     echo "<td style='border-right: 2px solid #999999; width: 230px;'>&nbsp;</td>\n";
-    foreach($tCompilers as $compNm=>$compN) {
-      foreach($tTypes as $typNm=>$typN) {
+    foreach($tCompilers as $compNm) {
+      foreach($tTypes as $typNm) {
         echo "<td align=center>".$typNm."</td>\n";
       }
     }
     echo "</tr>\n";
-    foreach($tBuilds as $bldNm=>$bldN) {
+    foreach($tBuilds as $bldNm) {
       echo "<tr>\n";
       echo "<td style='border-right: 2px solid #999999; width: 230px;'><b>".$bldNm."</b></td>\n";
-      foreach($tCompilers as $compNm=>$compN) {
-        foreach($tTypes as $typNm=>$typN) {
-          $tData  = $tStatus[$tMap[$compNm."/".$typNm."/".$bldNm]];
-          $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
-          $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds\n";
-          $tInfo .= "Command: ".str_replace('\"','"',$tData["testcmd"]);
-          if($tData["failed"] != "") {
-            $tInfo .= "\nFailed: ".$tData["failed"];
+      foreach($tCompilers as $compNm) {
+        foreach($tTypes as $typNm) {
+          $tData = $tStatus[$tMap[$compNm."/".$typNm."/".$bldNm]];
+          if(array_key_exists("action",$tData)) {
+            $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
+            $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds\n";
+            $tInfo .= "Command: ".str_replace('\"','"',$tData["testcmd"]);
+            if($tData["failed"] != "") {
+              $tInfo .= "\nFailed: ".$tData["failed"];
+            }
+            echo "<td title='".$tInfo."'>";
+            $nTotal = intval($tData["ntotal"]);
+            $nPass  = intval($tData["npass"]);
+            $nFail  = intval($tData["nfail"]);
+            $fRate  = $nFail/$nTotal;
+            $tMsg   = $tData["npass"]."/".$tData["ntotal"];
+            if($tData["passtests"] == "True") {
+              svgBadge("tests", $tMsg,"green");
+            } elseif($tData["passtests"] == "False") {
+              if($fRate > 0.1) {
+                svgBadge("tests", $tMsg,"red");
+              } else {
+                svgBadge("tests", $tMsg,"orange");
+              }
+            } else {
+              svgBadge("tests","unknown","grey");
+            }
+            echo "</td>\n";
+          } else {
+            echo "<td>";
+              if($bMeta["endtime"] == "-1") {
+                svgBadge("tests","queued","yellow");
+              } else {
+                svgBadge("tests","skipped","orange");
+              }
+            echo "</td>\n";
           }
-          echo "<td>";
-          $tPass = -1;
-          if($tData["passtests"] == "False") $tPass = 0;
-          if($tData["passtests"] == "True")  $tPass = 1;
-          $tAge = time() - intval($tData["timestamp"]);
-          if(intval($tMeta["testtime"]) > intval($tData["timestamp"])) $tPass = 2;
-          switch($tPass) {
-          case 0:
-            echo "<img title='".$tInfo."' src='images/test_failing.svg'>";
-            break;
-          case 1:
-            echo "<img title='".$tInfo."' src='images/test_passing.svg'>";
-            break;
-          case 2:
-            echo "<img src='images/test_queued.svg'>";
-            break;
-          default:
-            echo "<img src='images/test_unknown.svg'>";
-            break;
-          }
-          echo "</td>\n";
         }
       }
       echo "</tr>\n";
