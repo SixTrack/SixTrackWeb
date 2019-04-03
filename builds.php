@@ -196,6 +196,8 @@
             $tMsg   = number_format(100*$tRate,1)." %";
             if($tData["passtests"] == "True") {
               svgBadge("tests", $tMsg,"green");
+            } elseif($tData["passtests"] == "False" && $tRate >= 0.98) {
+              svgBadge("tests", $tMsg,"orange");
             } elseif($tData["passtests"] == "False") {
               svgBadge("tests", $tMsg,"red");
             } else {
@@ -207,7 +209,7 @@
               if($bMeta["endtime"] == "-1") {
                 svgBadge("tests","queued","yellow");
               } else {
-                svgBadge("tests","skipped","orange");
+                svgBadge("tests","skipped","blue");
               }
             echo "</td>\n";
           }
