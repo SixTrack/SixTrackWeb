@@ -72,6 +72,28 @@
       echo "<a href='https://github.com/SixTrack/SixTrack/commit/".$bMeta["hash"]."'>".$bMeta["hash"]."</a> ";
     echo "</li>\n";
     echo "<li><span ".$lblStyle.">Git Time:</span> ".$bMeta["ctime"]."</li>\n";
+    if($bMeta["coverage"] == "True") {
+      $cLoc = intval($bMeta["covloc"]);
+      $cTot = intval($bMeta["totloc"]);
+      $cRat = $cTot > 0 ? 100*$cLoc/$cTot : 0;
+      $cDif = "";
+      if($bMeta["prevcov"] != "") {
+        $pCov = explode(";",$bMeta["prevcov"]);
+        if(count($pCov) == 4) {
+          $pGit = $pCov[0];
+          $pTot = $pCov[1];
+          $pLoc = $pCov[2];
+          $pRat = $pTot > 0 ? 100*$pLoc/$pTot : 0;
+          $xRat = $cRat-$pRat;
+          $cCol = $xRat < 0 ? "#aa0000" : "#00aa00";
+          $cDif = "&nbsp;&nbsp;[ <span style='color: ".$cCol.";'>".number_format($xRat,3)." %</span> change from ";
+          $cDif.= "<a href='https://github.com/SixTrack/SixTrack/commit/".$pGit."'>".substr($pGit,0,7)."</a> ]";
+        }
+      }
+      echo "<li><span ".$lblStyle.">Coverage:</span> ".number_format($cRat,2)." %".$cDif."</li>\n";
+    } else {
+      echo "<li><span ".$lblStyle.">Coverage:</span> Running ...</li>\n";
+    }
     echo "<li><span ".$lblStyle.">Host OS:</span> ".$bMeta["os"]."</li>\n";
     echo "</ul><br>\n";
 
