@@ -10,6 +10,13 @@
   $bMain = true;
   require_once("includes/header.php");
   require_once("includes/badges.php");
+
+  function secToTime($tSec) {
+    $tH = floor($tSec/3600);
+    $tM = floor(($tSec-$tH*3600)/60);
+    $tS = floor($tSec-$tH*3600-$tM*60);
+    return sprintf("%02d:%02d:%02d",$tH,$tM,$tS);
+  }
 ?>
 
 <article>
@@ -63,10 +70,8 @@
       echo "<li><span ".$lblStyle.">Finished:</span> Running ...</li>\n";
     } else {
       $runT = intval($bMeta["endtime"])-intval($bMeta["runtime"]);
-      $runH = floor($runT/3600);
-      $runM = round(($runT-$runH*3600)/60);
       echo "<li><span ".$lblStyle.">Finished:</span> ".date("Y-m-d H:i:s",intval($bMeta["endtime"]))."</li>\n";
-      echo "<li><span ".$lblStyle.">Run Time:</span> ".$runH." h ".$runM." min</li>\n";
+      echo "<li><span ".$lblStyle.">Run Time:</span> ".secToTime($runT)."</li>\n";
     }
     echo "<li><span ".$lblStyle.">Git Hash:</span> ";
       echo "<a href='https://github.com/SixTrack/SixTrack/commit/".$bMeta["hash"]."'>".$bMeta["hash"]."</a> ";
@@ -85,7 +90,7 @@
           $pLoc = $pCov[2];
           $pRat = $pTot > 0 ? 100*$pLoc/$pTot : 0;
           $xRat = $cRat-$pRat;
-          $cCol = $xRat < 0 ? "#aa0000" : "#00aa00";
+          $cCol = $xRat <= -0.001 ? "#aa0000" : $xRat >= 0.001 ? "#00aa00" : "#000000";
           $cDif = "&nbsp;&nbsp;[ <span style='color: ".$cCol.";'>".number_format($xRat,3)." %</span> change from ";
           $cDif.= "<a href='https://github.com/SixTrack/SixTrack/commit/".$pGit."'>".substr($pGit,0,7)."</a> ]";
         }
@@ -137,7 +142,7 @@
           if(array_key_exists("action",$bData)) {
             $bInfo = "Time Stamp: ".date("Y-m-d H:i:s",intval($bData["timestamp"]))."\n";
             if($bData["build"] == "True") {
-              $bInfo .= "Build Time: ".number_format($bData["buildtime"],3)." seconds\n";
+              $bInfo .= "Build Time: ".secToTime($bData["buildtime"])."\n";
               $bInfo .= "Command: ".$bData["command"];
             }
             echo "<td title='".str_replace("\'","",$bInfo)."'>";
@@ -204,7 +209,7 @@
           $tData = $tStatus[$tMap[$compNm."/".$typNm."/".$bldNm]];
           if(array_key_exists("action",$tData)) {
             $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
-            $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds\n";
+            $tInfo .= "Test Time: ".secToTime($tData["testtime"])."\n";
             $tInfo .= "Result: ".$tData["ntotal"]." Run, ".$tData["npass"]." Passed, ".$tData["nfail"]." Failed\n";
             $tInfo .= "Command: ".str_replace('\"','"',$tData["testcmd"]);
             if($tData["failed"] != "") {
