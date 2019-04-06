@@ -65,6 +65,9 @@
     $lblStyle  = "style='display: inline-block; width: 90px; font-weight: bold;'";
 
     echo "<ul class='no-bullet-list'>\n";
+    if($bMeta["stvers"] != "") {
+      echo "<li><span ".$lblStyle.">SixTrack:</span> Version ".$bMeta["stvers"]."</li>\n";
+    }
     echo "<li><span ".$lblStyle.">Started:</span> ".date("Y-m-d H:i:s",intval($bMeta["runtime"]))."</li>\n";
     if($bMeta["endtime"] == "-1") {
       echo "<li><span ".$lblStyle.">Finished:</span> Running ...</li>\n";
@@ -90,7 +93,8 @@
           $pLoc = $pCov[2];
           $pRat = $pTot > 0 ? 100*$pLoc/$pTot : 0;
           $xRat = $cRat-$pRat;
-          $cCol = $xRat <= -0.001 ? "#aa0000" : $xRat >= 0.001 ? "#00aa00" : "#000000";
+          $cCol = $xRat <= -0.001 ? "#aa0000" : "#000000";
+          $cCol = $xRat >=  0.001 ? "#00aa00" : $cCol;
           $cDif = "&nbsp;&nbsp;[ <span style='color: ".$cCol.";'>".number_format($xRat,3)." %</span> change from ";
           $cDif.= "<a href='https://github.com/SixTrack/SixTrack/commit/".$pGit."'>".substr($pGit,0,7)."</a> ]";
         }
