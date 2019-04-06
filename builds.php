@@ -65,9 +65,6 @@
     $lblStyle  = "style='display: inline-block; width: 90px; font-weight: bold;'";
 
     echo "<ul class='no-bullet-list'>\n";
-    if($bMeta["stvers"] != "") {
-      echo "<li><span ".$lblStyle.">SixTrack:</span> Version ".$bMeta["stvers"]."</li>\n";
-    }
     echo "<li><span ".$lblStyle.">Started:</span> ".date("Y-m-d H:i:s",intval($bMeta["runtime"]))."</li>\n";
     if($bMeta["endtime"] == "-1") {
       echo "<li><span ".$lblStyle.">Finished:</span> Running ...</li>\n";
@@ -104,6 +101,9 @@
       echo "<li><span ".$lblStyle.">Coverage:</span> Running ...</li>\n";
     }
     echo "<li><span ".$lblStyle.">Host OS:</span> ".$bMeta["os"]."</li>\n";
+    if($bMeta["stvers"] != "") {
+      echo "<li><span ".$lblStyle.">SixTrack:</span> Version ".$bMeta["stvers"]."</li>\n";
+    }
     echo "</ul><br>\n";
 
     echo "<h2>SixTrack Builds</h2>\n";
