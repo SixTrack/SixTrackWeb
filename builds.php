@@ -10,6 +10,13 @@
   $bMain = true;
   require_once("includes/header.php");
   require_once("includes/badges.php");
+
+  function secToTime($tSec) {
+    $tH = floor($tSec/3600);
+    $tM = floor(($tSec-$tH*3600)/60);
+    $tS = floor($tSec-$tH*3600-$tM*60);
+    return sprintf("%02d:%02d:%02d",$tH,$tM,$tS);
+  }
 ?>
 
 <article>
@@ -63,16 +70,40 @@
       echo "<li><span ".$lblStyle.">Finished:</span> Running ...</li>\n";
     } else {
       $runT = intval($bMeta["endtime"])-intval($bMeta["runtime"]);
-      $runH = floor($runT/3600);
-      $runM = round(($runT-$runH*3600)/60);
       echo "<li><span ".$lblStyle.">Finished:</span> ".date("Y-m-d H:i:s",intval($bMeta["endtime"]))."</li>\n";
-      echo "<li><span ".$lblStyle.">Run Time:</span> ".$runH." h ".$runM." min</li>\n";
+      echo "<li><span ".$lblStyle.">Run Time:</span> ".secToTime($runT)."</li>\n";
     }
     echo "<li><span ".$lblStyle.">Git Hash:</span> ";
       echo "<a href='https://github.com/SixTrack/SixTrack/commit/".$bMeta["hash"]."'>".$bMeta["hash"]."</a> ";
     echo "</li>\n";
     echo "<li><span ".$lblStyle.">Git Time:</span> ".$bMeta["ctime"]."</li>\n";
+    if($bMeta["coverage"] == "True") {
+      $cLoc = intval($bMeta["covloc"]);
+      $cTot = intval($bMeta["totloc"]);
+      $cRat = $cTot > 0 ? 100*$cLoc/$cTot : 0;
+      $cDif = "";
+      if($bMeta["prevcov"] != "") {
+        $pCov = explode(";",$bMeta["prevcov"]);
+        if(count($pCov) == 4) {
+          $pGit = $pCov[0];
+          $pTot = $pCov[1];
+          $pLoc = $pCov[2];
+          $pRat = $pTot > 0 ? 100*$pLoc/$pTot : 0;
+          $xRat = $cRat-$pRat;
+          $cCol = $xRat <= -0.001 ? "#aa0000" : "#000000";
+          $cCol = $xRat >=  0.001 ? "#00aa00" : $cCol;
+          $cDif = "&nbsp;&nbsp;[ <span style='color: ".$cCol.";'>".number_format($xRat,3)." %</span> change from ";
+          $cDif.= "<a href='https://github.com/SixTrack/SixTrack/commit/".$pGit."'>".substr($pGit,0,7)."</a> ]";
+        }
+      }
+      echo "<li><span ".$lblStyle.">Coverage:</span> ".number_format($cRat,2)." %".$cDif."</li>\n";
+    } else {
+      echo "<li><span ".$lblStyle.">Coverage:</span> Running ...</li>\n";
+    }
     echo "<li><span ".$lblStyle.">Host OS:</span> ".$bMeta["os"]."</li>\n";
+    if($bMeta["stvers"] != "") {
+      echo "<li><span ".$lblStyle.">SixTrack:</span> Version ".$bMeta["stvers"]."</li>\n";
+    }
     echo "</ul><br>\n";
 
     echo "<h2>SixTrack Builds</h2>\n";
@@ -115,10 +146,10 @@
           if(array_key_exists("action",$bData)) {
             $bInfo = "Time Stamp: ".date("Y-m-d H:i:s",intval($bData["timestamp"]))."\n";
             if($bData["build"] == "True") {
-              $bInfo .= "Build Time: ".number_format($bData["buildtime"],3)." seconds\n";
+              $bInfo .= "Build Time: ".secToTime($bData["buildtime"])."\n";
               $bInfo .= "Command: ".$bData["command"];
             }
-            echo "<td title='".$bInfo."'>";
+            echo "<td title='".str_replace("\'","",$bInfo)."'>";
             if($bData["build"] == "True") {
               if($bData["success"] == "True") {
                 svgBadge("build","passed","green");
@@ -182,25 +213,24 @@
           $tData = $tStatus[$tMap[$compNm."/".$typNm."/".$bldNm]];
           if(array_key_exists("action",$tData)) {
             $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
-            $tInfo .= "Test Time: ".number_format($tData["testtime"],3)." seconds\n";
+            $tInfo .= "Test Time: ".secToTime($tData["testtime"])."\n";
+            $tInfo .= "Result: ".$tData["ntotal"]." Run, ".$tData["npass"]." Passed, ".$tData["nfail"]." Failed\n";
             $tInfo .= "Command: ".str_replace('\"','"',$tData["testcmd"]);
             if($tData["failed"] != "") {
               $tInfo .= "\nFailed: ".$tData["failed"];
             }
-            echo "<td title='".$tInfo."'>";
+            echo "<td title='".str_replace("\'","",$tInfo)."'>";
             $nTotal = intval($tData["ntotal"]);
             $nPass  = intval($tData["npass"]);
             $nFail  = intval($tData["nfail"]);
-            $fRate  = $nFail/$nTotal;
-            $tMsg   = $tData["npass"]."/".$tData["ntotal"];
+            $tRate  = $nPass/$nTotal;
+            $tMsg   = number_format(100*$tRate,1)." %";
             if($tData["passtests"] == "True") {
               svgBadge("tests", $tMsg,"green");
+            } elseif($tData["passtests"] == "False" && $tRate >= 0.98) {
+              svgBadge("tests", $tMsg,"orange");
             } elseif($tData["passtests"] == "False") {
-              if($fRate > 0.1) {
-                svgBadge("tests", $tMsg,"red");
-              } else {
-                svgBadge("tests", $tMsg,"orange");
-              }
+              svgBadge("tests", $tMsg,"red");
             } else {
               svgBadge("tests","unknown","grey");
             }
@@ -210,7 +240,7 @@
               if($bMeta["endtime"] == "-1") {
                 svgBadge("tests","queued","yellow");
               } else {
-                svgBadge("tests","skipped","orange");
+                svgBadge("tests","skipped","blue");
               }
             echo "</td>\n";
           }

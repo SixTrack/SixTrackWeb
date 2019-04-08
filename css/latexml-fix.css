@@ -50,6 +50,22 @@
     padding: 3px 5px !important;
 }
 
+#manual .ltx_eqn_table {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#manual .ltx_equation,
+#manual .ltx_eqn_table,
+#manual .ltx_eqn_row,
+#manual .ltx_eqn_cell {
+    max-width: 940px!important;
+}
+
+#manual .ltx_align_right {
+    position: relative;
+}
+
 #manual .ltx_p {
     text-indent: 0px;
 }
