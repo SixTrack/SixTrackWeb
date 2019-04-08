@@ -21,7 +21,17 @@
 
 <article>
   <h1>Build Status</h1>
-  See also the <a href="http://abp-cdash.web.cern.ch/abp-cdash/index.php?project=SixTrack">SixTrack CDash</a> page.<br>
+  See also: <a href="http://abp-cdash.web.cern.ch/abp-cdash/index.php?project=SixTrack">SixTrack CDash Page</a>.<br>
+  <?php
+    // Read coverage file
+    $bCov = file_get_contents("coverage/githash.txt");
+    $bCov = explode("\n",$bCov);
+    if(count($bCov) > 1) {
+      echo "See also: <a href='coverage/'>Coverage</a> for ";
+      echo "<a href='https://github.com/SixTrack/SixTrack/commit/".$bCov[0]."'>".substr($bCov[0],0,7)."</a>";
+      echo " [ ".$bCov[1]." ]<br>";
+    }
+  ?>
   <br>
   <?php
     $bStatus = array();
