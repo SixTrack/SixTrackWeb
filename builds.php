@@ -262,12 +262,7 @@
   ?>
 </article>
 <aside>
-  <h2>Quick Links</h2>
-  <ul class="square-bullet-list">
-    <li><a href="https://github.com/SixTrack/SixTrack/">SixTrack Source</a></li>
-    <li><a href="https://github.com/SixTrack/SixTrack/releases">SixTrack Releases</a></li>
-  </ul>
-  <br>
+  <?php include_once($incPath."/aside_quick.php"); ?>
   <?php include_once($incPath."/aside_footer.php"); ?>
 </aside>
 
