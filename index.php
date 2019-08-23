@@ -26,6 +26,12 @@
         <a href="source.php">source</a> page for preparing, running, and analysing dynamic aperture studies for the LHC.
         It can be used with the CERN LSF and <a href="http://lhcathome.web.cern.ch/LHCathome/">LHC@Home</a> computer resources.</p>
 
+    <h3>Citation</h3>
+    <p>If you use SixTrack 5 in your publication, please cite:</p>
+    <ul>
+        </li>De Maria, R., et al. ‘SixTrack Version 5: Status and New Developments’. In Proceedings of IPAC 2019, 3200–3203. Melbourne, Australia: JACoW, 2019. DOI:<a href="https://doi.org/10.18429/JACoW-IPAC2019-WEPTS043">10.18429/JACoW-IPAC2019-WEPTS043</a>.</li>
+    </ul>
+
     <h2>Development</h2>
     <ul class="no-bullet-list">
         <li><b>Coordinator:</b> Riccardo De Maria</li>
