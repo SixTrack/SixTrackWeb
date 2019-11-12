@@ -41,8 +41,10 @@
     $bFiles = scandir("build_status");
     foreach($bFiles as $bFile) {
       if(!is_file("build_status/".$bFile)) continue;
+      $bExt = pathinfo("build_status/".$bFile, PATHINFO_EXTENSION);
+      if($bExt != "json") continue;
       $bData = file_get_contents("build_status/".$bFile);
-      $bData = unserialize($bData);
+      $bData = json_decode($bData,true);
       if($bData["action"] == "meta") {
         $bMeta = $bData;
       }
