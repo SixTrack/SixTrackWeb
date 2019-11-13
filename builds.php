@@ -89,7 +89,7 @@
       echo "<a href='https://github.com/SixTrack/SixTrack/commit/".$bMeta["hash"]."'>".$bMeta["hash"]."</a> ";
     echo "</li>\n";
     echo "<li><span ".$lblStyle.">Git Time:</span> ".$bMeta["ctime"]."</li>\n";
-    if($bMeta["coverage"] == "True") {
+    if($bMeta["coverage"]) {
       $cLoc = intval($bMeta["covloc"]);
       $cTot = intval($bMeta["totloc"]);
       $cRat = $cTot > 0 ? 100*$cLoc/$cTot : 0;
@@ -157,15 +157,15 @@
           $bData = $bStatus[$bMap[$compNm."/".$typNm."/".$bldNm]];
           if(array_key_exists("action",$bData)) {
             $bInfo = "Time Stamp: ".date("Y-m-d H:i:s",intval($bData["timestamp"]))."\n";
-            if($bData["build"] == "True") {
+            if($bData["build"]) {
               $bInfo .= "Build Time: ".secToTime($bData["buildtime"])."\n";
               $bInfo .= "Command: ".$bData["command"];
             }
             echo "<td title='".str_replace("\'","",$bInfo)."'>";
-            if($bData["build"] == "True") {
-              if($bData["success"] == "True") {
+            if($bData["build"]) {
+              if($bData["success"]) {
                 svgBadge("build","passed","green");
-              } elseif($bData["success"] == "False") {
+              } elseif(!$bData["success"]) {
                 svgBadge("build","failed","red");
               } else {
                 svgBadge("build","unknown","grey");
@@ -237,11 +237,11 @@
             $nFail  = intval($tData["nfail"]);
             $tRate  = $nPass/$nTotal;
             $tMsg   = number_format(100*$tRate,1)." %";
-            if($tData["passtests"] == "True") {
+            if($tData["passtests"]) {
               svgBadge("tests", $tMsg,"green");
-            } elseif($tData["passtests"] == "False" && $tRate >= 0.98) {
+            } elseif(!$tData["passtests"] && $tRate >= 0.98) {
               svgBadge("tests", $tMsg,"orange");
-            } elseif($tData["passtests"] == "False") {
+            } elseif(!$tData["passtests"]) {
               svgBadge("tests", $tMsg,"red");
             } else {
               svgBadge("tests","unknown","grey");
