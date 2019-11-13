@@ -161,7 +161,7 @@
               $bInfo .= "Build Time: ".secToTime($bData["buildtime"])."\n";
               $bInfo .= "Command: ".$bData["command"];
             }
-            echo "<td title='".str_replace("\'","",$bInfo)."'>";
+            echo "<td title=\"".$bInfo."\">";
             if($bData["build"]) {
               if($bData["success"]) {
                 svgBadge("build","passed","green");
@@ -227,11 +227,11 @@
             $tInfo  = "Time Stamp: ".date("Y-m-d H:i:s",intval($tData["timestamp"]))."\n";
             $tInfo .= "Test Time: ".secToTime($tData["testtime"])."\n";
             $tInfo .= "Result: ".$tData["ntotal"]." Run, ".$tData["npass"]." Passed, ".$tData["nfail"]." Failed\n";
-            $tInfo .= "Command: ".str_replace('\"','"',$tData["testcmd"]);
+            $tInfo .= "Command: ".$tData["testcmd"];
             if($tData["failed"] != "") {
               $tInfo .= "\nFailed: ".$tData["failed"];
             }
-            echo "<td title='".str_replace("\'","",$tInfo)."'>";
+            echo "<td title=\"".$tInfo."\">";
             $nTotal = intval($tData["ntotal"]);
             $nPass  = intval($tData["npass"]);
             $nFail  = intval($tData["nfail"]);
